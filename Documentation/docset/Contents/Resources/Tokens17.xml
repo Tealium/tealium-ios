@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TEALDispatchType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALDispatchType</TokenIdentifier>
+			<Abstract type="html">Types of available dispatches</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeNone</TokenIdentifier>
+            <Abstract type="html">A dispatch with an unassigned type.
+     </Abstract>
+            <Declaration>TEALDispatchTypeNone</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeEvent</TokenIdentifier>
+            <Abstract type="html">Any non-view type dispatch.
+     </Abstract>
+            <Declaration>TEALDispatchTypeEvent</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeView</TokenIdentifier>
+            <Abstract type="html">Dispatch for view / screen appearances only.
+     </Abstract>
+            <Declaration>TEALDispatchTypeView</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

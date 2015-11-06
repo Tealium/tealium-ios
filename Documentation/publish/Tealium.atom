@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>http://www.tealium.com/Tealium/Tealium.atom/20160201110736</id>
+    <title type="text">TealiumIOS Documentation</title>
+    <rights>Copyright © 2016 Tealium. All rights reserved.</rights>
+    <link rel="self" href="http://www.tealium.com/Tealium/Tealium.atom"></link>
+    <docset:publisherName>Tealium</docset:publisherName>
+    <docset:publisherID>com.Tealium.documentation</docset:publisherID>
+    <updated>2016-02-01T11:07:36-08:00</updated>
+    <entry>
+        <id>tag:www.tealium.com,2016-02-1:com.Tealium.TealiumIOS/1.0.0</id>
+        <title type="text">TealiumIOS Documentation</title>
+        <updated>2016-02-01T11:07:36-08:00</updated>
+        <content type="text">TealiumIOS Documentation (v1.0.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http:/www.tealium.com/Tealium/com.Tealium.TealiumIOS-1.0.xar" length="354311"></link>
+        <docset:identifier>com.Tealium.TealiumIOS</docset:identifier>
+        <docset:version>1.0.0</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>

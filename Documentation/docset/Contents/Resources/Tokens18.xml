@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TEALErrorCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALErrorCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TEALError.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeUnknown</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALErrorCodeUnknown</Declaration>
+            
+            <DeclaredIn>TEALError.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeSuccess</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALErrorCodeSuccess</Declaration>
+            
+            <DeclaredIn>TEALError.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeNoContent</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALErrorCodeNoContent</Declaration>
+            
+            <DeclaredIn>TEALError.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeMalformed</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALErrorCodeMalformed</Declaration>
+            
+            <DeclaredIn>TEALError.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeFailure</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALErrorCodeFailure</Declaration>
+            
+            <DeclaredIn>TEALError.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeNotAcceptable</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALErrorCodeNotAcceptable</Declaration>
+            
+            <DeclaredIn>TEALError.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeException</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALErrorCodeException</Declaration>
+            
+            <DeclaredIn>TEALError.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TEALVisitorProfileFlagAttribute.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileFlagAttribute</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TEALVisitorProfileFlagAttribute.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileFlagAttribute/value</TokenIdentifier>
+			<Abstract type="html">Value of the Flag</Abstract>
+			<DeclaredIn>TEALVisitorProfileFlagAttribute.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)value</Declaration>
+			
+			<ReturnValue><Abstract type="html">booleon value of the flag</Abstract></ReturnValue>
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileFlagAttribute/isEqualAttribute:</TokenIdentifier>
+			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
+			<DeclaredIn>TEALVisitorProfileFlagAttribute.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualAttribute:(TEALVisitorProfileBaseAttribute *)attribute</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">Any NSObject, only TEALVisitorProfileBaseAttribute subclasses can return a true result.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">boolean of true if relavent values are equal, regardles of object hashing or non relavant properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualAttribute:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

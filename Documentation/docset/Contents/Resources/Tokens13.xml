@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TEALVisitorProfilePropertyAttribute.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfilePropertyAttribute</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TEALVisitorProfilePropertyAttribute.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfilePropertyAttribute/value</TokenIdentifier>
+			<Abstract type="html">String value of a given property or trait.</Abstract>
+			<DeclaredIn>TEALVisitorProfilePropertyAttribute.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)value</Declaration>
+			
+			<ReturnValue><Abstract type="html">valid string or nil if none</Abstract></ReturnValue>
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfilePropertyAttribute/isEqualAttribute:</TokenIdentifier>
+			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
+			<DeclaredIn>TEALVisitorProfilePropertyAttribute.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualAttribute:(TEALVisitorProfileBaseAttribute *)attribute</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">Any NSObject, only TEALVisitorProfileBaseAttribute subclasses can return a true result.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">boolean of true if relavent values are equal, regardles of object hashing or non relavant properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualAttribute:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
