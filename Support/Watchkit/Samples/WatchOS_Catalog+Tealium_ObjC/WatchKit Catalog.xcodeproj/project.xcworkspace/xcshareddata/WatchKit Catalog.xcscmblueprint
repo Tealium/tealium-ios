@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9DE14BDEECC68A29C3E2C50A14534F3DB834B22B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FA19643236AAAF25878EDE1FB9F2F08B5CF47F32" : 0,
+    "9DE14BDEECC68A29C3E2C50A14534F3DB834B22B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FD6137E0-691F-47B2-9643-CF135F30EC6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FA19643236AAAF25878EDE1FB9F2F08B5CF47F32" : "tealium-apple-builder\/",
+    "9DE14BDEECC68A29C3E2C50A14534F3DB834B22B" : "tealium-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WatchKit Catalog",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "samples\/objc\/WatchKitCatalog+Tealium-Objc\/WatchKit Catalog.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jalakoo\/tealium-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9DE14BDEECC68A29C3E2C50A14534F3DB834B22B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jalakoo\/tealium-apple-builder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FA19643236AAAF25878EDE1FB9F2F08B5CF47F32"
+    }
+  ]
+}

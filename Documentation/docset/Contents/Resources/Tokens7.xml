@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TEALVisitorProfileBadgeAttribute.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileBadgeAttribute</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TEALVisitorProfileBadgeAttribute.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBadgeAttribute/name</TokenIdentifier>
+			<Abstract type="html">Name of the Audience, this is a display name, all attributes are refenerenced by their unique attributeID</Abstract>
+			<DeclaredIn>TEALVisitorProfileBadgeAttribute.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)name</Declaration>
+			
+			<ReturnValue><Abstract type="html">string of the human friendly name or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

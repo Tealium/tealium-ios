@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Tealium Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TealiumIOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tealium</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/destroyInstanceForKey:">+ destroyInstanceForKey:</option>
+		
+		<option value="//api/name/instanceAvailableForMessage:">+ instanceAvailableForMessage:</option>
+		
+		<option value="//api/name/instanceForKey:">+ instanceForKey:</option>
+		
+		<option value="//api/name/newInstanceForKey:configuration:">+ newInstanceForKey:configuration:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addPersistentDataSources:">- addPersistentDataSources:</option>
+		
+		<option value="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">- addRemoteCommandID:description:targetQueue:responseBlock:</option>
+		
+		<option value="//api/name/addVolatileDataSources:">- addVolatileDataSources:</option>
+		
+		<option value="//api/name/cachedVisitorProfileCopy">- cachedVisitorProfileCopy</option>
+		
+		<option value="//api/name/delegate">- delegate</option>
+		
+		<option value="//api/name/fetchVisitorProfileWithCompletion:">- fetchVisitorProfileWithCompletion:</option>
+		
+		<option value="//api/name/joinTraceWithToken:">- joinTraceWithToken:</option>
+		
+		<option value="//api/name/leaveTrace">- leaveTrace</option>
+		
+		<option value="//api/name/persistentDataSourcesCopy">- persistentDataSourcesCopy</option>
+		
+		<option value="//api/name/profileDefinitionURL">- profileDefinitionURL</option>
+		
+		<option value="//api/name/profileURL">- profileURL</option>
+		
+		<option value="//api/name/removePersistentDataSourcesForKeys:">- removePersistentDataSourcesForKeys:</option>
+		
+		<option value="//api/name/removeRemoteCommandID:">- removeRemoteCommandID:</option>
+		
+		<option value="//api/name/removeVolatileDataSourcesForKeys:">- removeVolatileDataSourcesForKeys:</option>
+		
+		<option value="//api/name/session:didReceiveMessage:">- session:didReceiveMessage:</option>
+		
+		<option value="//api/name/session:didReceiveMessage:replyHandler:">- session:didReceiveMessage:replyHandler:</option>
+		
+		<option value="//api/name/setDelegate:">- setDelegate:</option>
+		
+		<option value="//api/name/trackEventWithTitle:dataSources:">- trackEventWithTitle:dataSources:</option>
+		
+		<option value="//api/name/trackViewWithTitle:dataSources:">- trackViewWithTitle:dataSources:</option>
+		
+		<option value="//api/name/visitorIDCopy">- visitorIDCopy</option>
+		
+		<option value="//api/name/volatileDataSourcesCopy">- volatileDataSourcesCopy</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Tealium Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>Tealium.h<br />Tealium.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Tealium is the main class for the Tealium Library.</p>
+
+<p>Currently implements a multiton pattern that permits multiple Tealium instances.</p>
+
+<p>Internally the entire library runs inside its own serial queue so there is
+no need call Tealium methods from a background thread, it takes care of that on its own.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/newInstanceForKey:configuration:" title="newInstanceForKey:configuration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/newInstanceForKey:configuration:">+&nbsp;newInstanceForKey:configuration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts an instance of the Tealium Mobile Library for a given key with the
+given configuration object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (_Nullable instancetype)newInstanceForKey:(NSString *_Nonnull)<em>key</em> configuration:(TEALConfiguration *_Nonnull)<em>configuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>NSString identifier for the library instance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p><a href="../Classes/TEALConfiguration.html">TEALConfiguration</a> instance with valid Account/Profile/Enviroment properties.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/instanceForKey:" title="instanceForKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/instanceForKey:">+&nbsp;instanceForKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an instance of the library for the given key, or NIL if such an
+instance has not been previously initialized.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (_Nullable instancetype)instanceForKey:(NSString *_Nonnull)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>NSString identifier for the library instance.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/destroyInstanceForKey:" title="destroyInstanceForKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/destroyInstanceForKey:">+&nbsp;destroyInstanceForKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes and nils out an instance of the library with the given key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)destroyInstanceForKey:(NSString *_Nonnull)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>NSString identifier for the library instance to remove.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&ndash;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Optional delegate primarily for monitoring or manipulating dispatch data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;TealiumDelegate&gt; _Nullable)delegate</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The current delegate of the library instance</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDelegate:" title="setDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDelegate:">&ndash;&nbsp;setDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the library <a href="#//api/name/delegate">delegate</a> for overriding and or monitoring dispatch processes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDelegate:(id&lt;TealiumDelegate&gt; _Nullable)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Any object that implements one or more optional Tealium Delegate
+protocols.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackEventWithTitle:dataSources:" title="trackEventWithTitle:dataSources:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackEventWithTitle:dataSources:">&ndash;&nbsp;trackEventWithTitle:dataSources:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends an event to Collect.  Event are packaged with any custom key/value
+data sources passed in along with the default datasources provided by the library.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackEventWithTitle:(NSString *_Nonnull)<em>title</em> dataSources:(NSDictionary *_Nullable)<em>customDataSources</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>String title of event</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>customDataSources</code></th>
+						<td><p>Dictionary of custom datasources (key/value pairs)
+to be included in the event dispatch. If a value is an array, be sure to use
+an array of strings.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackViewWithTitle:dataSources:" title="trackViewWithTitle:dataSources:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackViewWithTitle:dataSources:">&ndash;&nbsp;trackViewWithTitle:dataSources:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a view to Collect.  Views are packaged with any custom key/value data
+sources passed in along with the default datasources provided by the library.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackViewWithTitle:(NSString *_Nonnull)<em>title</em> dataSources:(NSDictionary *_Nullable)<em>customDataSources</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>String title of view</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>customDataSources</code></th>
+						<td><p>Dictionary of custom datasources (key/value pairs)
+to be included in the event dispatch. If a value is an array, be sure to use
+an array of strings.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/volatileDataSourcesCopy" title="volatileDataSourcesCopy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/volatileDataSourcesCopy">&ndash;&nbsp;volatileDataSourcesCopy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Copy of all non persistent, UI object and dispatch specific data sources
+captured by a Tealium library instance at time of call.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nonnull)volatileDataSourcesCopy</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSDictionary of Tealium Data Source keys and values at time of call.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addVolatileDataSources:" title="addVolatileDataSources:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addVolatileDataSources:">&ndash;&nbsp;addVolatileDataSources:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds additional data to the temporary data sources dictionary. This command
+is added to the end of the current Tealium background queue for writing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addVolatileDataSources:(NSDictionary *_Nonnull)<em>additionalDataSources</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>additionalDataSources</code></th>
+						<td><p>New or overwrite data sources to add to the
+volatile data sources store.  These key values can only be superceded by the
+custom data sources added to track calls. If a value is an array, be sure to use
+an array of strings.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeVolatileDataSourcesForKeys:" title="removeVolatileDataSourcesForKeys:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeVolatileDataSourcesForKeys:">&ndash;&nbsp;removeVolatileDataSourcesForKeys:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes key-value pairs from the library instance&rsquo;s volatile memory</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeVolatileDataSourcesForKeys:(NSArray *_Nonnull)<em>dataSourceKeys</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataSourceKeys</code></th>
+						<td><p>An NSArray of string keys to remove</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/persistentDataSourcesCopy" title="persistentDataSourcesCopy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/persistentDataSourcesCopy">&ndash;&nbsp;persistentDataSourcesCopy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Copy of all long term Tealium data source data written to and read from disk,
+specific to a given library instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nonnull)persistentDataSourcesCopy</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSDictionary of Tealium Data Source keys and values at time of call.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addPersistentDataSources:" title="addPersistentDataSources:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addPersistentDataSources:">&ndash;&nbsp;addPersistentDataSources:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds key-value info into the library instance&rsquo;s persistent data store.  Use
+this to track lifetime values or seldom-changed global data sources.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addPersistentDataSources:(NSDictionary *_Nonnull)<em>additionalDataSources</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>additionalDataSources</code></th>
+						<td><p>An NSDictionary of string keys and values. If
+a value is an array, be sure to use an array of strings.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removePersistentDataSourcesForKeys:" title="removePersistentDataSourcesForKeys:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removePersistentDataSourcesForKeys:">&ndash;&nbsp;removePersistentDataSourcesForKeys:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes all keys from array parameter.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removePersistentDataSourcesForKeys:(NSArray *_Nonnull)<em>dataSourceKeys</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataSourceKeys</code></th>
+						<td><p>An NSArray of strings of the target keys to remove
+from the persistence store.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/joinTraceWithToken:" title="joinTraceWithToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinTraceWithToken:">&ndash;&nbsp;joinTraceWithToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Joins an AudienceStream trace if either the Collect or TagManagement service are enabled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinTraceWithToken:(NSString *_Nonnull)<em>token</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>String value should match the code provided via the AudienceStream web UI.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/leaveTrace" title="leaveTrace"></a>
+	<h3 class="method-title"><code><a href="#//api/name/leaveTrace">&ndash;&nbsp;leaveTrace</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stops sending trace data for the provided token in the <a href="#//api/name/joinTraceWithToken:">joinTraceWithToken:</a> method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)leaveTrace</code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>An optional completion block.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
+						<h2 class="task-title">TagManagement Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:" title="addRemoteCommandID:description:targetQueue:responseBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">&ndash;&nbsp;addRemoteCommandID:description:targetQueue:responseBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a remote command block that can be triggered by the instance&rsquo;s TIQ templates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addRemoteCommandID:(NSString *_Nonnull)<em>commandID</em> description:(NSString *_Nullable)<em>description</em> targetQueue:(dispatch_queue_t _Nonnull)<em>queue</em> responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nullable response ))<em>responseBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commandID</code></th>
+						<td><p>NSString that identifies this code block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>description</code></th>
+						<td><p>Optional NSString description of the command block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>queue</code></th>
+						<td><p>The dispatch queue to run the command on.  Note, any UI
+commands must be done on the main thread.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>responseBlock</code></th>
+						<td><p>An optional block that returns a <a href="../Classes/TEALRemoteCommandResponse.html">TEALRemoteCommandResponse</a>
+object whenever the command is executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeRemoteCommandID:" title="removeRemoteCommandID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeRemoteCommandID:">&ndash;&nbsp;removeRemoteCommandID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a remote command block for the given commandID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeRemoteCommandID:(NSString *_Nonnull)<em>commandID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commandID</code></th>
+						<td><p>NSString identifier for the command block to remove.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Collect Methods" name="task_Collect Methods"></a>
+						<h2 class="task-title">Collect Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/profileURL" title="profileURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/profileURL">&ndash;&nbsp;profileURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The visitor profile url associated with the current user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *_Nullable)profileURL</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSURL An optional NSURL object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/profileDefinitionURL" title="profileDefinitionURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/profileDefinitionURL">&ndash;&nbsp;profileDefinitionURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Where Collect will retrieve profile definitions.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *_Nullable)profileDefinitionURL</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSURL An optional NSURL object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visitorIDCopy" title="visitorIDCopy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visitorIDCopy">&ndash;&nbsp;visitorIDCopy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Copy of the Unique visitor ID per Account / Device combination.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)visitorIDCopy</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String value of the visitorID for the Account the library was enabled with.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cachedVisitorProfileCopy" title="cachedVisitorProfileCopy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cachedVisitorProfileCopy">&ndash;&nbsp;cachedVisitorProfileCopy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Last retrieved profile instance.  This is updated every time the profile is
+queried.  Depending on the settings the library was enabled with, this could
+be after every sendEvent:customData: call or only on explicit request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TEALVisitorProfile *_Nullable)cachedVisitorProfileCopy</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns valid <a href="../Classes/TEALVisitorProfile.html">TEALVisitorProfile</a> object.  Its properties might be
+nil of nothing is loaded into them yet.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchVisitorProfileWithCompletion:" title="fetchVisitorProfileWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchVisitorProfileWithCompletion:">&ndash;&nbsp;fetchVisitorProfileWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the current visitor profile from AudienceStream.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchVisitorProfileWithCompletion:(void ( ^ _Nullable ) ( TEALVisitorProfile *_Nullable profile , NSError *_Nullable error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block with retrieved <a href="../Classes/TEALVisitorProfile.html">TEALVisitorProfile</a>
+instance and an error should any problems occur.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="WatchKit Methods" name="task_WatchKit Methods"></a>
+						<h2 class="task-title">WatchKit Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/instanceAvailableForMessage:" title="instanceAvailableForMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/instanceAvailableForMessage:">+&nbsp;instanceAvailableForMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Check message from a watchKit extension sendMessage call to determine if any it
+     specifies any content for Tealium processing, and if so, if a Tealium
+     instance specified is available to process.
+*</li>
+<li>@param message Origin NSDictionary message.
+*</li>
+<li>@return Boolean indicating whether the Tealium instance specified in the message
+     exists.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)instanceAvailableForMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/session:didReceiveMessage:" title="session:didReceiveMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/session:didReceiveMessage:">&ndash;&nbsp;session:didReceiveMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Called on the <a href="#//api/name/delegate">delegate</a> of the receiver. Will be called on startup if the
+incoming message caused the receiver to launch.
+*</li>
+<li>@param session WCSession responding.</li>
+<li>@param message Message from Watch Extension.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)session:(WCSession *)<em>session</em> didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/session:didReceiveMessage:replyHandler:" title="session:didReceiveMessage:replyHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/session:didReceiveMessage:replyHandler:">&ndash;&nbsp;session:didReceiveMessage:replyHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Called on the <a href="#//api/name/delegate">delegate</a> of the receiver when the sender sends a message that
+expects a reply. Will be called on startup if the incoming message caused the
+receiver to launch.
+*</li>
+<li>@param session WCSession responding.</li>
+<li>@param message Message from Watch Extension.</li>
+<li>@param replyHandler Block responding.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)session:(WCSession *)<em>session</em> didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em> replyHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,id&gt; *replyMessage ))<em>replyHandler</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-02-01</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

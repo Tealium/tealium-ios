@@ -1,0 +1,7 @@
+# Mac
+
+.DS_Store
+
+TealiumIOS_collect_only.framework
+
+Samples/iOS_UIKitCatalog+Tealium_collect_only_ObjC/

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TEALConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALConfiguration</TokenIdentifier>
+			<Abstract type="html">Configuration Class for the Tealium Mobile Library
+An instance of this is passed to Tealium enableWithConfiguration: to start the Collect Library</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setAccountName:</TokenIdentifier>
+			<Abstract type="html">Tealium iQ account name</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *accountName</Declaration>
+			
+			
+			<Anchor>//api/name/accountName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/accountName</TokenIdentifier>
+			<Abstract type="html">Tealium iQ account name</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *accountName</Declaration>
+			
+			
+			<Anchor>//api/name/accountName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALConfiguration/accountName</TokenIdentifier>
+			<Abstract type="html">Tealium iQ account name</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *accountName</Declaration>
+			
+			
+			<Anchor>//api/name/accountName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setProfileName:</TokenIdentifier>
+			<Abstract type="html">Tealium iQ profile name, this should be the TiQ profile where the mobile publish settings have been configured for Tealium collect.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *profileName</Declaration>
+			
+			
+			<Anchor>//api/name/profileName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/profileName</TokenIdentifier>
+			<Abstract type="html">Tealium iQ profile name, this should be the TiQ profile where the mobile publish settings have been configured for Tealium collect.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *profileName</Declaration>
+			
+			
+			<Anchor>//api/name/profileName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALConfiguration/profileName</TokenIdentifier>
+			<Abstract type="html">Tealium iQ profile name, this should be the TiQ profile where the mobile publish settings have been configured for Tealium collect.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *profileName</Declaration>
+			
+			
+			<Anchor>//api/name/profileName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setEnvironmentName:</TokenIdentifier>
+			<Abstract type="html">Tealium iQ evnvironment name.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *environmentName</Declaration>
+			
+			
+			<Anchor>//api/name/environmentName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/environmentName</TokenIdentifier>
+			<Abstract type="html">Tealium iQ evnvironment name.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *environmentName</Declaration>
+			
+			
+			<Anchor>//api/name/environmentName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALConfiguration/environmentName</TokenIdentifier>
+			<Abstract type="html">Tealium iQ evnvironment name.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *environmentName</Declaration>
+			
+			
+			<Anchor>//api/name/environmentName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverridePublishSettingsURL:</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the default mobile publish setting source location with an alternate address. Example - &quot;https://my.domain.com/app/publish.html&quot;</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *overridePublishSettingsURL</Declaration>
+			
+			
+			<Anchor>//api/name/overridePublishSettingsURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/overridePublishSettingsURL</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the default mobile publish setting source location with an alternate address. Example - &quot;https://my.domain.com/app/publish.html&quot;</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *overridePublishSettingsURL</Declaration>
+			
+			
+			<Anchor>//api/name/overridePublishSettingsURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALConfiguration/overridePublishSettingsURL</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the default mobile publish setting source location with an alternate address. Example - &quot;https://my.domain.com/app/publish.html&quot;</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *overridePublishSettingsURL</Declaration>
+			
+			
+			<Anchor>//api/name/overridePublishSettingsURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideTagManagementURL:</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the default address used to retrieve the tag management UTAG.js file.  Example - &quot;https://my.domain.com/app/mobile.html&quot;</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *overrideTagManagementURL</Declaration>
+			
+			
+			<Anchor>//api/name/overrideTagManagementURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/overrideTagManagementURL</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the default address used to retrieve the tag management UTAG.js file.  Example - &quot;https://my.domain.com/app/mobile.html&quot;</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *overrideTagManagementURL</Declaration>
+			
+			
+			<Anchor>//api/name/overrideTagManagementURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALConfiguration/overrideTagManagementURL</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the default address used to retrieve the tag management UTAG.js file.  Example - &quot;https://my.domain.com/app/mobile.html&quot;</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *overrideTagManagementURL</Declaration>
+			
+			
+			<Anchor>//api/name/overrideTagManagementURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALConfiguration/configurationWithAccount:profile:environment:</TokenIdentifier>
+			<Abstract type="html">Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile&apos;s mobile publish settings used</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype _Nullable)configurationWithAccount:(NSString *_Nonnull)accountName profile:(NSString *_Nonnull)profileName environment:(NSString *_Nonnull)environmentName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accountName</Name>
+					<Abstract type="html">String of TiQ / AudienceStream account name</Abstract>
+				</Parameter><Parameter>
+					<Name>profileName</Name>
+					<Abstract type="html">String of TiQ Profile Name</Abstract>
+				</Parameter><Parameter>
+					<Name>environmentName</Name>
+					<Abstract type="html">String</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Valid configuration instance to pass to the enableWithConfiguration: method.</Abstract></ReturnValue>
+			<Anchor>//api/name/configurationWithAccount:profile:environment:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALConfiguration/isValidConfiguration:</TokenIdentifier>
+			<Abstract type="html">Checks to see if configuration is populated with the minimum required properties.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isValidConfiguration:(TEALConfiguration *_Nonnull)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">TEALConfiguration to check.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Boolean of whether the argument configuration is valid.</Abstract></ReturnValue>
+			<Anchor>//api/name/isValidConfiguration:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/instanceID</TokenIdentifier>
+			<Abstract type="html">A unique identifier generated from the account-profile-environment.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (NSString *_Nonnull)instanceID</Declaration>
+			
+			<ReturnValue><Abstract type="html">instanceID NSString identifier</Abstract></ReturnValue>
+			<Anchor>//api/name/instanceID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/overrideCollectDispatchURL</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the destination endpoint for Collect dispatch calls.</Abstract>
+			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			
+			<Declaration>- (NSString *_Nullable)overrideCollectDispatchURL</Declaration>
+			
+			
+			<Anchor>//api/name/overrideCollectDispatchURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/overrideS2SLegacyDispatchURL</TokenIdentifier>
+			<Abstract type="html">If assigned, will replace the destination endpoint for S2S Legacy dispatch calls.</Abstract>
+			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			
+			<Declaration>- (NSString *_Nullable)overrideS2SLegacyDispatchURL</Declaration>
+			
+			
+			<Anchor>//api/name/overrideS2SLegacyDispatchURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/collectPollingFrequency</TokenIdentifier>
+			<Abstract type="html">Frequency at which visitor profile should be polled.</Abstract>
+			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			
+			<Declaration>- (TEALVisitorProfilePollingFrequency)collectPollingFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/collectPollingFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideCollectDispatchURL:</TokenIdentifier>
+			<Abstract type="html">Set the destination endpoint for Collect dispatch calls.</Abstract>
+			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			
+			<Declaration>- (void)setOverrideCollectDispatchURL:(NSString *_Nonnull)overrideURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>overrideURL</Name>
+					<Abstract type="html">The NSString representation of the target URL address to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOverrideCollectDispatchURL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideS2SLegacyDispatchURL:</TokenIdentifier>
+			<Abstract type="html">Set the destination endpoint for Legacy S2S dispatch calls.</Abstract>
+			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			
+			<Declaration>- (void)setOverrideS2SLegacyDispatchURL:(NSString *_Nonnull)overrideURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>overrideURL</Name>
+					<Abstract type="html">The NSString representation of the target URL address to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOverrideS2SLegacyDispatchURL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setCollectPollingFrequency:</TokenIdentifier>
+			<Abstract type="html">Set the visitor profile polling frequency mode.</Abstract>
+			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/TEALVisitorProfilePollingFrequency</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setCollectPollingFrequency:(TEALVisitorProfilePollingFrequency)frequency</Declaration>
+			
+			
+			<Anchor>//api/name/setCollectPollingFrequency:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/remoteCommandsEnabled</TokenIdentifier>
+			<Abstract type="html">Read-only flag for remote commands triggerablilty status.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)remoteCommandsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/remoteCommandsEnabled</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/tagManagementPublishURL</TokenIdentifier>
+			<Abstract type="html">The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (NSString *_Nullable)tagManagementPublishURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSString String representation of the target address.</Abstract></ReturnValue>
+			<Anchor>//api/name/tagManagementPublishURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideTagManagementPublishURL:</TokenIdentifier>
+			<Abstract type="html">Override the default publishURL source point with another address.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)publishURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>publishURL</Name>
+					<Abstract type="html">The replacement URL to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOverrideTagManagementPublishURL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setRemoteCommandsEnabled:</TokenIdentifier>
+			<Abstract type="html">Enable or disable the remote command triggerability.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)setRemoteCommandsEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">BOOL to switch remoteCommandEnabled to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRemoteCommandsEnabled:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

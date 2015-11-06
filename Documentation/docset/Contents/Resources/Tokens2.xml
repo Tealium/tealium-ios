@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TEALDispatch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALDispatch</TokenIdentifier>
+			<Abstract type="html">Constants for the two most common dispatch types</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/setDispatchType:</TokenIdentifier>
+			<Abstract type="html">Type of dispatch, either &apos;link&apos; or &apos;view&apos;</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TEALDispatchType dispatchType</Declaration>
+			
+			
+			<Anchor>//api/name/dispatchType</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/dispatchType</TokenIdentifier>
+			<Abstract type="html">Type of dispatch, either &apos;link&apos; or &apos;view&apos;</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TEALDispatchType dispatchType</Declaration>
+			
+			
+			<Anchor>//api/name/dispatchType</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALDispatch/dispatchType</TokenIdentifier>
+			<Abstract type="html">Type of dispatch, either &apos;link&apos; or &apos;view&apos;</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TEALDispatchType dispatchType</Declaration>
+			
+			
+			<Anchor>//api/name/dispatchType</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/setAssignedBlock:</TokenIdentifier>
+			<Abstract type="html">Optional block assigned to dispatch that can be triggered upon dispatch or queuing of dispatch</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TEALDispatchBlock _Nullable assignedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/assignedBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/assignedBlock</TokenIdentifier>
+			<Abstract type="html">Optional block assigned to dispatch that can be triggered upon dispatch or queuing of dispatch</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TEALDispatchBlock _Nullable assignedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/assignedBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALDispatch/assignedBlock</TokenIdentifier>
+			<Abstract type="html">Optional block assigned to dispatch that can be triggered upon dispatch or queuing of dispatch</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TEALDispatchBlock _Nullable assignedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/assignedBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/setDispatchServiceName:</TokenIdentifier>
+			<Abstract type="html">Name of the dispatch service used to deliver track call.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *dispatchServiceName</Declaration>
+			
+			
+			<Anchor>//api/name/dispatchServiceName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/dispatchServiceName</TokenIdentifier>
+			<Abstract type="html">Name of the dispatch service used to deliver track call.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *dispatchServiceName</Declaration>
+			
+			
+			<Anchor>//api/name/dispatchServiceName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALDispatch/dispatchServiceName</TokenIdentifier>
+			<Abstract type="html">Name of the dispatch service used to deliver track call.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *dispatchServiceName</Declaration>
+			
+			
+			<Anchor>//api/name/dispatchServiceName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/setPayload:</TokenIdentifier>
+			<Abstract type="html">The populated datasources available for mapping with the dispatch.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/payload</TokenIdentifier>
+			<Abstract type="html">The populated datasources available for mapping with the dispatch.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALDispatch/payload</TokenIdentifier>
+			<Abstract type="html">The populated datasources available for mapping with the dispatch.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">Time in Unix epoch of when the dispatch origin track call was called.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/timestamp</TokenIdentifier>
+			<Abstract type="html">Time in Unix epoch of when the dispatch origin track call was called.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALDispatch/timestamp</TokenIdentifier>
+			<Abstract type="html">Time in Unix epoch of when the dispatch origin track call was called.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

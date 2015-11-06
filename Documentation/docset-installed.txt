@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/jasonkoo/Library/Developer/Shared/Documentation/DocSets/com.Tealium.TealiumIOS.docset
+Time: 2016-02-01 19:07:36 +0000

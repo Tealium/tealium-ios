@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>TealiumIOS</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="15"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="22"/>
+                        <NodeRef refid="23"/>
+                        <NodeRef refid="24"/>
+                        <NodeRef refid="25"/>
+                        <NodeRef refid="26"/>
+                        <NodeRef refid="27"/>
+                        <NodeRef refid="28"/>
+                        <NodeRef refid="29"/>
+                        <NodeRef refid="30"/>
+                        <NodeRef refid="31"/>
+                        <NodeRef refid="32"/>
+                        <NodeRef refid="33"/>
+                        <NodeRef refid="34"/>
+                        <NodeRef refid="35"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>TEALConfiguration</Name>
+            <Path>Classes/TEALConfiguration.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALConfiguration.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALConfiguration.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TEALConfiguration.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALConfiguration.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALConfiguration.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>TEALDispatch</Name>
+            <Path>Classes/TEALDispatch.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALDispatch.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALDispatch.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TEALDispatch.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>TEALRemoteCommandManager</Name>
+            <Path>Classes/TEALRemoteCommandManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>TEALRemoteCommandResponse</Name>
+            <Path>Classes/TEALRemoteCommandResponse.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandResponse.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandResponse.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandResponse.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>TEALVisitorProfile</Name>
+            <Path>Classes/TEALVisitorProfile.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfile.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfile.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfile.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>TEALVisitorProfileAudienceAttribute</Name>
+            <Path>Classes/TEALVisitorProfileAudienceAttribute.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileAudienceAttribute.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileAudienceAttribute.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileAudienceAttribute.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>TEALVisitorProfileBadgeAttribute</Name>
+            <Path>Classes/TEALVisitorProfileBadgeAttribute.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileBadgeAttribute.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileBadgeAttribute.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileBadgeAttribute.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>TEALVisitorProfileBaseAttribute</Name>
+            <Path>Classes/TEALVisitorProfileBaseAttribute.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileBaseAttribute.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileBaseAttribute.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileBaseAttribute.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>TEALVisitorProfileCurrentVisit</Name>
+            <Path>Classes/TEALVisitorProfileCurrentVisit.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileCurrentVisit.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileCurrentVisit.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileCurrentVisit.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>TEALVisitorProfileDateAttribute</Name>
+            <Path>Classes/TEALVisitorProfileDateAttribute.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileDateAttribute.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileDateAttribute.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileDateAttribute.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>TEALVisitorProfileFlagAttribute</Name>
+            <Path>Classes/TEALVisitorProfileFlagAttribute.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileFlagAttribute.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileFlagAttribute.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileFlagAttribute.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>TEALVisitorProfileMetricAttribute</Name>
+            <Path>Classes/TEALVisitorProfileMetricAttribute.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileMetricAttribute.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileMetricAttribute.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfileMetricAttribute.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>TEALVisitorProfilePropertyAttribute</Name>
+            <Path>Classes/TEALVisitorProfilePropertyAttribute.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfilePropertyAttribute.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfilePropertyAttribute.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALVisitorProfilePropertyAttribute.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>Tealium</Name>
+            <Path>Classes/Tealium.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Tealium.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Tealium.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/Tealium.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/Tealium.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="15" type="file" documentType="reference">
+            <Name>TealiumDelegate</Name>
+            <Path>Protocols/TealiumDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TealiumDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TealiumDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TealiumDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="16" type="file" documentType="reference">
+            <Name>TEALDispatchStatus</Name>
+            <Path>Constants/TEALDispatchStatus.html</Path>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>TEALDispatchType</Name>
+            <Path>Constants/TEALDispatchType.html</Path>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>TEALErrorCode</Name>
+            <Path>Constants/TEALErrorCode.html</Path>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>TEALRemoteResponseErrors</Name>
+            <Path>Constants/TEALRemoteResponseErrors.html</Path>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>TEALVisitorProfileAttributeType</Name>
+            <Path>Constants/TEALVisitorProfileAttributeType.html</Path>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>TEALVisitorProfilePollingFrequency</Name>
+            <Path>Constants/TEALVisitorProfilePollingFrequency.html</Path>
+            
+        </Node>
+		
+        <Node id="22" type="file" documentType="reference">
+            <Name>TEALBooleanBlock</Name>
+            <Path>Blocks/TEALBooleanBlock.html</Path>
+            
+        </Node>
+        <Node id="23" type="file" documentType="reference">
+            <Name>TEALBooleanCompletionBlock</Name>
+            <Path>Blocks/TEALBooleanCompletionBlock.html</Path>
+            
+        </Node>
+        <Node id="24" type="file" documentType="reference">
+            <Name>TEALDictionaryCompletionBlock</Name>
+            <Path>Blocks/TEALDictionaryCompletionBlock.html</Path>
+            
+        </Node>
+        <Node id="25" type="file" documentType="reference">
+            <Name>TEALDispatchBlock</Name>
+            <Path>Blocks/TEALDispatchBlock.html</Path>
+            
+        </Node>
+        <Node id="26" type="file" documentType="reference">
+            <Name>TEALErrorBlock</Name>
+            <Path>Blocks/TEALErrorBlock.html</Path>
+            
+        </Node>
+        <Node id="27" type="file" documentType="reference">
+            <Name>TEALHTTPResponseBlock</Name>
+            <Path>Blocks/TEALHTTPResponseBlock.html</Path>
+            
+        </Node>
+        <Node id="28" type="file" documentType="reference">
+            <Name>TEALHTTPResponseJSONBlock</Name>
+            <Path>Blocks/TEALHTTPResponseJSONBlock.html</Path>
+            
+        </Node>
+        <Node id="29" type="file" documentType="reference">
+            <Name>TEALRemoteCommandResponseBlock</Name>
+            <Path>Blocks/TEALRemoteCommandResponseBlock.html</Path>
+            
+        </Node>
+        <Node id="30" type="file" documentType="reference">
+            <Name>TEALURLResponseBlock</Name>
+            <Path>Blocks/TEALURLResponseBlock.html</Path>
+            
+        </Node>
+        <Node id="31" type="file" documentType="reference">
+            <Name>TEALURLTaskResponseBlock</Name>
+            <Path>Blocks/TEALURLTaskResponseBlock.html</Path>
+            
+        </Node>
+        <Node id="32" type="file" documentType="reference">
+            <Name>TEALVisitorProfileAttributeCreationBlock</Name>
+            <Path>Blocks/TEALVisitorProfileAttributeCreationBlock.html</Path>
+            
+        </Node>
+        <Node id="33" type="file" documentType="reference">
+            <Name>TEALVisitorProfileCompletionBlock</Name>
+            <Path>Blocks/TEALVisitorProfileCompletionBlock.html</Path>
+            
+        </Node>
+        <Node id="34" type="file" documentType="reference">
+            <Name>TEALVoidBlock</Name>
+            <Path>Blocks/TEALVoidBlock.html</Path>
+            
+        </Node>
+        <Node id="35" type="file" documentType="reference">
+            <Name>tealiumEndBGTask</Name>
+            <Path>Blocks/tealiumEndBGTask.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

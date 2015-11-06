@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TEALRemoteCommandResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALRemoteCommandResponse</TokenIdentifier>
+			<Abstract type="html">A response object for triggered Remote Commands.</Abstract>
+			<DeclaredIn>TEALRemoteCommandResponse.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALRemoteCommandResponse/description</TokenIdentifier>
+			<Abstract type="html">/    NSString *cleanedString = [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];</Abstract>
+			<DeclaredIn>TEALRemoteCommandResponse.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
