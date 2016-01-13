@@ -1,0 +1,16 @@
+{
+    "5":{
+        "_is_enabled":"false",
+        "battery_saver":"true",
+        "dispatch_expiration":"-1",
+        "enable_collect":"true",
+        "enable_s2s_legacy":"true",
+        "enable_tag_management":"true",
+        "event_batch_size":"1",
+        "minutes_between_refresh":"0.0",
+        "offline_dispatch_limit":"100",
+        "override_log":"",
+        "wifi_only_sending":"false"},
+    
+    "_firstPublish":"true"
+}
