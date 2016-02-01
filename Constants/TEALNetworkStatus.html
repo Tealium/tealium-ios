@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>TEALErrorCode Constants Reference</title>
+	<title>TEALNetworkStatus Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">TEALErrorCode Constants Reference</h1>
+					<h1 class="title">TEALNetworkStatus Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>TEALError.h</td>
+	<td>TEALReachability.h</td>
+</tr><tr>
+	<th>References</th>
+	<td>http://nshipster.com/ns_enum-ns_options/</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,27 +78,25 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">TEALErrorCode</h3>
+                    <h3 class="subsubtitle method-title">TEALNetworkStatus</h3>
                     
+					
+					<div class="section section-overview">
+                        <p>Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.</p>
+					</div>
+					
+					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSInteger, TEALErrorCode ) {<br>
+                        <code>typedef NS_ENUM(NSInteger, TEALNetworkStatus ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">TEALErrorCodeUnknown</a> = -1,<br>
+                            &nbsp;&nbsp; <a href="">TEALNetworkStatusNotReachable</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">TEALErrorCodeSuccess</a> = 200,<br>
+                            &nbsp;&nbsp; <a href="">TEALNetworkStatusReachableViaWiFi</a> = 2,<br>
                             
-                            &nbsp;&nbsp; <a href="">TEALErrorCodeNoContent</a> = 204,<br>
-                            
-                            &nbsp;&nbsp; <a href="">TEALErrorCodeMalformed</a> = 400,<br>
-                            
-                            &nbsp;&nbsp; <a href="">TEALErrorCodeFailure</a> = 404,<br>
-                            
-                            &nbsp;&nbsp; <a href="">TEALErrorCodeNotAcceptable</a> = 406,<br>
-                            
-                            &nbsp;&nbsp; <a href="">TEALErrorCodeException</a> = 555,<br>
+                            &nbsp;&nbsp; <a href="">TEALNetworkStatusReachableViaWWAN</a> = 1,<br>
                             
                             };</code>
                     
@@ -105,72 +106,53 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="TEALErrorCodeUnknown"></a><code>TEALErrorCodeUnknown</code></dt>
+                            <dt><a name="" title="TEALNetworkStatusNotReachable"></a><code>TEALNetworkStatusNotReachable</code></dt>
 <dd>
+
+
+<p>Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TEALError.h</code>.
+		Declared In <code class="declared-in-ref">TEALReachability.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="TEALErrorCodeSuccess"></a><code>TEALErrorCodeSuccess</code></dt>
+                            <dt><a name="" title="TEALNetworkStatusReachableViaWiFi"></a><code>TEALNetworkStatusReachableViaWiFi</code></dt>
 <dd>
+
+
+<p>Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TEALError.h</code>.
+		Declared In <code class="declared-in-ref">TEALReachability.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="TEALErrorCodeNoContent"></a><code>TEALErrorCodeNoContent</code></dt>
+                            <dt><a name="" title="TEALNetworkStatusReachableViaWWAN"></a><code>TEALNetworkStatusReachableViaWWAN</code></dt>
 <dd>
+
+
+<p>Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TEALError.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="TEALErrorCodeMalformed"></a><code>TEALErrorCodeMalformed</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TEALError.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="TEALErrorCodeFailure"></a><code>TEALErrorCodeFailure</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TEALError.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="TEALErrorCodeNotAcceptable"></a><code>TEALErrorCodeNotAcceptable</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TEALError.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="TEALErrorCodeException"></a><code>TEALErrorCodeException</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TEALError.h</code>.
+		Declared In <code class="declared-in-ref">TEALReachability.h</code>.
 	</p>
 	
 </dd>
@@ -179,6 +161,26 @@
                     </div>
                     
 
+                    
+                    
+
+                    
+                    <div class="method-subsection see-also-section">
+                        <h4 class="method-subtitle">See Also</h4>
+                        <ul>
+                            
+                            <li><code><p><a href="http://nshipster.com/ns_enum-ns_options/">http://nshipster.com/ns_enum-ns_options/</a></p></code></li>
+                            
+                        </ul>
+                    </div>
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">TEALReachability.h</code></p>
+                    </div>
+                    
                     
                     
                     

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>TEALDispatch Class Reference</title>
+	<title>TEALWKExtensionConfiguration Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,19 +56,19 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/assignedBlock">assignedBlock</option>
+		<option value="//api/name/logLevel">logLevel</option>
 		
-		<option value="//api/name/dispatchServiceName">dispatchServiceName</option>
-		
-		<option value="//api/name/dispatchType">dispatchType</option>
-		
-		<option value="//api/name/payload">payload</option>
-		
-		<option value="//api/name/timestamp">timestamp</option>
+		<option value="//api/name/offlineDispatchQueueSize">offlineDispatchQueueSize</option>
 		
 	</optgroup>
 	
 
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/configuration">+ configuration</option>
+		
+	</optgroup>
 	
 
 	
@@ -85,7 +85,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">TEALDispatch Class Reference</h1>
+					<h1 class="title">TEALWKExtensionConfiguration Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -93,11 +93,8 @@
 	<th>Inherits from</th>
 	<td>NSObject</td>
 </tr><tr>
-	<th>Conforms to</th>
-	<td>NSCoding</td>
-</tr><tr>
 	<th>Declared in</th>
-	<td>TEALDispatch.h<br />TEALDispatch.m</td>
+	<td>TEALWKExtensionConfiguration.h<br />TEALWKExtensionConfiguration.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -107,7 +104,12 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Constants for the two most common dispatch types</p>
+						<ul>
+<li>This is a lighter-weight version of the <a href="../Classes/TEALConfiguration.html">TEALConfiguration</a> object meant
+ specifically for use in a watchOS extension. Create an instance of this class
+ to pass as an argument into a <a href="../Classes/TEALWKExtension.html">TEALWKExtension</a> init method.</li>
+</ul>
+
 					</div>
 					
 					
@@ -123,8 +125,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/dispatchType" title="dispatchType"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dispatchType">&nbsp;&nbsp;dispatchType</a></code>
+	<a name="//api/name/offlineDispatchQueueSize" title="offlineDispatchQueueSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/offlineDispatchQueueSize">&nbsp;&nbsp;offlineDispatchQueueSize</a></code>
 </h3>
 
 	<div class="method-info">
@@ -134,12 +136,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Type of dispatch, either &lsquo;link&rsquo; or &lsquo;view&rsquo;</p>
+				<p>The number of track events to store when the host iOS device in not reachable.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) TEALDispatchType dispatchType</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSUInteger offlineDispatchQueueSize</code></div>
 
 		    
 			
@@ -148,6 +150,11 @@
 
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default - 100</p>
+			</div>
 			
 
 			
@@ -157,15 +164,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALDispatch.h</code></p>
+				<p><code class="declared-in-ref">TEALWKExtensionConfiguration.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/assignedBlock" title="assignedBlock"></a>
-	<h3 class="method-title"><code><a href="#//api/name/assignedBlock">&nbsp;&nbsp;assignedBlock</a></code>
+	<a name="//api/name/logLevel" title="logLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logLevel">&nbsp;&nbsp;logLevel</a></code>
 </h3>
 
 	<div class="method-info">
@@ -175,12 +182,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Optional block assigned to dispatch that can be triggered upon dispatch or queuing of dispatch</p>
+				<p><a href="../Classes/Tealium.html">Tealium</a> log level to use with the extension only.  Default none.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) TEALDispatchBlock _Nullable assignedBlock</code></div>
+			<div class="method-subsection method-declaration"><code>@property TEALLogLevel logLevel</code></div>
 
 		    
 			
@@ -198,15 +205,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALDispatch.h</code></p>
+				<p><code class="declared-in-ref">TEALWKExtensionConfiguration.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/dispatchServiceName" title="dispatchServiceName"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dispatchServiceName">&nbsp;&nbsp;dispatchServiceName</a></code>
+	<a name="//api/name/configuration" title="configuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configuration">+&nbsp;configuration</a></code>
 </h3>
 
 	<div class="method-info">
@@ -216,16 +223,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Name of the dispatch service used to deliver track call.</p>
+				<p>Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile&rsquo;s mobile publish settings used</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *dispatchServiceName</code></div>
+			<div class="method-subsection method-declaration"><code>+ (instancetype)configuration</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Valid configuration instance to pass to the enableWithConfiguration: method.</p>
+			</div>
 			
 
 			
@@ -239,89 +251,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALDispatch.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/payload" title="payload"></a>
-	<h3 class="method-title"><code><a href="#//api/name/payload">&nbsp;&nbsp;payload</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The populated datasources available for mapping with the dispatch.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *payload</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALDispatch.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/timestamp" title="timestamp"></a>
-	<h3 class="method-title"><code><a href="#//api/name/timestamp">&nbsp;&nbsp;timestamp</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Time in Unix epoch of when the dispatch origin track call was called.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval timestamp</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALDispatch.h</code></p>
+				<p><code class="declared-in-ref">TEALWKExtensionConfiguration.h</code></p>
 			</div>
 			
 			

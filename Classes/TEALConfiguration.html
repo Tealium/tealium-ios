@@ -60,23 +60,11 @@
 		
 		<option value="//api/name/environmentName">environmentName</option>
 		
-		<option value="//api/name/instanceID">instanceID</option>
-		
-		<option value="//api/name/overrideCollectDispatchURL">overrideCollectDispatchURL</option>
-		
 		<option value="//api/name/overridePublishSettingsURL">overridePublishSettingsURL</option>
 		
-		<option value="//api/name/overridePublishURL">overridePublishURL</option>
-		
-		<option value="//api/name/overrideS2SLegacyDispatchURL">overrideS2SLegacyDispatchURL</option>
-		
-		<option value="//api/name/pollingFrequency">pollingFrequency</option>
+		<option value="//api/name/overrideTagManagementURL">overrideTagManagementURL</option>
 		
 		<option value="//api/name/profileName">profileName</option>
-		
-		<option value="//api/name/remoteCommandsEnabled">remoteCommandsEnabled</option>
-		
-		<option value="//api/name/useHTTP">useHTTP</option>
 		
 	</optgroup>
 	
@@ -91,6 +79,32 @@
 	</optgroup>
 	
 
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/collectPollingFrequency">- collectPollingFrequency</option>
+		
+		<option value="//api/name/instanceID">- instanceID</option>
+		
+		<option value="//api/name/overrideCollectDispatchURL">- overrideCollectDispatchURL</option>
+		
+		<option value="//api/name/overrideS2SLegacyDispatchURL">- overrideS2SLegacyDispatchURL</option>
+		
+		<option value="//api/name/remoteCommandsEnabled">- remoteCommandsEnabled</option>
+		
+		<option value="//api/name/setCollectPollingFrequency:">- setCollectPollingFrequency:</option>
+		
+		<option value="//api/name/setOverrideCollectDispatchURL:">- setOverrideCollectDispatchURL:</option>
+		
+		<option value="//api/name/setOverrideS2SLegacyDispatchURL:">- setOverrideS2SLegacyDispatchURL:</option>
+		
+		<option value="//api/name/setOverrideTagManagementPublishURL:">- setOverrideTagManagementPublishURL:</option>
+		
+		<option value="//api/name/setRemoteCommandsEnabled:">- setRemoteCommandsEnabled:</option>
+		
+		<option value="//api/name/tagManagementPublishURL">- tagManagementPublishURL</option>
+		
+	</optgroup>
 	
 	
 </select>
@@ -137,7 +151,7 @@ An instance of this is passed to <a href="../Classes/Tealium.html">Tealium</a> e
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -274,208 +288,6 @@ An instance of this is passed to <a href="../Classes/Tealium.html">Tealium</a> e
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/instanceID" title="instanceID"></a>
-	<h3 class="method-title"><code><a href="#//api/name/instanceID">&nbsp;&nbsp;instanceID</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The instance id assigned to the library instance associated with this configuration.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *instanceID</code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>instanceKey</code></th>
-						<td><p>NSString identifier</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/remoteCommandsEnabled" title="remoteCommandsEnabled"></a>
-	<h3 class="method-title"><code><a href="#//api/name/remoteCommandsEnabled">&nbsp;&nbsp;remoteCommandsEnabled</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Flag for allowing remote commands triggerable via the Tag Management dispatch service.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL remoteCommandsEnabled</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>@default YES</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/useHTTP" title="useHTTP"></a>
-	<h3 class="method-title"><code><a href="#//api/name/useHTTP">&nbsp;&nbsp;useHTTP</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Flag when on will send all data for HTTP.  Suggested to be used in development only!</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL useHTTP</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>@default NO</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/pollingFrequency" title="pollingFrequency"></a>
-	<h3 class="method-title"><code><a href="#//api/name/pollingFrequency">&nbsp;&nbsp;pollingFrequency</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Frequency at which visitor profile should be polled.
-By default after each sendEventWithData: and sendViewWithData: call an updated visitor profile will be requested.
-If set to on request, the library will only requery the profile when asked for using fetchVisitorProfileWithCompletion:</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) TEALVisitorProfilePollingFrequency pollingFrequency</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>@default TEALVisitorProfilePollingFrequencyAfterEveryEvent</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Constants/TEALVisitorProfilePollingFrequency.html">TEALVisitorProfilePollingFrequency</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/overridePublishSettingsURL" title="overridePublishSettingsURL"></a>
 	<h3 class="method-title"><code><a href="#//api/name/overridePublishSettingsURL">&nbsp;&nbsp;overridePublishSettingsURL</a></code>
 </h3>
@@ -517,8 +329,8 @@ If set to on request, the library will only requery the profile when asked for u
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/overridePublishURL" title="overridePublishURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/overridePublishURL">&nbsp;&nbsp;overridePublishURL</a></code>
+	<a name="//api/name/overrideTagManagementURL" title="overrideTagManagementURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/overrideTagManagementURL">&nbsp;&nbsp;overrideTagManagementURL</a></code>
 </h3>
 
 	<div class="method-info">
@@ -533,89 +345,7 @@ If set to on request, the library will only requery the profile when asked for u
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *overridePublishURL</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/overrideCollectDispatchURL" title="overrideCollectDispatchURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/overrideCollectDispatchURL">&nbsp;&nbsp;overrideCollectDispatchURL</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>If assigned, will replace the destination endpoint for Collect dispatch calls.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *overrideCollectDispatchURL</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/overrideS2SLegacyDispatchURL" title="overrideS2SLegacyDispatchURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/overrideS2SLegacyDispatchURL">&nbsp;&nbsp;overrideS2SLegacyDispatchURL</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>If assigned, will replace the destination endpoint for S2S Legacy dispatch calls.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *overrideS2SLegacyDispatchURL</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *overrideTagManagementURL</code></div>
 
 		    
 			
@@ -656,7 +386,7 @@ If set to on request, the library will only requery the profile when asked for u
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (instancetype)configurationWithAccount:(NSString *)<em>accountName</em> profile:(NSString *)<em>profileName</em> environment:(NSString *)<em>environmentName</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (instancetype _Nullable)configurationWithAccount:(NSString *_Nonnull)<em>accountName</em> profile:(NSString *_Nonnull)<em>profileName</em> environment:(NSString *_Nonnull)<em>environmentName</em></code></div>
 
 		    
 			
@@ -724,11 +454,74 @@ If set to on request, the library will only requery the profile when asked for u
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (BOOL)isValidConfiguration:(TEALConfiguration *)<em>configuration</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isValidConfiguration:(TEALConfiguration *_Nonnull)<em>configuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>TEALConfiguration to check.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Boolean of whether the argument configuration is valid.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/instanceID" title="instanceID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/instanceID">&ndash;&nbsp;instanceID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A unique identifier generated from the account-profile-environment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nonnull)instanceID</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>instanceID NSString identifier</p>
+			</div>
 			
 
 			
@@ -751,6 +544,507 @@ If set to on request, the library will only requery the profile when asked for u
 </div>
 						</div>
 						
+
+						<a title="Collect Methods" name="task_Collect Methods"></a>
+						<h2 class="task-title">Collect Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/overrideCollectDispatchURL" title="overrideCollectDispatchURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/overrideCollectDispatchURL">&ndash;&nbsp;overrideCollectDispatchURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If assigned, will replace the destination endpoint for Collect dispatch calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)overrideCollectDispatchURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/overrideS2SLegacyDispatchURL" title="overrideS2SLegacyDispatchURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/overrideS2SLegacyDispatchURL">&ndash;&nbsp;overrideS2SLegacyDispatchURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If assigned, will replace the destination endpoint for S2S Legacy dispatch calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)overrideS2SLegacyDispatchURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/collectPollingFrequency" title="collectPollingFrequency"></a>
+	<h3 class="method-title"><code><a href="#//api/name/collectPollingFrequency">&ndash;&nbsp;collectPollingFrequency</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Frequency at which visitor profile should be polled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TEALVisitorProfilePollingFrequency)collectPollingFrequency</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setOverrideCollectDispatchURL:" title="setOverrideCollectDispatchURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setOverrideCollectDispatchURL:">&ndash;&nbsp;setOverrideCollectDispatchURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the destination endpoint for Collect dispatch calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setOverrideCollectDispatchURL:(NSString *_Nonnull)<em>overrideURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overrideURL</code></th>
+						<td><p>The NSString representation of the target URL address to use.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setOverrideS2SLegacyDispatchURL:" title="setOverrideS2SLegacyDispatchURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setOverrideS2SLegacyDispatchURL:">&ndash;&nbsp;setOverrideS2SLegacyDispatchURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the destination endpoint for Legacy S2S dispatch calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setOverrideS2SLegacyDispatchURL:(NSString *_Nonnull)<em>overrideURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overrideURL</code></th>
+						<td><p>The NSString representation of the target URL address to use.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCollectPollingFrequency:" title="setCollectPollingFrequency:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCollectPollingFrequency:">&ndash;&nbsp;setCollectPollingFrequency:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the visitor profile polling frequency mode.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCollectPollingFrequency:(TEALVisitorProfilePollingFrequency)<em>frequency</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>By default after each sendEventWithData: and sendViewWithData: call an updated visitor profile will be requested.
+If set to on request, the library will only requery the profile when asked for using fetchVisitorProfileWithCompletion:</p>
+
+<p>@default TEALVisitorProfilePollingFrequencyAfterEveryEvent</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/TEALVisitorProfilePollingFrequency.html">TEALVisitorProfilePollingFrequency</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Collect.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
+						<h2 class="task-title">TagManagement Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/remoteCommandsEnabled" title="remoteCommandsEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteCommandsEnabled">&ndash;&nbsp;remoteCommandsEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Read-only flag for remote commands triggerablilty status.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)remoteCommandsEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@default YES</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tagManagementPublishURL" title="tagManagementPublishURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tagManagementPublishURL">&ndash;&nbsp;tagManagementPublishURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)tagManagementPublishURL</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSString String representation of the target address.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setOverrideTagManagementPublishURL:" title="setOverrideTagManagementPublishURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setOverrideTagManagementPublishURL:">&ndash;&nbsp;setOverrideTagManagementPublishURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Override the default publishURL source point with another address.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)<em>publishURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publishURL</code></th>
+						<td><p>The replacement URL to use.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRemoteCommandsEnabled:" title="setRemoteCommandsEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRemoteCommandsEnabled:">&ndash;&nbsp;setRemoteCommandsEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable the remote command triggerability.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRemoteCommandsEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>BOOL to switch remoteCommandEnabled to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -763,7 +1057,7 @@ If set to on request, the library will only requery the profile when asked for u
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Tealium. All rights reserved. Updated: 2015-11-17</p>
+						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-01-29</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
