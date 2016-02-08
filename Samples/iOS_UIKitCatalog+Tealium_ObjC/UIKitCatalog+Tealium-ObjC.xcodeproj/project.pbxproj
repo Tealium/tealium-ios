@@ -336,6 +336,7 @@
 				5356823718F3656900BAAD62 /* Frameworks */,
 				5356823818F3656900BAAD62 /* Resources */,
 				715C4A241C53018C006B39EF /* Embed Frameworks */,
+				711CEF1E1C6928D8001E2161 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -388,6 +389,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		711CEF1E1C6928D8001E2161 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5356823618F3656900BAAD62 /* Sources */ = {
@@ -539,6 +556,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIKitCatalog/UIKitCatalog+Tealium-ObjC-Prefix.pch";
 				INFOPLIST_FILE = "UIKitCatalog/UIKitCatalog+Tealium-ObjC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "UIKitCatalog+Tealium-ObjC";
@@ -555,6 +573,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIKitCatalog/UIKitCatalog+Tealium-ObjC-Prefix.pch";
 				INFOPLIST_FILE = "UIKitCatalog/UIKitCatalog+Tealium-ObjC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UIKitCatalog";
 				PRODUCT_NAME = "UIKitCatalog+Tealium-ObjC";

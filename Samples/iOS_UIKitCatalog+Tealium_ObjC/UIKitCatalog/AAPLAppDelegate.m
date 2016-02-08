@@ -28,6 +28,7 @@
     [TealiumHelper trackEventWithTitle:@"launch" dataSources:nil];
 
     [TealiumHelper enableRemoteCommandBlock];
+    
     return YES;
 }
 

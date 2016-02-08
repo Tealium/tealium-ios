@@ -145,6 +145,12 @@
                 </Node>
                 
                 
+                <Node type="section">
+                    <Path>Classes/TEALDispatch.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
                 
             </Subnodes>
             

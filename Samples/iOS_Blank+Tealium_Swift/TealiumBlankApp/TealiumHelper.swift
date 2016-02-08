@@ -30,12 +30,7 @@ class TealiumHelper : NSObject {
         
         let config = TEALConfiguration.init(account: "tealiummobile", profile: "demo", environment: "dev")
         
-        guard let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config) else {
-            
-            // Any additional failure response here
-            
-            return
-        }
+        let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config)
         
         tealium.setDelegate(sharedInstance())
         
@@ -127,7 +122,7 @@ extension TealiumHelper{
     
     class func enableRemoteCommand() {
         
-        Tealium.instanceForKey(tealiumInstanceID)?.addRemoteCommandId("testCommand", description: "An example remote command block", targetQueue: dispatch_get_main_queue(), block: { (response: TEALRemoteCommandResponse?) -> Void in
+        Tealium.instanceForKey(tealiumInstanceID)?.addRemoteCommandID("testCommand", description: "An example remote command block", targetQueue: dispatch_get_main_queue(), responseBlock: { (response: TEALRemoteCommandResponse?) -> Void in
             
             // Put any code here that can execute on the main thread - ie content
             // modification, A/B testing, etc.

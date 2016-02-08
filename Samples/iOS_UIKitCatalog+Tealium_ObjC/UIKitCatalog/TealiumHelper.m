@@ -26,12 +26,15 @@ static TealiumHelper * _sharedInstance;
 + (void) startTracking {
     
     TEALConfiguration *configuration = [TEALConfiguration configurationWithAccount:@"tealiummobile"
-                                                                           profile:@"tagbridge"
+                                                                           profile:@"demo"
                                                                        environment:@"dev"];
     
     Tealium *tealiumInstance1 = [Tealium newInstanceForKey:TEALIUM_INSTANCE_ID configuration:configuration];
     
+
     [tealiumInstance1 setDelegate:[TealiumHelper sharedInstance]];
+    
+    [tealiumInstance1 addVolatileDataSources:@{@"volatileTestKey":@"volatileTestValue"}];
     
     [TealiumHelper incrementLifetimeValueForKey:@"launches" amount:1];
     
@@ -115,6 +118,23 @@ static TealiumHelper * _sharedInstance;
         // modification, A/B testing, etc.
         
     }];
+    
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] addRemoteCommandID:@"blogger" description:@"An example remote command block" targetQueue:dispatch_get_main_queue() responseBlock:^(TEALRemoteCommandResponse * _Nullable response) {
+        
+        NSLog(@"%s response: %@", __FUNCTION__, response);
+        // Put any code here that can execute on the main thread - ie content
+        // modification, A/B testing, etc.
+        
+    }];
+    
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] addRemoteCommandID:@"flogger" description:@"An example remote command block" targetQueue:dispatch_get_main_queue() responseBlock:^(TEALRemoteCommandResponse * _Nullable response) {
+        
+        NSLog(@"%s response: %@", __FUNCTION__, response);
+        // Put any code here that can execute on the main thread - ie content
+        // modification, A/B testing, etc.
+        
+    }];
+    
     
 }
 

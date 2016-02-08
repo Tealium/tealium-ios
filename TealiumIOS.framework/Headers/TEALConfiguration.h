@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#pragma mark - Configuration Types
-
 /**
  *  Configuration Class for the Tealium Mobile Library
  *  An instance of this is passed to Tealium enableWithConfiguration: to start the Collect Library
@@ -46,6 +44,11 @@
  */
 @property (nonatomic) NSString * _Nullable overrideTagManagementURL;
 
+
+#pragma mark - Core Methods
+/** @name Core Methods */
+
+
 /**
  *  Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile's mobile publish settings used
  *
@@ -55,7 +58,7 @@
  *
  *  @returns Valid configuration instance to pass to the enableWithConfiguration: method.
  */
-+ (instancetype _Nullable) configurationWithAccount:(NSString * _Nonnull)accountName
++ (instancetype _Nonnull) configurationWithAccount:(NSString * _Nonnull)accountName
                                             profile:(NSString * _Nonnull)profileName
                                         environment:(NSString * _Nonnull)environmentName;
 

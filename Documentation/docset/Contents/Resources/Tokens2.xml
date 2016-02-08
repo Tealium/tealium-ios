@@ -192,6 +192,23 @@
             <NodeRef refid="2"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALDispatch/stringFromDispatchStatus:</TokenIdentifier>
+			<Abstract type="html">Status as human-readable text.</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *_Nonnull)stringFromDispatchStatus:(TEALDispatchStatus)dispatchStatus</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dispatchStatus</Name>
+					<Abstract type="html">TEALDispatchStatus of a dispatch.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NSString representation of the given dispatch status type.</Abstract></ReturnValue>
+			<Anchor>//api/name/stringFromDispatchStatus:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
         
         
 	</File>

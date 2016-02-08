@@ -108,7 +108,7 @@
     NSLog(@"A button was clicked: %@.", button);
     
     [TealiumHelper trackEventWithTitle:@"button_click"
-                           dataSources:@{TEALDataSourceKey_AssociatedViewTitle:NSStringFromClass([self class])}];
+                           dataSources:@{@"Associated_ViewTitle":NSStringFromClass([self class])}];
     
 }
 

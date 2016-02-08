@@ -35,13 +35,6 @@ typedef NS_ENUM(NSUInteger, TEALVisitorProfilePollingFrequency){
  */
 - (NSString * _Nullable) overrideS2SLegacyDispatchURL;
 
-///**
-// *  AudienceStream Trace ID - If set
-// *
-// *  @return NSString String trace id that should match an active AudienceStream trace.
-// */
-//- (NSString * _Nullable) traceID;
-
 /**
  *  Frequency at which visitor profile should be polled.
  */

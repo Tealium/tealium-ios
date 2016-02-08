@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <TealiumIOS/TealiumIOS.h>
+@import TealiumIOS;
 
 //@import TealiumIOS;
 
