@@ -198,7 +198,7 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 			<Abstract type="html">Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile&apos;s mobile publish settings used</Abstract>
 			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype _Nullable)configurationWithAccount:(NSString *_Nonnull)accountName profile:(NSString *_Nonnull)profileName environment:(NSString *_Nonnull)environmentName</Declaration>
+			<Declaration>+ (instancetype _Nonnull)configurationWithAccount:(NSString *_Nonnull)accountName profile:(NSString *_Nonnull)profileName environment:(NSString *_Nonnull)environmentName</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>accountName</Name>

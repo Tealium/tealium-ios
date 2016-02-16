@@ -91,6 +91,14 @@ typedef void (^TEALDispatchBlock)(TEALDispatchStatus status, TEALDispatch * _Non
  */
 @property (nonatomic) NSTimeInterval timestamp;
 
+/**
+ *  Status as human-readable text.
+ *
+ *  @param dispatchStatus TEALDispatchStatus of a dispatch.
+ *
+ *  @return NSString representation of the given dispatch status type.
+ */
++ (NSString * _Nonnull) stringFromDispatchStatus:(TEALDispatchStatus)dispatchStatus;
 
 
 @end

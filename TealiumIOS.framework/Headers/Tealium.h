@@ -23,7 +23,8 @@
  */
 @interface Tealium : NSObject
 
-#pragma mark - Instance Management
+#pragma mark - Core Methods
+/** @name Core Methods */
 
 /**
  *  Starts an instance of the Tealium Mobile Library for a given key with the 
@@ -33,7 +34,8 @@
  *
  *  @param configuration TEALConfiguration instance with valid Account/Profile/Enviroment properties.
  */
-+ (_Nullable instancetype) newInstanceForKey:(NSString * _Nonnull)key configuration:(TEALConfiguration * _Nonnull)configuration;
++ (_Nonnull instancetype) newInstanceForKey:(NSString * _Nonnull)key
+                               configuration:(TEALConfiguration * _Nonnull)configuration;
 
 
 /**
@@ -66,9 +68,6 @@
  */
 - (void) setDelegate:(id<TealiumDelegate> _Nullable)delegate;
 
-
-# pragma mark - Track Data
-
 /**
  *  Sends an event to Collect.  Event are packaged with any custom key/value 
  *  data sources passed in along with the default datasources provided by the library.
@@ -78,7 +77,8 @@
  *  to be included in the event dispatch. If a value is an array, be sure to use 
  *  an array of strings.
  */
-- (void) trackEventWithTitle:(NSString * _Nonnull)title dataSources:(NSDictionary * _Nullable)customDataSources;
+- (void) trackEventWithTitle:(NSString * _Nonnull)title
+                 dataSources:(NSDictionary * _Nullable)customDataSources;
 
 /**
  *  Sends a view to Collect.  Views are packaged with any custom key/value data 
@@ -90,10 +90,8 @@
  *  an array of strings.
  */
 
-- (void) trackViewWithTitle:(NSString * _Nonnull)title dataSources:(NSDictionary * _Nullable)customDataSources;
-
-
-#pragma mark - Data Management
+- (void) trackViewWithTitle:(NSString * _Nonnull)title
+                dataSources:(NSDictionary * _Nullable)customDataSources;
 
 /**
  *  Copy of all non persistent, UI object and dispatch specific data sources 
@@ -147,8 +145,6 @@
  */
 - (void) removePersistentDataSourcesForKeys:(NSArray * _Nonnull)dataSourceKeys;
 
-#pragma mark - VERIFICATION
-
 /**
  *  Joins an AudienceStream trace if either the Collect or TagManagement service are enabled.
  *
@@ -162,5 +158,6 @@
  *  @param completion An optional completion block.
  */
 - (void) leaveTrace;
+
 
 @end

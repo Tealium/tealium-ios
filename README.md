@@ -1,4 +1,4 @@
-# Tealium Mobile Library for iOS Version 5.0.0
+# Tealium Mobile Library for iOS Version 5.0.1
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to iOS applications.
 
@@ -37,6 +37,19 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 * If you have **account specific questions** please contact your Tealium account manager
 
 ## Change Log
+
+- 5.0.1 Bug fixes
+    - Remote disable fix
+    - Reachability check fix
+    - @import TealiumIOS module name fix
+    - Minutes between refresh now displays correct time remaining 
+    - Dispatch logs updated with a QA verbosity option
+    - Minor documentation update
+    - Nullability specifiers for inits corrected for cleaner swift implementation
+    - OverrideS2SLegacyDispatchURL can now accept base addresses without trailing '?'
+    - TEALDispatch stringForDispatchStatusType class method made public
+    - Track calls forced to stay on main thread until data capture complete, then to background queue
+    - Blank sample app updated with proper method signatures
 
 - 5.0.0 Initial Release
     - Multiton support

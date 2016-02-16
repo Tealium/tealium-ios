@@ -6,10 +6,6 @@
 //  Copyright (c) 2015 Tealium Inc. All rights reserved.
 //
 
-#ifndef TEAL_MODULE_TAGMANAGEMENT
-#define TEAL_MODULE_TAGMANAGEMENT
-#endif
-
 #import "Tealium.h"
 #import "TEALRemoteCommandResponse.h"
 #import "TEALConfiguration+TagManagement.h"
@@ -29,7 +25,7 @@
 - (void) addRemoteCommandID:(NSString* _Nonnull)commandID
                 description:(NSString* _Nullable)description
                 targetQueue:(dispatch_queue_t _Nonnull)queue
-              responseBlock:(void (^ _Nonnull)(TEALRemoteCommandResponse * _Nullable response))responseBlock;
+              responseBlock:(void (^ _Nonnull)(TEALRemoteCommandResponse * _Nonnull response))responseBlock;
 
 /**
  *  Removes a remote command block for the given commandID

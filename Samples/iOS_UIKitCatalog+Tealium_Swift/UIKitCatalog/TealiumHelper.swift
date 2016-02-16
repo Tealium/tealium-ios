@@ -27,19 +27,9 @@ class TealiumHelper : NSObject {
     
     class func startTracking() {
         
-        guard let config = TEALConfiguration.init(account: "tealiummobile", profile: "demo", environment: "dev") else {
-            
-            print("Problem initializing TEALConfiguration object.")
-            
-            return
-        }
+        let config = TEALConfiguration.init(account: "tealiummobile", profile: "demo", environment: "dev")
         
-        guard let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config) else {
-            
-            print("Problem initializing Tealium instance.")
-            
-            return
-        }
+        let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config)
         
         tealium.setDelegate(sharedInstance())
         

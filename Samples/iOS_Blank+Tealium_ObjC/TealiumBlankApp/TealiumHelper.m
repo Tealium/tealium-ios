@@ -111,15 +111,15 @@ static TealiumHelper * _sharedInstance;
 
 + (void) enableRemoteCommandBlock {
     
-    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] addRemoteCommandId:@"testCommand"
-         description:@"An example remote command block"
-         targetQueue:dispatch_get_main_queue()
-               block:^(TEALRemoteCommandResponse * _Nullable response) {
-                   
-                   // Put any code here that can execute on the main thread - ie content
-                   // modification, A/B testing, etc.
-                   
-               }];
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] addRemoteCommandID:@"testCommand"
+                                                         description:@"An example remote command block"
+                                                         targetQueue:dispatch_get_main_queue()
+                                                          responseBlock:^(TEALRemoteCommandResponse * _Nonnull response) {
+                                                              
+          // Put any code here that can execute on the main thread - ie content
+          // modification, A/B testing, etc.
+          
+      }];
     
 }
 

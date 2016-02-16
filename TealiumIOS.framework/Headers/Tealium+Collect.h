@@ -6,10 +6,6 @@
 //  Copyright (c) 2015 Tealium Inc. All rights reserved.
 //
 
-#ifndef TEAL_MODULE_COLLECT
-#define TEAL_MODULE_COLLECT
-#endif
-
 #import "Tealium.h"
 #import "TEALVisitorProfile.h"
 #import "TEALConfiguration+Collect.h"

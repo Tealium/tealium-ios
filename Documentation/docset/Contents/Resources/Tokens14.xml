@@ -18,7 +18,7 @@
 given configuration object.</Abstract>
 			<DeclaredIn>Tealium.h</DeclaredIn>
 			
-			<Declaration>+ (_Nullable instancetype)newInstanceForKey:(NSString *_Nonnull)key configuration:(TEALConfiguration *_Nonnull)configuration</Declaration>
+			<Declaration>+ (_Nonnull instancetype)newInstanceForKey:(NSString *_Nonnull)key configuration:(TEALConfiguration *_Nonnull)configuration</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>key</Name>
@@ -284,7 +284,7 @@ from the persistence store.</Abstract>
 			<Abstract type="html">Adds a remote command block that can be triggered by the instance&apos;s TIQ templates.</Abstract>
 			<DeclaredIn>Tealium+TagManagement.h</DeclaredIn>
 			
-			<Declaration>- (void)addRemoteCommandID:(NSString *_Nonnull)commandID description:(NSString *_Nullable)description targetQueue:(dispatch_queue_t _Nonnull)queue responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nullable response ))responseBlock</Declaration>
+			<Declaration>- (void)addRemoteCommandID:(NSString *_Nonnull)commandID description:(NSString *_Nullable)description targetQueue:(dispatch_queue_t _Nonnull)queue responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))responseBlock</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>commandID</Name>
@@ -321,6 +321,59 @@ object whenever the command is executed.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/removeRemoteCommandID:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Tealium/instanceAvailableForMessage:</TokenIdentifier>
+			<Abstract type="html">*  Check message from a watchKit extension sendMessage call to determine if any it
+        specifies any content for Tealium processing, and if so, if a Tealium
+        instance specified is available to process.
+*
+*  @param message Origin NSDictionary message.
+*
+*  @return Boolean indicating whether the Tealium instance specified in the message
+        exists.</Abstract>
+			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)instanceAvailableForMessage:(NSDictionary&lt;NSString*,id&gt; *)message</Declaration>
+			
+			
+			<Anchor>//api/name/instanceAvailableForMessage:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/session:didReceiveMessage:</TokenIdentifier>
+			<Abstract type="html">*  Called on the delegate of the receiver. Will be called on startup if the
+incoming message caused the receiver to launch.
+*
+*  @param session WCSession responding.
+*  @param message Message from Watch Extension.</Abstract>
+			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
+			
+			<Declaration>- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)message</Declaration>
+			
+			
+			<Anchor>//api/name/session:didReceiveMessage:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/session:didReceiveMessage:replyHandler:</TokenIdentifier>
+			<Abstract type="html">*  Called on the delegate of the receiver when the sender sends a message that
+expects a reply. Will be called on startup if the incoming message caused the
+receiver to launch.
+*
+*  @param session WCSession responding.
+*  @param message Message from Watch Extension.
+*  @param replyHandler Block responding.</Abstract>
+			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
+			
+			<Declaration>- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)message replyHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,id&gt; *replyMessage ))replyHandler</Declaration>
+			
+			
+			<Anchor>//api/name/session:didReceiveMessage:replyHandler:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
@@ -390,59 +443,6 @@ instance and an error should any problems occur.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/fetchVisitorProfileWithCompletion:</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/Tealium/instanceAvailableForMessage:</TokenIdentifier>
-			<Abstract type="html">*  Check message from a watchKit extension sendMessage call to determine if any it
-        specifies any content for Tealium processing, and if so, if a Tealium
-        instance specified is available to process.
-*
-*  @param message Origin NSDictionary message.
-*
-*  @return Boolean indicating whether the Tealium instance specified in the message
-        exists.</Abstract>
-			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
-			
-			<Declaration>+ (BOOL)instanceAvailableForMessage:(NSDictionary&lt;NSString*,id&gt; *)message</Declaration>
-			
-			
-			<Anchor>//api/name/instanceAvailableForMessage:</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Tealium/session:didReceiveMessage:</TokenIdentifier>
-			<Abstract type="html">*  Called on the delegate of the receiver. Will be called on startup if the
-incoming message caused the receiver to launch.
-*
-*  @param session WCSession responding.
-*  @param message Message from Watch Extension.</Abstract>
-			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
-			
-			<Declaration>- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)message</Declaration>
-			
-			
-			<Anchor>//api/name/session:didReceiveMessage:</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Tealium/session:didReceiveMessage:replyHandler:</TokenIdentifier>
-			<Abstract type="html">*  Called on the delegate of the receiver when the sender sends a message that
-expects a reply. Will be called on startup if the incoming message caused the
-receiver to launch.
-*
-*  @param session WCSession responding.
-*  @param message Message from Watch Extension.
-*  @param replyHandler Block responding.</Abstract>
-			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
-			
-			<Declaration>- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)message replyHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,id&gt; *replyMessage ))replyHandler</Declaration>
-			
-			
-			<Anchor>//api/name/session:didReceiveMessage:replyHandler:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
