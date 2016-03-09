@@ -1,4 +1,4 @@
-# Tealium Mobile Library for iOS Version 5.0.1
+# Tealium Mobile Library for iOS Version 5.0.2
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to iOS applications.
 
@@ -37,6 +37,14 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 * If you have **account specific questions** please contact your Tealium account manager
 
 ## Change Log
+
+- 5.0.2 Lifecycle Module & Sample App Added
+    - TealiumIOSLifecycle.framework and sample app added to Support folder
+    - Initial queue size init after first launch for default -1 setting fixed
+    - CaptureTimeDataSources now safely adds additional data for certain launch edge cases
+    - DestroyInstanceForKey: method now properly clears persistent data
+    - Additional Data Source Keys to support lifecycle module added
+    - Offline TagBridge feature enabled
 
 - 5.0.1 Bug fixes
     - Remote disable fix

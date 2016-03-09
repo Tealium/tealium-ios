@@ -1110,163 +1110,6 @@ object whenever the command is executed.</p></td>
 						</div>
 						
 
-						<a title="WatchKit Methods" name="task_WatchKit Methods"></a>
-						<h2 class="task-title">WatchKit Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/instanceAvailableForMessage:" title="instanceAvailableForMessage:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/instanceAvailableForMessage:">+&nbsp;instanceAvailableForMessage:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<ul>
-<li>Check message from a watchKit extension sendMessage call to determine if any it
-     specifies any content for Tealium processing, and if so, if a Tealium
-     instance specified is available to process.
-*</li>
-<li>@param message Origin NSDictionary message.
-*</li>
-<li>@return Boolean indicating whether the Tealium instance specified in the message
-     exists.</li>
-</ul>
-
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (BOOL)instanceAvailableForMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/session:didReceiveMessage:" title="session:didReceiveMessage:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/session:didReceiveMessage:">&ndash;&nbsp;session:didReceiveMessage:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<ul>
-<li>Called on the <a href="#//api/name/delegate">delegate</a> of the receiver. Will be called on startup if the
-incoming message caused the receiver to launch.
-*</li>
-<li>@param session WCSession responding.</li>
-<li>@param message Message from Watch Extension.</li>
-</ul>
-
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)session:(WCSession *)<em>session</em> didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/session:didReceiveMessage:replyHandler:" title="session:didReceiveMessage:replyHandler:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/session:didReceiveMessage:replyHandler:">&ndash;&nbsp;session:didReceiveMessage:replyHandler:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<ul>
-<li>Called on the <a href="#//api/name/delegate">delegate</a> of the receiver when the sender sends a message that
-expects a reply. Will be called on startup if the incoming message caused the
-receiver to launch.
-*</li>
-<li>@param session WCSession responding.</li>
-<li>@param message Message from Watch Extension.</li>
-<li>@param replyHandler Block responding.</li>
-</ul>
-
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)session:(WCSession *)<em>session</em> didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em> replyHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,id&gt; *replyMessage ))<em>replyHandler</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
 						<a title="Collect Methods" name="task_Collect Methods"></a>
 						<h2 class="task-title">Collect Methods</h2>
 
@@ -1515,6 +1358,163 @@ instance and an error should any problems occur.</p></td>
 </div>
 						</div>
 						
+
+						<a title="WatchKit Methods" name="task_WatchKit Methods"></a>
+						<h2 class="task-title">WatchKit Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/instanceAvailableForMessage:" title="instanceAvailableForMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/instanceAvailableForMessage:">+&nbsp;instanceAvailableForMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Check message from a watchKit extension sendMessage call to determine if any it
+     specifies any content for Tealium processing, and if so, if a Tealium
+     instance specified is available to process.
+*</li>
+<li>@param message Origin NSDictionary message.
+*</li>
+<li>@return Boolean indicating whether the Tealium instance specified in the message
+     exists.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)instanceAvailableForMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/session:didReceiveMessage:" title="session:didReceiveMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/session:didReceiveMessage:">&ndash;&nbsp;session:didReceiveMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Called on the <a href="#//api/name/delegate">delegate</a> of the receiver. Will be called on startup if the
+incoming message caused the receiver to launch.
+*</li>
+<li>@param session WCSession responding.</li>
+<li>@param message Message from Watch Extension.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)session:(WCSession *)<em>session</em> didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/session:didReceiveMessage:replyHandler:" title="session:didReceiveMessage:replyHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/session:didReceiveMessage:replyHandler:">&ndash;&nbsp;session:didReceiveMessage:replyHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Called on the <a href="#//api/name/delegate">delegate</a> of the receiver when the sender sends a message that
+expects a reply. Will be called on startup if the incoming message caused the
+receiver to launch.
+*</li>
+<li>@param session WCSession responding.</li>
+<li>@param message Message from Watch Extension.</li>
+<li>@param replyHandler Block responding.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)session:(WCSession *)<em>session</em> didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)<em>message</em> replyHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,id&gt; *replyMessage ))<em>replyHandler</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+WatchKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1527,7 +1527,7 @@ instance and an error should any problems occur.</p></td>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-02-15</p>
+						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-03-13</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

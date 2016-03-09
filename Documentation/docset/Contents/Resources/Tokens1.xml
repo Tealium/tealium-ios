@@ -246,6 +246,64 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/remoteCommandsEnabled</TokenIdentifier>
+			<Abstract type="html">Read-only flag for remote commands triggerablilty status.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)remoteCommandsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/remoteCommandsEnabled</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/tagManagementPublishURL</TokenIdentifier>
+			<Abstract type="html">The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (NSString *_Nullable)tagManagementPublishURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSString String representation of the target address.</Abstract></ReturnValue>
+			<Anchor>//api/name/tagManagementPublishURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideTagManagementPublishURL:</TokenIdentifier>
+			<Abstract type="html">Override the default publishURL source point with another address.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)publishURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>publishURL</Name>
+					<Abstract type="html">The replacement URL to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOverrideTagManagementPublishURL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setRemoteCommandsEnabled:</TokenIdentifier>
+			<Abstract type="html">Enable or disable the remote command triggerability.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)setRemoteCommandsEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">BOOL to switch remoteCommandEnabled to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRemoteCommandsEnabled:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/overrideCollectDispatchURL</TokenIdentifier>
 			<Abstract type="html">If assigned, will replace the destination endpoint for Collect dispatch calls.</Abstract>
 			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
@@ -329,64 +387,6 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 			
 			
 			<Anchor>//api/name/setCollectPollingFrequency:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/remoteCommandsEnabled</TokenIdentifier>
-			<Abstract type="html">Read-only flag for remote commands triggerablilty status.</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)remoteCommandsEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/remoteCommandsEnabled</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/tagManagementPublishURL</TokenIdentifier>
-			<Abstract type="html">The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (NSString *_Nullable)tagManagementPublishURL</Declaration>
-			
-			<ReturnValue><Abstract type="html">NSString String representation of the target address.</Abstract></ReturnValue>
-			<Anchor>//api/name/tagManagementPublishURL</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideTagManagementPublishURL:</TokenIdentifier>
-			<Abstract type="html">Override the default publishURL source point with another address.</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)publishURL</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>publishURL</Name>
-					<Abstract type="html">The replacement URL to use.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setOverrideTagManagementPublishURL:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setRemoteCommandsEnabled:</TokenIdentifier>
-			<Abstract type="html">Enable or disable the remote command triggerability.</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (void)setRemoteCommandsEnabled:(BOOL)enabled</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">BOOL to switch remoteCommandEnabled to.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setRemoteCommandsEnabled:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
