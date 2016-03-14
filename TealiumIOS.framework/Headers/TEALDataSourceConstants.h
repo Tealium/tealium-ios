@@ -48,6 +48,7 @@ extern NSString * const TEALDataSourceKey_LibraryVersion;
 extern NSString * const TEALDataSourceKey_LifecycleDayOfWeek;
 extern NSString * const TEALDataSourceKey_LifecycleDaysSinceLaunch;
 extern NSString * const TEALDataSourceKey_LifecycleDaysSinceUpdate;
+extern NSString * const TEALDataSourceKey_LifecycleDaysSinceLastWake;
 extern NSString * const TEALDataSourceKey_LifecycleFirstLaunchDate;
 extern NSString * const TEALDataSourceKey_LifecycleFirstLaunchDate_MMDDYYYY;
 extern NSString * const TEALDataSourceKey_LifecycleHourOfDayLocal;
@@ -66,6 +67,7 @@ extern NSString * const TEALDataSourceKey_LifecycleType;
 extern NSString * const TEALDataSourceKey_LifecycleTotalLaunchCount;
 extern NSString * const TEALDataSourceKey_LifecycleTotalWakeCount;
 extern NSString * const TEALDataSourceKey_LifecycleTotalSleepCount;
+extern NSString * const TEALDataSourceKey_LifecycleTotalSecondsAwake;
 extern NSString * const TEALDataSourceKey_LifecycleUpdateLaunchDate;
 extern NSString * const TEALDataSourceKey_LifecycleWakeCount;
 
