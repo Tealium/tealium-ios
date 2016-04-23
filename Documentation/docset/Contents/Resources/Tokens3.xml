@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALRemoteCommandManager.html">
+	<File path="Classes/TEALRemoteCommandResponse.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALRemoteCommandManager</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALRemoteCommandManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALRemoteCommandResponse</TokenIdentifier>
+			<Abstract type="html">A response object for triggered Remote Commands.</Abstract>
+			<DeclaredIn>TEALRemoteCommandResponse.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -13,25 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALRemoteCommandManager/processCommandString:responseBlock:completion:</TokenIdentifier>
-			<Abstract type="html">Called by webview if Tag Bridge formatted url request string found.</Abstract>
-			<DeclaredIn>TEALRemoteCommandManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALRemoteCommandResponse/description</TokenIdentifier>
+			<Abstract type="html">/    NSString *cleanedString = [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];</Abstract>
+			<DeclaredIn>TEALRemoteCommandResponse.m</DeclaredIn>
 			
-			<Declaration>- (void)processCommandString:(NSString *)commandString responseBlock:(TEALRemoteCommandResponseBlock)responseBlock completion:(TEALBooleanCompletionBlock)completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>commandString</Name>
-					<Abstract type="html">NSString of url string with tealium:// prefix removed.</Abstract>
-				</Parameter><Parameter>
-					<Name>responseBlock</Name>
-					<Abstract type="html">This is the block that will be called if the command is executed.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">Completion block that reports if the remote command block was added.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSString *)description</Declaration>
 			
-			<Anchor>//api/name/processCommandString:responseBlock:completion:</Anchor>
+			
+			<Anchor>//api/name/description</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

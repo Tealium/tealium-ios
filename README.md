@@ -1,4 +1,4 @@
-# Tealium Mobile Library for iOS Version 5.0.2
+# Tealium Mobile Library for iOS Version 5.0.3
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to iOS applications.
 
@@ -37,6 +37,11 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 * If you have **account specific questions** please contact your Tealium account manager
 
 ## Change Log
+
+- 5.0.3 Bug Fixes
+    - Protections added to the collectDispatchURL that may have caused crashes at launch time
+    - Lifecycle module update fixing errant isFirstLaunch data source with subsequent events
+    - Simulator stripping run script added to Sample Apps
 
 - 5.0.2 Lifecycle Module & Sample App Added
     - TealiumIOSLifecycle.framework and sample app added to Support folder

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALRemoteResponseErrors.html">
+	<File path="Constants/TEALVisitorProfileAttributeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALRemoteResponseErrors</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALVisitorProfileAttributeType</TokenIdentifier>
+			<Abstract type="html">Type of Visitor Profile Attribute</Abstract>
+			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
 			
 			<NodeRef refid="19"/>
@@ -14,91 +14,67 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorUnknown</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorUnknown</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeAudience</TokenIdentifier>
+            <Abstract type="html">Profile Audience
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeAudience</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMalformedURL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMalformedURL</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingArgs</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingArgs</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeBadge</TokenIdentifier>
+            <Abstract type="html">Profile Badge
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeBadge</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommand</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommand</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandId</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommandId</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeDate</TokenIdentifier>
+            <Abstract type="html">Profile Date
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeDate</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandBlock</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommandBlock</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingRequest</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingRequest</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeFlag</TokenIdentifier>
+            <Abstract type="html">Profile Flag
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeFlag</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoMethodType</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorHttp_NoMethodType</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoTargetUrl</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorHttp_NoTargetUrl</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeMetric</TokenIdentifier>
+            <Abstract type="html">Profile Metric
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeMetric</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            
+            <NodeRef refid="19"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeProperty</TokenIdentifier>
+            <Abstract type="html">Profile Property or &quot;Trait&quot; in the AudienceStream App
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeProperty</Declaration>
+            
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
