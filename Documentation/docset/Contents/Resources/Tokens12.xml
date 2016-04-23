@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALVisitorProfileMetricAttribute.html">
+	<File path="Classes/TEALVisitorProfilePropertyAttribute.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileMetricAttribute</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfilePropertyAttribute</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALVisitorProfileMetricAttribute.h</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfilePropertyAttribute.h</DeclaredIn>
             
 			
 			<NodeRef refid="12"/>
@@ -13,21 +13,21 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileMetricAttribute/value</TokenIdentifier>
-			<Abstract type="html">Value of the given Metric</Abstract>
-			<DeclaredIn>TEALVisitorProfileMetricAttribute.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfilePropertyAttribute/value</TokenIdentifier>
+			<Abstract type="html">String value of a given property or trait.</Abstract>
+			<DeclaredIn>TEALVisitorProfilePropertyAttribute.h</DeclaredIn>
 			
-			<Declaration>- (float)value</Declaration>
+			<Declaration>- (NSString *)value</Declaration>
 			
-			<ReturnValue><Abstract type="html">float value of the metric, default is 0.0</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">valid string or nil if none</Abstract></ReturnValue>
 			<Anchor>//api/name/value</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileMetricAttribute/isEqualAttribute:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfilePropertyAttribute/isEqualAttribute:</TokenIdentifier>
 			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
-			<DeclaredIn>TEALVisitorProfileMetricAttribute.m</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfilePropertyAttribute.m</DeclaredIn>
 			
 			<Declaration>- (BOOL)isEqualAttribute:(TEALVisitorProfileBaseAttribute *)attribute</Declaration>
 			<Parameters>

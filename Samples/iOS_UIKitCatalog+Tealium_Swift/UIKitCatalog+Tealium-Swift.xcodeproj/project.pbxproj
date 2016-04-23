@@ -256,6 +256,7 @@
 				228DB9F018BC53F1002BA12A /* Frameworks */,
 				228DB9F118BC53F1002BA12A /* Resources */,
 				710807E71BF262B3006879E8 /* Embed Frameworks */,
+				7152217F1CCBEB530057596D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -314,6 +315,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7152217F1CCBEB530057596D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "################################################################################\n#\n# Copyright 2015 Realm Inc.\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n# http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\n################################################################################\n\n# This script strips all non-valid architectures from dynamic libraries in\n# the application's `Frameworks` directory.\n#\n# The following environment variables are required:\n#\n# BUILT_PRODUCTS_DIR\n# FRAMEWORKS_FOLDER_PATH\n# VALID_ARCHS\n# EXPANDED_CODE_SIGN_IDENTITY\n\n\n# Signs a framework with the provided identity\ncode_sign() {\n    # Use the current code_sign_identitiy\n    echo \"Code Signing $1 with Identity ${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\n    echo \"/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --preserve-metadata=identifier,entitlements $1\"\n    /usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --preserve-metadata=identifier,entitlements \"$1\"\n}\n\necho \"Stripping frameworks\"\ncd \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\nfor file in $(find . -type f -perm +111); do\n# Skip non-dynamic libraries\nif ! [[ \"$(file \"$file\")\" == *\"dynamically linked shared library\"* ]]; then\ncontinue\nfi\n# Get architectures for current file\narchs=\"$(lipo -info \"${file}\" | rev | cut -d ':' -f1 | rev)\"\nstripped=\"\"\nfor arch in $archs; do\nif ! [[ \"${VALID_ARCHS}\" == *\"$arch\"* ]]; then\n# Strip non-valid architectures in-place\nlipo -remove \"$arch\" -output \"$file\" \"$file\" || exit 1\nstripped=\"$stripped $arch\"\nfi\ndone\nif [[ \"$stripped\" != \"\" ]]; then\necho \"Stripped $file of architectures:$stripped\"\nif [ \"${CODE_SIGNING_REQUIRED}\" == \"YES\" ]; then\ncode_sign \"${file}\"\nfi\nfi\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		228DB9EF18BC53F1002BA12A /* Sources */ = {

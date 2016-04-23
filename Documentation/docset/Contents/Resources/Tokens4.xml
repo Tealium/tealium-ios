@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALRemoteCommandResponse.html">
+	<File path="Classes/TEALVisitorProfile.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALRemoteCommandResponse</TokenIdentifier>
-			<Abstract type="html">A response object for triggered Remote Commands.</Abstract>
-			<DeclaredIn>TEALRemoteCommandResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfile</TokenIdentifier>
+			<Abstract type="html">This class represents a visitor profile retrieved from AudienceStream by the Collect library.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
             
 			
 			<NodeRef refid="4"/>
@@ -13,14 +13,139 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALRemoteCommandResponse/description</TokenIdentifier>
-			<Abstract type="html">/    NSString *cleanedString = [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];</Abstract>
-			<DeclaredIn>TEALRemoteCommandResponse.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/initWithVisitorID:</TokenIdentifier>
+			<Abstract type="html">Create instance with vistorID</Abstract>
+			<DeclaredIn>TEALVisitorProfile+PrivateHeader.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)description</Declaration>
+			<Declaration>- (instancetype)initWithVisitorID:(NSString *)visitorID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>visitorID</Name>
+					<Abstract type="html">Current visitorID of user</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Instance of TEALVisitorProfile</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithVisitorID:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/isValid</TokenIdentifier>
+			<Abstract type="html">Valid flag for Profile instance</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
 			
+			<Declaration>- (BOOL)isValid</Declaration>
 			
-			<Anchor>//api/name/description</Anchor>
+			<ReturnValue><Abstract type="html">YES if visitorID is valid, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/visitorID</TokenIdentifier>
+			<Abstract type="html">Visitor ID addociated with this profile</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)visitorID</Declaration>
+			
+			<ReturnValue><Abstract type="html">String representation of user&apos;s vistorID</Abstract></ReturnValue>
+			<Anchor>//api/name/visitorID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/audiences</TokenIdentifier>
+			<Abstract type="html">Audiences this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)audiences</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileAudienceAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/audiences</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/badges</TokenIdentifier>
+			<Abstract type="html">Badges this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)badges</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileBadgeAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/badges</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/dates</TokenIdentifier>
+			<Abstract type="html">Dates this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)dates</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileDateAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/flags</TokenIdentifier>
+			<Abstract type="html">Flags this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)flags</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileFlagAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/flags</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/metrics</TokenIdentifier>
+			<Abstract type="html">Metrics this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)metrics</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileMetricAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/metrics</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/properties</TokenIdentifier>
+			<Abstract type="html">Properties or &quot;Traits&quot; this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)properties</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfilePropertyAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/currentVisit</TokenIdentifier>
+			<Abstract type="html">Current visit instance, similar to the TEALVisitorProfile but contains only attributes related to the users current visit.</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (TEALVisitorProfileCurrentVisit *)currentVisit</Declaration>
+			
+			<ReturnValue><Abstract type="html">Object representing the visitor profile&apos;s current visit with type TEALVisitorProfileCurrentVisit or nil if current visit has not yet been established.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentVisit</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfile/rawProfile</TokenIdentifier>
+			<Abstract type="html">Raw profile returned from AudienceStream.  JSON object converted to valid native objects</Abstract>
+			<DeclaredIn>TEALVisitorProfile.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)rawProfile</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSDictionary of raw profile objects</Abstract></ReturnValue>
+			<Anchor>//api/name/rawProfile</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
