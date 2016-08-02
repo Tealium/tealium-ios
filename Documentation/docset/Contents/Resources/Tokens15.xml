@@ -1,72 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALDispatchStatus.html">
+	<File path="Classes/TEALWKExtension.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALDispatchStatus</TokenIdentifier>
-			<Abstract type="html">Dispatch Status Types</Abstract>
-			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALWKExtension</TokenIdentifier>
+			<Abstract type="html">Add this class to your Watch App Extension.</Abstract>
+			<DeclaredIn>TEALWKExtension.h</DeclaredIn>
             
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusUnknown</TokenIdentifier>
-            <Abstract type="html">Status not known.
-     </Abstract>
-            <Declaration>TEALDispatchStatusUnknown</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALWKExtension/newInstanceForKey:configuration:</TokenIdentifier>
+			<Abstract type="html">Starts an instance of the TEALWKExtension.</Abstract>
+			<DeclaredIn>TEALWKExtension.h</DeclaredIn>
+			
+			<Declaration>+ (_Nullable instancetype)newInstanceForKey:(NSString *_Nonnull)key configuration:(TEALWKExtensionConfiguration *_Nonnull)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifier for the target matching Tealium instance.</Abstract>
+				</Parameter><Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">A TEALWKExtensionConfiguration object that contains the target account-profile-env settings.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TEALWKExtension instance that matches a Tealium instance with the given configuration</Abstract></ReturnValue>
+			<Anchor>//api/name/newInstanceForKey:configuration:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusSent</TokenIdentifier>
-            <Abstract type="html">Delivered dispatch.
-     </Abstract>
-            <Declaration>TEALDispatchStatusSent</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALWKExtension/instanceForKey:</TokenIdentifier>
+			<Abstract type="html">NSString identifier for the library extension instance.</Abstract>
+			<DeclaredIn>TEALWKExtension.h</DeclaredIn>
+			
+			<Declaration>+ (_Nullable instancetype)instanceForKey:(NSString *_Nonnull)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">NSString identifier for the library extension instance.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of the TEALWKExtension for calling methods.</Abstract></ReturnValue>
+			<Anchor>//api/name/instanceForKey:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusQueued</TokenIdentifier>
-            <Abstract type="html">Was saved.
-     </Abstract>
-            <Declaration>TEALDispatchStatusQueued</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALWKExtension/destroy</TokenIdentifier>
+			<Abstract type="html">Removes and nils out an instance of the extension library. Thread-safe.</Abstract>
+			<DeclaredIn>TEALWKExtension.h</DeclaredIn>
+			
+			<Declaration>- (void)destroy</Declaration>
+			
+			
+			<Anchor>//api/name/destroy</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusDestroyed</TokenIdentifier>
-            <Abstract type="html">Destruction requested.
-     </Abstract>
-            <Declaration>TEALDispatchStatusDestroyed</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALWKExtension/trackEventWithTitle:dataSources:</TokenIdentifier>
+			<Abstract type="html">Sends an event to Collect.  Event are packaged with any custom key/value
+data sources passed in along with the default datasources provided by the library.
+Thread-safe.</Abstract>
+			<DeclaredIn>TEALWKExtension.h</DeclaredIn>
+			
+			<Declaration>- (void)trackEventWithTitle:(NSString *_Nonnull)title dataSources:(NSDictionary *_Nullable)customDataSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">String title of event</Abstract>
+				</Parameter><Parameter>
+					<Name>customDataSources</Name>
+					<Abstract type="html">Dictionary of custom datasources (key/value pairs)
+to be included in the event dispatch. If a value is an array, be sure to use
+an array of strings.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackEventWithTitle:dataSources:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusFailed</TokenIdentifier>
-            <Abstract type="html">Other failure.
-     </Abstract>
-            <Declaration>TEALDispatchStatusFailed</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALWKExtension/trackViewWithTitle:dataSources:</TokenIdentifier>
+			<Abstract type="html">Sends a view to Collect.  Views are packaged with any custom key/value data
+sources passed in along with the default datasources provided by the library.
+Thread-safe.</Abstract>
+			<DeclaredIn>TEALWKExtension.h</DeclaredIn>
+			
+			<Declaration>- (void)trackViewWithTitle:(NSString *_Nonnull)title dataSources:(NSDictionary *_Nullable)customDataSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">String title of view</Abstract>
+				</Parameter><Parameter>
+					<Name>customDataSources</Name>
+					<Abstract type="html">Dictionary of custom datasources (key/value pairs)
+to be included in the event dispatch. If a value is an array, be sure to use
+an array of strings.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackViewWithTitle:dataSources:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
+		</Token>
+		
         
         
 	</File>

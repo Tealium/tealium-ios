@@ -1,4 +1,4 @@
-# Tealium Mobile Library for iOS Version 5.0.1
+# Tealium Mobile Library for iOS Version 5.0.4
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to iOS applications.
 
@@ -23,6 +23,23 @@ The TealiumWATCHOS.framework is intended to be used in a watchOS extension appli
 * If you have **account specific questions** please contact your Tealium account manager
 
 ## Change Log
+
+- 5.0.4 Universal Data Sources & Bug Fixes
+    - First track event now waits for webview ready when Tag Management option enabled
+    - Lifecycle module first launch auto detection fixed    
+    - Devices only builds added to repo (no simulator support frameworks)
+    - DSYMs provided with each framework
+    - Tealium universal data sources added for all dispatches:
+        - event_name (previously link_id)
+        - tealium_account
+        - tealium_environment
+        - tealium_library_name
+        - tealium_library_version
+        - tealium_profile
+        - tealium_random (different 16 digit long number for each track event)
+        - tealium_session_id
+        - tealium_timestamp_epoch (previously timestamp_unix)
+        - tealium_visitor_id (previously tealium_vid)
 
 - 5.0.1 Initial Version
 

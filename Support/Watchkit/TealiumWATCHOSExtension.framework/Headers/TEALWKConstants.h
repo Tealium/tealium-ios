@@ -19,8 +19,9 @@ extern NSString * const TEALWKCommandTrackValueEvent;
 extern NSString * const TEALWKCommandTrackValueView;
 
 /**
- *  These constants used between the Tealium library and TEALWKExtension classes
- *  to coordinate data transfer to host Tealium Library.
+ *  Constants used between the Tealium library and TEALWKExtension classes
+ *  to coordinate data transfer to host Tealium Library. No public properties
+ *  or methods available.
  */
 @interface TEALWKConstants : NSObject
 
