@@ -1,8 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="">
+	<File path="Constants/TEALRemoteResponseErrors.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALRemoteResponseErrors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
 		
 		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorUnknown</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorUnknown</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMalformedURL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorMalformedURL</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingArgs</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorMissingArgs</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommand</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorMissingCommand</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandId</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorMissingCommandId</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandBlock</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorMissingCommandBlock</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingRequest</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorMissingRequest</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoMethodType</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorHttp_NoMethodType</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoTargetUrl</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TEALRemoteResponseErrorHttp_NoTargetUrl</Declaration>
+            
+            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
         
         
 	</File>
