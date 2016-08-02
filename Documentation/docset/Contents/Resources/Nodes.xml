@@ -24,6 +24,10 @@
 						<NodeRef refid="11"/>
 						<NodeRef refid="12"/>
 						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
 						
 					</Subnodes>
 				</Node>
@@ -34,7 +38,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="14"/>
+						<NodeRef refid="18"/>
 						
 					</Subnodes>
 				</Node>
@@ -44,12 +48,12 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="15"/>
-						<NodeRef refid="16"/>
-						<NodeRef refid="17"/>
-						<NodeRef refid="18"/>
 						<NodeRef refid="19"/>
 						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
 						
 					</Subnodes>
 				</Node>
@@ -59,10 +63,6 @@
                     <Name>Blocks</Name>
                     <Path>index.html</Path>
                     <Subnodes>
-                        <NodeRef refid="21"/>
-                        <NodeRef refid="22"/>
-                        <NodeRef refid="23"/>
-                        <NodeRef refid="24"/>
                         <NodeRef refid="25"/>
                         <NodeRef refid="26"/>
                         <NodeRef refid="27"/>
@@ -73,6 +73,11 @@
                         <NodeRef refid="32"/>
                         <NodeRef refid="33"/>
                         <NodeRef refid="34"/>
+                        <NodeRef refid="35"/>
+                        <NodeRef refid="36"/>
+                        <NodeRef refid="37"/>
+                        <NodeRef refid="38"/>
+                        <NodeRef refid="39"/>
                         
                     </Subnodes>
                 </Node>
@@ -155,17 +160,44 @@
             
         </Node>
 		<Node id="3" type="file" documentType="reference">
-            <Name>TEALRemoteCommandResponse</Name>
-            <Path>Classes/TEALRemoteCommandResponse.html</Path>
+            <Name>TEALLifecycleDataSources</Name>
+            <Path>Classes/TEALLifecycleDataSources.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Classes/TEALRemoteCommandResponse.html</Path>
+                    <Path>Classes/TEALLifecycleDataSources.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Classes/TEALRemoteCommandResponse.html</Path>
+                    <Path>Classes/TEALLifecycleDataSources.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALLifecycleDataSources.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>TEALRemoteCommandManager</Name>
+            <Path>Classes/TEALRemoteCommandManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALRemoteCommandManager.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
@@ -173,7 +205,7 @@
                 
                 
                 <Node type="section">
-                    <Path>Classes/TEALRemoteCommandResponse.html</Path>
+                    <Path>Classes/TEALRemoteCommandManager.html</Path>
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>
@@ -181,7 +213,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="4" type="file" documentType="reference">
+		<Node id="5" type="file" documentType="reference">
+            <Name>TEALRemoteCommandResponse</Name>
+            <Path>Classes/TEALRemoteCommandResponse.html</Path>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
             <Name>TEALVisitorProfile</Name>
             <Path>Classes/TEALVisitorProfile.html</Path>
             
@@ -208,7 +245,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="5" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>TEALVisitorProfileAudienceAttribute</Name>
             <Path>Classes/TEALVisitorProfileAudienceAttribute.html</Path>
             
@@ -235,7 +272,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="6" type="file" documentType="reference">
+		<Node id="8" type="file" documentType="reference">
             <Name>TEALVisitorProfileBadgeAttribute</Name>
             <Path>Classes/TEALVisitorProfileBadgeAttribute.html</Path>
             
@@ -262,7 +299,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="7" type="file" documentType="reference">
+		<Node id="9" type="file" documentType="reference">
             <Name>TEALVisitorProfileBaseAttribute</Name>
             <Path>Classes/TEALVisitorProfileBaseAttribute.html</Path>
             
@@ -289,7 +326,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="10" type="file" documentType="reference">
             <Name>TEALVisitorProfileCurrentVisit</Name>
             <Path>Classes/TEALVisitorProfileCurrentVisit.html</Path>
             
@@ -316,7 +353,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
+		<Node id="11" type="file" documentType="reference">
             <Name>TEALVisitorProfileDateAttribute</Name>
             <Path>Classes/TEALVisitorProfileDateAttribute.html</Path>
             
@@ -343,7 +380,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="10" type="file" documentType="reference">
+		<Node id="12" type="file" documentType="reference">
             <Name>TEALVisitorProfileFlagAttribute</Name>
             <Path>Classes/TEALVisitorProfileFlagAttribute.html</Path>
             
@@ -370,7 +407,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="11" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>TEALVisitorProfileMetricAttribute</Name>
             <Path>Classes/TEALVisitorProfileMetricAttribute.html</Path>
             
@@ -397,7 +434,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="12" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
             <Name>TEALVisitorProfilePropertyAttribute</Name>
             <Path>Classes/TEALVisitorProfilePropertyAttribute.html</Path>
             
@@ -424,7 +461,73 @@
             </Subnodes>
             
         </Node>
-		<Node id="13" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
+            <Name>TEALWKExtension</Name>
+            <Path>Classes/TEALWKExtension.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALWKExtension.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALWKExtension.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALWKExtension.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALWKExtension.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>TEALWKExtensionConfiguration</Name>
+            <Path>Classes/TEALWKExtensionConfiguration.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TEALWKExtensionConfiguration.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TEALWKExtensionConfiguration.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TEALWKExtensionConfiguration.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TEALWKExtensionConfiguration.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
             <Name>Tealium</Name>
             <Path>Classes/Tealium.html</Path>
             
@@ -459,7 +562,7 @@
         </Node>
 		
 		
-        <Node id="14" type="file" documentType="reference">
+        <Node id="18" type="file" documentType="reference">
             <Name>TealiumDelegate</Name>
             <Path>Protocols/TealiumDelegate.html</Path>
             
@@ -487,103 +590,108 @@
             
         </Node>
 		
-        <Node id="15" type="file" documentType="reference">
+        <Node id="19" type="file" documentType="reference">
             <Name>TEALDispatchStatus</Name>
             <Path>Constants/TEALDispatchStatus.html</Path>
             
         </Node>
-		<Node id="16" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
             <Name>TEALDispatchType</Name>
             <Path>Constants/TEALDispatchType.html</Path>
             
         </Node>
-		<Node id="17" type="file" documentType="reference">
+		<Node id="21" type="file" documentType="reference">
             <Name>TEALErrorCode</Name>
             <Path>Constants/TEALErrorCode.html</Path>
             
         </Node>
-		<Node id="18" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>TEALRemoteResponseErrors</Name>
             <Path>Constants/TEALRemoteResponseErrors.html</Path>
             
         </Node>
-		<Node id="19" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>TEALVisitorProfileAttributeType</Name>
             <Path>Constants/TEALVisitorProfileAttributeType.html</Path>
             
         </Node>
-		<Node id="20" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>TEALVisitorProfilePollingFrequency</Name>
             <Path>Constants/TEALVisitorProfilePollingFrequency.html</Path>
             
         </Node>
 		
-        <Node id="21" type="file" documentType="reference">
+        <Node id="25" type="file" documentType="reference">
+            <Name>SuccessBlock</Name>
+            <Path>Blocks/SuccessBlock.html</Path>
+            
+        </Node>
+        <Node id="26" type="file" documentType="reference">
             <Name>TEALBooleanBlock</Name>
             <Path>Blocks/TEALBooleanBlock.html</Path>
             
         </Node>
-        <Node id="22" type="file" documentType="reference">
+        <Node id="27" type="file" documentType="reference">
             <Name>TEALBooleanCompletionBlock</Name>
             <Path>Blocks/TEALBooleanCompletionBlock.html</Path>
             
         </Node>
-        <Node id="23" type="file" documentType="reference">
+        <Node id="28" type="file" documentType="reference">
             <Name>TEALDictionaryCompletionBlock</Name>
             <Path>Blocks/TEALDictionaryCompletionBlock.html</Path>
             
         </Node>
-        <Node id="24" type="file" documentType="reference">
+        <Node id="29" type="file" documentType="reference">
             <Name>TEALDispatchBlock</Name>
             <Path>Blocks/TEALDispatchBlock.html</Path>
             
         </Node>
-        <Node id="25" type="file" documentType="reference">
+        <Node id="30" type="file" documentType="reference">
             <Name>TEALErrorBlock</Name>
             <Path>Blocks/TEALErrorBlock.html</Path>
             
         </Node>
-        <Node id="26" type="file" documentType="reference">
+        <Node id="31" type="file" documentType="reference">
             <Name>TEALHTTPResponseBlock</Name>
             <Path>Blocks/TEALHTTPResponseBlock.html</Path>
             
         </Node>
-        <Node id="27" type="file" documentType="reference">
+        <Node id="32" type="file" documentType="reference">
             <Name>TEALHTTPResponseJSONBlock</Name>
             <Path>Blocks/TEALHTTPResponseJSONBlock.html</Path>
             
         </Node>
-        <Node id="28" type="file" documentType="reference">
+        <Node id="33" type="file" documentType="reference">
             <Name>TEALRemoteCommandResponseBlock</Name>
             <Path>Blocks/TEALRemoteCommandResponseBlock.html</Path>
             
         </Node>
-        <Node id="29" type="file" documentType="reference">
+        <Node id="34" type="file" documentType="reference">
             <Name>TEALURLResponseBlock</Name>
             <Path>Blocks/TEALURLResponseBlock.html</Path>
             
         </Node>
-        <Node id="30" type="file" documentType="reference">
+        <Node id="35" type="file" documentType="reference">
             <Name>TEALURLTaskResponseBlock</Name>
             <Path>Blocks/TEALURLTaskResponseBlock.html</Path>
             
         </Node>
-        <Node id="31" type="file" documentType="reference">
+        <Node id="36" type="file" documentType="reference">
             <Name>TEALVisitorProfileAttributeCreationBlock</Name>
             <Path>Blocks/TEALVisitorProfileAttributeCreationBlock.html</Path>
             
         </Node>
-        <Node id="32" type="file" documentType="reference">
+        <Node id="37" type="file" documentType="reference">
             <Name>TEALVisitorProfileCompletionBlock</Name>
             <Path>Blocks/TEALVisitorProfileCompletionBlock.html</Path>
             
         </Node>
-        <Node id="33" type="file" documentType="reference">
+        <Node id="38" type="file" documentType="reference">
             <Name>TEALVoidBlock</Name>
             <Path>Blocks/TEALVoidBlock.html</Path>
             
         </Node>
-        <Node id="34" type="file" documentType="reference">
+        <Node id="39" type="file" documentType="reference">
             <Name>tealiumEndBGTask</Name>
             <Path>Blocks/tealiumEndBGTask.html</Path>
             

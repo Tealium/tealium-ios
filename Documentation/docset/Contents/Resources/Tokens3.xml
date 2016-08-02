@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALRemoteCommandResponse.html">
+	<File path="Classes/TEALLifecycleDataSources.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALRemoteCommandResponse</TokenIdentifier>
-			<Abstract type="html">A response object for triggered Remote Commands.</Abstract>
-			<DeclaredIn>TEALRemoteCommandResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALLifecycleDataSources</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TEALLifecycleDataSources.m</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -13,14 +13,52 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALRemoteCommandResponse/description</TokenIdentifier>
-			<Abstract type="html">/    NSString *cleanedString = [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];</Abstract>
-			<DeclaredIn>TEALRemoteCommandResponse.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALLifecycleDataSources/incrementedLifetimeValuesForKeys:amount:persistentData:</TokenIdentifier>
+			<Abstract type="html">Get new values for given persistent keys.</Abstract>
+			<DeclaredIn>TEALLifecycleDataSources.m</DeclaredIn>
 			
-			<Declaration>- (NSString *)description</Declaration>
+			<Declaration>+ (NSDictionary *)incrementedLifetimeValuesForKeys:(NSArray *)keys amount:(int)number persistentData:(NSDictionary *)persistentData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keys</Name>
+					<Abstract type="html">NSArray of NSStrin keys to get new increment values for.</Abstract>
+				</Parameter><Parameter>
+					<Name>number</Name>
+					<Abstract type="html">Int value to increment target values by</Abstract>
+				</Parameter><Parameter>
+					<Name>increment</Name>
+					<Abstract type="html">BOOL indicating whether the incremented amounts should be
+committed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSDictionary with the given keys and new values.</Abstract></ReturnValue>
+			<Anchor>//api/name/incrementedLifetimeValuesForKeys:amount:persistentData:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALLifecycleDataSources/newLifecycleDataSourcesForType:date:persistentData:</TokenIdentifier>
+			<Abstract type="html">Returns all lifecycle related data for a given call type. Does NOT set any
+lifecycle data, use the updatePersistentDataSourcesForType: method to set.</Abstract>
+			<DeclaredIn>TEALLifecycleDataSources.m</DeclaredIn>
 			
+			<Declaration>+ (NSDictionary *)newLifecycleDataSourcesForType:(TEALLifecycleType)type date:(NSDate *)date persistentData:(NSDictionary *)persistentData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The TEALLifecycleType of call.</Abstract>
+				</Parameter><Parameter>
+					<Name>date</Name>
+					<Abstract type="html">An optional NSDate override for the method call. If not provided,
+[NSDate date] will be used at time of call.</Abstract>
+				</Parameter><Parameter>
+					<Name>increment</Name>
+					<Abstract type="html">BOOL indicating whether or not the incremented values should
+be commited to persistence.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			<Anchor>//api/name/description</Anchor>
+			<Anchor>//api/name/newLifecycleDataSourcesForType:date:persistentData:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

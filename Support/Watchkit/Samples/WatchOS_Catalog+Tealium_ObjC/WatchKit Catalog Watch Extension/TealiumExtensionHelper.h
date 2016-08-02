@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import <TealiumWATCHOSExtension/TealiumWATCHOS.h>
-//@import TealiumWATCHOSExtension
+//#import <TealiumWATCHOSExtension/TealiumWATCHOS.h>
+@import TealiumWATCHOSExtension;
 
 /*
  *  Using an abstract class like this is the recommended best practice for 

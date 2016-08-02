@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALVisitorProfileFlagAttribute.html">
+	<File path="Classes/TEALVisitorProfileCurrentVisit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileFlagAttribute</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALVisitorProfileFlagAttribute.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileCurrentVisit</TokenIdentifier>
+			<Abstract type="html">Container object for attrubtes related only to a users current visit.  Similar to the TEALVisitorProfile but contains only attributes related to the users current visit.</Abstract>
+			<DeclaredIn>TEALVisitorProfileCurrentVisit.h</DeclaredIn>
             
 			
 			<NodeRef refid="10"/>
@@ -13,31 +13,74 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileFlagAttribute/value</TokenIdentifier>
-			<Abstract type="html">Value of the Flag</Abstract>
-			<DeclaredIn>TEALVisitorProfileFlagAttribute.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileCurrentVisit/creationTimestamp</TokenIdentifier>
+			<Abstract type="html">Time current visit was initiated</Abstract>
+			<DeclaredIn>TEALVisitorProfileCurrentVisit.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)value</Declaration>
+			<Declaration>- (NSTimeInterval)creationTimestamp</Declaration>
 			
-			<ReturnValue><Abstract type="html">booleon value of the flag</Abstract></ReturnValue>
-			<Anchor>//api/name/value</Anchor>
+			<ReturnValue><Abstract type="html">interval as unix timestamp</Abstract></ReturnValue>
+			<Anchor>//api/name/creationTimestamp</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileFlagAttribute/isEqualAttribute:</TokenIdentifier>
-			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
-			<DeclaredIn>TEALVisitorProfileFlagAttribute.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileCurrentVisit/dates</TokenIdentifier>
+			<Abstract type="html">Dates this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfileCurrentVisit.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isEqualAttribute:(TEALVisitorProfileBaseAttribute *)attribute</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">Any NSObject, only TEALVisitorProfileBaseAttribute subclasses can return a true result.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">boolean of true if relavent values are equal, regardles of object hashing or non relavant properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/isEqualAttribute:</Anchor>
+			<Declaration>- (NSArray *)dates</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileDateAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileCurrentVisit/flags</TokenIdentifier>
+			<Abstract type="html">Flags this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfileCurrentVisit.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)flags</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileFlagAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/flags</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileCurrentVisit/metrics</TokenIdentifier>
+			<Abstract type="html">Metrics this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfileCurrentVisit.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)metrics</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfileMetricAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/metrics</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileCurrentVisit/properties</TokenIdentifier>
+			<Abstract type="html">Properties or &quot;Traits&quot; this visitor&apos;s profile is associated with.</Abstract>
+			<DeclaredIn>TEALVisitorProfileCurrentVisit.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)properties</Declaration>
+			
+			<ReturnValue><Abstract type="html">Array of TEALVisitorProfilePropertyAttribute objects or nil if none exist</Abstract></ReturnValue>
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileCurrentVisit/totalEventCount</TokenIdentifier>
+			<Abstract type="html">Total number of events received during this current visit.</Abstract>
+			<DeclaredIn>TEALVisitorProfileCurrentVisit.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)totalEventCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">count as an unsigned integer</Abstract></ReturnValue>
+			<Anchor>//api/name/totalEventCount</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		

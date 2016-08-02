@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALVisitorProfileMetricAttribute.html">
+	<File path="Classes/TEALVisitorProfileDateAttribute.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileMetricAttribute</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileDateAttribute</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALVisitorProfileMetricAttribute.h</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfileDateAttribute.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -13,21 +13,21 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileMetricAttribute/value</TokenIdentifier>
-			<Abstract type="html">Value of the given Metric</Abstract>
-			<DeclaredIn>TEALVisitorProfileMetricAttribute.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileDateAttribute/timestamp</TokenIdentifier>
+			<Abstract type="html">Date as Unix timestamp</Abstract>
+			<DeclaredIn>TEALVisitorProfileDateAttribute.h</DeclaredIn>
 			
-			<Declaration>- (float)value</Declaration>
+			<Declaration>- (NSTimeInterval)timestamp</Declaration>
 			
-			<ReturnValue><Abstract type="html">float value of the metric, default is 0.0</Abstract></ReturnValue>
-			<Anchor>//api/name/value</Anchor>
+			<ReturnValue><Abstract type="html">time interval timetamp representation of a date</Abstract></ReturnValue>
+			<Anchor>//api/name/timestamp</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileMetricAttribute/isEqualAttribute:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileDateAttribute/isEqualAttribute:</TokenIdentifier>
 			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
-			<DeclaredIn>TEALVisitorProfileMetricAttribute.m</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfileDateAttribute.m</DeclaredIn>
 			
 			<Declaration>- (BOOL)isEqualAttribute:(TEALVisitorProfileBaseAttribute *)attribute</Declaration>
 			<Parameters>
