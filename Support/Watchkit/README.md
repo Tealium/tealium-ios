@@ -24,8 +24,7 @@ The TealiumWATCHOS.framework is intended to be used in a watchOS extension appli
 
 ## Change Log
 
--  5.0.4 Bug Fixes
-   
+- 5.0.4 Universal Data Sources & Bug Fixes
     - First track event now waits for webview ready when Tag Management option enabled
     - Lifecycle module first launch auto detection fixed
     - Devices only builds added to repo (no simulator support frameworks)
