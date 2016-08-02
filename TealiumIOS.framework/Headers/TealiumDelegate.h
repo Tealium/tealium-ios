@@ -75,9 +75,9 @@
  */
 - (void) tealiumInstanceDidUpdatePublishSettings:(Tealium *)tealium;
 
-/*
+/**
  *  If Tag Management dispatch service is enabled, passes pointer to it's UIWebView
- *  that hosts UTAG.js
+ *  that hosts UTAG.js. Not available on tvOS.
  *
  *  @param tealium The Tealium instance ready
  *  @param webView The WebView instance used by any Tag Management service - nil 

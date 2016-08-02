@@ -45,6 +45,8 @@ typedef NS_ENUM(NSUInteger, TEALLogLevel){
 
 - (void) disable;
 
+- (BOOL) isEnabled;
+
 - (BOOL) updateLogLevel:(NSString * _Nullable)logLevelString;
 
 - (void) logProd:(NSString * _Nonnull) format, ...;
