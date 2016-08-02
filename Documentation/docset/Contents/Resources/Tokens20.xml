@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALVisitorProfilePollingFrequency.html">
+	<File path="Constants/TEALDispatchType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALVisitorProfilePollingFrequency</TokenIdentifier>
-			<Abstract type="html">Unsigned integer value that controls the frequency at which the user&apos;s visitor profile is requested</Abstract>
-			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALDispatchType</TokenIdentifier>
+			<Abstract type="html">Types of available dispatches</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
@@ -14,23 +14,34 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfilePollingFrequencyOnRequest</TokenIdentifier>
-            <Abstract type="html">On request only, will only poll with the fetchVisitorProfileWithCompletion: method
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeNone</TokenIdentifier>
+            <Abstract type="html">A dispatch with an unassigned type.
      </Abstract>
-            <Declaration>TEALVisitorProfilePollingFrequencyOnRequest</Declaration>
+            <Declaration>TEALDispatchTypeNone</Declaration>
             
-            <DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfilePollingFrequencyAfterEveryEvent</TokenIdentifier>
-            <Abstract type="html">After each track event (trackEventWithTitle:dataSources: or trackViewWithTitle:dataSources:) an updated visitor profile will be requested.
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeEvent</TokenIdentifier>
+            <Abstract type="html">Any non-view type dispatch.
      </Abstract>
-            <Declaration>TEALVisitorProfilePollingFrequencyAfterEveryEvent</Declaration>
+            <Declaration>TEALDispatchTypeEvent</Declaration>
             
-            <DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeView</TokenIdentifier>
+            <Abstract type="html">Dispatch for view / screen appearances only.
+     </Abstract>
+            <Declaration>TEALDispatchTypeView</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>

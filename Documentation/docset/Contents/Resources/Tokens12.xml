@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALVisitorProfilePropertyAttribute.html">
+	<File path="Classes/TEALVisitorProfileFlagAttribute.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfilePropertyAttribute</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileFlagAttribute</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALVisitorProfilePropertyAttribute.h</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfileFlagAttribute.h</DeclaredIn>
             
 			
 			<NodeRef refid="12"/>
@@ -13,21 +13,21 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfilePropertyAttribute/value</TokenIdentifier>
-			<Abstract type="html">String value of a given property or trait.</Abstract>
-			<DeclaredIn>TEALVisitorProfilePropertyAttribute.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileFlagAttribute/value</TokenIdentifier>
+			<Abstract type="html">Value of the Flag</Abstract>
+			<DeclaredIn>TEALVisitorProfileFlagAttribute.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)value</Declaration>
+			<Declaration>- (BOOL)value</Declaration>
 			
-			<ReturnValue><Abstract type="html">valid string or nil if none</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">booleon value of the flag</Abstract></ReturnValue>
 			<Anchor>//api/name/value</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfilePropertyAttribute/isEqualAttribute:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileFlagAttribute/isEqualAttribute:</TokenIdentifier>
 			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
-			<DeclaredIn>TEALVisitorProfilePropertyAttribute.m</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfileFlagAttribute.m</DeclaredIn>
 			
 			<Declaration>- (BOOL)isEqualAttribute:(TEALVisitorProfileBaseAttribute *)attribute</Declaration>
 			<Parameters>
