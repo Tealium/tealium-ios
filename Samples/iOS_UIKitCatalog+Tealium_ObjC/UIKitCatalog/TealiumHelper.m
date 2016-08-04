@@ -35,9 +35,8 @@ static TealiumHelper * _sharedInstance;
     [tealiumInstance1 setDelegate:[TealiumHelper sharedInstance]];
     
     [tealiumInstance1 addVolatileDataSources:@{@"volatileTestKey":@"volatileTestValue"}];
-    
+
     [TealiumHelper incrementLifetimeValueForKey:@"launches" amount:1];
-    
         
 }
 

@@ -14,9 +14,9 @@
 		710DE46A1C15E0E100FC3691 /* TealiumExtensionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 710DE4691C15E0E100FC3691 /* TealiumExtensionHelper.m */; };
 		7114E4FA1C482B30008C65A7 /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7114E4F81C482B13008C65A7 /* TealiumIOS.framework */; };
 		7114E4FB1C482B30008C65A7 /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7114E4F81C482B13008C65A7 /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7114E4FF1C482BA6008C65A7 /* TealiumWATCHOSExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7114E4FE1C482BA6008C65A7 /* TealiumWATCHOSExtension.framework */; };
-		7114E5011C482BAB008C65A7 /* TealiumWATCHOSExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7114E4FE1C482BA6008C65A7 /* TealiumWATCHOSExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		716C128B1C10F44800E5FCB4 /* TealiumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 716C128A1C10F44800E5FCB4 /* TealiumHelper.m */; };
+		716FB8341D4AB66800585BA7 /* TealiumWATCHOSExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716FB8331D4AB66800585BA7 /* TealiumWATCHOSExtension.framework */; };
+		716FB8361D4AB67500585BA7 /* TealiumWATCHOSExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 716FB8331D4AB66800585BA7 /* TealiumWATCHOSExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB2698C21A3667CE00D75212 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2698C11A3667CE00D75212 /* main.m */; };
 		CB2698F81A3667DA00D75212 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2698F71A3667DA00D75212 /* Images.xcassets */; };
 		CB2699051A3667DA00D75212 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2699041A3667DA00D75212 /* Images.xcassets */; };
@@ -100,10 +100,20 @@
 		7114E5021C482BAB008C65A7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716FB8371D4AB67600585BA7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7114E5011C482BAB008C65A7 /* TealiumWATCHOSExtension.framework in Embed Frameworks */,
+				716FB8361D4AB67500585BA7 /* TealiumWATCHOSExtension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,9 +127,9 @@
 		710DE4681C15E0E100FC3691 /* TealiumExtensionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumExtensionHelper.h; sourceTree = "<group>"; };
 		710DE4691C15E0E100FC3691 /* TealiumExtensionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumExtensionHelper.m; sourceTree = "<group>"; };
 		7114E4F81C482B13008C65A7 /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOS.framework; path = ../../../../TealiumIOS.framework; sourceTree = SOURCE_ROOT; };
-		7114E4FE1C482BA6008C65A7 /* TealiumWATCHOSExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumWATCHOSExtension.framework; path = ../../TealiumWATCHOSExtension.framework; sourceTree = SOURCE_ROOT; };
 		716C12891C10F44800E5FCB4 /* TealiumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumHelper.h; sourceTree = "<group>"; };
 		716C128A1C10F44800E5FCB4 /* TealiumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumHelper.m; sourceTree = "<group>"; };
+		716FB8331D4AB66800585BA7 /* TealiumWATCHOSExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumWATCHOSExtension.framework; path = ../../../TealiumWATCHOSExtension.framework; sourceTree = "<group>"; };
 		CB2698BC1A3667CE00D75212 /* WatchKit Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2698C01A3667CE00D75212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB2698C11A3667CE00D75212 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -189,7 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7114E4FF1C482BA6008C65A7 /* TealiumWATCHOSExtension.framework in Frameworks */,
+				716FB8341D4AB66800585BA7 /* TealiumWATCHOSExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +219,7 @@
 			children = (
 				710DE4681C15E0E100FC3691 /* TealiumExtensionHelper.h */,
 				710DE4691C15E0E100FC3691 /* TealiumExtensionHelper.m */,
-				7114E4FE1C482BA6008C65A7 /* TealiumWATCHOSExtension.framework */,
+				716FB8331D4AB66800585BA7 /* TealiumWATCHOSExtension.framework */,
 			);
 			name = TealiumExtension;
 			sourceTree = "<group>";
@@ -409,6 +419,7 @@
 				CB2698E61A3667DA00D75212 /* Frameworks */,
 				CB2698E71A3667DA00D75212 /* Resources */,
 				7114E5021C482BAB008C65A7 /* Embed Frameworks */,
+				716FB8371D4AB67600585BA7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -447,9 +458,11 @@
 				TargetAttributes = {
 					CB2698BB1A3667CE00D75212 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = XC939GDC9P;
 					};
 					CB2698E81A3667DA00D75212 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = XC939GDC9P;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -458,6 +471,7 @@
 					};
 					CB2698FA1A3667DA00D75212 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = XC939GDC9P;
 					};
 				};
 			};

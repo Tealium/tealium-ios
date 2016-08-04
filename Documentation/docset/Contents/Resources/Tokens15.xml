@@ -1,72 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALDispatchStatus.html">
+	<File path="Protocols/TealiumDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALDispatchStatus</TokenIdentifier>
-			<Abstract type="html">Dispatch Status Types</Abstract>
-			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/TealiumDelegate</TokenIdentifier>
+			<Abstract type="html">Optional Tealium Delegate for monitoring or overriding outbound dispatches.</Abstract>
+			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
             
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusUnknown</TokenIdentifier>
-            <Abstract type="html">Status not known.
-     </Abstract>
-            <Declaration>TEALDispatchStatusUnknown</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:shouldDropDispatch:</TokenIdentifier>
+			<Abstract type="html">Delegate method that permits last minute manipulation or suppression (destruction)
+of a track call dispatch.</Abstract>
+			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)tealium:(Tealium *)tealium shouldDropDispatch:(TEALDispatch *)dispatch</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tealium</Name>
+					<Abstract type="html">The Tealium instance to process this dispatch</Abstract>
+				</Parameter><Parameter>
+					<Name>dispatch</Name>
+					<Abstract type="html">The dispatch in question. Property and payload data manipulated
+here will overwrite this dispatch&apos;s outbound data - effects not
+persistent</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Boolean indicating whether dispatch should be sent or destroyed</Abstract></ReturnValue>
+			<Anchor>//api/name/tealium:shouldDropDispatch:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusSent</TokenIdentifier>
-            <Abstract type="html">Delivered dispatch.
-     </Abstract>
-            <Declaration>TEALDispatchStatusSent</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:shouldQueueDispatch:</TokenIdentifier>
+			<Abstract type="html">Dispatches passing the tealium:shouldDropDispatch: delegate method can be
+queued / saved by this method.  Also supercedes any remote publish setting
+batching and offline options. Must include logic to return NO or dispatches
+will never be sent.</Abstract>
+			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)tealium:(Tealium *)tealium shouldQueueDispatch:(TEALDispatch *)dispatch</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tealium</Name>
+					<Abstract type="html">The Tealium instance requesting confirmation</Abstract>
+				</Parameter><Parameter>
+					<Name>dispatch</Name>
+					<Abstract type="html">The dispatch in question. Property and payload data manipulated
+here will overwrite this dispatch&apos;s outbound data - effects not
+persistent
+
+@bool Boolean indicating whether dispatch should be queued at this time.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tealium:shouldQueueDispatch:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusQueued</TokenIdentifier>
-            <Abstract type="html">Was saved.
-     </Abstract>
-            <Declaration>TEALDispatchStatusQueued</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:didSendDispatch:</TokenIdentifier>
+			<Abstract type="html">Provides pointer to TEALDispatch that was just sent by a dispatch service.</Abstract>
+			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tealium:(Tealium *)tealium didSendDispatch:(TEALDispatch *)dispatch</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tealium</Name>
+					<Abstract type="html">The Tealium instance confirming</Abstract>
+				</Parameter><Parameter>
+					<Name>dispatch</Name>
+					<Abstract type="html">The dispatch in question. Do not manipulate any of its
+properties or payload data here as they will not take effect or
+persist.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tealium:didSendDispatch:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusDestroyed</TokenIdentifier>
-            <Abstract type="html">Destruction requested.
-     </Abstract>
-            <Declaration>TEALDispatchStatusDestroyed</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:didQueueDispatch:</TokenIdentifier>
+			<Abstract type="html">Provides pointer to TEALDispatch that was just saved for later delivery.</Abstract>
+			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tealium:(Tealium *)tealium didQueueDispatch:(TEALDispatch *)dispatch</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tealium</Name>
+					<Abstract type="html">The Tealium instance confirming</Abstract>
+				</Parameter><Parameter>
+					<Name>dispatch</Name>
+					<Abstract type="html">The dispatch in question. Do not manipulate any of its
+properties or payload data here as they will not take effect or
+persist.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tealium:didQueueDispatch:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusFailed</TokenIdentifier>
-            <Abstract type="html">Other failure.
-     </Abstract>
-            <Declaration>TEALDispatchStatusFailed</Declaration>
-            
-            <DeclaredIn>TEALDispatch.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealiumInstanceDidUpdatePublishSettings:</TokenIdentifier>
+			<Abstract type="html">Notification that new remote publish settings have been received and processed.</Abstract>
+			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tealiumInstanceDidUpdatePublishSettings:(Tealium *)tealium</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tealium</Name>
+					<Abstract type="html">The Tealium instance with new publish settings.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tealiumInstanceDidUpdatePublishSettings:</Anchor>
             <NodeRef refid="15"/>
-        </Token>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:webViewIsReady:</TokenIdentifier>
+			<Abstract type="html">If Tag Management dispatch service is enabled, passes pointer to it&apos;s UIWebView
+that hosts UTAG.js. Not available on tvOS.</Abstract>
+			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tealium:(Tealium *)tealium webViewIsReady:(id)webView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tealium</Name>
+					<Abstract type="html">The Tealium instance ready</Abstract>
+				</Parameter><Parameter>
+					<Name>webView</Name>
+					<Abstract type="html">The WebView instance used by any Tag Management service - nil
+if none initialized.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tealium:webViewIsReady:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
         
         
 	</File>

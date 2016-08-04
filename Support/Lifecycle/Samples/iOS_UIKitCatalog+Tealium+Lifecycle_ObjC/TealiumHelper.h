@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@import TealiumIOSLifecycle;
+@import TealiumIOS_Lifecycle;
 
 /*
  *  Using an abstract class like this is the recommended best practice for 

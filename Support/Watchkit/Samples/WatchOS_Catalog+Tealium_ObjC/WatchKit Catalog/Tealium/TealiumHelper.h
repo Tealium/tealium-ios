@@ -22,6 +22,12 @@
  */
 @interface TealiumHelper : NSObject<TealiumDelegate>
 
+
+/**
+ *  Start up Tealium
+ */
++ (void) startTracking;
+
 /**
  *  Triggers an event tracking call - lazy loads the library upon first call.
  *

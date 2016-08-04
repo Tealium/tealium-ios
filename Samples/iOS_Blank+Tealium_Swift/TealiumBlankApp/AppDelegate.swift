@@ -16,9 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         TealiumHelper.startTracking()
-                
-        TealiumHelper.trackEvent("Launch", dataSources: [:])
-        
+                        
         return true
     }
 
