@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALRemoteResponseErrors.html">
+	<File path="Constants/TEALErrorCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALRemoteResponseErrors</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALErrorCode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+			<DeclaredIn>TEALError.h</DeclaredIn>
             
 			
 			<NodeRef refid="18"/>
@@ -14,91 +14,71 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorUnknown</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeUnknown</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorUnknown</Declaration>
+            <Declaration>TEALErrorCodeUnknown</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALError.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMalformedURL</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeSuccess</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMalformedURL</Declaration>
+            <Declaration>TEALErrorCodeSuccess</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALError.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingArgs</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeNoContent</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingArgs</Declaration>
+            <Declaration>TEALErrorCodeNoContent</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALError.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommand</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeMalformed</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommand</Declaration>
+            <Declaration>TEALErrorCodeMalformed</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALError.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandId</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeFailure</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommandId</Declaration>
+            <Declaration>TEALErrorCodeFailure</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALError.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandBlock</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeNotAcceptable</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommandBlock</Declaration>
+            <Declaration>TEALErrorCodeNotAcceptable</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALError.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingRequest</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TEALErrorCodeException</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingRequest</Declaration>
+            <Declaration>TEALErrorCodeException</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoMethodType</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorHttp_NoMethodType</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoTargetUrl</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorHttp_NoTargetUrl</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALError.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>

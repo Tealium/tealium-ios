@@ -29,12 +29,15 @@ class TealiumHelper : NSObject {
     class func startTracking() {
         
         let config = TEALConfiguration.init(account: "tealiummobile", profile: "demo", environment: "dev")
-        
+                
         let tealium = Tealium.newInstanceForKey(tealiumInstanceID, configuration: config)
         
         tealium.setDelegate(sharedInstance())
         
         TealiumHelper.incrementLifetimeValue(tealium,key: "Launches", value: 1)
+        
+        TealiumHelper.trackEvent("Launch", dataSources: [TEALDataSourceKey_Autotracked: TEALDataSourceValue_False])
+
         
     }
     

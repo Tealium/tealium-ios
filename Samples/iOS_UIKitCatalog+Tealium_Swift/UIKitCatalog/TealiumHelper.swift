@@ -37,13 +37,13 @@ class TealiumHelper : NSObject {
         
     }
     
-    class func trackEvent(title: String, dataSources: [String:String]){
+    class func trackEvent(title: String, dataSources: [String:AnyObject]){
         
         Tealium.instanceForKey(tealiumInstanceID)?.trackEventWithTitle(title, dataSources: dataSources)
         
     }
     
-    class func trackView(title: String, dataSources: [String:String]){
+    class func trackView(title: String, dataSources: [String:AnyObject]){
         
         Tealium.instanceForKey(tealiumInstanceID)?.trackViewWithTitle(title, dataSources: dataSources)
     }

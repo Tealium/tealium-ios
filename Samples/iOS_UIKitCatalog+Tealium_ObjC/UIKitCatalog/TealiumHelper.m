@@ -31,13 +31,11 @@ static TealiumHelper * _sharedInstance;
     
     Tealium *tealiumInstance1 = [Tealium newInstanceForKey:TEALIUM_INSTANCE_ID configuration:configuration];
     
-
     [tealiumInstance1 setDelegate:[TealiumHelper sharedInstance]];
     
     [tealiumInstance1 addVolatileDataSources:@{@"volatileTestKey":@"volatileTestValue"}];
-    
+
     [TealiumHelper incrementLifetimeValueForKey:@"launches" amount:1];
-    
         
 }
 

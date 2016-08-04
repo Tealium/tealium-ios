@@ -24,7 +24,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UISplitViewControllerDelegat
 
         TealiumHelper.startTracking()
         
-        TealiumHelper.trackEvent("Launch", dataSources: [:])
+        TealiumHelper.trackEvent("Launch", dataSources: ["autotracked":"false"])
         
         return true
     }

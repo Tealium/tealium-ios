@@ -41,10 +41,9 @@
 		535682BE18F3670300BAAD62 /* AAPLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A418F3670300BAAD62 /* AAPLWebViewController.m */; };
 		535682BF18F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */; };
 		53874F9918F36B1800510922 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53874F9718F36B1800510922 /* Localizable.strings */; };
-		7192DCF61C8E48C6000F15A4 /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7192DCF51C8E48C6000F15A4 /* TealiumIOS.framework */; };
+		716060D11D5A27DC009D74DC /* TealiumIOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */; };
+		716060D21D5A2C25009D74DC /* TealiumIOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7192DD021C8E49B7000F15A4 /* TealiumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7192DD011C8E49B7000F15A4 /* TealiumHelper.m */; };
-		71E21BE21C8F2E340019DF45 /* TealiumIOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21BE11C8F2E340019DF45 /* TealiumIOSLifecycle.framework */; };
-		71E21BE41C8F2E3A0019DF45 /* TealiumIOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71E21BE11C8F2E340019DF45 /* TealiumIOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71F65EC61C8F28DE00D91A6E /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7192DCF51C8E48C6000F15A4 /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5C300DF1B0FC4F1003B05A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C300DE1B0FC4F1003B05A0 /* LaunchScreen.storyboard */; };
 		B5C805741B1A7BDE00C110F1 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C805721B1A7BDE00C110F1 /* Search.storyboard */; };
@@ -58,8 +57,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				716060D21D5A2C25009D74DC /* TealiumIOSLifecycle.framework in Embed Frameworks */,
 				71F65EC61C8F28DE00D91A6E /* TealiumIOS.framework in Embed Frameworks */,
-				71E21BE41C8F2E3A0019DF45 /* TealiumIOSLifecycle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,10 +130,10 @@
 		535682A518F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AAPLApplicationSpecific.h"; sourceTree = "<group>"; };
 		535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AAPLApplicationSpecific.m"; sourceTree = "<group>"; };
 		53874F9818F36B1800510922 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOSLifecycle.framework; path = ../../TealiumIOSLifecycle.framework; sourceTree = "<group>"; };
 		7192DCF51C8E48C6000F15A4 /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOS.framework; path = ../../../../TealiumIOS.framework; sourceTree = "<group>"; };
 		7192DD001C8E49B7000F15A4 /* TealiumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumHelper.h; sourceTree = "<group>"; };
 		7192DD011C8E49B7000F15A4 /* TealiumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumHelper.m; sourceTree = "<group>"; };
-		71E21BE11C8F2E340019DF45 /* TealiumIOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOSLifecycle.framework; path = ../../TealiumIOSLifecycle.framework; sourceTree = "<group>"; };
 		B5C300DE1B0FC4F1003B05A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C805731B1A7BDE00C110F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		B5E280F81B1D03F800920B27 /* AAPLStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLStackViewController.h; sourceTree = "<group>"; };
@@ -146,9 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7192DCF61C8E48C6000F15A4 /* TealiumIOS.framework in Frameworks */,
 				5356824018F3656900BAAD62 /* CoreGraphics.framework in Frameworks */,
-				71E21BE21C8F2E340019DF45 /* TealiumIOSLifecycle.framework in Frameworks */,
+				716060D11D5A27DC009D74DC /* TealiumIOSLifecycle.framework in Frameworks */,
 				5356824218F3656900BAAD62 /* UIKit.framework in Frameworks */,
 				5356823E18F3656900BAAD62 /* Foundation.framework in Frameworks */,
 			);
@@ -325,7 +323,7 @@
 			children = (
 				7192DD001C8E49B7000F15A4 /* TealiumHelper.h */,
 				7192DD011C8E49B7000F15A4 /* TealiumHelper.m */,
-				71E21BE11C8F2E340019DF45 /* TealiumIOSLifecycle.framework */,
+				716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */,
 				7192DCF51C8E48C6000F15A4 /* TealiumIOS.framework */,
 			);
 			name = Tealium;
@@ -549,6 +547,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIKitCatalog/UIKitCatalog-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TEAL_TARGET_IOS=1",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog/UIKitCatalog-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
@@ -569,6 +572,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIKitCatalog/UIKitCatalog-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "TEAL_TARGET_IOS=1";
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog/UIKitCatalog-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";

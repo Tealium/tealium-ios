@@ -23,7 +23,7 @@
     [TealiumHelper startTracking];
     
     [TealiumHelper trackEventWithTitle:@"launch"
-                           dataSources:nil];
+                           dataSources:@{TEALDataSourceKey_Autotracked:TEALDataSourceValue_False}];
     
     return YES;
 }

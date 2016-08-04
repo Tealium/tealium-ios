@@ -25,9 +25,7 @@
 
     [TealiumHelper startTracking];
     
-    [TealiumHelper trackEventWithTitle:@"launch" dataSources:nil];
-
-//    [TealiumHelper enableRemoteCommandBlock];
+    [TealiumHelper trackEventWithTitle:@"launch" dataSources:@{TEALDataSourceKey_Autotracked:TEALDataSourceValue_False}];
     
     return YES;
 }

@@ -29,21 +29,18 @@ static TealiumHelper * _sharedInstance;
                                                                            profile:@"demo"
                                                                        environment:@"dev"];
     
+    [configuration setAutotrackingLifecycleEnabled:YES];
+    
     Tealium *tealiumInstance1 = [Tealium newInstanceForKey:TEALIUM_INSTANCE_ID configuration:configuration];
     
-
-    [tealiumInstance1 setDelegate:[TealiumHelper sharedInstance]];
     
-    [tealiumInstance1 setLifecycleAutotrackingIsEnabled:YES];
+    [tealiumInstance1 setDelegate:[TealiumHelper sharedInstance]];
     
     [tealiumInstance1 addVolatileDataSources:@{@"volatileTestKey":@"volatileTestValue"}];
     
-    if ([tealiumInstance1 respondsToSelector:@selector(launch)]){
-        [tealiumInstance1 launch];
-    } else {
+    if (![tealiumInstance1 respondsToSelector:@selector(launch)]){
         NSLog(@"%s Lifecycle Module not loaded.", __FUNCTION__);
     }
-    
     
 }
 
