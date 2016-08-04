@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TEALVisitorProfileBaseAttribute.html">
+	<File path="Classes/TEALVisitorProfileBadgeAttribute.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileBaseAttribute</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/TEALVisitorProfileBadgeAttribute</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+			<DeclaredIn>TEALVisitorProfileBadgeAttribute.h</DeclaredIn>
             
 			
 			<NodeRef refid="7"/>
@@ -13,61 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/initWithType:</TokenIdentifier>
-			<Abstract type="html">Constructor method.</Abstract>
-			<DeclaredIn>TEALVisitorProfile+PrivateHeader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBadgeAttribute/name</TokenIdentifier>
+			<Abstract type="html">Name of the Audience, this is a display name, all attributes are refenerenced by their unique attributeID</Abstract>
+			<DeclaredIn>TEALVisitorProfileBadgeAttribute.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithType:(TEALVisitorProfileAttributeType)type</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">Type of TEALVisitorProfileAttributeType that this base attribute
-should be.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSString *)name</Declaration>
 			
-			<Anchor>//api/name/initWithType:</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/isEqualAttribute:</TokenIdentifier>
-			<Abstract type="html">Compares relavent properties of two attributes for equality</Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isEqualAttribute:(id)object</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">Any NSObject, only TEALVisitorProfileBaseAttribute subclasses can return a true result.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">boolean of true if relavent values are equal, regardles of object hashing or non relavant properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/isEqualAttribute:</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/attributeID</TokenIdentifier>
-			<Abstract type="html">ID of the attribute</Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)attributeID</Declaration>
-			
-			<ReturnValue><Abstract type="html">string value of the attribute&apos;s ID</Abstract></ReturnValue>
-			<Anchor>//api/name/attributeID</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALVisitorProfileBaseAttribute/type</TokenIdentifier>
-			<Abstract type="html">Type of attribute</Abstract>
-			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
-			
-			<Declaration>- (TEALVisitorProfileAttributeType)type</Declaration>
-			
-			<ReturnValue><Abstract type="html">valid TEALVisitorProfileAttributeType type</Abstract></ReturnValue>
-			<Anchor>//api/name/type</Anchor>
+			<ReturnValue><Abstract type="html">string of the human friendly name or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/TealiumDelegate.html">
+	<File path="Classes/Tealium.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/TealiumDelegate</TokenIdentifier>
-			<Abstract type="html">Optional Tealium Delegate for monitoring or overriding outbound dispatches.</Abstract>
-			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/Tealium</TokenIdentifier>
+			<Abstract type="html">Tealium is the main class for the Tealium Library.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
             
 			
 			<NodeRef refid="14"/>
@@ -13,135 +13,436 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:shouldDropDispatch:</TokenIdentifier>
-			<Abstract type="html">Delegate method that permits last minute manipulation or suppression (destruction)
-of a track call dispatch.</Abstract>
-			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/Tealium/newInstanceForKey:configuration:</TokenIdentifier>
+			<Abstract type="html">Starts an instance of the Tealium Mobile Library for a given key with the
+given configuration object.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)tealium:(Tealium *)tealium shouldDropDispatch:(TEALDispatch *)dispatch</Declaration>
+			<Declaration>+ (_Nonnull instancetype)newInstanceForKey:(NSString *_Nonnull)key configuration:(TEALConfiguration *_Nonnull)configuration</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tealium</Name>
-					<Abstract type="html">The Tealium instance to process this dispatch</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">NSString identifier for the library instance</Abstract>
 				</Parameter><Parameter>
-					<Name>dispatch</Name>
-					<Abstract type="html">The dispatch in question. Property and payload data manipulated
-here will overwrite this dispatch&apos;s outbound data - effects not
-persistent</Abstract>
+					<Name>configuration</Name>
+					<Abstract type="html">TEALConfiguration instance with valid Account/Profile/Enviroment properties.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Boolean indicating whether dispatch should be sent or destroyed</Abstract></ReturnValue>
-			<Anchor>//api/name/tealium:shouldDropDispatch:</Anchor>
+			
+			<Anchor>//api/name/newInstanceForKey:configuration:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:shouldQueueDispatch:</TokenIdentifier>
-			<Abstract type="html">Dispatches passing the tealium:shouldDropDispatch: delegate method can be
-queued / saved by this method.  Also supercedes any remote publish setting
-batching and offline options. Must include logic to return NO or dispatches
-will never be sent.</Abstract>
-			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/Tealium/instanceForKey:</TokenIdentifier>
+			<Abstract type="html">Returns an instance of the library for the given key, or NIL if such an
+instance has not been previously initialized.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)tealium:(Tealium *)tealium shouldQueueDispatch:(TEALDispatch *)dispatch</Declaration>
+			<Declaration>+ (_Nullable instancetype)instanceForKey:(NSString *_Nonnull)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tealium</Name>
-					<Abstract type="html">The Tealium instance requesting confirmation</Abstract>
-				</Parameter><Parameter>
-					<Name>dispatch</Name>
-					<Abstract type="html">The dispatch in question. Property and payload data manipulated
-here will overwrite this dispatch&apos;s outbound data - effects not
-persistent
-
-@bool Boolean indicating whether dispatch should be queued at this time.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">NSString identifier for the library instance.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/tealium:shouldQueueDispatch:</Anchor>
+			<Anchor>//api/name/instanceForKey:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:didSendDispatch:</TokenIdentifier>
-			<Abstract type="html">Provides pointer to TEALDispatch that was just sent by a dispatch service.</Abstract>
-			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/Tealium/destroyInstanceForKey:</TokenIdentifier>
+			<Abstract type="html">Removes and nils out an instance of the library with the given key.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
 			
-			<Declaration>- (void)tealium:(Tealium *)tealium didSendDispatch:(TEALDispatch *)dispatch</Declaration>
+			<Declaration>+ (void)destroyInstanceForKey:(NSString *_Nonnull)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tealium</Name>
-					<Abstract type="html">The Tealium instance confirming</Abstract>
-				</Parameter><Parameter>
-					<Name>dispatch</Name>
-					<Abstract type="html">The dispatch in question. Do not manipulate any of its
-properties or payload data here as they will not take effect or
-persist.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">NSString identifier for the library instance to remove.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/tealium:didSendDispatch:</Anchor>
+			<Anchor>//api/name/destroyInstanceForKey:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:didQueueDispatch:</TokenIdentifier>
-			<Abstract type="html">Provides pointer to TEALDispatch that was just saved for later delivery.</Abstract>
-			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/delegate</TokenIdentifier>
+			<Abstract type="html">Optional delegate primarily for monitoring or manipulating dispatch data.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
 			
-			<Declaration>- (void)tealium:(Tealium *)tealium didQueueDispatch:(TEALDispatch *)dispatch</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tealium</Name>
-					<Abstract type="html">The Tealium instance confirming</Abstract>
-				</Parameter><Parameter>
-					<Name>dispatch</Name>
-					<Abstract type="html">The dispatch in question. Do not manipulate any of its
-properties or payload data here as they will not take effect or
-persist.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (id&lt;TealiumDelegate&gt; _Nullable)delegate</Declaration>
 			
-			<Anchor>//api/name/tealium:didQueueDispatch:</Anchor>
+			<ReturnValue><Abstract type="html">The current delegate of the library instance</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealiumInstanceDidUpdatePublishSettings:</TokenIdentifier>
-			<Abstract type="html">Notification that new remote publish settings have been received and processed.</Abstract>
-			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Set the library delegate for overriding and or monitoring dispatch processes.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
 			
-			<Declaration>- (void)tealiumInstanceDidUpdatePublishSettings:(Tealium *)tealium</Declaration>
+			<Declaration>- (void)setDelegate:(id&lt;TealiumDelegate&gt; _Nullable)delegate</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tealium</Name>
-					<Abstract type="html">The Tealium instance with new publish settings.</Abstract>
+					<Name>delegate</Name>
+					<Abstract type="html">Any object that implements one or more optional Tealium Delegate
+protocols.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/tealiumInstanceDidUpdatePublishSettings:</Anchor>
+			<Anchor>//api/name/setDelegate:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/TealiumDelegate/tealium:webViewIsReady:</TokenIdentifier>
-			<Abstract type="html">If Tag Management dispatch service is enabled, passes pointer to it&apos;s UIWebView
-that hosts UTAG.js. Not available on tvOS.</Abstract>
-			<DeclaredIn>TealiumDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/trackEventWithTitle:dataSources:</TokenIdentifier>
+			<Abstract type="html">Sends an event to Collect.  Event are packaged with any custom key/value
+data sources passed in along with the default datasources provided by the library.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
 			
-			<Declaration>- (void)tealium:(Tealium *)tealium webViewIsReady:(id)webView</Declaration>
+			<Declaration>- (void)trackEventWithTitle:(NSString *_Nonnull)title dataSources:(NSDictionary *_Nullable)customDataSources</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tealium</Name>
-					<Abstract type="html">The Tealium instance ready</Abstract>
+					<Name>title</Name>
+					<Abstract type="html">String title of event</Abstract>
 				</Parameter><Parameter>
-					<Name>webView</Name>
-					<Abstract type="html">The WebView instance used by any Tag Management service - nil
-if none initialized.</Abstract>
+					<Name>customDataSources</Name>
+					<Abstract type="html">Dictionary of custom datasources (key/value pairs)
+to be included in the event dispatch. If a value is an array, be sure to use
+an array of strings.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/tealium:webViewIsReady:</Anchor>
+			<Anchor>//api/name/trackEventWithTitle:dataSources:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/trackViewWithTitle:dataSources:</TokenIdentifier>
+			<Abstract type="html">Sends a view to Collect.  Views are packaged with any custom key/value data
+sources passed in along with the default datasources provided by the library.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (void)trackViewWithTitle:(NSString *_Nonnull)title dataSources:(NSDictionary *_Nullable)customDataSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">String title of view</Abstract>
+				</Parameter><Parameter>
+					<Name>customDataSources</Name>
+					<Abstract type="html">Dictionary of custom datasources (key/value pairs)
+to be included in the event dispatch. If a value is an array, be sure to use
+an array of strings.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackViewWithTitle:dataSources:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/volatileDataSourcesCopy</TokenIdentifier>
+			<Abstract type="html">Copy of all non persistent, UI object and dispatch specific data sources
+captured by a Tealium library instance at time of call.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *_Nonnull)volatileDataSourcesCopy</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSDictionary of Tealium Data Source keys and values at time of call.</Abstract></ReturnValue>
+			<Anchor>//api/name/volatileDataSourcesCopy</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/addVolatileDataSources:</TokenIdentifier>
+			<Abstract type="html">Adds additional data to the temporary data sources dictionary. This command
+is added to the end of the current Tealium background queue for writing.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (void)addVolatileDataSources:(NSDictionary *_Nonnull)additionalDataSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>additionalDataSources</Name>
+					<Abstract type="html">New or overwrite data sources to add to the
+volatile data sources store.  These key values can only be superceded by the
+custom data sources added to track calls. If a value is an array, be sure to use
+an array of strings.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addVolatileDataSources:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/removeVolatileDataSourcesForKeys:</TokenIdentifier>
+			<Abstract type="html">Removes key-value pairs from the library instance&apos;s volatile memory</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (void)removeVolatileDataSourcesForKeys:(NSArray *_Nonnull)dataSourceKeys</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataSourceKeys</Name>
+					<Abstract type="html">An NSArray of string keys to remove</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeVolatileDataSourcesForKeys:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/persistentDataSourcesCopy</TokenIdentifier>
+			<Abstract type="html">Copy of all long term Tealium data source data written to and read from disk,
+specific to a given library instance.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *_Nonnull)persistentDataSourcesCopy</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSDictionary of Tealium Data Source keys and values at time of call.</Abstract></ReturnValue>
+			<Anchor>//api/name/persistentDataSourcesCopy</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/addPersistentDataSources:</TokenIdentifier>
+			<Abstract type="html">Adds key-value info into the library instance&apos;s persistent data store.  Use
+this to track lifetime values or seldom-changed global data sources.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (void)addPersistentDataSources:(NSDictionary *_Nonnull)additionalDataSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>additionalDataSources</Name>
+					<Abstract type="html">An NSDictionary of string keys and values. If
+a value is an array, be sure to use an array of strings.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPersistentDataSources:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/removePersistentDataSourcesForKeys:</TokenIdentifier>
+			<Abstract type="html">Removes all keys from array parameter.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (void)removePersistentDataSourcesForKeys:(NSArray *_Nonnull)dataSourceKeys</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataSourceKeys</Name>
+					<Abstract type="html">An NSArray of strings of the target keys to remove
+from the persistence store.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removePersistentDataSourcesForKeys:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/joinTraceWithToken:</TokenIdentifier>
+			<Abstract type="html">Joins an AudienceStream trace if either the Collect or TagManagement service are enabled.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (void)joinTraceWithToken:(NSString *_Nonnull)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">String value should match the code provided via the AudienceStream web UI.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/joinTraceWithToken:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/leaveTrace</TokenIdentifier>
+			<Abstract type="html">Stops sending trace data for the provided token in the joinTraceWithToken: method.</Abstract>
+			<DeclaredIn>Tealium.h</DeclaredIn>
+			
+			<Declaration>- (void)leaveTrace</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">An optional completion block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/leaveTrace</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/profileURL</TokenIdentifier>
+			<Abstract type="html">The visitor profile url associated with the current user.</Abstract>
+			<DeclaredIn>Tealium+Collect.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *_Nullable)profileURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSURL An optional NSURL object.</Abstract></ReturnValue>
+			<Anchor>//api/name/profileURL</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/profileDefinitionURL</TokenIdentifier>
+			<Abstract type="html">Where Collect will retrieve profile definitions.</Abstract>
+			<DeclaredIn>Tealium+Collect.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *_Nullable)profileDefinitionURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSURL An optional NSURL object.</Abstract></ReturnValue>
+			<Anchor>//api/name/profileDefinitionURL</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/visitorIDCopy</TokenIdentifier>
+			<Abstract type="html">Copy of the Unique visitor ID per Account / Device combination.</Abstract>
+			<DeclaredIn>Tealium+Collect.h</DeclaredIn>
+			
+			<Declaration>- (NSString *_Nullable)visitorIDCopy</Declaration>
+			
+			<ReturnValue><Abstract type="html">String value of the visitorID for the Account the library was enabled with.</Abstract></ReturnValue>
+			<Anchor>//api/name/visitorIDCopy</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/cachedVisitorProfileCopy</TokenIdentifier>
+			<Abstract type="html">Last retrieved profile instance.  This is updated every time the profile is
+queried.  Depending on the settings the library was enabled with, this could
+be after every sendEvent:customData: call or only on explicit request.</Abstract>
+			<DeclaredIn>Tealium+Collect.h</DeclaredIn>
+			
+			<Declaration>- (TEALVisitorProfile *_Nullable)cachedVisitorProfileCopy</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns valid TEALVisitorProfile object.  Its properties might be
+nil of nothing is loaded into them yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/cachedVisitorProfileCopy</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/fetchVisitorProfileWithCompletion:</TokenIdentifier>
+			<Abstract type="html">Retrieves the current visitor profile from AudienceStream.</Abstract>
+			<DeclaredIn>Tealium+Collect.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchVisitorProfileWithCompletion:(void ( ^ _Nullable ) ( TEALVisitorProfile *_Nullable profile , NSError *_Nullable error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block with retrieved TEALVisitorProfile
+instance and an error should any problems occur.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchVisitorProfileWithCompletion:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/addRemoteCommandID:description:targetQueue:responseBlock:</TokenIdentifier>
+			<Abstract type="html">Adds a remote command block that can be triggered by the instance&apos;s TIQ templates.</Abstract>
+			<DeclaredIn>Tealium+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)addRemoteCommandID:(NSString *_Nonnull)commandID description:(NSString *_Nullable)description targetQueue:(dispatch_queue_t _Nonnull)queue responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))responseBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commandID</Name>
+					<Abstract type="html">NSString that identifies this code block</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">Optional NSString description of the command block</Abstract>
+				</Parameter><Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The dispatch queue to run the command on.  Note, any UI
+commands must be done on the main thread.</Abstract>
+				</Parameter><Parameter>
+					<Name>responseBlock</Name>
+					<Abstract type="html">An optional block that returns a TEALRemoteCommandResponse
+object whenever the command is executed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addRemoteCommandID:description:targetQueue:responseBlock:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/removeRemoteCommandID:</TokenIdentifier>
+			<Abstract type="html">Removes a remote command block for the given commandID</Abstract>
+			<DeclaredIn>Tealium+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)removeRemoteCommandID:(NSString *_Nonnull)commandID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commandID</Name>
+					<Abstract type="html">NSString identifier for the command block to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeRemoteCommandID:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Tealium/instanceAvailableForMessage:</TokenIdentifier>
+			<Abstract type="html">*  Check message from a watchKit extension sendMessage call to determine if any it
+        specifies any content for Tealium processing, and if so, if a Tealium
+        instance specified is available to process.
+*
+*  @param message Origin NSDictionary message.
+*
+*  @return Boolean indicating whether the Tealium instance specified in the message
+        exists.</Abstract>
+			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)instanceAvailableForMessage:(NSDictionary&lt;NSString*,id&gt; *)message</Declaration>
+			
+			
+			<Anchor>//api/name/instanceAvailableForMessage:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/session:didReceiveMessage:</TokenIdentifier>
+			<Abstract type="html">*  Called on the delegate of the receiver. Will be called on startup if the
+incoming message caused the receiver to launch.
+*
+*  @param session WCSession responding.
+*  @param message Message from Watch Extension.</Abstract>
+			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
+			
+			<Declaration>- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)message</Declaration>
+			
+			
+			<Anchor>//api/name/session:didReceiveMessage:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/session:didReceiveMessage:replyHandler:</TokenIdentifier>
+			<Abstract type="html">*  Called on the delegate of the receiver when the sender sends a message that
+expects a reply. Will be called on startup if the incoming message caused the
+receiver to launch.
+*
+*  @param session WCSession responding.
+*  @param message Message from Watch Extension.
+*  @param replyHandler Block responding.</Abstract>
+			<DeclaredIn>Tealium+WatchKit.h</DeclaredIn>
+			
+			<Declaration>- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary&lt;NSString*,id&gt; *)message replyHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,id&gt; *replyMessage ))replyHandler</Declaration>
+			
+			
+			<Anchor>//api/name/session:didReceiveMessage:replyHandler:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		

@@ -17,11 +17,7 @@
         [[WCSession defaultSession] activateSession];
     }
     
-    
-    
-    
-    [TealiumHelper trackEventWithTitle:@"app_launch" dataSources:nil];
-    
+    [TealiumHelper startTracking];
     
 }
 

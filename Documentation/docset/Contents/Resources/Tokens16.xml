@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALDispatchType.html">
+	<File path="Constants/TEALDispatchStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALDispatchType</TokenIdentifier>
-			<Abstract type="html">Types of available dispatches</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALDispatchStatus</TokenIdentifier>
+			<Abstract type="html">Dispatch Status Types</Abstract>
 			<DeclaredIn>TEALDispatch.h</DeclaredIn>
             
 			
@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeNone</TokenIdentifier>
-            <Abstract type="html">A dispatch with an unassigned type.
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusUnknown</TokenIdentifier>
+            <Abstract type="html">Status not known.
      </Abstract>
-            <Declaration>TEALDispatchTypeNone</Declaration>
+            <Declaration>TEALDispatchStatusUnknown</Declaration>
             
             <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
@@ -25,10 +25,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeEvent</TokenIdentifier>
-            <Abstract type="html">Any non-view type dispatch.
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusSent</TokenIdentifier>
+            <Abstract type="html">Delivered dispatch.
      </Abstract>
-            <Declaration>TEALDispatchTypeEvent</Declaration>
+            <Declaration>TEALDispatchStatusSent</Declaration>
             
             <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
@@ -36,10 +36,32 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeView</TokenIdentifier>
-            <Abstract type="html">Dispatch for view / screen appearances only.
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusQueued</TokenIdentifier>
+            <Abstract type="html">Was saved.
      </Abstract>
-            <Declaration>TEALDispatchTypeView</Declaration>
+            <Declaration>TEALDispatchStatusQueued</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusDestroyed</TokenIdentifier>
+            <Abstract type="html">Destruction requested.
+     </Abstract>
+            <Declaration>TEALDispatchStatusDestroyed</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchStatusFailed</TokenIdentifier>
+            <Abstract type="html">Other failure.
+     </Abstract>
+            <Declaration>TEALDispatchStatusFailed</Declaration>
             
             <DeclaredIn>TEALDispatch.h</DeclaredIn>
             

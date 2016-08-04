@@ -46,20 +46,22 @@ static TealiumHelper * _sharedInstance;
     
     [tealiumInstance1 setDelegate:[TealiumHelper sharedInstance]];
     
+    if (![tealiumInstance1 respondsToSelector:@selector(session:didReceiveMessage:replyHandler:)]){
+        NSLog(@"%s Tealium watchKit module not loaded.", __FUNCTION__);
+    }
+    
+    [TealiumHelper trackEventWithTitle:@"app_launch" dataSources:nil];
+
 }
 
 + (void) trackEventWithTitle:(NSString *)title dataSources:(NSDictionary *)data {
-    
-    [self startTracking];
     
     [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackEventWithTitle:title dataSources:data];
         
 }
 
 + (void) trackViewWithTitle:(NSString *)title dataSources:(NSDictionary *)data {
-    
-    [self startTracking];
-    
+        
     [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackViewWithTitle:title dataSources:data];
 }
 
@@ -103,7 +105,7 @@ static TealiumHelper * _sharedInstance;
     // Alternatively TEALWKDelegate could be imported and used directly by the class originally calling this method.
     
     // Turn on the library if not already on.
-    [self startTracking];
+    [TealiumHelper startTracking];
     
     [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] session:session didReceiveMessage:message replyHandler:replyHandler];
     
