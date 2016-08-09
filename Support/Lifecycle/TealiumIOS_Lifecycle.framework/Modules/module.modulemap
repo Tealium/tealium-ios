@@ -1,6 +1,0 @@
-framework module TealiumIOS_Lifecycle {
-  umbrella header "TealiumIOS_Lifecycle.h"
-
-  export *
-  module * { export * }
-}

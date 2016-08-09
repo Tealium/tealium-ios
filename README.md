@@ -41,6 +41,8 @@ The Tealium DataAccess™ solution is a rich set of customer data services and f
 - 5.0.4
     - First track event now waits for webview ready when Tag Management option enabled
     - Lifecycle module first launch auto detection fixed
+    - Volatile and Persistent data is now processed at track call time, instead of dispatch time
+    - Lifecycle module has additional manual lifecycle calls that take optional data sources
     - Devices only builds added to repo (no simulator support frameworks)
     - DSYMs provided with each framework
     - Tealium universal data sources added for all dispatches:
