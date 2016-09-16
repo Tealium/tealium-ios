@@ -6,23 +6,21 @@ This mobile library leverages the power of Tealium's [TIQ™ Tag Management](htt
 
 Tealium provides the platform for crafting a modern, scalable and flexible marketing technology stack so you can easily connect and integrate all of your best-in-class solutions.
 
-### What is Tag Managment ?
+### What is Tag Management ?
 
-Tags are snippets of code that nearly every digital marketing vendor requires their customers to embed in the source code of their web sites and mobile applications.
+Tealium iQ™ powers more web experiences than any other enterprise tag management provider.  
 
-A tag management system is a new type of application that makes it easy for digital marketers and IT professionals to deploy and manage these tags via an intuitive user interface with no coding required.
-
-A key part of enterprise-class tag management systems is the [data layer](http://tealium.com/what-is-a-data-layer/), the behind-the-scenes data and structure that drive customer interactions in web, mobile, and other digital channels.
-
-The Tealium iQ™ tag management system is a powerful and highly extensible solution that helps marketers easily manage their mission-critical technologies across web and mobile channels. Tealium iQ drives the complexity out of vendor tag deployments and is the cornerstone for achieving unified marketing, i.e., the ability to harmonize applications and data to drive superior cross-channel customer interactions.
+As the foundation of Tealium’s real-time customer data platform, the Tealium iQ tag management solution enables marketing organizations to unify disparate data sources and drive more consistent visitor interactions. Equipped with an ecosystem of hundreds of turnkey vendor integrations, you can easily deploy and manage vendor tags, test new technologies, and finally take control of your marketing technology stack.
 
 ### What is Audience Stream ?
 
-The Tealium AudienceStream™ Influence DMP (data management platform) enables you to build a universal 360-degree customer profile to better influence and engage visitors in your web or mobile channels in real time. AudienceStream leverages the richest source of real-time, first-party data to help you deliver more relevant and timely interactions, thereby improving loyalty and conversions and creating new opportunities for growth.
+Tealium AudienceStream is the leading omnichannel customer segmentation and action engine, combining robust audience management and profile enrichment capabilities with the ability to take immediate, relevant action.
+
+AudienceStream allows you to create a unified view of your customers, correlating data across every customer touchpoint, and then leverage that comprehensive customer profile across your entire digital marketing stack.
 
 ### What is Data Access ?
 
-The Tealium DataAccess™ solution is a rich set of customer data services and feeds delivered at the speed needed to fuel strong personalization and other timely customer interactions. DataAccess offers a clean, fully correlated dataset for your business intelligence (BI) or enterprise customer data initiatives.
+Tealium DataAccess™ is a suite of rich data services built from the ground up to break down the barriers between the marketing data set and data available across an entire organization. DataAccess offers the richest source of clean omnichannel, event, and audience data collected across web and mobile touch points, and makes that data available for real-time action.
 
 ## How To Get Started
 
