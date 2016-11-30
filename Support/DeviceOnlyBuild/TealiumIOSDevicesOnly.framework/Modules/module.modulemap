@@ -1,5 +1,5 @@
-framework module TealiumIOS_DevicesOnly {
-  umbrella header "TealiumIOS_DevicesOnly.h"
+framework module TealiumIOSDevicesOnly {
+  umbrella header "TealiumIOSDevicesOnly.h"
 
   export *
   module * { export * }

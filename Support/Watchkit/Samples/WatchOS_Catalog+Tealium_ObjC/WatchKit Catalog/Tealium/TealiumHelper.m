@@ -54,6 +54,12 @@ static TealiumHelper * _sharedInstance;
 
 }
 
++ (void) trackType: (TEALDispatchType) eventType title: (NSString *)title dataSources: (NSDictionary *)dataSources {
+
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackType:eventType title: title dataSources:dataSources completion:nil];
+
+}
+
 + (void) trackEventWithTitle:(NSString *)title dataSources:(NSDictionary *)data {
     
     [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackEventWithTitle:title dataSources:data];

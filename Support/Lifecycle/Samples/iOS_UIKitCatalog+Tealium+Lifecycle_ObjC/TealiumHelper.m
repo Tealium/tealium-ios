@@ -26,7 +26,7 @@ static TealiumHelper * _sharedInstance;
 + (void) startTracking {
     
     TEALConfiguration *configuration = [TEALConfiguration configurationWithAccount:@"tealiummobile"
-                                                                           profile:@"demo"
+                                                                           profile:@"main"
                                                                        environment:@"dev"];
     
     [configuration setAutotrackingLifecycleEnabled:YES];
@@ -52,6 +52,12 @@ static TealiumHelper * _sharedInstance;
 + (void) trackViewWithTitle:(NSString *)title dataSources:(NSDictionary *)data {
     
     [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackViewWithTitle:title dataSources:data];
+}
+
++ (void) trackType: (TEALDispatchType) eventType title: (NSString *)title dataSources: (NSDictionary *)dataSources {
+    
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackType:eventType title: title dataSources:dataSources completion:nil];
+    
 }
 
 + (void) stopTracking{

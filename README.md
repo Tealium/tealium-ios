@@ -1,4 +1,4 @@
-# Tealium Mobile Library for iOS Version 5.0.4
+# Tealium Mobile Library for iOS  
 
 This mobile library leverages the power of Tealium's [TIQ™ Tag Management](http://tealium.com/products/tealium-iq-tag-management-system/), [AudienceStream™](http://tealium.com/products/audiencestream/) and [Data Access™](http://tealium.com/products/tealium-dataaccess/) products, or any combination of, making them natively available to iOS applications. Please contact your Account Manager first to verify your agreement(s) for licensed products.
 
@@ -36,6 +36,15 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
+- 5.1
+    - New track with type API added and optional completion
+    - Swift sample apps updated to support Swift 3
+    - Removed underscores from binaries
+    - Tealium universal data sources added for all dispatches:
+        - tealium_event (previously event_name / link_id)
+        - app_uuid (previously uuid)
+        - tealium_event_type
+        
 - 5.0.4
     - First track event now waits for webview ready when Tag Management option enabled
     - Lifecycle module first launch auto detection now fires when autotrack lifecycle enabled

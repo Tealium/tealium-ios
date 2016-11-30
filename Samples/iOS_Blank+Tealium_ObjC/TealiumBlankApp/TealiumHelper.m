@@ -50,6 +50,13 @@ static TealiumHelper * _sharedInstance;
     [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackViewWithTitle:title dataSources:data];
 }
 
++ (void) trackType: (TEALDispatchType) eventType title: (NSString *)title dataSources: (NSDictionary *)dataSources {
+    
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackType:eventType title: title dataSources:dataSources completion:nil];
+    
+}
+
+
 + (void) stopTracking{
     
     [Tealium destroyInstanceForKey:TEALIUM_INSTANCE_ID];

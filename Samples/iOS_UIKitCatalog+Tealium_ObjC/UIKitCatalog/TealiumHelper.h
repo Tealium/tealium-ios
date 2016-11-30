@@ -23,10 +23,13 @@
 
 + (void) trackViewWithTitle:(NSString *)title dataSources:(NSDictionary *)data;
 
++ (void) trackEventWithTitle:(NSString *)title dataSources:(NSDictionary *)data eventType: (TEALDispatchType) eventType completion:(TEALDispatchBlock) completion;
+
 + (void) stopTracking;
 
 + (void) incrementLifetimeValueForKey:(NSString *)key amount:(int)number;
 
 + (void) enableRemoteCommandBlock;
+
     
 @end

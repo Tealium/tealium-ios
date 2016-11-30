@@ -39,9 +39,19 @@ static TealiumHelper * _sharedInstance;
         
 }
 
+
++ (void) trackType:(NSString *)title dataSources:(NSDictionary *)data eventType: (TEALDispatchType) eventType completion:(TEALDispatchBlock) completion{
+    
+    
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackType:eventType title:title dataSources:data completion:completion];
+    
+    }
+
 + (void) trackEventWithTitle:(NSString *)title dataSources:(NSDictionary *)data {
     
-    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackEventWithTitle:title dataSources:data];
+    [[Tealium instanceForKey:TEALIUM_INSTANCE_ID] trackType:TEALDispatchTypeActivity title:title dataSources:data completion:nil];
+    
+    
 }
 
 + (void) trackViewWithTitle:(NSString *)title dataSources:(NSDictionary *)data {
@@ -52,8 +62,8 @@ static TealiumHelper * _sharedInstance;
 + (void) stopTracking{
     
     [Tealium destroyInstanceForKey:TEALIUM_INSTANCE_ID];
-    
 }
+
 
 #pragma mark - OPTIONAL TEALIUM DELEGATE
 

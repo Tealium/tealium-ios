@@ -108,6 +108,8 @@
 		
 		<option value="//api/name/trackEventWithTitle:dataSources:">- trackEventWithTitle:dataSources:</option>
 		
+		<option value="//api/name/trackType:title:dataSources:completion:">- trackType:title:dataSources:completion:</option>
+		
 		<option value="//api/name/trackViewWithTitle:dataSources:">- trackViewWithTitle:dataSources:</option>
 		
 		<option value="//api/name/visitorIDCopy">- visitorIDCopy</option>
@@ -557,6 +559,77 @@ an array of strings.</p></td>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/trackType:title:dataSources:completion:" title="trackType:title:dataSources:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackType:title:dataSources:completion:">&ndash;&nbsp;trackType:title:dataSources:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends an event to Collect. Events are packaged with any custom key/value data
+sources passed in along with the default datasources provided by the library.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackType:(TEALDispatchType)<em>eventType</em> title:(NSString *_Nonnull)<em>title</em> dataSources:(NSDictionary *_Nonnull)<em>clientDataSources</em> completion:(TEALDispatchBlock _Nullable)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Eventtype</code></th>
+						<td><p>enum: (TEALDispatchTypeActivity, TEALDispatchTypeConversion,TEALDispatchTypeDerived, TEALDispatchTypeInteraction, TEALDispatchTypeView)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>CustomDataSources</code></th>
+						<td><p>Dictionary of custom datasources (key/value pairs)
+to be included in the event dispatch. If a value is an array, be sure to use
+an array of strings.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Title</code></th>
+						<td><p>String title of view</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion:</code></th>
+						<td><p>Optional completion handler returns dispatch status</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/volatileDataSourcesCopy" title="volatileDataSourcesCopy"></a>
 	<h3 class="method-title"><code><a href="#//api/name/volatileDataSourcesCopy">&ndash;&nbsp;volatileDataSourcesCopy</a></code>
 </h3>
@@ -979,6 +1052,137 @@ from the persistence store.</p></td>
 						</div>
 						
 
+						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
+						<h2 class="task-title">TagManagement Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:" title="addRemoteCommandID:description:targetQueue:responseBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">&ndash;&nbsp;addRemoteCommandID:description:targetQueue:responseBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a remote command block that can be triggered by the instance&rsquo;s TIQ templates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addRemoteCommandID:(NSString *_Nonnull)<em>commandID</em> description:(NSString *_Nullable)<em>description</em> targetQueue:(dispatch_queue_t _Nonnull)<em>queue</em> responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))<em>responseBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commandID</code></th>
+						<td><p>NSString that identifies this code block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>description</code></th>
+						<td><p>Optional NSString description of the command block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>queue</code></th>
+						<td><p>The dispatch queue to run the command on.  Note, any UI
+commands must be done on the main thread.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>responseBlock</code></th>
+						<td><p>An optional block that returns a <a href="../Classes/TEALRemoteCommandResponse.html">TEALRemoteCommandResponse</a>
+object whenever the command is executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeRemoteCommandID:" title="removeRemoteCommandID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeRemoteCommandID:">&ndash;&nbsp;removeRemoteCommandID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a remote command block for the given commandID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeRemoteCommandID:(NSString *_Nonnull)<em>commandID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commandID</code></th>
+						<td><p>NSString identifier for the command block to remove.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
 						<a title="WatchKit Methods" name="task_WatchKit Methods"></a>
 						<h2 class="task-title">WatchKit Methods</h2>
 
@@ -1384,137 +1588,6 @@ instance and an error should any problems occur.</p></td>
 </div>
 						</div>
 						
-
-						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
-						<h2 class="task-title">TagManagement Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:" title="addRemoteCommandID:description:targetQueue:responseBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">&ndash;&nbsp;addRemoteCommandID:description:targetQueue:responseBlock:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Adds a remote command block that can be triggered by the instance&rsquo;s TIQ templates.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)addRemoteCommandID:(NSString *_Nonnull)<em>commandID</em> description:(NSString *_Nullable)<em>description</em> targetQueue:(dispatch_queue_t _Nonnull)<em>queue</em> responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))<em>responseBlock</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>commandID</code></th>
-						<td><p>NSString that identifies this code block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>description</code></th>
-						<td><p>Optional NSString description of the command block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>queue</code></th>
-						<td><p>The dispatch queue to run the command on.  Note, any UI
-commands must be done on the main thread.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>responseBlock</code></th>
-						<td><p>An optional block that returns a <a href="../Classes/TEALRemoteCommandResponse.html">TEALRemoteCommandResponse</a>
-object whenever the command is executed.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/removeRemoteCommandID:" title="removeRemoteCommandID:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/removeRemoteCommandID:">&ndash;&nbsp;removeRemoteCommandID:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Removes a remote command block for the given commandID</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)removeRemoteCommandID:(NSString *_Nonnull)<em>commandID</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>commandID</code></th>
-						<td><p>NSString identifier for the command block to remove.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
 					</div>
 					
 					
@@ -1527,7 +1600,7 @@ object whenever the command is executed.</p></td>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-08-15</p>
+						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-12-05</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

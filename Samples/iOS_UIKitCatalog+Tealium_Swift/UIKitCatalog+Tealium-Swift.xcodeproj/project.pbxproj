@@ -279,6 +279,7 @@
 				TargetAttributes = {
 					228DB9F218BC53F1002BA12A = {
 						DevelopmentTeam = XC939GDC9P;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -483,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.sample;
 				PRODUCT_NAME = "UIKitCatalog+Tealium-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -497,6 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.sample;
 				PRODUCT_NAME = "UIKitCatalog+Tealium-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
