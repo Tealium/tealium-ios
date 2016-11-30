@@ -1,5 +1,5 @@
-framework module TealiumWATCHOSExtension_DevicesOnly {
-  umbrella header "TealiumWATCHOSExtension_DevicesOnly.h"
+framework module TealiumWATCHOSExtensionDevicesOnly {
+  umbrella header "TealiumWATCHOSExtensionDevicesOnly.h"
 
   export *
   module * { export * }

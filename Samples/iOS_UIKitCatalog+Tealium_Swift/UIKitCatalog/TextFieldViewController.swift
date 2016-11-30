@@ -33,34 +33,34 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         configureCustomTextField()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Listen for changes to keyboard visibility so that we can adjust the text view accordingly.
-        let notificationCenter = NSNotificationCenter.defaultCenter()
+        let notificationCenter = NotificationCenter.default
 
-        notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(TextFieldViewController.handleKeyboardNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
 
-        notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(TextFieldViewController.handleKeyboardNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        let notificationCenter = NSNotificationCenter.defaultCenter()
+        let notificationCenter = NotificationCenter.default
 
-        notificationCenter.removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
-        notificationCenter.removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
     // MARK: Configuration
 
     func configureTextField() {
         textField.placeholder = NSLocalizedString("Placeholder text", comment: "")
-        textField.autocorrectionType = .Yes
-        textField.returnKeyType = .Done
-        textField.clearButtonMode = .Never
+        textField.autocorrectionType = .yes
+        textField.returnKeyType = .done
+        textField.clearButtonMode = .never
     }
 
     func configureTintedTextField() {
@@ -68,16 +68,16 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         tintedTextField.textColor = UIColor.applicationGreenColor
 
         tintedTextField.placeholder = NSLocalizedString("Placeholder text", comment: "")
-        tintedTextField.returnKeyType = .Done
-        tintedTextField.clearButtonMode = .Never
+        tintedTextField.returnKeyType = .done
+        tintedTextField.clearButtonMode = .never
     }
 
     func configureSecureTextField() {
-        secureTextField.secureTextEntry = true
+        secureTextField.isSecureTextEntry = true
 
         secureTextField.placeholder = NSLocalizedString("Placeholder text", comment: "")
-        secureTextField.returnKeyType = .Done
-        secureTextField.clearButtonMode = .Always
+        secureTextField.returnKeyType = .done
+        secureTextField.clearButtonMode = .always
     }
 
     /**
@@ -86,15 +86,15 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         This example shows how to display a keyboard to help enter email addresses.
     */
     func configureSpecificKeyboardTextField() {
-        specificKeyboardTextField.keyboardType = .EmailAddress
+        specificKeyboardTextField.keyboardType = .emailAddress
 
         specificKeyboardTextField.placeholder = NSLocalizedString("Placeholder text", comment: "")
-        specificKeyboardTextField.returnKeyType = .Done
+        specificKeyboardTextField.returnKeyType = .done
     }
 
     func configureCustomTextField() {
         // Text fields with custom image backgrounds must have no border.
-        customTextField.borderStyle = .None
+        customTextField.borderStyle = .none
 
         customTextField.background = UIImage(named: "text_field_background")
 
@@ -103,28 +103,28 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
             text color to purple.
         */
         let purpleImage = UIImage(named: "text_field_purple_right_view")!
-        let purpleImageButton = UIButton(type: .Custom)
+        let purpleImageButton = UIButton(type: .custom)
         purpleImageButton.bounds = CGRect(x: 0, y: 0, width: purpleImage.size.width, height: purpleImage.size.height)
         purpleImageButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
-        purpleImageButton.setImage(purpleImage, forState: .Normal)
-        purpleImageButton.addTarget(self, action: "customTextFieldPurpleButtonClicked", forControlEvents: .TouchUpInside)
+        purpleImageButton.setImage(purpleImage, for: UIControlState())
+        purpleImageButton.addTarget(self, action: #selector(TextFieldViewController.customTextFieldPurpleButtonClicked), for: .touchUpInside)
         customTextField.rightView = purpleImageButton
-        customTextField.rightViewMode = .Always
+        customTextField.rightViewMode = .always
 
         // Add an empty view as the left view to ensure inset between the text and the bounding rectangle.
         let leftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
-        leftPaddingView.backgroundColor = UIColor.clearColor()
+        leftPaddingView.backgroundColor = UIColor.clear
         customTextField.leftView = leftPaddingView
-        customTextField.leftViewMode = .Always
+        customTextField.leftViewMode = .always
 
         customTextField.placeholder = NSLocalizedString("Placeholder text", comment: "")
-        customTextField.autocorrectionType = .No
-        customTextField.returnKeyType = .Done
+        customTextField.autocorrectionType = .no
+        customTextField.returnKeyType = .done
     }
 
     // MARK: UITextFieldDelegate
 
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
 
         return true
@@ -132,21 +132,21 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
 
     // MARK: Keyboard Event Notifications
     
-    func handleKeyboardNotification(notification: NSNotification) {
+    func handleKeyboardNotification(_ notification: Notification) {
         let userInfo = notification.userInfo!
         
         // Get information about the animation.
-        let animationDuration: NSTimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let animationDuration: TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         
-        let rawAnimationCurveValue = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).unsignedLongValue
+        let rawAnimationCurveValue = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).uintValue
         let animationCurve = UIViewAnimationOptions(rawValue: rawAnimationCurveValue)
         
         // Convert the keyboard frame from screen to view coordinates.
-        let keyboardScreenBeginFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
-        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        let keyboardScreenBeginFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
-        let keyboardViewBeginFrame = view.convertRect(keyboardScreenBeginFrame, fromView: view.window)
-        let keyboardViewEndFrame = view.convertRect(keyboardScreenEndFrame, fromView: view.window)
+        let keyboardViewBeginFrame = view.convert(keyboardScreenBeginFrame, from: view.window)
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
         
         // Determine how far the keyboard has moved up or down.
         let originDelta = keyboardViewEndFrame.origin.y - keyboardViewBeginFrame.origin.y
@@ -159,8 +159,8 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         tableView.setNeedsLayout()
 
         // Animate updating the view's layout by calling layoutIfNeeded inside a UIView animation block.
-        let animationOptions: UIViewAnimationOptions = [animationCurve, .BeginFromCurrentState]
-        UIView.animateWithDuration(animationDuration, delay: 0, options: animationOptions, animations: {
+        let animationOptions: UIViewAnimationOptions = [animationCurve, .beginFromCurrentState]
+        UIView.animate(withDuration: animationDuration, delay: 0, options: animationOptions, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }

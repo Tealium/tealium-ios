@@ -16,23 +16,23 @@ class AppDelegate: NSObject, UIApplicationDelegate, UISplitViewControllerDelegat
 
     // MARK: UIApplicationDelegate
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let splitViewController = window!.rootViewController as! UISplitViewController
         
         splitViewController.delegate = self
-        splitViewController.preferredDisplayMode = .AllVisible
+        splitViewController.preferredDisplayMode = .allVisible
 
         TealiumHelper.startTracking()
         
-        TealiumHelper.trackEvent("Launch", dataSources: ["autotracked":"false"])
+        TealiumHelper.trackEvent("Launch", dataSources: ["autotracked":"false" as AnyObject])
         
         return true
     }
     
     // MARK: UISplitViewControllerDelegate
 
-    func targetDisplayModeForActionInSplitViewController(splitViewController: UISplitViewController) -> UISplitViewControllerDisplayMode {
-        return .AllVisible
+    func targetDisplayModeForAction(in splitViewController: UISplitViewController) -> UISplitViewControllerDisplayMode {
+        return .allVisible
     }
     
 }

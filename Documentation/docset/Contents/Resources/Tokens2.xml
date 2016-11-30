@@ -14,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/setDispatchType:</TokenIdentifier>
-			<Abstract type="html">Type of dispatch, either &apos;link&apos; or &apos;view&apos;</Abstract>
+			<Abstract type="html">Type of dispatch, either &apos;activity&apos;, &apos;view&apos; , &apos;interaction&apos;, &apos;derived&apos;, or &apos;conversion&apos;</Abstract>
 			<DeclaredIn>TEALDispatch.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) TEALDispatchType dispatchType</Declaration>
@@ -26,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/dispatchType</TokenIdentifier>
-			<Abstract type="html">Type of dispatch, either &apos;link&apos; or &apos;view&apos;</Abstract>
+			<Abstract type="html">Type of dispatch, either &apos;activity&apos;, &apos;view&apos; , &apos;interaction&apos;, &apos;derived&apos;, or &apos;conversion&apos;</Abstract>
 			<DeclaredIn>TEALDispatch.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) TEALDispatchType dispatchType</Declaration>
@@ -38,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/TEALDispatch/dispatchType</TokenIdentifier>
-			<Abstract type="html">Type of dispatch, either &apos;link&apos; or &apos;view&apos;</Abstract>
+			<Abstract type="html">Type of dispatch, either &apos;activity&apos;, &apos;view&apos; , &apos;interaction&apos;, &apos;derived&apos;, or &apos;conversion&apos;</Abstract>
 			<DeclaredIn>TEALDispatch.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) TEALDispatchType dispatchType</Declaration>

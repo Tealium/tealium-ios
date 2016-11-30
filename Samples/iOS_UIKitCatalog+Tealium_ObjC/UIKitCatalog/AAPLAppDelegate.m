@@ -27,7 +27,7 @@
     
     [TealiumHelper trackEventWithTitle:@"launch" dataSources:@{TEALDataSourceKey_Autotracked:TEALDataSourceValue_False}];
     
-    return YES;
+       return YES;
 }
 
 #pragma mark - UISplitViewControllerDelegate

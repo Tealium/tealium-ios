@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeNone</TokenIdentifier>
-            <Abstract type="html">A dispatch with an unassigned type.
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeActivity</TokenIdentifier>
+            <Abstract type="html">Dispatch type used to track monitiored behavioral actions.
      </Abstract>
-            <Declaration>TEALDispatchTypeNone</Declaration>
+            <Declaration>TEALDispatchTypeActivity</Declaration>
             
             <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
@@ -25,10 +25,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeEvent</TokenIdentifier>
-            <Abstract type="html">Any non-view type dispatch.
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeDerived</TokenIdentifier>
+            <Abstract type="html">Dispatch type that represents data about the user that was infered.
      </Abstract>
-            <Declaration>TEALDispatchTypeEvent</Declaration>
+            <Declaration>TEALDispatchTypeDerived</Declaration>
             
             <DeclaredIn>TEALDispatch.h</DeclaredIn>
             
@@ -40,6 +40,28 @@
             <Abstract type="html">Dispatch for view / screen appearances only.
      </Abstract>
             <Declaration>TEALDispatchTypeView</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeInteraction</TokenIdentifier>
+            <Abstract type="html">Dispatch type when an event represents the interaction between a user and an external resource
+     </Abstract>
+            <Declaration>TEALDispatchTypeInteraction</Declaration>
+            
+            <DeclaredIn>TEALDispatch.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALDispatchTypeConversion</TokenIdentifier>
+            <Abstract type="html">Dispatch type that represents events that dictate that a desired goal has been reached
+     </Abstract>
+            <Declaration>TEALDispatchTypeConversion</Declaration>
             
             <DeclaredIn>TEALDispatch.h</DeclaredIn>
             

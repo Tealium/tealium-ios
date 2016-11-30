@@ -26,7 +26,7 @@ class ActivityIndicatorViewController: UITableViewController {
         // When activity is done, use UIActivityIndicatorView.stopAnimating().
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         TealiumHelper.trackView(NSStringFromClass(self.classForCoder), dataSources: [:])
         
@@ -35,7 +35,7 @@ class ActivityIndicatorViewController: UITableViewController {
     // MARK: Configuration
 
     func configureGrayActivityIndicatorView() {
-        grayStyleActivityIndicatorView.activityIndicatorViewStyle = .Gray
+        grayStyleActivityIndicatorView.activityIndicatorViewStyle = .gray
         
         grayStyleActivityIndicatorView.startAnimating()
         
@@ -43,7 +43,7 @@ class ActivityIndicatorViewController: UITableViewController {
     }
     
     func configureTintedActivityIndicatorView() {
-        tintedActivityIndicatorView.activityIndicatorViewStyle = .Gray
+        tintedActivityIndicatorView.activityIndicatorViewStyle = .gray
         
         tintedActivityIndicatorView.color = UIColor.applicationPurpleColor
         

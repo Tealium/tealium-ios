@@ -19,6 +19,8 @@
 
 + (void) startTracking;
 
++ (void) trackType:(TEALDispatchType)eventType title: (NSString * _Nonnull) title dataSources:(NSDictionary * _Nullable)data;
+
 + (void) trackEventWithTitle:(NSString *)title dataSources:(NSDictionary *)data;
 
 + (void) trackViewWithTitle:(NSString *)title dataSources:(NSDictionary *)data;
@@ -26,5 +28,7 @@
 + (void) stopTracking;
 
 + (void) enableRemoteCommandBlock;
-    
+
++ (void)trackEventWithType:(TEALDispatchType)eventType eventTitle:(NSString *)title dataSources: (NSDictionary *)data completion:(TEALDispatchBlock)completiom;
+
 @end

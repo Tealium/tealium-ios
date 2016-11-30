@@ -38,6 +38,17 @@
 + (void) trackEventWithTitle:(NSString * _Nonnull)title dataSources:(NSDictionary * _Nullable)data;
 
 /**
+ *  Triggers an event tracking call - lazy loads the library upon first call.
+ *
+ *  @param eventType TEALDispatchType (activity, interaction, derived, view, conversion)
+ *  @param title Any NSString identifier for the event.
+ *  @param data An NSDictionary of additional data for Tealium mapping.
+ *
+ */
++ (void) trackType:(TEALDispatchType)eventType title: (NSString * _Nonnull) title dataSources:(NSDictionary * _Nullable)data;
+
+
+/**
  *  Triggers a view tracking call - lazy loads the library upon first call.
  *
  *  @param title Any NSString identifier for the event.

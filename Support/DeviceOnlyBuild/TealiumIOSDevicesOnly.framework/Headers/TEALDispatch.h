@@ -13,17 +13,25 @@
  */
 typedef NS_ENUM(NSUInteger, TEALDispatchType) {
     /**
-     *  A dispatch with an unassigned type.
+     *  Dispatch type used to track monitiored behavioral actions.
      */
-    TEALDispatchTypeNone,
+    TEALDispatchTypeActivity,
     /**
-     *  Any non-view type dispatch.
+     *   Dispatch type that represents data about the user that was infered.
      */
-    TEALDispatchTypeEvent,
+    TEALDispatchTypeDerived,
     /**
      *  Dispatch for view / screen appearances only.
      */
-    TEALDispatchTypeView
+    TEALDispatchTypeView,
+    /**
+     * Dispatch type when an event represents the interaction between a user and an external resource
+     */
+    TEALDispatchTypeInteraction,
+    /**
+     * Dispatch type that represents events that dictate that a desired goal has been reached
+     */
+    TEALDispatchTypeConversion
 };
 
 /**
@@ -57,15 +65,13 @@ typedef NS_ENUM(NSUInteger, TEALDispatchStatus) {
  *  Constants for the two most common dispatch types
  *
  */
-extern NSString * _Nonnull const TEALDispatchTypeLinkStringValue; // string actual - "link"
-extern NSString * _Nonnull const TEALDispatchTypeViewStringValue; // string actual - "view"
 
 @interface TEALDispatch : NSObject <NSCoding>
 
 typedef void (^TEALDispatchBlock)(TEALDispatchStatus status, TEALDispatch * _Nonnull dispatch, NSError * _Nullable error);
 
 /**
- *  Type of dispatch, either 'link' or 'view'
+ *  Type of dispatch, either 'activity', 'view' , 'interaction', 'derived', or 'conversion'
  */
 @property (nonatomic) TEALDispatchType dispatchType;
 
@@ -87,7 +93,7 @@ typedef void (^TEALDispatchBlock)(TEALDispatchStatus status, TEALDispatch * _Non
 @property (nonatomic, strong) NSDictionary * _Nonnull payload;
 
 /**
- *  Time in Unix epoch of when the dispatch origin track call was called. 
+ *  Time in Unix epoch of when the dispatch origin track call was called.
  */
 @property (nonatomic) NSTimeInterval timestamp;
 

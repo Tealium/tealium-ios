@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22C0AD261DDD35C30010F046 /* TealiumBlankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E69D91BF05C00002FED27 /* TealiumBlankAppTests.swift */; };
 		7134F01C1C4EDF51006AACEF /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E3BA631C44F6A20027FC8D /* TealiumIOS.framework */; };
 		7134F01D1C4EDF51006AACEF /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71E3BA631C44F6A20027FC8D /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		717E69C51BF05C00002FED27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E69C41BF05C00002FED27 /* AppDelegate.swift */; };
@@ -14,7 +15,6 @@
 		717E69CA1BF05C00002FED27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717E69C81BF05C00002FED27 /* Main.storyboard */; };
 		717E69CC1BF05C00002FED27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717E69CB1BF05C00002FED27 /* Assets.xcassets */; };
 		717E69CF1BF05C00002FED27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717E69CD1BF05C00002FED27 /* LaunchScreen.storyboard */; };
-		717E69DA1BF05C00002FED27 /* TealiumBlankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E69D91BF05C00002FED27 /* TealiumBlankAppTests.swift */; };
 		717E69E51BF05C00002FED27 /* TealiumBlankAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E69E41BF05C00002FED27 /* TealiumBlankAppUITests.swift */; };
 		71A5A2C11BFA7B3000F6E572 /* TealiumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5A2C01BFA7B3000F6E572 /* TealiumHelper.swift */; };
 /* End PBXBuildFile section */
@@ -225,13 +225,17 @@
 				TargetAttributes = {
 					717E69C01BF05C00002FED27 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = XC939GDC9P;
+						LastSwiftMigration = 0810;
 					};
 					717E69D41BF05C00002FED27 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 717E69C01BF05C00002FED27;
 					};
 					717E69DF1BF05C00002FED27 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 717E69C01BF05C00002FED27;
 					};
 				};
@@ -314,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				717E69DA1BF05C00002FED27 /* TealiumBlankAppTests.swift in Sources */,
+				22C0AD261DDD35C30010F046 /* TealiumBlankAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,12 +450,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XC939GDC9P;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = TealiumBlankApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.TealiumBlankApp;
 				PRODUCT_NAME = "Blank+Tealium-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -459,12 +465,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XC939GDC9P;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = TealiumBlankApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.TealiumBlankApp;
 				PRODUCT_NAME = "Blank+Tealium-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -476,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.TealiumBlankAppTests;
 				PRODUCT_NAME = "Blank+Tealium-Swift";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blank+Tealium-Swift.app/Blank+Tealium-Swift";
 			};
 			name = Debug;
@@ -488,6 +497,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.TealiumBlankAppTests;
 				PRODUCT_NAME = "Blank+Tealium-Swift";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blank+Tealium-Swift.app/Blank+Tealium-Swift";
 			};
 			name = Release;
@@ -499,6 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.TealiumBlankAppUITests;
 				PRODUCT_NAME = "Blank+Tealium-Swift";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TealiumBlankApp;
 				USES_XCTRUNNER = YES;
 			};
@@ -511,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.TealiumBlankAppUITests;
 				PRODUCT_NAME = "Blank+Tealium-Swift";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TealiumBlankApp;
 				USES_XCTRUNNER = YES;
 			};

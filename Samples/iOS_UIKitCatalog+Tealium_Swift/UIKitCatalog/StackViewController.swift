@@ -17,30 +17,30 @@ class StackViewController: UIViewController {
     
     // MARK: View Life Cycle
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        furtherDetailStackView.hidden = true
-        plusButton.hidden = false
+        furtherDetailStackView.isHidden = true
+        plusButton.isHidden = false
     }
     
     // MARK: Actions
     
     @IBAction func showFurtherDetail(_: AnyObject) {
         // Animate the changes by performing them in a `UIView` animation block.
-        UIView.animateWithDuration(0.25) {
+        UIView.animate(withDuration: 0.25, animations: {
             // Reveal the further details stack view and hide the plus button.
-            self.furtherDetailStackView.hidden = false
-            self.plusButton.hidden = true
-        }
+            self.furtherDetailStackView.isHidden = false
+            self.plusButton.isHidden = true
+        }) 
     }
     
     @IBAction func hideFurtherDetail(_: AnyObject) {
         // Animate the changes by performing them in a `UIView` animation block.
-        UIView.animateWithDuration(0.25) {
+        UIView.animate(withDuration: 0.25, animations: {
             // Hide the further details stack view and reveal the plus button.
-            self.furtherDetailStackView.hidden = true
-            self.plusButton.hidden = false
-        }
+            self.furtherDetailStackView.isHidden = true
+            self.plusButton.isHidden = false
+        }) 
     }
 }

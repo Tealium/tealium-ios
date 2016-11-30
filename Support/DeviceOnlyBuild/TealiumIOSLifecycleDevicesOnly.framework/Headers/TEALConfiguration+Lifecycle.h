@@ -8,8 +8,10 @@
 
 #ifdef TEAL_SOURCE
 #import "TEALConfiguration.h"
-#else
+#elif defined(TEAL_TARGET_IOS)
 #import <TealiumIOS/TEALConfiguration.h>
+#elif defined(TEAL_TARGET_TVOS)
+#import <TealiumTVOS/TEALConfiguration.h>
 #endif
 
 @interface TEALConfiguration (Lifecycle)

@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>English</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.apple.xcode.dsym.com.tealium.TealiumIOS_DevicesOnly</string>
+		<string>com.apple.xcode.dsym.com.tealium.TealiumIOSDevicesOnly</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundlePackageType</key>
@@ -13,7 +13,7 @@
 		<key>CFBundleSignature</key>
 		<string>????</string>
 		<key>CFBundleShortVersionString</key>
-		<string>5.0.4</string>
+		<string>5.1</string>
 		<key>CFBundleVersion</key>
 		<string>1</string>
 	</dict>
