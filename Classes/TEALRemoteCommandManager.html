@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>TEALVisitorProfileBadgeAttribute Class Reference</title>
+	<title>TEALRemoteCommandManager Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -58,7 +58,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/name">- name</option>
+		<option value="//api/name/processCommandString:responseBlock:completion:">- processCommandString:responseBlock:completion:</option>
 		
 	</optgroup>
 	
@@ -75,19 +75,19 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">TEALVisitorProfileBadgeAttribute Class Reference</h1>
+					<h1 class="title">TEALRemoteCommandManager Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td><a href="../Classes/TEALVisitorProfileBaseAttribute.html">TEALVisitorProfileBaseAttribute</a> : NSObject</td>
+	<td>NSObject</td>
 </tr><tr>
 	<th>Conforms to</th>
-	<td>NSCoding<br />NSCopying</td>
+	<td>TEALRemoteCommandResponseDelegate</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>TEALVisitorProfileBadgeAttribute.h</td>
+	<td>TEALRemoteCommandManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -105,8 +105,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/name" title="name"></a>
-	<h3 class="method-title"><code><a href="#//api/name/name">&ndash;&nbsp;name</a></code>
+	<a name="//api/name/processCommandString:responseBlock:completion:" title="processCommandString:responseBlock:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processCommandString:responseBlock:completion:">&ndash;&nbsp;processCommandString:responseBlock:completion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -116,21 +116,38 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Name of the Audience, this is a display name, all attributes are refenerenced by their unique attributeID</p>
+				<p>Called by webview if Tag Bridge formatted url request string found.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSString *)name</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)processCommandString:(NSString *)<em>commandString</em> responseBlock:(TEALRemoteCommandResponseBlock)<em>responseBlock</em> completion:(TEALBooleanCompletionBlock)<em>completion</em></code></div>
 
 		    
 			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>string of the human friendly name or nil.</p>
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commandString</code></th>
+						<td><p>NSString of url string with tealium:// prefix removed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>responseBlock</code></th>
+						<td><p>This is the block that will be called if the command is executed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that reports if the remote command block was added.</p></td>
+					</tr>
+				
+				</table>
 			</div>
+			
+
 			
 
 			
@@ -144,7 +161,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALVisitorProfileBadgeAttribute.h</code></p>
+				<p><code class="declared-in-ref">TEALRemoteCommandManager.h</code></p>
 			</div>
 			
 			
