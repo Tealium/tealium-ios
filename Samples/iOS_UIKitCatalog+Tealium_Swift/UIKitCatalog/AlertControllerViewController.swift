@@ -41,8 +41,9 @@ class AlertControllerViewController : UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         TealiumHelper.trackView(NSStringFromClass(self.classForCoder), dataSources: [:])
-    
     }
+    
+    
     
     // MARK: UIAlertControllerStyleAlert Style Alerts
 

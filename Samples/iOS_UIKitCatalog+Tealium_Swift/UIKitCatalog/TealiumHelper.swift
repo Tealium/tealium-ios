@@ -33,6 +33,7 @@ class TealiumHelper : NSObject {
         
         tealium.setDelegate(sharedInstance())
         
+    
         TealiumHelper.incrementLifetimeValue(tealium, key: "launches", value: 1)
         
     }
@@ -40,7 +41,6 @@ class TealiumHelper : NSObject {
     class func trackType(_ eventType: TEALDispatchType, title: String , dataSources: [String: AnyObject]?, completion: @escaping TEALDispatchBlock) {
         
         Tealium.instance(forKey: tealiumInstanceID)?.trackType(eventType, title: title, dataSources: dataSources!, completion: completion)
-        
     }
     
     
@@ -48,7 +48,7 @@ class TealiumHelper : NSObject {
     class func trackEvent(_ title: String, dataSources: [String:AnyObject]){
         
         Tealium.instance(forKey: tealiumInstanceID)?.trackType(.activity, title: title, dataSources: dataSources, completion: nil)
-        
+
     }
     
     class func trackView(_ title: String, dataSources: [String:AnyObject]){
@@ -85,7 +85,6 @@ extension TealiumHelper : TealiumDelegate {
     func tealium(_ tealium: Tealium!, didQueue dispatch: TEALDispatch!) {
         
         // Add optional code here to respond to queuing of dispatches.
-
     }
     
     func tealium(_ tealium: Tealium!, didSend dispatch: TEALDispatch!) {

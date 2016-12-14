@@ -36,6 +36,9 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
+- 5.1.1 Bug Fix 
+    - Corrected issue related to call_type datasource
+
 - 5.1
     - New track with type API added and optional completion
     - Swift sample apps updated to support Swift 3

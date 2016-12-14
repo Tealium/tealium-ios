@@ -11,6 +11,9 @@ import UIKit
 class ActivityIndicatorViewController: UITableViewController {
     // MARK: Properties
 
+    weak var delegate:TealiumHelper?
+
+    
     @IBOutlet weak var grayStyleActivityIndicatorView: UIActivityIndicatorView!
     
     @IBOutlet weak var tintedActivityIndicatorView: UIActivityIndicatorView!
@@ -22,6 +25,8 @@ class ActivityIndicatorViewController: UITableViewController {
         
         configureGrayActivityIndicatorView()
         configureTintedActivityIndicatorView()
+
+        if delegate?.tealium(<#T##tealium: Tealium!##Tealium!#>, webViewIsReady: <#T##AnyObject!#>)
         
         // When activity is done, use UIActivityIndicatorView.stopAnimating().
     }
