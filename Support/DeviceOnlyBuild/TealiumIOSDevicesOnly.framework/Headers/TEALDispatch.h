@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+
+extern NSString * const TEALDispatchKey_Dispatch_Type ;
+extern NSString * const TEALDispatchKey_Dispatch_Service ;
+extern NSString * const TEALDispatchKey_DataSources_Payload;
+extern NSString * const TEALDispatchKey_Time_Stamp;
+
+
 /**
  *  Types of available dispatches
  */
@@ -106,5 +113,15 @@ typedef void (^TEALDispatchBlock)(TEALDispatchStatus status, TEALDispatch * _Non
  */
 + (NSString * _Nonnull) stringFromDispatchStatus:(TEALDispatchStatus)dispatchStatus;
 
+/**
+ * Converts a TEALDispatch to a NSDictionary 
+ */
 
+- (NSDictionary * _Nonnull) asDictionary;
+
+/**
+ * Converts a NSDictionary to a TEALDispatch
+ */
+
++ (TEALDispatch * _Nonnull)fromDictionary:(NSDictionary* _Nullable)dictionary;
 @end

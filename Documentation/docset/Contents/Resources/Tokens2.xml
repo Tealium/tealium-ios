@@ -209,6 +209,30 @@
             <NodeRef refid="2"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALDispatch/asDictionary</TokenIdentifier>
+			<Abstract type="html">Converts a TEALDispatch to a NSDictionary</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *_Nonnull)asDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/asDictionary</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALDispatch/fromDictionary:</TokenIdentifier>
+			<Abstract type="html">Converts a NSDictionary to a TEALDispatch</Abstract>
+			<DeclaredIn>TEALDispatch.h</DeclaredIn>
+			
+			<Declaration>+ (TEALDispatch *_Nonnull)fromDictionary:(NSDictionary *_Nullable)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/fromDictionary:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
         
         
 	</File>

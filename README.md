@@ -36,7 +36,11 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
-- 5.1.1 Bug Fix 
+- 5.1.2 Bug Fix
+    - Dispatch manager logic fix related to purged dispatches
+    - Protections added for saving dispatches to persistence
+
+- 5.1.1 Bug Fix
     - Corrected issue related to call_type datasource
 
 - 5.1
@@ -47,7 +51,7 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
         - tealium_event (previously event_name / link_id)
         - app_uuid (previously uuid)
         - tealium_event_type
-        
+
 - 5.0.4
     - First track event now waits for webview ready when Tag Management option enabled
     - Lifecycle module first launch auto detection now fires when autotrack lifecycle enabled
@@ -85,7 +89,7 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
     - Remote disable fix
     - Reachability check fix
     - @import TealiumIOS module name fix
-    - Minutes between refresh now displays correct time remaining 
+    - Minutes between refresh now displays correct time remaining
     - Dispatch logs updated with a QA verbosity option
     - Minor documentation update
     - Nullability specifiers for inits corrected for cleaner swift implementation
@@ -107,4 +111,4 @@ Use of this software is subject to the terms and conditions of the license agree
 
 
 ---
-Copyright (C) 2012-2016, Tealium Inc.
+Copyright (C) 2012-2017, Tealium Inc.

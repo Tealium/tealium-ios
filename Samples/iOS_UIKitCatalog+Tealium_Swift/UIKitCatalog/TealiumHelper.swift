@@ -36,11 +36,20 @@ class TealiumHelper : NSObject {
     
         TealiumHelper.incrementLifetimeValue(tealium, key: "launches", value: 1)
         
+        
+        guard let persistentData = Tealium.instance(forKey: tealiumInstanceID)?.volatileDataSourcesCopy() else {
+            
+            return
+        }
+        print("persistent Data \(persistentData)")
     }
     
     class func trackType(_ eventType: TEALDispatchType, title: String , dataSources: [String: AnyObject]?, completion: @escaping TEALDispatchBlock) {
         
         Tealium.instance(forKey: tealiumInstanceID)?.trackType(eventType, title: title, dataSources: dataSources!, completion: completion)
+ 
+        
+        
     }
     
     
@@ -128,6 +137,8 @@ extension TealiumHelper{
         
         
     }
+    
+    
     
     class func enableRemoteCommand() {
         
