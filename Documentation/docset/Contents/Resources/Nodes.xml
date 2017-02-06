@@ -151,6 +151,12 @@
                 </Node>
                 
                 
+                <Node type="section">
+                    <Path>Classes/TEALDispatch.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
             </Subnodes>
             
         </Node>

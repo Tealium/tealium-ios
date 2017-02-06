@@ -26,8 +26,8 @@ class ActivityIndicatorViewController: UITableViewController {
         configureGrayActivityIndicatorView()
         configureTintedActivityIndicatorView()
 
-        if delegate?.tealium(<#T##tealium: Tealium!##Tealium!#>, webViewIsReady: <#T##AnyObject!#>)
-        
+
+     
         // When activity is done, use UIActivityIndicatorView.stopAnimating().
     }
     
@@ -36,7 +36,7 @@ class ActivityIndicatorViewController: UITableViewController {
         TealiumHelper.trackView(NSStringFromClass(self.classForCoder), dataSources: [:])
         
     }
-    
+ 
     // MARK: Configuration
 
     func configureGrayActivityIndicatorView() {
