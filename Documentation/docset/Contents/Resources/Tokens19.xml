@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALRemoteResponseErrors.html">
+	<File path="Constants/TEALLogLevel.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALRemoteResponseErrors</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALLogLevel</TokenIdentifier>
+			<Abstract type="html">Unsigned integer value that controls the verbosity level of any log output.</Abstract>
+			<DeclaredIn>TEALLogLevels.h</DeclaredIn>
             
 			
 			<NodeRef refid="19"/>
@@ -14,91 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorUnknown</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorUnknown</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALLogLevelNone</TokenIdentifier>
+            <Abstract type="html">Nothing is logged to the console, this is the default.
+     </Abstract>
+            <Declaration>TEALLogLevelNone</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMalformedURL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMalformedURL</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALLogLevels.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingArgs</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingArgs</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALLogLevelProd</TokenIdentifier>
+            <Abstract type="html">Only errors reported.
+     </Abstract>
+            <Declaration>TEALLogLevelProd</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommand</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommand</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALLogLevels.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandId</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommandId</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALLogLevelQA</TokenIdentifier>
+            <Abstract type="html">Provides warnings and errors only.
+     </Abstract>
+            <Declaration>TEALLogLevelQA</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingCommandBlock</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingCommandBlock</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALLogLevels.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorMissingRequest</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorMissingRequest</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/TEALLogLevelDev</TokenIdentifier>
+            <Abstract type="html">Most verbose - Useful for debugging and verification during development.
+     </Abstract>
+            <Declaration>TEALLogLevelDev</Declaration>
             
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoMethodType</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorHttp_NoMethodType</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALRemoteResponseErrorHttp_NoTargetUrl</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TEALRemoteResponseErrorHttp_NoTargetUrl</Declaration>
-            
-            <DeclaredIn>TEALRemoteCommandConstants.h</DeclaredIn>
+            <DeclaredIn>TEALLogLevels.h</DeclaredIn>
             
             <NodeRef refid="19"/>
         </Token>

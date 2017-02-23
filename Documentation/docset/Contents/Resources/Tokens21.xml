@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TEALVisitorProfilePollingFrequency.html">
+	<File path="Constants/TEALVisitorProfileAttributeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TEALVisitorProfilePollingFrequency</TokenIdentifier>
-			<Abstract type="html">Unsigned integer value that controls the frequency at which the user&apos;s visitor profile is requested</Abstract>
-			<DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/TEALVisitorProfileAttributeType</TokenIdentifier>
+			<Abstract type="html">Type of Visitor Profile Attribute</Abstract>
+			<DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
 			
 			<NodeRef refid="21"/>
@@ -14,23 +14,67 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfilePollingFrequencyOnRequest</TokenIdentifier>
-            <Abstract type="html">On request only, will only poll with the fetchVisitorProfileWithCompletion: method
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeAudience</TokenIdentifier>
+            <Abstract type="html">Profile Audience
      </Abstract>
-            <Declaration>TEALVisitorProfilePollingFrequencyOnRequest</Declaration>
+            <Declaration>TEALVisitorProfileAttributeTypeAudience</Declaration>
             
-            <DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
             <NodeRef refid="21"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfilePollingFrequencyAfterEveryEvent</TokenIdentifier>
-            <Abstract type="html">After each track event (trackEventWithTitle:dataSources: or trackViewWithTitle:dataSources:) an updated visitor profile will be requested.
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeBadge</TokenIdentifier>
+            <Abstract type="html">Profile Badge
      </Abstract>
-            <Declaration>TEALVisitorProfilePollingFrequencyAfterEveryEvent</Declaration>
+            <Declaration>TEALVisitorProfileAttributeTypeBadge</Declaration>
             
-            <DeclaredIn>TEALConfiguration+Collect.h</DeclaredIn>
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeDate</TokenIdentifier>
+            <Abstract type="html">Profile Date
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeDate</Declaration>
+            
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeFlag</TokenIdentifier>
+            <Abstract type="html">Profile Flag
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeFlag</Declaration>
+            
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeMetric</TokenIdentifier>
+            <Abstract type="html">Profile Metric
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeMetric</Declaration>
+            
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TEALVisitorProfileAttributeTypeProperty</TokenIdentifier>
+            <Abstract type="html">Profile Property or &quot;Trait&quot; in the AudienceStream App
+     </Abstract>
+            <Declaration>TEALVisitorProfileAttributeTypeProperty</Declaration>
+            
+            <DeclaredIn>TEALVisitorProfileBaseAttribute.h</DeclaredIn>
             
             <NodeRef refid="21"/>
         </Token>

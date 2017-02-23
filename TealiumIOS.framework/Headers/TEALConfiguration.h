@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TEALLogLevels.h"
+
 /**
  *  Configuration Class for the Tealium Mobile Library
  *  An instance of this is passed to Tealium enableWithConfiguration: to start the Collect Library
@@ -33,6 +35,10 @@
  */
 @property (nonatomic, copy) NSString * _Nonnull environmentName;
 
+/**
+ *  Debug log level to use. Default 'silent' (none)
+ */
+@property (nonatomic) TEALLogLevel logLevel;
 
 /**
  *  If assigned, will replace the default mobile publish setting source location with an alternate address. Example - "https://my.domain.com/app/publish.html"
