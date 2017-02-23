@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TEALConfiguration.h</key>
 		<data>
-		90Ur3aPEDfARf8Gqol2hSG18A/0=
+		yI3OxiuhcekyYY21fMYtawRcs3I=
 		</data>
 		<key>Headers/TEALDataSourceConstants.h</key>
 		<data>
@@ -22,7 +22,11 @@
 		</data>
 		<key>Headers/TEALDispatch.h</key>
 		<data>
-		xuEH1puZtcRfnlfDfmb0IaalzSc=
+		krWJjxkr/cowooIZFo6INWsy8Qs=
+		</data>
+		<key>Headers/TEALLogLevels.h</key>
+		<data>
+		BKBDjfXgXlVvJarpL/FTIV1SuUA=
 		</data>
 		<key>Headers/TEALRemoteCommandResponse.h</key>
 		<data>
@@ -58,11 +62,11 @@
 		</data>
 		<key>Headers/TealiumIOS.h</key>
 		<data>
-		I2ubCn1iQ4tgiyNjgYodYDUWqtM=
+		oEvwsRnAe1dWMUCy0khY7+/HZ3c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AS4luBM/4DLC8fob6hSH/B7vfQU=
+		+4n52u9B7fSwmg6zmRIkdQ1BZ7g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			90Ur3aPEDfARf8Gqol2hSG18A/0=
+			yI3OxiuhcekyYY21fMYtawRcs3I=
 			</data>
 			<key>hash2</key>
 			<data>
-			1CHZbgyru+n6KdVggvWoI8/Y3HjfXMvv8wzL4IdRSGA=
+			jbRYCZLe6FGNjQsySX4IY2N+y36EKKt4nsH14docR80=
 			</data>
 		</dict>
 		<key>Headers/TEALDataSourceConstants.h</key>
@@ -119,11 +123,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xuEH1puZtcRfnlfDfmb0IaalzSc=
+			krWJjxkr/cowooIZFo6INWsy8Qs=
 			</data>
 			<key>hash2</key>
 			<data>
-			TI5qV08g4F6nm5Kyo3YuR+VsbIecPTo3RsEfTVvcSAE=
+			pP8jVAFE7+yzgHBKsVtz+mCs1tLo2qmvLGGCgmR9LwI=
+			</data>
+		</dict>
+		<key>Headers/TEALLogLevels.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BKBDjfXgXlVvJarpL/FTIV1SuUA=
+			</data>
+			<key>hash2</key>
+			<data>
+			P1DSH7fcyeiYz1NVTbc6lEVUxD0zGwC2tzQ9koe1zSM=
 			</data>
 		</dict>
 		<key>Headers/TEALRemoteCommandResponse.h</key>
@@ -218,11 +233,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I2ubCn1iQ4tgiyNjgYodYDUWqtM=
+			oEvwsRnAe1dWMUCy0khY7+/HZ3c=
 			</data>
 			<key>hash2</key>
 			<data>
-			I/FgdOjUtuh1FsdCGAzOwFsvY6m8xQswGVPseBGj8oE=
+			14Nm9MrjsRGZMQ7VgO3277vgu9p99V/vserzgqD3k2U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -254,6 +269,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -299,6 +319,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

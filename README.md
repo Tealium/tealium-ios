@@ -36,6 +36,10 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
+- 5.1.3 
+    - Nullable attributes added to dispatch manager
+    - Improved Tealium Logger handling to support more development side control 
+
 - 5.1.2 Bug Fix
     - Dispatch manager logic fix related to purged dispatches
     - Protections added for saving dispatches to persistence
