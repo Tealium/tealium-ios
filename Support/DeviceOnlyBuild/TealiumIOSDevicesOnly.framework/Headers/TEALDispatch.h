@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-extern NSString * const TEALDispatchKey_Dispatch_Type ;
-extern NSString * const TEALDispatchKey_Dispatch_Service ;
-extern NSString * const TEALDispatchKey_DataSources_Payload;
-extern NSString * const TEALDispatchKey_Time_Stamp;
+extern NSString * __nonnull const TEALDispatchKey_Dispatch_Type ;
+extern NSString * __nonnull const TEALDispatchKey_Dispatch_Service ;
+extern NSString * __nonnull const TEALDispatchKey_DataSources_Payload;
+extern NSString * __nonnull const TEALDispatchKey_Time_Stamp;
 
 
 /**

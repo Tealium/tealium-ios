@@ -9,29 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-/**
- *  Unsigned integer value that controls the verbosity level of any log output.
- */
-typedef NS_ENUM(NSUInteger, TEALLogLevel){
-    /**
-     *  Nothing is logged to the console, this is the default.
-     */
-    TEALLogLevelNone = 1,
-    /**
-     *  Only errors reported.
-     */
-    TEALLogLevelProd,
-    /**
-     *  Provides warnings and errors only.
-     */
-    TEALLogLevelQA,
-    /**
-     *  Most verbose - Useful for debugging and verification during development.
-     */
-    TEALLogLevelDev
-
-
-};
+#import "TEALLogLevels.h"
 
 @interface TEALLogger : NSObject
 
@@ -47,7 +25,7 @@ typedef NS_ENUM(NSUInteger, TEALLogLevel){
 
 - (BOOL) isEnabled;
 
-- (BOOL) updateLogLevel:(NSString * _Nullable)logLevelString;
+- (BOOL) updateLogLevel:(TEALLogLevel)logLevel;
 
 - (void) logProd:(NSString * _Nonnull) format, ...;
 
