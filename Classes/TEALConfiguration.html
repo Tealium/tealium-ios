@@ -60,6 +60,8 @@
 		
 		<option value="//api/name/environmentName">environmentName</option>
 		
+		<option value="//api/name/logLevel">logLevel</option>
+		
 		<option value="//api/name/overridePublishSettingsURL">overridePublishSettingsURL</option>
 		
 		<option value="//api/name/overrideTagManagementURL">overrideTagManagementURL</option>
@@ -276,6 +278,47 @@ An instance of this is passed to <a href="../Classes/Tealium.html">Tealium</a> e
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>@example dev/qa/prod</p>
 			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logLevel" title="logLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logLevel">&nbsp;&nbsp;logLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Debug log level to use. Default &lsquo;silent&rsquo; (none)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) TEALLogLevel logLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
 			
 
 			
@@ -852,113 +895,6 @@ If set to on request, the library will only requery the profile when asked for u
 						</div>
 						
 
-						<a title="Lifecycle Methods" name="task_Lifecycle Methods"></a>
-						<h2 class="task-title">Lifecycle Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/isAutotrackingLifecycleEnabled" title="isAutotrackingLifecycleEnabled"></a>
-	<h3 class="method-title"><code><a href="#//api/name/isAutotrackingLifecycleEnabled">&ndash;&nbsp;isAutotrackingLifecycleEnabled</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read-only flag for lifecycle autotracking status.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)isAutotrackingLifecycleEnabled</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>@default YES</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration+Lifecycle.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setAutotrackingLifecycleEnabled:" title="setAutotrackingLifecycleEnabled:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setAutotrackingLifecycleEnabled:">&ndash;&nbsp;setAutotrackingLifecycleEnabled:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Enable or disable the lifecycle autotracking system.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setAutotrackingLifecycleEnabled:(BOOL)<em>enable</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>enable</code></th>
-						<td><p>BOOL whether autotracking should be on or off.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration+Lifecycle.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
 						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
 						<h2 class="task-title">TagManagement Methods</h2>
 
@@ -1164,6 +1100,113 @@ If set to on request, the library will only requery the profile when asked for u
 </div>
 						</div>
 						
+
+						<a title="Lifecycle Methods" name="task_Lifecycle Methods"></a>
+						<h2 class="task-title">Lifecycle Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isAutotrackingLifecycleEnabled" title="isAutotrackingLifecycleEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isAutotrackingLifecycleEnabled">&ndash;&nbsp;isAutotrackingLifecycleEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Read-only flag for lifecycle autotracking status.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isAutotrackingLifecycleEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@default YES</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Lifecycle.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAutotrackingLifecycleEnabled:" title="setAutotrackingLifecycleEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAutotrackingLifecycleEnabled:">&ndash;&nbsp;setAutotrackingLifecycleEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable the lifecycle autotracking system.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAutotrackingLifecycleEnabled:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>BOOL whether autotracking should be on or off.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+Lifecycle.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1176,7 +1219,7 @@ If set to on request, the library will only requery the profile when asked for u
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Tealium. All rights reserved. Updated: 2016-12-05</p>
+						<p class="copyright">Copyright &copy; 2017 Tealium. All rights reserved. Updated: 2017-02-22</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
