@@ -369,6 +369,35 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/isAutotrackingLifecycleEnabled</TokenIdentifier>
+			<Abstract type="html">Read-only flag for lifecycle autotracking status.</Abstract>
+			<DeclaredIn>TEALConfiguration+Lifecycle.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isAutotrackingLifecycleEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/isAutotrackingLifecycleEnabled</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setAutotrackingLifecycleEnabled:</TokenIdentifier>
+			<Abstract type="html">Enable or disable the lifecycle autotracking system.</Abstract>
+			<DeclaredIn>TEALConfiguration+Lifecycle.h</DeclaredIn>
+			
+			<Declaration>- (void)setAutotrackingLifecycleEnabled:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">BOOL whether autotracking should be on or off.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAutotrackingLifecycleEnabled:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/remoteCommandsEnabled</TokenIdentifier>
 			<Abstract type="html">Read-only flag for remote commands triggerablilty status.</Abstract>
 			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
@@ -423,35 +452,6 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 			</Parameters>
 			
 			<Anchor>//api/name/setRemoteCommandsEnabled:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/isAutotrackingLifecycleEnabled</TokenIdentifier>
-			<Abstract type="html">Read-only flag for lifecycle autotracking status.</Abstract>
-			<DeclaredIn>TEALConfiguration+Lifecycle.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isAutotrackingLifecycleEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/isAutotrackingLifecycleEnabled</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setAutotrackingLifecycleEnabled:</TokenIdentifier>
-			<Abstract type="html">Enable or disable the lifecycle autotracking system.</Abstract>
-			<DeclaredIn>TEALConfiguration+Lifecycle.h</DeclaredIn>
-			
-			<Declaration>- (void)setAutotrackingLifecycleEnabled:(BOOL)enable</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enable</Name>
-					<Abstract type="html">BOOL whether autotracking should be on or off.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setAutotrackingLifecycleEnabled:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

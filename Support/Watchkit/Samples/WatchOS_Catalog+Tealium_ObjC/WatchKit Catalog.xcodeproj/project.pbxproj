@@ -459,11 +459,9 @@
 				TargetAttributes = {
 					CB2698BB1A3667CE00D75212 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XC939GDC9P;
 					};
 					CB2698E81A3667DA00D75212 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XC939GDC9P;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -472,7 +470,6 @@
 					};
 					CB2698FA1A3667DA00D75212 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XC939GDC9P;
 					};
 				};
 			};
@@ -682,6 +679,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../",
 					"$(PROJECT_DIR)/../../../../",
@@ -698,6 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../",
 					"$(PROJECT_DIR)/../../../../",
@@ -716,6 +715,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -740,6 +740,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "";
 				IBSC_MODULE = WatchKit_Catalog_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchKit Catalog Watch App/Info.plist";
@@ -759,6 +760,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/WatchKit",
 					Catalog/Tealium,
@@ -787,6 +789,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/WatchKit",
 					Catalog/Tealium,

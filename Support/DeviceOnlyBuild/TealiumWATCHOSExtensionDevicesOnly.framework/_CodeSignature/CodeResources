@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/TEALLogLevels.h</key>
+		<data>
+		BKBDjfXgXlVvJarpL/FTIV1SuUA=
+		</data>
 		<key>Headers/TEALLogger.h</key>
 		<data>
 		JvhKokNKEPVHm38GDiNju+u+0wI=
@@ -22,11 +26,11 @@
 		</data>
 		<key>Headers/TealiumWATCHOSExtensionDevicesOnly.h</key>
 		<data>
-		MN4eLaEqXP4upwVXdBBiUUQ7U4k=
+		d5nr7YTEczSz6ANIT6jBqC45TrM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Q7k0qvm64ZwggYbwuZhQRp0QqII=
+		4afTgsfk/ZvMrp4yAYw4wYqauvQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,6 +39,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/TEALLogLevels.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BKBDjfXgXlVvJarpL/FTIV1SuUA=
+			</data>
+			<key>hash2</key>
+			<data>
+			P1DSH7fcyeiYz1NVTbc6lEVUxD0zGwC2tzQ9koe1zSM=
+			</data>
+		</dict>
 		<key>Headers/TEALLogger.h</key>
 		<dict>
 			<key>hash</key>
@@ -83,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MN4eLaEqXP4upwVXdBBiUUQ7U4k=
+			d5nr7YTEczSz6ANIT6jBqC45TrM=
 			</data>
 			<key>hash2</key>
 			<data>
-			G0IvYMfF0DSopWTKrHC/W5IdQg+cjMU5UIy8fPSR8fY=
+			jm1hlVHXYbknYsl2WyfIv4CykstpUTB2sgOUFMI3gJ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

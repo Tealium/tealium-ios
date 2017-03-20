@@ -41,8 +41,8 @@
 		535682BE18F3670300BAAD62 /* AAPLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A418F3670300BAAD62 /* AAPLWebViewController.m */; };
 		535682BF18F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */; };
 		53874F9918F36B1800510922 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53874F9718F36B1800510922 /* Localizable.strings */; };
-		716060D11D5A27DC009D74DC /* TealiumIOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */; };
-		716060D21D5A2C25009D74DC /* TealiumIOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		714F98D71E8052520089A73C /* TealiumIOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7166022E1E7C5A53005C11AC /* TealiumIOSLifecycle.framework */; };
+		714F98D81E8052520089A73C /* TealiumIOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7166022E1E7C5A53005C11AC /* TealiumIOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7192DD021C8E49B7000F15A4 /* TealiumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7192DD011C8E49B7000F15A4 /* TealiumHelper.m */; };
 		71F65EC61C8F28DE00D91A6E /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7192DCF51C8E48C6000F15A4 /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5C300DF1B0FC4F1003B05A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C300DE1B0FC4F1003B05A0 /* LaunchScreen.storyboard */; };
@@ -57,8 +57,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				716060D21D5A2C25009D74DC /* TealiumIOSLifecycle.framework in Embed Frameworks */,
 				71F65EC61C8F28DE00D91A6E /* TealiumIOS.framework in Embed Frameworks */,
+				714F98D81E8052520089A73C /* TealiumIOSLifecycle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +130,7 @@
 		535682A518F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AAPLApplicationSpecific.h"; sourceTree = "<group>"; };
 		535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AAPLApplicationSpecific.m"; sourceTree = "<group>"; };
 		53874F9818F36B1800510922 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOSLifecycle.framework; path = ../../TealiumIOSLifecycle.framework; sourceTree = "<group>"; };
+		7166022E1E7C5A53005C11AC /* TealiumIOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOSLifecycle.framework; path = ../../../../TealiumIOSLifecycle.framework; sourceTree = "<group>"; };
 		7192DCF51C8E48C6000F15A4 /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOS.framework; path = ../../../../TealiumIOS.framework; sourceTree = "<group>"; };
 		7192DD001C8E49B7000F15A4 /* TealiumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumHelper.h; sourceTree = "<group>"; };
 		7192DD011C8E49B7000F15A4 /* TealiumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumHelper.m; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5356824018F3656900BAAD62 /* CoreGraphics.framework in Frameworks */,
-				716060D11D5A27DC009D74DC /* TealiumIOSLifecycle.framework in Frameworks */,
+				714F98D71E8052520089A73C /* TealiumIOSLifecycle.framework in Frameworks */,
 				5356824218F3656900BAAD62 /* UIKit.framework in Frameworks */,
 				5356823E18F3656900BAAD62 /* Foundation.framework in Frameworks */,
 			);
@@ -323,7 +323,7 @@
 			children = (
 				7192DD001C8E49B7000F15A4 /* TealiumHelper.h */,
 				7192DD011C8E49B7000F15A4 /* TealiumHelper.m */,
-				716060D01D5A27DC009D74DC /* TealiumIOSLifecycle.framework */,
+				7166022E1E7C5A53005C11AC /* TealiumIOSLifecycle.framework */,
 				7192DCF51C8E48C6000F15A4 /* TealiumIOS.framework */,
 			);
 			name = Tealium;
@@ -360,11 +360,6 @@
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = f;
-				TargetAttributes = {
-					5356823918F3656900BAAD62 = {
-						DevelopmentTeam = XC939GDC9P;
-					};
-				};
 			};
 			buildConfigurationList = 5356823518F3656900BAAD62 /* Build configuration list for PBXProject "UIKitCatalog" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -563,7 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				DEVELOPMENT_TEAM = XC939GDC9P;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../../../",
 					"$(PROJECT_DIR)/../../",
@@ -589,7 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				DEVELOPMENT_TEAM = XC939GDC9P;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../../../",
 					"$(PROJECT_DIR)/../../",

@@ -89,7 +89,7 @@ extension TealiumHelper : TealiumDelegate {
 
     }
     
-    func tealium(_ tealium: Tealium!, webViewIsReady webView: AnyObject!) {
+    func tealium(_ tealium: Tealium!, webViewIsReady webView: Any!) {
 
         // Use this to interact with the Tag Management Dispatcher's webview - available only if Tag Management enabled via remote settings.
 

@@ -1,4 +1,4 @@
-9//
+//
 //  TealiumIOS.h
 //  TealiumIOS
 //
@@ -15,18 +15,18 @@ FOUNDATION_EXPORT double TealiumIOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char TealiumIOSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TealiumIOS/PublicHeader.h>
-#import <TealiumIOS_DevicesOnly/Tealium.h>
-#import <TealiumIOS_DevicesOnly/Tealium+Collect.h>
-#import <TealiumIOS_DevicesOnly/Tealium+TagManagement.h>
-#import <TealiumIOS_DevicesOnly/Tealium+WatchKit.h>
-#import <TealiumIOS_DevicesOnly/TealiumDelegate.h>
+#import <TealiumIOSDevicesOnly/Tealium.h>
+#import <TealiumIOSDevicesOnly/Tealium+Collect.h>
+#import <TealiumIOSDevicesOnly/Tealium+TagManagement.h>
+#import <TealiumIOSDevicesOnly/Tealium+WatchKit.h>
+#import <TealiumIOSDevicesOnly/TealiumDelegate.h>
 
-#import <TealiumIOS_DevicesOnly/TEALConfiguration+Collect.h>
-#import <TealiumIOS_DevicesOnly/TEALConfiguration+TagManagement.h>
-#import <TealiumIOS_DevicesOnly/TEALConfiguration.h>
-#import <TealiumIOS_DevicesOnly/TEALDataSourceConstants.h>
-#import <TealiumIOS_DevicesOnly/TEALDispatch.h>
-#import <TealiumIOS_DevicesOnly/TEALLogLevels.h>
-#import <TealiumIOS_DevicesOnly/TEALRemoteCommandResponse.h>
-#import <TealiumIOS_DevicesOnly/TEALVisitorProfile.h>
-#import <TealiumIOS_DevicesOnly/TEALVisitorProfileCurrentVisit.h>
+#import <TealiumIOSDevicesOnly/TEALConfiguration+Collect.h>
+#import <TealiumIOSDevicesOnly/TEALConfiguration+TagManagement.h>
+#import <TealiumIOSDevicesOnly/TEALConfiguration.h>
+#import <TealiumIOSDevicesOnly/TEALDataSourceConstants.h>
+#import <TealiumIOSDevicesOnly/TEALDispatch.h>
+#import <TealiumIOSDevicesOnly/TEALLogLevels.h>
+#import <TealiumIOSDevicesOnly/TEALRemoteCommandResponse.h>
+#import <TealiumIOSDevicesOnly/TEALVisitorProfile.h>
+#import <TealiumIOSDevicesOnly/TEALVisitorProfileCurrentVisit.h>

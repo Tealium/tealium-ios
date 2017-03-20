@@ -309,6 +309,51 @@ from the persistence store.</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/addRemoteCommandID:description:targetQueue:responseBlock:</TokenIdentifier>
+			<Abstract type="html">Adds a remote command block that can be triggered by the instance&apos;s TIQ templates.</Abstract>
+			<DeclaredIn>Tealium+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)addRemoteCommandID:(NSString *_Nonnull)commandID description:(NSString *_Nullable)description targetQueue:(dispatch_queue_t _Nonnull)queue responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))responseBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commandID</Name>
+					<Abstract type="html">NSString that identifies this code block</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">Optional NSString description of the command block</Abstract>
+				</Parameter><Parameter>
+					<Name>queue</Name>
+					<Abstract type="html">The dispatch queue to run the command on.  Note, any UI
+commands must be done on the main thread.</Abstract>
+				</Parameter><Parameter>
+					<Name>responseBlock</Name>
+					<Abstract type="html">An optional block that returns a TEALRemoteCommandResponse
+object whenever the command is executed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addRemoteCommandID:description:targetQueue:responseBlock:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Tealium/removeRemoteCommandID:</TokenIdentifier>
+			<Abstract type="html">Removes a remote command block for the given commandID</Abstract>
+			<DeclaredIn>Tealium+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)removeRemoteCommandID:(NSString *_Nonnull)commandID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commandID</Name>
+					<Abstract type="html">NSString identifier for the command block to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeRemoteCommandID:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/Tealium/profileURL</TokenIdentifier>
 			<Abstract type="html">The visitor profile url associated with the current user.</Abstract>
 			<DeclaredIn>Tealium+Collect.h</DeclaredIn>
@@ -374,51 +419,6 @@ instance and an error should any problems occur.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/fetchVisitorProfileWithCompletion:</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Tealium/addRemoteCommandID:description:targetQueue:responseBlock:</TokenIdentifier>
-			<Abstract type="html">Adds a remote command block that can be triggered by the instance&apos;s TIQ templates.</Abstract>
-			<DeclaredIn>Tealium+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (void)addRemoteCommandID:(NSString *_Nonnull)commandID description:(NSString *_Nullable)description targetQueue:(dispatch_queue_t _Nonnull)queue responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))responseBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>commandID</Name>
-					<Abstract type="html">NSString that identifies this code block</Abstract>
-				</Parameter><Parameter>
-					<Name>description</Name>
-					<Abstract type="html">Optional NSString description of the command block</Abstract>
-				</Parameter><Parameter>
-					<Name>queue</Name>
-					<Abstract type="html">The dispatch queue to run the command on.  Note, any UI
-commands must be done on the main thread.</Abstract>
-				</Parameter><Parameter>
-					<Name>responseBlock</Name>
-					<Abstract type="html">An optional block that returns a TEALRemoteCommandResponse
-object whenever the command is executed.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addRemoteCommandID:description:targetQueue:responseBlock:</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Tealium/removeRemoteCommandID:</TokenIdentifier>
-			<Abstract type="html">Removes a remote command block for the given commandID</Abstract>
-			<DeclaredIn>Tealium+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (void)removeRemoteCommandID:(NSString *_Nonnull)commandID</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>commandID</Name>
-					<Abstract type="html">NSString identifier for the command block to remove.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeRemoteCommandID:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		

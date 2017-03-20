@@ -1052,6 +1052,137 @@ from the persistence store.</p></td>
 						</div>
 						
 
+						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
+						<h2 class="task-title">TagManagement Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:" title="addRemoteCommandID:description:targetQueue:responseBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">&ndash;&nbsp;addRemoteCommandID:description:targetQueue:responseBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a remote command block that can be triggered by the instance&rsquo;s TIQ templates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addRemoteCommandID:(NSString *_Nonnull)<em>commandID</em> description:(NSString *_Nullable)<em>description</em> targetQueue:(dispatch_queue_t _Nonnull)<em>queue</em> responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))<em>responseBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commandID</code></th>
+						<td><p>NSString that identifies this code block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>description</code></th>
+						<td><p>Optional NSString description of the command block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>queue</code></th>
+						<td><p>The dispatch queue to run the command on.  Note, any UI
+commands must be done on the main thread.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>responseBlock</code></th>
+						<td><p>An optional block that returns a <a href="../Classes/TEALRemoteCommandResponse.html">TEALRemoteCommandResponse</a>
+object whenever the command is executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeRemoteCommandID:" title="removeRemoteCommandID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeRemoteCommandID:">&ndash;&nbsp;removeRemoteCommandID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a remote command block for the given commandID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeRemoteCommandID:(NSString *_Nonnull)<em>commandID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commandID</code></th>
+						<td><p>NSString identifier for the command block to remove.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
 						<a title="Collect Methods" name="task_Collect Methods"></a>
 						<h2 class="task-title">Collect Methods</h2>
 
@@ -1301,137 +1432,6 @@ instance and an error should any problems occur.</p></td>
 						</div>
 						
 
-						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
-						<h2 class="task-title">TagManagement Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/addRemoteCommandID:description:targetQueue:responseBlock:" title="addRemoteCommandID:description:targetQueue:responseBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addRemoteCommandID:description:targetQueue:responseBlock:">&ndash;&nbsp;addRemoteCommandID:description:targetQueue:responseBlock:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Adds a remote command block that can be triggered by the instance&rsquo;s TIQ templates.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)addRemoteCommandID:(NSString *_Nonnull)<em>commandID</em> description:(NSString *_Nullable)<em>description</em> targetQueue:(dispatch_queue_t _Nonnull)<em>queue</em> responseBlock:(void ( ^ _Nonnull ) ( TEALRemoteCommandResponse *_Nonnull response ))<em>responseBlock</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>commandID</code></th>
-						<td><p>NSString that identifies this code block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>description</code></th>
-						<td><p>Optional NSString description of the command block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>queue</code></th>
-						<td><p>The dispatch queue to run the command on.  Note, any UI
-commands must be done on the main thread.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>responseBlock</code></th>
-						<td><p>An optional block that returns a <a href="../Classes/TEALRemoteCommandResponse.html">TEALRemoteCommandResponse</a>
-object whenever the command is executed.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/removeRemoteCommandID:" title="removeRemoteCommandID:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/removeRemoteCommandID:">&ndash;&nbsp;removeRemoteCommandID:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Removes a remote command block for the given commandID</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)removeRemoteCommandID:(NSString *_Nonnull)<em>commandID</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>commandID</code></th>
-						<td><p>NSString identifier for the command block to remove.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Tealium+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
 						<a title="WatchKit Methods" name="task_WatchKit Methods"></a>
 						<h2 class="task-title">WatchKit Methods</h2>
 
@@ -1600,7 +1600,7 @@ receiver to launch.
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Tealium. All rights reserved. Updated: 2017-02-22</p>
+						<p class="copyright">Copyright &copy; 2017 Tealium. All rights reserved. Updated: 2017-03-20</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

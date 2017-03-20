@@ -21,14 +21,17 @@
 
 + (void) trackType:(TEALDispatchType)eventType title: (NSString * _Nonnull) title dataSources:(NSDictionary * _Nullable)data;
 
-+ (void) trackEventWithTitle:(NSString *)title dataSources:(NSDictionary *)data;
++ (void) trackEventWithTitle:(NSString * _Nonnull)title dataSources:(NSDictionary * _Nullable)data;
 
-+ (void) trackViewWithTitle:(NSString *)title dataSources:(NSDictionary *)data;
++ (void) trackViewWithTitle:(NSString * _Nonnull)title dataSources:(NSDictionary * _Nullable)data;
 
 + (void) stopTracking;
 
 + (void) enableRemoteCommandBlock;
 
-+ (void)trackEventWithType:(TEALDispatchType)eventType eventTitle:(NSString *)title dataSources: (NSDictionary *)data completion:(TEALDispatchBlock)completiom;
++ (void)trackEventWithType:(TEALDispatchType)eventType
+                eventTitle:(NSString * _Nonnull)title
+               dataSources: (NSDictionary * _Nullable)data
+                completion:(TEALDispatchBlock _Nullable)completion;
 
 @end

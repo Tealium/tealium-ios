@@ -1,3 +1,3 @@
 ## Tealium Support Files
 
-Contains any additional files or frameworks.
+This folder contains any additional files or module frameworks.
