@@ -21,13 +21,13 @@
 
 + (void) trackType:(TEALDispatchType)eventType title: (NSString * _Nonnull) title dataSources:(NSDictionary * _Nullable)data;
 
-+ (void) trackEventWithTitle:(NSString *)title dataSources:(NSDictionary *)data;
++ (void) trackEventWithTitle:(NSString * _Nonnull)title dataSources:(NSDictionary * _Nullable)data;
 
-+ (void) trackViewWithTitle:(NSString *)title dataSources:(NSDictionary *)data;
++ (void) trackViewWithTitle:(NSString *_Nonnull)title dataSources:(NSDictionary *_Nullable)data;
 
 + (void) stopTracking;
 
-+ (void) incrementLifetimeValueForKey:(NSString *)key amount:(int)number;
++ (void) incrementLifetimeValueForKey:(NSString *_Nonnull)key amount:(int)number;
 
 + (void) enableRemoteCommandBlock;
 

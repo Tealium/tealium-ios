@@ -36,11 +36,16 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
+- 5.2.1
+    - Lifecycle module fix: Missing wake detection
+    - Lifecycle module fix: Errant didDetectCrash=true when no actual crash occurred
+
 - 5.2.0
     - Optimizely Integration Module available in the Support/Optimizely folder.
     - TealiumIOSDevicesOnly header fix (lingering underscores removed)
     - @synchronization protection added to the captureTimeDatasources function.
     - Log warning if a call is made to uninitilized Tealium instance (previously silent fail).
+
 - 5.1.3 
     - Nullable attributes added to dispatch manager
     - Improved Tealium Logger handling to support more development side control 
