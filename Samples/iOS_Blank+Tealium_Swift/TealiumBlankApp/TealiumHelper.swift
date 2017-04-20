@@ -28,7 +28,10 @@ class TealiumHelper : NSObject {
     
     class func startTracking() {
         
-        let config = TEALConfiguration.init(account: "tealiummobile", profile: "demo", environment: "dev")
+        let config = TEALConfiguration.init(account: "tealiummobile",
+                                            profile: "demo",
+                                            environment: "dev",
+                                            datasource: "testDatasourceId")
                 
         let tealium = Tealium.newInstance(forKey: tealiumInstanceID, configuration: config)
         

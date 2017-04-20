@@ -39,6 +39,7 @@
 		3E6AE856196B3B490062A3E1 /* SearchPresentOverNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6AE855196B3B490062A3E1 /* SearchPresentOverNavigationBarViewController.swift */; };
 		3E6AE85A196B3BBC0062A3E1 /* SearchBarEmbeddedInNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6AE859196B3BBC0062A3E1 /* SearchBarEmbeddedInNavigationBarViewController.swift */; };
 		7134F0211C4EE2D4006AACEF /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71E3BA5D1C44F3710027FC8D /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		719618491ED4E9B3008DB538 /* UIKitCatalog+Tealium-Swift-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 719618481ED4E9B3008DB538 /* UIKitCatalog+Tealium-Swift-Info.plist */; };
 		71A5A2CB1BFA987500F6E572 /* TealiumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5A2CA1BFA987500F6E572 /* TealiumHelper.swift */; };
 		71E3BA5E1C44F3710027FC8D /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E3BA5D1C44F3710027FC8D /* TealiumIOS.framework */; };
 		B50F41081B1D284700E5147D /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F41071B1D284700E5147D /* StackViewController.swift */; };
@@ -85,7 +86,6 @@
 		2200543B18BC54F5002A6E8B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		221D43D318BF15EF00B9E8C9 /* UIColor+ApplicationSpecific.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ApplicationSpecific.swift"; sourceTree = "<group>"; };
 		228DB9F318BC53F1002BA12A /* UIKitCatalog+Tealium-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKitCatalog+Tealium-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		228DB9F718BC53F1002BA12A /* UIKitCatalog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitCatalog-Info.plist"; sourceTree = "<group>"; };
 		228DB9F918BC53F1002BA12A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		228DBA0718BC53F1002BA12A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E5C084F1974991E00969DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 		3E6AE853196B39350062A3E1 /* SearchShowResultsInSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchShowResultsInSourceViewController.swift; sourceTree = "<group>"; };
 		3E6AE855196B3B490062A3E1 /* SearchPresentOverNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresentOverNavigationBarViewController.swift; sourceTree = "<group>"; };
 		3E6AE859196B3BBC0062A3E1 /* SearchBarEmbeddedInNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarEmbeddedInNavigationBarViewController.swift; sourceTree = "<group>"; };
+		719618481ED4E9B3008DB538 /* UIKitCatalog+Tealium-Swift-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UIKitCatalog+Tealium-Swift-Info.plist"; sourceTree = "<group>"; };
 		71A5A2CA1BFA987500F6E572 /* TealiumHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TealiumHelper.swift; path = UIKitCatalog/TealiumHelper.swift; sourceTree = "<group>"; };
 		71E3BA5D1C44F3710027FC8D /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOS.framework; path = ../../TealiumIOS.framework; sourceTree = "<group>"; };
 		B50F41071B1D284700E5147D /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2200542E18BC54F5002A6E8B /* Localizable.strings */,
-				228DB9F718BC53F1002BA12A /* UIKitCatalog-Info.plist */,
+				719618481ED4E9B3008DB538 /* UIKitCatalog+Tealium-Swift-Info.plist */,
 				228DB9F818BC53F1002BA12A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -311,6 +312,7 @@
 				B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */,
 				B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */,
 				228DB9FA18BC53F1002BA12A /* InfoPlist.strings in Resources */,
+				719618491ED4E9B3008DB538 /* UIKitCatalog+Tealium-Swift-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

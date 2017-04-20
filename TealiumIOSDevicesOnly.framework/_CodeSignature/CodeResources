@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/TEALConfiguration.h</key>
 		<data>
-		yI3OxiuhcekyYY21fMYtawRcs3I=
+		u3B3PuWXgqmnCxRwXRJ5vwGwhdY=
 		</data>
 		<key>Headers/TEALDataSourceConstants.h</key>
 		<data>
-		kLGxESHBLXIubgSX8Eu7XRfC66I=
+		FzHBfXaajgX7O/O1FUg76iPz7Fo=
 		</data>
 		<key>Headers/TEALDispatch.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/Tealium+TagManagement.h</key>
 		<data>
-		f2ILqh5LO9PSVIC1Vip7dBhBKh8=
+		w8XjVq+4pU02rBGJj2j4fdzU10c=
 		</data>
 		<key>Headers/Tealium+WatchKit.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5J27M1dzvQnXSboGYb5GQ42+9pw=
+		+Eehh2mx9UKCUMwqaE4+JfQn/jI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,22 +101,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yI3OxiuhcekyYY21fMYtawRcs3I=
+			u3B3PuWXgqmnCxRwXRJ5vwGwhdY=
 			</data>
 			<key>hash2</key>
 			<data>
-			jbRYCZLe6FGNjQsySX4IY2N+y36EKKt4nsH14docR80=
+			mfBGWQpngRP+ysrx16WLkS2qRHJReD718FqObWWaax8=
 			</data>
 		</dict>
 		<key>Headers/TEALDataSourceConstants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kLGxESHBLXIubgSX8Eu7XRfC66I=
+			FzHBfXaajgX7O/O1FUg76iPz7Fo=
 			</data>
 			<key>hash2</key>
 			<data>
-			6EknnLanK3aeWpkph29AGM7fdDE5lgxJrX10noHHIFs=
+			K/clvFT8w1uvFuGRirZfn4c5u6ueaDSW92r5Ahtvl40=
 			</data>
 		</dict>
 		<key>Headers/TEALDispatch.h</key>
@@ -189,11 +189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f2ILqh5LO9PSVIC1Vip7dBhBKh8=
+			w8XjVq+4pU02rBGJj2j4fdzU10c=
 			</data>
 			<key>hash2</key>
 			<data>
-			M6Jypvf0PqBNndkhME+28fpPa5kLcBSxpQJ4jwWYFXc=
+			100mpwB+eLPWoj7Mvm3OSULt5ejaENRCbGHPDrG8gBc=
 			</data>
 		</dict>
 		<key>Headers/Tealium+WatchKit.h</key>

@@ -35,6 +35,14 @@
  */
 @property (nonatomic, copy) NSString * _Nonnull environmentName;
 
+
+/**
+ *  Tealium UDH Data source Id.
+ *
+ *  @example abc123
+ */
+@property (nonatomic, copy) NSString * _Nullable datasourceId;
+
 /**
  *  Debug log level to use. Default 'silent' (none)
  */
@@ -58,15 +66,30 @@
 /**
  *  Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile's mobile publish settings used
  *
- *  @param accountName     String of TiQ / AudienceStream account name
- *  @param profileName     String of TiQ Profile Name
- *  @param environmentName String
+ *  @param accountName     String of TiQ / AudienceStream account name. Required.
+ *  @param profileName     String of TiQ Profile name. Required.
+ *  @param environmentName String of TiQ Environment name. Typically dev/qa/prod. Required.
  *
  *  @returns Valid configuration instance to pass to the enableWithConfiguration: method.
  */
 + (instancetype _Nonnull) configurationWithAccount:(NSString * _Nonnull)accountName
                                             profile:(NSString * _Nonnull)profileName
                                         environment:(NSString * _Nonnull)environmentName;
+
+/**
+ *  Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile's mobile publish settings used
+ *
+ *  @param accountName     String of TiQ / AudienceStream account name. Required.
+ *  @param profileName     String of TiQ Profile name. Required.
+ *  @param environmentName String of target environment, typically dev, qa, or prod. Required.
+ *  @param datasource      String data source id for UDH. 6 alphanumerics long. Optional.
+ *
+ *  @returns Valid configuration instance to pass to the enableWithConfiguration: method.
+ */
++ (instancetype _Nonnull) configurationWithAccount:(NSString * _Nonnull)accountName
+                                           profile:(NSString * _Nonnull)profileName
+                                       environment:(NSString * _Nonnull)environmentName
+                                        datasource:(NSString * _Nullable)datasourceId;
 
 /**
  *  Checks to see if configuration is populated with the minimum required properties.

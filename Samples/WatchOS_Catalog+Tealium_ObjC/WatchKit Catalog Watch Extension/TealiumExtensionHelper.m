@@ -21,6 +21,7 @@ static TealiumExtensionHelper * _sharedInstance;
     
     if (!_sharedInstance){
         _sharedInstance = [[TealiumExtensionHelper alloc] init];
+        [TealiumExtensionHelper startTracking];
     }
     
     return _sharedInstance;
