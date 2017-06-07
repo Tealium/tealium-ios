@@ -122,6 +122,42 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setDatasourceId:</TokenIdentifier>
+			<Abstract type="html">Tealium UDH Data source Id.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *datasourceId</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/datasourceId</TokenIdentifier>
+			<Abstract type="html">Tealium UDH Data source Id.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *datasourceId</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TEALConfiguration/datasourceId</TokenIdentifier>
+			<Abstract type="html">Tealium UDH Data source Id.</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *datasourceId</Declaration>
+			
+			
+			<Anchor>//api/name/datasourceId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setLogLevel:</TokenIdentifier>
 			<Abstract type="html">Debug log level to use. Default &apos;silent&apos; (none)</Abstract>
 			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
@@ -238,17 +274,43 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 			<Parameters>
 				<Parameter>
 					<Name>accountName</Name>
-					<Abstract type="html">String of TiQ / AudienceStream account name</Abstract>
+					<Abstract type="html">String of TiQ / AudienceStream account name. Required.</Abstract>
 				</Parameter><Parameter>
 					<Name>profileName</Name>
-					<Abstract type="html">String of TiQ Profile Name</Abstract>
+					<Abstract type="html">String of TiQ Profile name. Required.</Abstract>
 				</Parameter><Parameter>
 					<Name>environmentName</Name>
-					<Abstract type="html">String</Abstract>
+					<Abstract type="html">String of TiQ Environment name. Typically dev/qa/prod. Required.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">Valid configuration instance to pass to the enableWithConfiguration: method.</Abstract></ReturnValue>
 			<Anchor>//api/name/configurationWithAccount:profile:environment:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TEALConfiguration/configurationWithAccount:profile:environment:datasource:</TokenIdentifier>
+			<Abstract type="html">Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile&apos;s mobile publish settings used</Abstract>
+			<DeclaredIn>TEALConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype _Nonnull)configurationWithAccount:(NSString *_Nonnull)accountName profile:(NSString *_Nonnull)profileName environment:(NSString *_Nonnull)environmentName datasource:(NSString *_Nullable)datasourceId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accountName</Name>
+					<Abstract type="html">String of TiQ / AudienceStream account name. Required.</Abstract>
+				</Parameter><Parameter>
+					<Name>profileName</Name>
+					<Abstract type="html">String of TiQ Profile name. Required.</Abstract>
+				</Parameter><Parameter>
+					<Name>environmentName</Name>
+					<Abstract type="html">String of target environment, typically dev, qa, or prod. Required.</Abstract>
+				</Parameter><Parameter>
+					<Name>datasource</Name>
+					<Abstract type="html">String data source id for UDH. 6 alphanumerics long. Optional.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Valid configuration instance to pass to the enableWithConfiguration: method.</Abstract></ReturnValue>
+			<Anchor>//api/name/configurationWithAccount:profile:environment:datasource:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -278,64 +340,6 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 			
 			<ReturnValue><Abstract type="html">instanceID NSString identifier</Abstract></ReturnValue>
 			<Anchor>//api/name/instanceID</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/remoteCommandsEnabled</TokenIdentifier>
-			<Abstract type="html">Read-only flag for remote commands triggerablilty status.</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)remoteCommandsEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/remoteCommandsEnabled</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/tagManagementPublishURL</TokenIdentifier>
-			<Abstract type="html">The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (NSString *_Nullable)tagManagementPublishURL</Declaration>
-			
-			<ReturnValue><Abstract type="html">NSString String representation of the target address.</Abstract></ReturnValue>
-			<Anchor>//api/name/tagManagementPublishURL</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideTagManagementPublishURL:</TokenIdentifier>
-			<Abstract type="html">Override the default publishURL source point with another address.</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)publishURL</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>publishURL</Name>
-					<Abstract type="html">The replacement URL to use.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setOverrideTagManagementPublishURL:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setRemoteCommandsEnabled:</TokenIdentifier>
-			<Abstract type="html">Enable or disable the remote command triggerability.</Abstract>
-			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
-			
-			<Declaration>- (void)setRemoteCommandsEnabled:(BOOL)enabled</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">BOOL to switch remoteCommandEnabled to.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setRemoteCommandsEnabled:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -452,6 +456,64 @@ An instance of this is passed to Tealium enableWithConfiguration: to start the C
 			</Parameters>
 			
 			<Anchor>//api/name/setAutotrackingLifecycleEnabled:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/remoteCommandsEnabled</TokenIdentifier>
+			<Abstract type="html">Read-only flag for remote commands triggerablilty status.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)remoteCommandsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/remoteCommandsEnabled</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/tagManagementPublishURL</TokenIdentifier>
+			<Abstract type="html">The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (NSString *_Nullable)tagManagementPublishURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSString String representation of the target address.</Abstract></ReturnValue>
+			<Anchor>//api/name/tagManagementPublishURL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setOverrideTagManagementPublishURL:</TokenIdentifier>
+			<Abstract type="html">Override the default publishURL source point with another address.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)publishURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>publishURL</Name>
+					<Abstract type="html">The replacement URL to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOverrideTagManagementPublishURL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TEALConfiguration/setRemoteCommandsEnabled:</TokenIdentifier>
+			<Abstract type="html">Enable or disable the remote command triggerability.</Abstract>
+			<DeclaredIn>TEALConfiguration+TagManagement.h</DeclaredIn>
+			
+			<Declaration>- (void)setRemoteCommandsEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">BOOL to switch remoteCommandEnabled to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRemoteCommandsEnabled:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

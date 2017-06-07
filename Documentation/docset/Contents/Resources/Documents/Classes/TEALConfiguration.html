@@ -58,6 +58,8 @@
 		
 		<option value="//api/name/accountName">accountName</option>
 		
+		<option value="//api/name/datasourceId">datasourceId</option>
+		
 		<option value="//api/name/environmentName">environmentName</option>
 		
 		<option value="//api/name/logLevel">logLevel</option>
@@ -75,6 +77,8 @@
 	<optgroup label="Class Methods">
 		
 		<option value="//api/name/configurationWithAccount:profile:environment:">+ configurationWithAccount:profile:environment:</option>
+		
+		<option value="//api/name/configurationWithAccount:profile:environment:datasource:">+ configurationWithAccount:profile:environment:datasource:</option>
 		
 		<option value="//api/name/isValidConfiguration:">+ isValidConfiguration:</option>
 		
@@ -294,6 +298,52 @@ An instance of this is passed to <a href="../Classes/Tealium.html">Tealium</a> e
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/datasourceId" title="datasourceId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/datasourceId">&nbsp;&nbsp;datasourceId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="../Classes/Tealium.html">Tealium</a> UDH Data source Id.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *datasourceId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@example abc123</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/logLevel" title="logLevel"></a>
 	<h3 class="method-title"><code><a href="#//api/name/logLevel">&nbsp;&nbsp;logLevel</a></code>
 </h3>
@@ -451,17 +501,90 @@ An instance of this is passed to <a href="../Classes/Tealium.html">Tealium</a> e
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>accountName</code></th>
-						<td><p>String of TiQ / AudienceStream account name</p></td>
+						<td><p>String of TiQ / AudienceStream account name. Required.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>profileName</code></th>
-						<td><p>String of TiQ Profile Name</p></td>
+						<td><p>String of TiQ Profile name. Required.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>environmentName</code></th>
-						<td><p>String</p></td>
+						<td><p>String of TiQ Environment name. Typically dev/qa/prod. Required.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Valid configuration instance to pass to the enableWithConfiguration: method.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configurationWithAccount:profile:environment:datasource:" title="configurationWithAccount:profile:environment:datasource:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configurationWithAccount:profile:environment:datasource:">+&nbsp;configurationWithAccount:profile:environment:datasource:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a default configration instance for a given account / profile / environment combination.  The TiQ information is used to fetch the profile&rsquo;s mobile publish settings used</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype _Nonnull)configurationWithAccount:(NSString *_Nonnull)<em>accountName</em> profile:(NSString *_Nonnull)<em>profileName</em> environment:(NSString *_Nonnull)<em>environmentName</em> datasource:(NSString *_Nullable)<em>datasourceId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accountName</code></th>
+						<td><p>String of TiQ / AudienceStream account name. Required.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>profileName</code></th>
+						<td><p>String of TiQ Profile name. Required.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environmentName</code></th>
+						<td><p>String of target environment, typically dev, qa, or prod. Required.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>datasource</code></th>
+						<td><p>String data source id for UDH. 6 alphanumerics long. Optional.</p></td>
 					</tr>
 				
 				</table>
@@ -591,212 +714,6 @@ An instance of this is passed to <a href="../Classes/Tealium.html">Tealium</a> e
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">TEALConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
-						<h2 class="task-title">TagManagement Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/remoteCommandsEnabled" title="remoteCommandsEnabled"></a>
-	<h3 class="method-title"><code><a href="#//api/name/remoteCommandsEnabled">&ndash;&nbsp;remoteCommandsEnabled</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read-only flag for remote commands triggerablilty status.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)remoteCommandsEnabled</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>@default YES</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/tagManagementPublishURL" title="tagManagementPublishURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/tagManagementPublishURL">&ndash;&nbsp;tagManagementPublishURL</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)tagManagementPublishURL</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>NSString String representation of the target address.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setOverrideTagManagementPublishURL:" title="setOverrideTagManagementPublishURL:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setOverrideTagManagementPublishURL:">&ndash;&nbsp;setOverrideTagManagementPublishURL:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Override the default publishURL source point with another address.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)<em>publishURL</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>publishURL</code></th>
-						<td><p>The replacement URL to use.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setRemoteCommandsEnabled:" title="setRemoteCommandsEnabled:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setRemoteCommandsEnabled:">&ndash;&nbsp;setRemoteCommandsEnabled:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Enable or disable the remote command triggerability.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setRemoteCommandsEnabled:(BOOL)<em>enabled</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>enabled</code></th>
-						<td><p>BOOL to switch remoteCommandEnabled to.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
 			</div>
 			
 			
@@ -1207,6 +1124,212 @@ If set to on request, the library will only requery the profile when asked for u
 </div>
 						</div>
 						
+
+						<a title="TagManagement Methods" name="task_TagManagement Methods"></a>
+						<h2 class="task-title">TagManagement Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/remoteCommandsEnabled" title="remoteCommandsEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteCommandsEnabled">&ndash;&nbsp;remoteCommandsEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Read-only flag for remote commands triggerablilty status.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)remoteCommandsEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@default YES</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tagManagementPublishURL" title="tagManagementPublishURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tagManagementPublishURL">&ndash;&nbsp;tagManagementPublishURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The url source point for retrieving the UTAG.js embedded mobile.html produced by the TIQ system</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)tagManagementPublishURL</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSString String representation of the target address.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setOverrideTagManagementPublishURL:" title="setOverrideTagManagementPublishURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setOverrideTagManagementPublishURL:">&ndash;&nbsp;setOverrideTagManagementPublishURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Override the default publishURL source point with another address.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setOverrideTagManagementPublishURL:(NSString *_Nonnull)<em>publishURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publishURL</code></th>
+						<td><p>The replacement URL to use.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRemoteCommandsEnabled:" title="setRemoteCommandsEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRemoteCommandsEnabled:">&ndash;&nbsp;setRemoteCommandsEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable the remote command triggerability.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRemoteCommandsEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>BOOL to switch remoteCommandEnabled to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TEALConfiguration+TagManagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1219,7 +1342,7 @@ If set to on request, the library will only requery the profile when asked for u
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Tealium. All rights reserved. Updated: 2017-03-27</p>
+						<p class="copyright">Copyright &copy; 2017 Tealium. All rights reserved. Updated: 2017-05-17</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

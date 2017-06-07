@@ -27,7 +27,8 @@ static TealiumHelper * _sharedInstance;
     
     TEALConfiguration *configuration = [TEALConfiguration configurationWithAccount:@"tealiummobile"
                                                                            profile:@"demo"
-                                                                       environment:@"dev"];
+                                                                       environment:@"dev"
+                                                                        datasource:@"testDatasourceId"];
     
     configuration.collectPollingFrequency = TEALVisitorProfilePollingFrequencyOnRequest;
         

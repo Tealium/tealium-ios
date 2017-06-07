@@ -36,6 +36,12 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
+- 5.3.0
+    - Configuration updated with new initializer that takes a 'datasource' arg - 6 digit alphanumeric UDH Datasource Id
+    - Removed variable:
+            - page_type
+    - Additional WebView dealloc protections added for Tag Managment service
+
 - 5.2.1
     - Lifecycle module fix: Missing wake detection
     - Lifecycle module fix: Errant didDetectCrash=true when no actual crash occurred
@@ -57,7 +63,7 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 - 5.1.1 Bug Fix
     - Corrected issue related to call_type datasource
 
-- 5.1
+- 5.1.0
     - New track with type API added and optional completion
     - Swift sample apps updated to support Swift 3
     - Removed underscores from binaries

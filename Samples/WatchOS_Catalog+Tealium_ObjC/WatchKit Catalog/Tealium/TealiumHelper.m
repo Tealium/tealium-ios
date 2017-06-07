@@ -39,7 +39,8 @@ static TealiumHelper * _sharedInstance;
     // Configure Tealium
     TEALConfiguration *configuration = [TEALConfiguration configurationWithAccount:@"tealiummobile"
                                                                            profile:@"demo"
-                                                                       environment:@"dev"];
+                                                                       environment:@"dev"
+                                                                        datasource:@"testDatasourceId"];
     
     // Create Tealium Instance
     Tealium *tealiumInstance1 = [Tealium newInstanceForKey:TEALIUM_INSTANCE_ID configuration:configuration];
