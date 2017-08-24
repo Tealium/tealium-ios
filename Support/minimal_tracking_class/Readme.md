@@ -6,7 +6,7 @@
 - [Features](#features)
 - [Public API](#public-api)
 - [Usage](#usage)
-- [Known Issues/Warnings](#known-issues-warnings)
+- [Known Issues/Warnings](#known-issueswarnings)
 - [Release Notes](#release-notes)
 
 ## Purpose
