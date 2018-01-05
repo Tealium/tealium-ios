@@ -36,6 +36,11 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
+- 5.3.1
+    - Library bug fixes
+       - NSDictionary was mutated while being enumerated
+       - Memory leak
+       - UIKit call performed on non-UIKit thread (this change may affect the behavior of screen_orientation)
 - 5.3.0
     - Configuration updated with new initializer that takes a 'datasource' arg - 6 digit alphanumeric UDH Datasource Id
     - Removed variable:
