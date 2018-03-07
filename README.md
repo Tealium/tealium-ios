@@ -36,6 +36,9 @@ Tealium DataAccess™ is a suite of rich data services built from the ground up 
 
 ## Change Log
 
+- 5.3.2
+    -  Bug fix 
+       - Corrected sending task to an invalid NSURLSession 
 - 5.3.1
     - Library bug fixes
        - NSDictionary was mutated while being enumerated
