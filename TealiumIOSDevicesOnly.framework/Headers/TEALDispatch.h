@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-extern NSString * __nonnull const TEALDispatchKey_Dispatch_Type ;
-extern NSString * __nonnull const TEALDispatchKey_Dispatch_Service ;
-extern NSString * __nonnull const TEALDispatchKey_DataSources_Payload;
-extern NSString * __nonnull const TEALDispatchKey_Time_Stamp;
+extern NSString * _Nonnull const TEALDispatchKey_Dispatch_Type ;
+extern NSString * _Nonnull const TEALDispatchKey_Dispatch_Service ;
+extern NSString * _Nonnull const TEALDispatchKey_DataSources_Payload;
+extern NSString * _Nonnull const TEALDispatchKey_Time_Stamp;
 
 
 /**
@@ -111,17 +111,33 @@ typedef void (^TEALDispatchBlock)(TEALDispatchStatus status, TEALDispatch * _Non
  *
  *  @return NSString representation of the given dispatch status type.
  */
-+ (NSString * _Nonnull) stringFromDispatchStatus:(TEALDispatchStatus)dispatchStatus;
++ (NSString * _Nonnull)stringFromDispatchStatus:(TEALDispatchStatus)dispatchStatus;
 
 /**
  * Converts a TEALDispatch to a NSDictionary 
  */
 
-- (NSDictionary * _Nonnull) asDictionary;
+- (NSDictionary * _Nonnull)asDictionary;
 
 /**
  * Converts a NSDictionary to a TEALDispatch
  */
 
 + (TEALDispatch * _Nonnull)fromDictionary:(NSDictionary* _Nullable)dictionary;
+
+/**
+ Adds dataSources to the payload.
+ 
+ @param dataSources NSDictionary to add to the dispatch.
+ */
+- (void)addDataSources:(NSDictionary *)dataSources;
+
+/**
+ Creates a TEALDispatch given a payload.
+ 
+ @param payload NSDictionary: payload
+ 
+ @returns TEALDispatch: the TEALDispatch.
+ */
++ (TEALDispatch * _Nonnull)dispatchForType:(TEALDispatchType)dispatchType withPayload:(NSDictionary * _Nonnull)payload;
 @end

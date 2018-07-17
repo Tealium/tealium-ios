@@ -13,26 +13,26 @@
 
 @interface TEALLogger : NSObject
 
-+ (TEALLogLevel) logLevelFromString:(NSString* _Nonnull)string;
++ (TEALLogLevel)logLevelFromString:(NSString *_Nonnull)string;
 
-+ (NSString * _Nonnull) stringFromLogLevel:(TEALLogLevel) logLevel;
++ (NSString *_Nonnull)stringFromLogLevel:(TEALLogLevel)logLevel;
 
-- (instancetype _Nonnull) initWithInstanceID:(NSString * _Nonnull)instanceID;
+- (instancetype _Nonnull)initWithInstanceID:(NSString *_Nonnull)instanceID;
 
-- (void) enable;
+- (void)enable;
 
-- (void) disable;
+- (void)disable;
 
-- (BOOL) isEnabled;
+- (BOOL)isEnabled;
 
-- (BOOL) updateLogLevel:(TEALLogLevel)logLevel;
+- (BOOL)updateLogLevel:(TEALLogLevel)logLevel;
 
-- (void) logProd:(NSString * _Nonnull) format, ...;
+- (void)logProd:(NSString *_Nonnull)format, ...;
 
-- (void) logQA:(NSString * _Nonnull) format, ...;
+- (void)logQA:(NSString *_Nonnull)format, ...;
 
-- (void) logDev:(NSString * _Nonnull) format, ...;
+- (void)logDev:(NSString *_Nonnull)format, ...;
 
-- (TEALLogLevel) currentLogLevel;
+- (TEALLogLevel)currentLogLevel;
 
 @end
