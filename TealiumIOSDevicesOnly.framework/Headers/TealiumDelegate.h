@@ -29,7 +29,7 @@
  *
  *  @return Boolean indicating whether dispatch should be sent or destroyed
  */
-- (BOOL) tealium:(Tealium *)tealium shouldDropDispatch:(TEALDispatch *)dispatch;
+- (BOOL)tealium:(Tealium *_Nonnull)tealium shouldDropDispatch:(TEALDispatch *_Nonnull)dispatch;
 
 /**
  *  Dispatches passing the tealium:shouldDropDispatch: delegate method can be
@@ -44,7 +44,7 @@
  *
  *  @bool Boolean indicating whether dispatch should be queued at this time.
  */
-- (BOOL) tealium:(Tealium *)tealium shouldQueueDispatch:(TEALDispatch *)dispatch;
+- (BOOL)tealium:(Tealium *_Nonnull)tealium shouldQueueDispatch:(TEALDispatch *_Nonnull)dispatch;
 
 /**
  *  Provides pointer to TEALDispatch that was just sent by a dispatch service.
@@ -55,7 +55,7 @@
  *          persist.
  *
  */
-- (void) tealium:(Tealium *)tealium didSendDispatch:(TEALDispatch *)dispatch;
+- (void)tealium:(Tealium *_Nonnull)tealium didSendDispatch:(TEALDispatch *_Nonnull)dispatch;
 
 /**
  *  Provides pointer to TEALDispatch that was just saved for later delivery.
@@ -66,14 +66,14 @@
  *          persist.
  *
  */
-- (void) tealium:(Tealium *)tealium didQueueDispatch:(TEALDispatch *)dispatch;
+- (void)tealium:(Tealium *_Nonnull)tealium didQueueDispatch:(TEALDispatch *_Nonnull)dispatch;
 
 /**
  *  Notification that new remote publish settings have been received and processed.
  *
  *  @param tealium The Tealium instance with new publish settings.
  */
-- (void) tealiumInstanceDidUpdatePublishSettings:(Tealium *)tealium;
+- (void)tealiumInstanceDidUpdatePublishSettings:(Tealium *_Nonnull)tealium;
 
 /**
  *  If Tag Management dispatch service is enabled, passes pointer to it's UIWebView
@@ -83,6 +83,6 @@
  *  @param webView The WebView instance used by any Tag Management service - nil 
  *          if none initialized.
  */
-- (void) tealium:(Tealium *)tealium webViewIsReady:(id)webView;
+- (void)tealium:(Tealium *_Nonnull)tealium webViewIsReady:(id _Nonnull)webView;
 
 @end

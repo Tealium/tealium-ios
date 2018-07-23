@@ -9,8 +9,16 @@
 #import <UIKit/UIKit.h>
 
 #import "TEALConfiguration.h"
+#import "TEALConsentConstants.h"
+#import "TEALConsentManagerDelegate.h"
 #import "TEALDispatch.h"
+#import "TEALSettingsFactory.h"
 #import "TealiumDelegate.h"
+
+@class TEALLogger;
+@class TEALConsentConfiguration;
+@class TEALConsentManager;
+@class TEALDispatchManager;
 
 /**
  *  Tealium is the main class for the Tealium Library.
@@ -23,6 +31,11 @@
  */
 @interface Tealium : NSObject
 
+@property (nonatomic, strong) TEALLogger *_Nonnull logger;
+@property (nonatomic, strong) id <TEALSettingsFactoryProtocol> _Nonnull settingsFactory;
+@property (nonatomic, strong, readonly) TEALDispatchManager * _Nonnull dispatchManager;
+@property (nonatomic, strong, readonly) TEALConsentManager * _Nonnull consentManager;
+
 #pragma mark - Core Methods
 /** @name Core Methods */
 
@@ -34,9 +47,8 @@
  *
  *  @param configuration TEALConfiguration instance with valid Account/Profile/Enviroment properties.
  */
-+ (_Nonnull instancetype) newInstanceForKey:(NSString * _Nonnull)key
-                              configuration:(TEALConfiguration * _Nonnull)configuration;
-
++ (_Nonnull instancetype)newInstanceForKey:(NSString *_Nonnull)key
+                             configuration:(TEALConfiguration *_Nonnull)configuration;
 
 /**
  *  Returns an instance of the library for the given key, or NIL if such an
@@ -44,21 +56,21 @@
  *
  *  @param key NSString identifier for the library instance.
  */
-+ (_Nullable instancetype) instanceForKey:(NSString * _Nonnull)key;
++ (_Nullable instancetype)instanceForKey:(NSString *_Nonnull)key;
 
 /**
  *  Removes and nils out an instance of the library with the given key.
  *
  *  @param key NSString identifier for the library instance to remove.
  */
-+ (void) destroyInstanceForKey:(NSString * _Nonnull)key;
++ (void)destroyInstanceForKey:(NSString *_Nonnull)key;
 
 /**
  *  Optional delegate primarily for monitoring or manipulating dispatch data.
  *
  *  @return The current delegate of the library instance
  */
-- (id<TealiumDelegate> _Nullable) delegate;
+- (id <TealiumDelegate> _Nullable)delegate;
 
 /**
  *  Set the library delegate for overriding and or monitoring dispatch processes.
@@ -66,7 +78,21 @@
  *  @param delegate Any object that implements one or more optional Tealium Delegate
  *  protocols.
  */
-- (void) setDelegate:(id<TealiumDelegate> _Nullable)delegate;
+- (void)setDelegate:(id <TealiumDelegate> _Nullable)delegate;
+
+/**
+ Optional delegate for consent manager.
+ 
+ - returns: The current delegate of the library instance.
+ */
+- (id <TEALConsentManagerDelegate> _Nullable)consentManagerDelegate;
+
+/**
+ Set the library delegate for interaction with the consent manager.
+ 
+ - param <TEALConsentManagerDelegate>: Any object that conforms to the TEALConsentManaerDelegate protocol.
+ */
+- (void)setConsentManagerDelegate:(id <TEALConsentManagerDelegate> _Nullable)delegate;
 
 /**
  *  Sends an event to Collect.  Event are packaged with any custom key/value
@@ -77,8 +103,8 @@
  *  to be included in the event dispatch. If a value is an array, be sure to use
  *  an array of strings.
  */
-- (void) trackEventWithTitle:(NSString * _Nonnull)title
-                 dataSources:(NSDictionary * _Nullable)customDataSources;
+- (void)trackEventWithTitle:(NSString *_Nonnull)title
+                dataSources:(NSDictionary *_Nullable)customDataSources;
 
 /**
  *  Sends a view to Collect.  Views are packaged with any custom key/value data
@@ -89,26 +115,23 @@
  *  to be included in the event dispatch. If a value is an array, be sure to use
  *  an array of strings.
  */
-
-- (void) trackViewWithTitle:(NSString * _Nonnull)title
-                dataSources:(NSDictionary * _Nullable)customDataSources;
+- (void)trackViewWithTitle:(NSString *_Nonnull)title
+               dataSources:(NSDictionary *_Nullable)customDataSources;
 
 /**
  *  Sends an event to Collect. Events are packaged with any custom key/value data
  *  sources passed in along with the default datasources provided by the library.
  *
- *  @param Eventtype enum: (TEALDispatchTypeActivity, TEALDispatchTypeConversion,TEALDispatchTypeDerived, TEALDispatchTypeInteraction, TEALDispatchTypeView)
- *  @param Title String title of view
- *  @param CustomDataSources Dictionary of custom datasources (key/value pairs)
+ *  @param eventType enum: (TEALDispatchTypeActivity, TEALDispatchTypeConversion,TEALDispatchTypeDerived, TEALDispatchTypeInteraction, TEALDispatchTypeView)
+ *  @param title String title of view
+ *  @param clientDataSources Dictionary of custom datasources (key/value pairs)
  *  to be included in the event dispatch. If a value is an array, be sure to use
  *  an array of strings.
- *  @param completion: Optional completion handler returns dispatch status
+ *  @param completion TEALDispatchBlock: Optional completion handler returns dispatch status
  */
-
-
 - (void)trackType:(TEALDispatchType)eventType
-            title:(NSString * _Nonnull)title
-      dataSources:(NSDictionary *_Nonnull) clientDataSources
+            title:(NSString *_Nonnull)title
+      dataSources:(NSDictionary *_Nonnull)clientDataSources
        completion:(TEALDispatchBlock _Nullable)completion;
 
 /**
@@ -117,7 +140,7 @@
  *
  *  @return NSDictionary of Tealium Data Source keys and values at time of call.
  */
-- (NSDictionary * _Nonnull) volatileDataSourcesCopy;
+- (NSDictionary *_Nonnull)volatileDataSourcesCopy;
 
 /**
  *  Adds additional data to the temporary data sources dictionary. This command
@@ -129,14 +152,14 @@
  *  an array of strings.
  *
  */
-- (void) addVolatileDataSources:(NSDictionary * _Nonnull)additionalDataSources;
+- (void)addVolatileDataSources:(NSDictionary *_Nonnull)additionalDataSources;
 
 /**
  *  Removes key-value pairs from the library instance's volatile memory
  *
  *  @param dataSourceKeys An NSArray of string keys to remove
  */
-- (void) removeVolatileDataSourcesForKeys:(NSArray * _Nonnull)dataSourceKeys;
+- (void)removeVolatileDataSourcesForKeys:(NSArray *_Nonnull)dataSourceKeys;
 
 /**
  *  Copy of all long term Tealium data source data written to and read from disk,
@@ -144,7 +167,7 @@
  *
  *  @return NSDictionary of Tealium Data Source keys and values at time of call.
  */
-- (NSDictionary * _Nonnull) persistentDataSourcesCopy;
+- (NSDictionary *_Nonnull)persistentDataSourcesCopy;
 
 /**
  *  Adds key-value info into the library instance's persistent data store.  Use
@@ -153,7 +176,7 @@
  *  @param additionalDataSources An NSDictionary of string keys and values. If
  *  a value is an array, be sure to use an array of strings.
  */
-- (void) addPersistentDataSources:(NSDictionary * _Nonnull)additionalDataSources;
+- (void)addPersistentDataSources:(NSDictionary *_Nonnull)additionalDataSources;
 
 /**
  *  Removes all keys from array parameter.
@@ -161,21 +184,18 @@
  *  @param dataSourceKeys An NSArray of strings of the target keys to remove
  *  from the persistence store.
  */
-- (void) removePersistentDataSourcesForKeys:(NSArray * _Nonnull)dataSourceKeys;
+- (void)removePersistentDataSourcesForKeys:(NSArray *_Nonnull)dataSourceKeys;
 
 /**
  *  Joins an AudienceStream trace if either the Collect or TagManagement service are enabled.
  *
  *  @param token String value should match the code provided via the AudienceStream web UI.
  */
-- (void) joinTraceWithToken:(NSString * _Nonnull)token;
+- (void)joinTraceWithToken:(NSString *_Nonnull)token;
 
 /**
  *  Stops sending trace data for the provided token in the joinTraceWithToken: method.
- *
- *  @param completion An optional completion block.
  */
-- (void) leaveTrace;
-
+- (void)leaveTrace;
 
 @end

@@ -17,21 +17,21 @@
  *
  *  @returns NSURL An optional NSURL object.
  */
-- (NSURL * _Nullable) profileURL;
+- (NSURL *_Nullable)profileURL;
 
 /**
  *  Where Collect will retrieve profile definitions.
  *
  *  @returns NSURL An optional NSURL object.
  */
-- (NSURL * _Nullable) profileDefinitionURL;
+- (NSURL *_Nullable)profileDefinitionURL;
 
 /**
  *  Copy of the Unique visitor ID per Account / Device combination.
  *
  *  @return String value of the visitorID for the Account the library was enabled with.
  */
-- (NSString * _Nullable) visitorIDCopy;
+- (NSString *_Nullable)visitorIDCopy;
 
 
 /**
@@ -42,7 +42,7 @@
  *  @return Returns valid TEALVisitorProfile object.  Its properties might be 
  *  nil of nothing is loaded into them yet.
  */
-- (TEALVisitorProfile * _Nullable) cachedVisitorProfileCopy;
+- (TEALVisitorProfile *_Nullable)cachedVisitorProfileCopy;
 
 
 /**
@@ -51,6 +51,6 @@
  *  @param completion Completion block with retrieved TEALVisitorProfile 
  *  instance and an error should any problems occur.
  */
-- (void) fetchVisitorProfileWithCompletion:(void (^ _Nullable)(TEALVisitorProfile * _Nullable profile, NSError * _Nullable error))completion;
+- (void)fetchVisitorProfileWithCompletion:(void (^ _Nullable)(TEALVisitorProfile *_Nullable profile, NSError *_Nullable error))completion;
 
 @end

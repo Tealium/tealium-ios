@@ -36,43 +36,43 @@
  *
  *  @param autotracking Boolean indicating whether to use autotracking or not. Default is NO.
  */
-- (void) setLifecycleAutotrackingIsEnabled:(BOOL)autotracking __attribute__((deprecated("Use the TEALConfiguration setLifecycleAutotrackingEnabled option instead")));
-    
+- (void)setLifecycleAutotrackingIsEnabled:(BOOL)autotracking __attribute__((deprecated("Use the TEALConfiguration setLifecycleAutotrackingEnabled option instead")));
+
 /**
  *  Use to manually record an app launch event.
  */
-- (void) launch;
+- (void)launch;
 
 /**
  *  Use to record an app wake event.
  */
-- (void) wake;
+- (void)wake;
 
 /**
  *  Use to record an app sleep event.
  */
-- (void) sleep;
+- (void)sleep;
 
 /**
  *  Use to manually record an app launch event.
  *
  *  @param dataSources NSDictionary of optional, additional data source key and values.
  */
-- (void) launchWithDataSources:(NSDictionary * _Nullable)dataSources;
+- (void)launchWithDataSources:(NSDictionary *_Nullable)dataSources;
 
 /**
  *  Use to manually record an app wake event.
  *
  *  @param dataSources NSDictionary of optional, additional data source key and values.
  */
-- (void) wakeWithDataSources:(NSDictionary * _Nullable)dataSources;
+- (void)wakeWithDataSources:(NSDictionary *_Nullable)dataSources;
 
 /**
  *  Use to manually record an app sleep event.
  *
  *  @param dataSources NSDictionary of optional, additional data source key and values.
  */
-- (void) sleepWithDataSources:(NSDictionary * _Nullable)dataSources;
+- (void)sleepWithDataSources:(NSDictionary *_Nullable)dataSources;
 
 /**
  *  Convenience method for updating a numeric persistent value using Tealium's
@@ -81,8 +81,8 @@
  *  @param keys NSArray of NSString key identifiers to increment
  *  @param number Integer number to increment value for
  */
-- (void) incrementLifetimeValuesForKeys:(NSArray * _Nonnull)keys
-                                 amount:(int)number;
+- (void)incrementLifetimeValuesForKeys:(NSArray *_Nonnull)keys
+                                amount:(int)number;
 
 
 /**
@@ -95,7 +95,7 @@
  *
  *  @return NSDictionary with all Lifecycle data source keys and values.
  */
-- (NSDictionary * _Nonnull) currentLifecycleDataSources:(NSDate * _Nullable)overrideDate;
+- (NSDictionary *_Nonnull)currentLifecycleDataSources:(NSDate *_Nullable)overrideDate;
 
 
 @end

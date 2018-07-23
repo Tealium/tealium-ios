@@ -11,15 +11,15 @@
 /**
  *  Unsigned integer value that controls the frequency at which the user's visitor profile is requested
  */
-typedef NS_ENUM(NSUInteger, TEALVisitorProfilePollingFrequency){
+typedef NS_ENUM(NSUInteger, TEALVisitorProfilePollingFrequency) {
     /**
      *  On request only, will only poll with the fetchVisitorProfileWithCompletion: method
      */
-    TEALVisitorProfilePollingFrequencyOnRequest = 0,
+            TEALVisitorProfilePollingFrequencyOnRequest = 0,
     /**
      *  After each track event (trackEventWithTitle:dataSources: or trackViewWithTitle:dataSources:) an updated visitor profile will be requested.
      */
-    TEALVisitorProfilePollingFrequencyAfterEveryEvent
+            TEALVisitorProfilePollingFrequencyAfterEveryEvent
 };
 
 
@@ -28,31 +28,19 @@ typedef NS_ENUM(NSUInteger, TEALVisitorProfilePollingFrequency){
 /**
  *  If assigned, will replace the destination endpoint for Collect dispatch calls.
  */
-- (NSString * _Nullable) overrideCollectDispatchURL;
-
-/**
- *  If assigned, will replace the destination endpoint for S2S Legacy dispatch calls.
- */
-- (NSString * _Nullable) overrideS2SLegacyDispatchURL;
+- (NSString *_Nullable)overrideCollectDispatchURL;
 
 /**
  *  Frequency at which visitor profile should be polled.
  */
-- (TEALVisitorProfilePollingFrequency) collectPollingFrequency;
+- (TEALVisitorProfilePollingFrequency)collectPollingFrequency;
 
 /**
  *  Set the destination endpoint for Collect dispatch calls.
  *
  *  @param overrideURL The NSString representation of the target URL address to use.
  */
-- (void) setOverrideCollectDispatchURL:(NSString * _Nonnull) overrideURL;
-
-/**
- *  Set the destination endpoint for Legacy S2S dispatch calls.
- *
- *  @param overrideURL The NSString representation of the target URL address to use.
- */
-- (void) setOverrideS2SLegacyDispatchURL:(NSString * _Nonnull)overrideURL;
+- (void)setOverrideCollectDispatchURL:(NSString *_Nonnull)overrideURL;
 
 /**
  *  Set the visitor profile polling frequency mode.
@@ -63,6 +51,6 @@ typedef NS_ENUM(NSUInteger, TEALVisitorProfilePollingFrequency){
  *  @default TEALVisitorProfilePollingFrequencyAfterEveryEvent
  *  @see TEALVisitorProfilePollingFrequency
  */
-- (void) setCollectPollingFrequency:(TEALVisitorProfilePollingFrequency)frequency;
+- (void)setCollectPollingFrequency:(TEALVisitorProfilePollingFrequency)frequency;
 
 @end

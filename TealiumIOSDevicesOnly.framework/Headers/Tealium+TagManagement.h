@@ -22,16 +22,16 @@
  *  @param responseBlock An optional block that returns a TEALRemoteCommandResponse 
  *  object whenever the command is executed.
  */
-- (void) addRemoteCommandID:(NSString* _Nonnull)commandID
-                description:(NSString* _Nullable)description
-                targetQueue:(dispatch_queue_t _Nonnull)queue
-              responseBlock:(void (^ _Nonnull)(TEALRemoteCommandResponse * _Nonnull response))responseBlock;
+- (void)addRemoteCommandID:(NSString *_Nonnull)commandID
+               description:(NSString *_Nullable)description
+               targetQueue:(dispatch_queue_t _Nonnull)queue
+             responseBlock:(void (^ _Nonnull)(TEALRemoteCommandResponse *_Nonnull response))responseBlock;
 
 /**
  *  Removes a remote command block for the given commandID
  *
  *  @param commandID NSString identifier for the command block to remove.
  */
-- (void) removeRemoteCommandID:(NSString * _Nonnull)commandID;
+- (void)removeRemoteCommandID:(NSString *_Nonnull)commandID;
 
 @end
