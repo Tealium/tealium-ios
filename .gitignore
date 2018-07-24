@@ -146,3 +146,7 @@ xcuserdata
 
 
 # End of https://www.gitignore.io/api/xcode,swift,swiftpm,carthage,cocoapods,objective-c,swiftpackagemanager
+
+### Demo Apps
+Samples/ConsentManagerDemo_ObjC/Pods
+Samples/ConsentManagerDemo_Swift/Pods
