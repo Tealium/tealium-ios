@@ -1,5 +1,8 @@
 # Change Log
 
+- 5.4.1
+  - Bug fix
+    - Corrected Lifecycle crash on start
 - 5.4.0
   - Consent Manager release
   - Library bug fix
