@@ -39,8 +39,7 @@
  *  @param session WCSession responding.
  *  @param message Message from Watch Extension.
  */
-- (void)  session:(WCSession *)session
-didReceiveMessage:(NSDictionary<NSString *, id> *)message;
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message;
 
 /**
  *  Called on the delegate of the receiver when the sender sends a message that
@@ -51,8 +50,6 @@ didReceiveMessage:(NSDictionary<NSString *, id> *)message;
  *  @param message Message from Watch Extension.
  *  @param replyHandler Block responding.
  */
-- (void)  session:(WCSession *)session
-didReceiveMessage:(NSDictionary<NSString *, id> *)message
-     replyHandler:(void (^)(NSDictionary<NSString *, id> *replyMessage))replyHandler;
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message replyHandler:(void (^)(NSDictionary<NSString *, id> *_Nonnull replyMessage))replyHandler;
 
 @end

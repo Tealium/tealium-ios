@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString * const TEALWKCommandResponseKey;
-extern NSString * const TEALWKCommandTrackKey;
-extern NSString * const TEALWKCommandTrackArgumentTypeKey;
-extern NSString * const TEALWKCommandTrackArgumentInstanceIDKey;
-extern NSString * const TEALWKCommandTrackArgumentTitleKey;
-extern NSString * const TEALWKCommandTrackArgumentCustomDataKey;
+extern NSString *const TEALWKCommandResponseKey;
+extern NSString *const TEALWKCommandTrackKey;
+extern NSString *const TEALWKCommandTrackArgumentTypeKey;
+extern NSString *const TEALWKCommandTrackArgumentInstanceIDKey;
+extern NSString *const TEALWKCommandTrackArgumentTitleKey;
+extern NSString *const TEALWKCommandTrackArgumentCustomDataKey;
 
-extern NSString * const TEALWKCommandTrackValueEvent;
-extern NSString * const TEALWKCommandTrackValueView;
+extern NSString *const TEALWKCommandTrackValueEvent;
+extern NSString *const TEALWKCommandTrackValueView;
 
 /**
  *  Constants used between the Tealium library and TEALWKExtension classes
