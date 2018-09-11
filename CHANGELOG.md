@@ -1,5 +1,10 @@
 # Change Log
 
+- 5.4.3
+  - Tealium Collect now uses [Tealium Collect HTTP API (https://community.tealiumiq.com/t5/Universal-Data-Hub/Tealium-Collect-HTTP-API/ta-p/16893)
+  - Configurable through TEALConfiguration object
+- 5.4.2
+  - Updated tealium_session_id to persist for a default value of thirty minutes. This value can be overridden in the TEALSettings object.
 - 5.4.1
   - Bug fix
     - Corrected Lifecycle crash on start
