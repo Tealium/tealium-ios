@@ -1,5 +1,9 @@
 # Change Log
 
+- 5.4.3
+  - Support for [HTTP Collect API](https://community.tealiumiq.com/t5/Universal-Data-Hub/Tealium-Collect-HTTP-API/ta-p/16893). This is the default value but is configurable.
+- 5.4.2
+  - Variable tealium_session_id updated to persist for 30 minutes. This value is configurable. 
 - 5.4.1
   - Bug fix
     - Corrected Lifecycle crash on start
