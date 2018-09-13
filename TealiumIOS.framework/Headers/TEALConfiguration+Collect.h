@@ -1,6 +1,6 @@
 //
 //  TEALConfiguration+Collect.h
-//  UIKitCatalog
+//  FrameworkBuilder
 //
 //  Created by Jason Koo on 1/9/16.
 //
@@ -21,7 +21,6 @@ typedef NS_ENUM(NSUInteger, TEALVisitorProfilePollingFrequency) {
      */
             TEALVisitorProfilePollingFrequencyAfterEveryEvent
 };
-
 
 @interface TEALConfiguration (Collect)
 

@@ -11,6 +11,14 @@
 #import "TEALConsentConstants.h"
 
 /**
+ Defines the endpoint of where to send data for the CollectDispatchService.
+ */
+typedef NS_ENUM(NSInteger, TEALCollectURL) {
+    Vdata,
+    Event
+};
+
+/**
  *  Configuration Class for the Tealium Mobile Library
  *  An instance of this is passed to Tealium enableWithConfiguration: to start the Collect Library
  */
@@ -72,6 +80,11 @@
  Optionally set initial userConsentStatus.
  */
 @property (nonatomic, assign) TEALConsentStatus userConsentStatus;
+
+/**
+ Set the endpoint for the CollectDispatchService. By default this is set to the /event endpoint and is a POST request.
+ */
+@property (nonatomic, assign) TEALCollectURL collectURL;
 
 #pragma mark - Core Methods
 /** @name Core Methods */
