@@ -1,5 +1,10 @@
 # Change Log
 
+- 5.4.4
+  - Rebuild of WatchOS platform to support arm64_32 architecture
+  - Refactoring of TEALConsentStatus enum to prevent clashes
+  - Bug Fix
+    - edge case where some duplicate events would occur on launch
 - 5.4.3
   - Support for [HTTP Collect API](https://community.tealiumiq.com/t5/Universal-Data-Hub/Tealium-Collect-HTTP-API/ta-p/16893). This is the default value but is configurable.
 - 5.4.2
