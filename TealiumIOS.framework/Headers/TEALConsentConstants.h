@@ -46,8 +46,8 @@ extern NSString *const TEALConsentCategoryMisc;
  Disabled - The developer does not use Privacy Manager and the SDK sends track calls like normal.
  */
 typedef NS_ENUM(NSInteger, TEALConsentStatus) {
-    Unknown,
-    Consented,
-    NotConsented,
-    Disabled
+    TEALConsentStatusUnknown,
+    TEALConsentStatusConsented,
+    TEALConsentStatusNotConsented,
+    TEALConsentStatusDisabled
 };
