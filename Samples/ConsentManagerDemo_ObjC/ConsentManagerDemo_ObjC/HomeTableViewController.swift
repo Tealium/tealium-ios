@@ -136,10 +136,10 @@ class HomeTableViewController: UITableViewController {
                 "categoriesLabel": categoriesLabel
             ]
 
-            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-[consentLabel]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: metrics, views: views)
-            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-[consentLabel]", options: NSLayoutFormatOptions(rawValue: 0), metrics: metrics, views: views)
-            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-[categoriesLabel]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: metrics, views: views)
-            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "V:[consentLabel]-[categoriesLabel]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: metrics, views: views)
+            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-[consentLabel]-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: metrics, views: views)
+            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-[consentLabel]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: metrics, views: views)
+            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-[categoriesLabel]-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: metrics, views: views)
+            allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "V:[consentLabel]-[categoriesLabel]-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: metrics, views: views)
             
             NSLayoutConstraint.activate(allConstraints)
             
