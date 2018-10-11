@@ -47,7 +47,7 @@ class PreferencesListViewController: UITableViewController {
                 return p.categoryName
         }
         if filteredCategoryNames.count > 0 {
-            consentManager.setUserConsentStatus(TEALConsentStatus.Consented, withUserConsentCategories: filteredCategoryNames)
+            consentManager.setUserConsentStatus(TEALConsentStatus.consented, withUserConsentCategories: filteredCategoryNames)
         }
     }
     
@@ -132,9 +132,9 @@ class PreferencesListViewController: UITableViewController {
         
         if preference.name == consentStatusString {
             if preference.enabled {
-                consentManager.setUserConsentStatus(TEALConsentStatus.Consented)
+                consentManager.setUserConsentStatus(TEALConsentStatus.consented)
             } else {
-                consentManager.setUserConsentStatus(TEALConsentStatus.NotConsented)
+                consentManager.setUserConsentStatus(TEALConsentStatus.notConsented)
             }
             
             // logic to enable/disable all switches when master consent status switch is enabled/disabled

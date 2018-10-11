@@ -98,18 +98,18 @@ class SliderPreferencesTableViewController: UITableViewController {
     func updateConsent(consentIndex: Int) {
         switch consentIndex {
         case ConsentLevels.off.rawValue:
-            consentManager.setUserConsentStatus(TEALConsentStatus.NotConsented)
+            consentManager.setUserConsentStatus(TEALConsentStatus.notConsented)
         case ConsentLevels.performance.rawValue:
             let categories = consentGroups[ConsentLevels.performance.rawValue].categories
-            consentManager.setUserConsentStatus(TEALConsentStatus.Consented, withUserConsentCategories: categories)
+            consentManager.setUserConsentStatus(TEALConsentStatus.consented, withUserConsentCategories: categories)
         case ConsentLevels.marketing.rawValue:
             let categories = consentGroups[ConsentLevels.marketing.rawValue].categories
-            consentManager.setUserConsentStatus(TEALConsentStatus.Consented, withUserConsentCategories: categories)
+            consentManager.setUserConsentStatus(TEALConsentStatus.consented, withUserConsentCategories: categories)
         case ConsentLevels.personalizedAdvertising.rawValue:
             let categories = consentGroups[ConsentLevels.personalizedAdvertising.rawValue].categories
-            consentManager.setUserConsentStatus(TEALConsentStatus.Consented, withUserConsentCategories: categories)
+            consentManager.setUserConsentStatus(TEALConsentStatus.consented, withUserConsentCategories: categories)
         default:
-            consentManager.setUserConsentStatus(TEALConsentStatus.Unknown)
+            consentManager.setUserConsentStatus(TEALConsentStatus.unknown)
         }
 
         updateConsentStatusLabel()
@@ -119,13 +119,13 @@ class SliderPreferencesTableViewController: UITableViewController {
     
     func updateConsentStatusSlider() {
         switch consentManager.userConsentStatus {
-        case .NotConsented, .Unknown, .Disabled:
+        case .notConsented, .unknown, .disabled:
             let index = ConsentLevels.off.rawValue
             consentStatusSlider.setValue(Float(index), animated: false)
             consentManager.setUserConsentCategories(consentGroups[index].categories)
                     updateConsentedCategoriesLabel(index: index)
             consentSliderValue = ConsentLevels.off.rawValue
-        case .Consented:
+        case .consented:
             let index = ConsentLevels.personalizedAdvertising.rawValue
             consentStatusSlider.setValue(Float(index), animated: false)
             consentManager.setUserConsentCategories(consentGroups[index].categories)

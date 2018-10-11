@@ -50,7 +50,7 @@ class SimplePreferencesTableViewController: UITableViewController {
     }
 
     func updateConsentStatus() {
-        if consentManager.userConsentStatus == TEALConsentStatus.Consented {
+        if consentManager.userConsentStatus == TEALConsentStatus.consented {
             consentStatusSwitch.isOn = true
         } else {
             consentStatusSwitch.isOn = false
@@ -58,7 +58,7 @@ class SimplePreferencesTableViewController: UITableViewController {
     }
     
     func updateConsentedCategoriesLabel() {
-        if consentManager.userConsentStatus == TEALConsentStatus.Consented {
+        if consentManager.userConsentStatus == TEALConsentStatus.consented {
             guard let consentedCategoryNames = consentManager.userConsentCategories() as? [String] else {
                 return
             }
@@ -75,9 +75,9 @@ class SimplePreferencesTableViewController: UITableViewController {
         let enabled = sender.isOn
         
         if enabled {
-            consentManager.setUserConsentStatus(TEALConsentStatus.Consented)
+            consentManager.setUserConsentStatus(TEALConsentStatus.consented)
         } else {
-            consentManager.setUserConsentStatus(TEALConsentStatus.NotConsented)
+            consentManager.setUserConsentStatus(TEALConsentStatus.notConsented)
         }
         
         updateConsentStatusLabel()
