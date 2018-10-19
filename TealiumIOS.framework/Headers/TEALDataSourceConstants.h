@@ -86,6 +86,7 @@ extern NSString *const TEALDataSourceKey_Timestamp;
 extern NSString *const TEALDataSourceKey_TimestampLocal;
 extern NSString *const TEALDataSourceKey_TimestampOffset;
 extern NSString *const TEALDataSourceKey_TimestampUnix;
+extern NSString *const TEALDataSourceKey_TimestampUnixMilliseconds;
 extern NSString *const TEALDataSourceKey_Tealium_Account;
 extern NSString *const TEALDataSourceKey_Tealium_Datasource;
 extern NSString *const TEALDataSourceKey_Tealium_Environment;
