@@ -1,5 +1,6 @@
 # Change Log
-
+- 5.4.5
+  - Added millisecond-precise timestamp variable (timestamp_unix_milliseconds)
 - 5.4.4
   - Rebuild of WatchOS platform to support arm64_32 architecture
   - Refactoring of TEALConsentStatus enum to prevent clashes
