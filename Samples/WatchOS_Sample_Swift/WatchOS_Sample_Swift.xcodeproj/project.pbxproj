@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		474EDB3BE48DD3EC4B677CA7 /* Pods_WatchOS_Sample_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1D35E2009F2562145FFAFA /* Pods_WatchOS_Sample_Swift.framework */; };
 		4B3EF7CC210BC1100027E8EC /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3EF7CB210BC1100027E8EC /* TealiumIOS.framework */; };
 		4B3EF7CD210BC1100027E8EC /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3EF7CB210BC1100027E8EC /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B4323652170F6EC005FC511 /* TealiumWATCHOSExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4323642170F6EB005FC511 /* TealiumWATCHOSExtension.framework */; };
@@ -26,6 +25,10 @@
 		4BB185492061C294008F66B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB185482061C294008F66B7 /* Assets.xcassets */; };
 		4BB185612061C2D3008F66B7 /* TealiumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB185602061C2D3008F66B7 /* TealiumHelper.swift */; };
 		4BB185632061C2D8008F66B7 /* TealiumWatchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB185622061C2D8008F66B7 /* TealiumWatchHelper.swift */; };
+		D789C85B217F652C00AF6043 /* TealiumIOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D789C85A217F652C00AF6043 /* TealiumIOSLifecycle.framework */; };
+		D789C85C217F657B00AF6043 /* TealiumIOSLifecycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D789C85A217F652C00AF6043 /* TealiumIOSLifecycle.framework */; };
+		D789C85D217F657B00AF6043 /* TealiumIOSLifecycle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D789C85A217F652C00AF6043 /* TealiumIOSLifecycle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D789C860217F65A000AF6043 /* dsfgdfg.m in Sources */ = {isa = PBXBuildFile; fileRef = D789C85F217F65A000AF6043 /* dsfgdfg.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4B3EF7CD210BC1100027E8EC /* TealiumIOS.framework in Embed Frameworks */,
+				D789C85D217F657B00AF6043 /* TealiumIOSLifecycle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +97,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B3EF7CB210BC1100027E8EC /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TealiumIOS.framework; sourceTree = "<group>"; };
-		4B4323642170F6EB005FC511 /* TealiumWATCHOSExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TealiumWATCHOSExtension.framework; sourceTree = "<group>"; };
+		4B3EF7CB210BC1100027E8EC /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOS.framework; path = ../../TealiumIOS.framework; sourceTree = "<group>"; };
+		4B4323642170F6EB005FC511 /* TealiumWATCHOSExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumWATCHOSExtension.framework; path = ../../TealiumWATCHOSExtension.framework; sourceTree = "<group>"; };
 		4BB1851E2061C293008F66B7 /* WatchOS_Sample_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOS_Sample_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB185212061C293008F66B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB185232061C293008F66B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,9 +117,9 @@
 		4BB1854A2061C294008F66B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB185602061C2D3008F66B7 /* TealiumHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TealiumHelper.swift; sourceTree = "<group>"; };
 		4BB185622061C2D8008F66B7 /* TealiumWatchHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TealiumWatchHelper.swift; sourceTree = "<group>"; };
-		F923BAAAE80B055678350F66 /* Pods-WatchOS_Sample_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOS_Sample_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchOS_Sample_Swift/Pods-WatchOS_Sample_Swift.release.xcconfig"; sourceTree = "<group>"; };
-		F9B9A8BF601C98C06413ACD5 /* Pods-WatchOS_Sample_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOS_Sample_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchOS_Sample_Swift/Pods-WatchOS_Sample_Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		FE1D35E2009F2562145FFAFA /* Pods_WatchOS_Sample_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchOS_Sample_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D789C85A217F652C00AF6043 /* TealiumIOSLifecycle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOSLifecycle.framework; path = ../../TealiumIOSLifecycle.framework; sourceTree = "<group>"; };
+		D789C85E217F65A000AF6043 /* WatchOS_Sample_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchOS_Sample_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		D789C85F217F65A000AF6043 /* dsfgdfg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dsfgdfg.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3EF7CC210BC1100027E8EC /* TealiumIOS.framework in Frameworks */,
-				474EDB3BE48DD3EC4B677CA7 /* Pods_WatchOS_Sample_Swift.framework in Frameworks */,
+				D789C85B217F652C00AF6043 /* TealiumIOSLifecycle.framework in Frameworks */,
+				D789C85C217F657B00AF6043 /* TealiumIOSLifecycle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +154,13 @@
 		4BB185152061C293008F66B7 = {
 			isa = PBXGroup;
 			children = (
+				D789C85A217F652C00AF6043 /* TealiumIOSLifecycle.framework */,
 				4B4323642170F6EB005FC511 /* TealiumWATCHOSExtension.framework */,
 				4B3EF7CB210BC1100027E8EC /* TealiumIOS.framework */,
 				4BB185202061C293008F66B7 /* WatchOS_Sample_Swift */,
 				4BB185342061C293008F66B7 /* WatchOS_Sample_Swift WatchKit App */,
 				4BB185432061C294008F66B7 /* WatchOS_Sample_Swift WatchKit Extension */,
 				4BB1851F2061C293008F66B7 /* Products */,
-				E3B978930733A2C02DA6857A /* Pods */,
-				D99035CEFDCEA3DEAA3FC7D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +184,8 @@
 				4BB185282061C293008F66B7 /* Assets.xcassets */,
 				4BB1852A2061C293008F66B7 /* LaunchScreen.storyboard */,
 				4BB1852D2061C293008F66B7 /* Info.plist */,
+				D789C85F217F65A000AF6043 /* dsfgdfg.m */,
+				D789C85E217F65A000AF6043 /* WatchOS_Sample_Swift-Bridging-Header.h */,
 			);
 			path = WatchOS_Sample_Swift;
 			sourceTree = "<group>";
@@ -206,23 +212,6 @@
 			path = "WatchOS_Sample_Swift WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		D99035CEFDCEA3DEAA3FC7D2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FE1D35E2009F2562145FFAFA /* Pods_WatchOS_Sample_Swift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E3B978930733A2C02DA6857A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F9B9A8BF601C98C06413ACD5 /* Pods-WatchOS_Sample_Swift.debug.xcconfig */,
-				F923BAAAE80B055678350F66 /* Pods-WatchOS_Sample_Swift.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,13 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BB185552061C294008F66B7 /* Build configuration list for PBXNativeTarget "WatchOS_Sample_Swift" */;
 			buildPhases = (
-				CF3FD751BE8DB1814CA03140 /* [CP] Check Pods Manifest.lock */,
 				4BB1851A2061C293008F66B7 /* Sources */,
 				4BB1851B2061C293008F66B7 /* Frameworks */,
 				4BB1851C2061C293008F66B7 /* Resources */,
 				4BB185542061C294008F66B7 /* Embed Watch Content */,
 				4BB1855B2061C2A5008F66B7 /* Embed Frameworks */,
-				2CE3C97356A2801103EEDA4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +283,7 @@
 				TargetAttributes = {
 					4BB1851D2061C293008F66B7 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					4BB1852F2061C293008F66B7 = {
@@ -358,53 +346,13 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2CE3C97356A2801103EEDA4C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WatchOS_Sample_Swift/Pods-WatchOS_Sample_Swift-frameworks.sh",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework.dSYM",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealiumIOS.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/TealiumIOS.framework.dSYM",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchOS_Sample_Swift/Pods-WatchOS_Sample_Swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF3FD751BE8DB1814CA03140 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WatchOS_Sample_Swift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		4BB1851A2061C293008F66B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4BB185242061C293008F66B7 /* ViewController.swift in Sources */,
+				D789C860217F65A000AF6043 /* dsfgdfg.m in Sources */,
 				4BB185612061C2D3008F66B7 /* TealiumHelper.swift in Sources */,
 				4BB185222061C293008F66B7 /* AppDelegate.swift in Sources */,
 			);
@@ -578,7 +526,7 @@
 				DEVELOPMENT_TEAM = XC939GDC9P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../**",
 				);
 				INFOPLIST_FILE = "WatchOS_Sample_Swift WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -588,7 +536,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -600,7 +548,7 @@
 				DEVELOPMENT_TEAM = XC939GDC9P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../**",
 				);
 				INFOPLIST_FILE = "WatchOS_Sample_Swift WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -610,7 +558,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -629,7 +577,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -648,25 +596,27 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
 		4BB185562061C294008F66B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9B9A8BF601C98C06413ACD5 /* Pods-WatchOS_Sample_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XC939GDC9P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../**",
 				);
 				INFOPLIST_FILE = WatchOS_Sample_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tealium.WatchOS-Sample-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchOS_Sample_Swift/WatchOS_Sample_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -674,19 +624,20 @@
 		};
 		4BB185572061C294008F66B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F923BAAAE80B055678350F66 /* Pods-WatchOS_Sample_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XC939GDC9P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../**",
 				);
 				INFOPLIST_FILE = WatchOS_Sample_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tealium.WatchOS-Sample-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchOS_Sample_Swift/WatchOS_Sample_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
