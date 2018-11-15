@@ -1,4 +1,8 @@
 # Change Log
+
+- 5.4.6
+  - Bug Fix
+    - Added protections around volatile data sources being accessed from multiple threads.
 - 5.4.5
   - Added millisecond-precise timestamp variable (timestamp_unix_milliseconds)
 - 5.4.4

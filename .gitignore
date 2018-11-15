@@ -56,7 +56,6 @@ xcuserdata/
 *.hmap
 *.ipa
 *.dSYM.zip
-*.dSYM
 
 # CocoaPods - Refactored to standalone file
 
