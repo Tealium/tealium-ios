@@ -1,8 +1,13 @@
 # Change Log
 
+- 5.4.7
+  - API Change
+    - `visitorIDCopy` available when Collect is not enabled
+  - Bug Fix
+    - Changed NSDateFormatter to use locale en_US_POSIX
 - 5.4.6
   - Bug Fix
-    - Added protection around volatile data sources from being accessed by multiple threads. 
+    - Added protection around volatile data sources from being accessed by multiple threads
 - 5.4.5
   - Added millisecond-precise timestamp variable (timestamp_unix_milliseconds)
 - 5.4.4
