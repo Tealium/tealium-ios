@@ -9,40 +9,41 @@
 import UIKit
 
 class TintedToolbarViewController: UIViewController {
+
     // MARK: Properties
-    
+    enum TintedToolbarViewData {
+        static let tealiumEvent = "account_view"
+        static let screenName = "tinted toolbar view"
+    }
     @IBOutlet weak var toolbar: UIToolbar!
 
     // MARK: View Life Cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        TealiumHelper.trackView(TintedToolbarViewData.tealiumEvent,
+                                dataSources: ["screen_name": TintedToolbarViewData.screenName as AnyObject])
         configureToolbar()
     }
 
     // MARK: Configuration
-
     func configureToolbar() {
         // See the `UIBarStyle` enum for more styles, including `.Default`.
         toolbar.barStyle = .blackTranslucent
-
         toolbar.tintColor = UIColor.applicationGreenColor
         toolbar.backgroundColor = UIColor.applicationBlueColor
-
         let toolbarButtonItems = [
             refreshBarButtonItem,
             flexibleSpaceBarButtonItem,
             actionBarButtonItem
         ]
-
         toolbar.setItems(toolbarButtonItems, animated: true)
     }
 
     // MARK: UIBarButtonItem Creation and Configuration
-
     var refreshBarButtonItem: UIBarButtonItem {
-        return UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(TintedToolbarViewController.barButtonItemClicked(_:)))
+        return UIBarButtonItem(barButtonSystemItem: .refresh,
+                               target: self,
+                               action: #selector(TintedToolbarViewController.barButtonItemClicked(_:)))
     }
 
     var flexibleSpaceBarButtonItem: UIBarButtonItem {
@@ -51,11 +52,12 @@ class TintedToolbarViewController: UIViewController {
     }
 
     var actionBarButtonItem: UIBarButtonItem {
-        return UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(TintedToolbarViewController.barButtonItemClicked(_:)))
+        return UIBarButtonItem(barButtonSystemItem: .action,
+                               target: self,
+                               action: #selector(TintedToolbarViewController.barButtonItemClicked(_:)))
     }
 
     // MARK: Actions
-
     func barButtonItemClicked(_ barButtonItem: UIBarButtonItem) {
         NSLog("A bar button item on the tinted toolbar was clicked: \(barButtonItem).")
     }
