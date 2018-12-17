@@ -9,8 +9,8 @@
 import UIKit
 
 class SearchResultsViewController: SearchControllerBaseViewController, UISearchResultsUpdating {
+
     // MARK: Types
-    
     struct StoryboardConstants {
         /**
             The identifier string that corresponds to the `SearchResultsViewController`'s
@@ -18,9 +18,8 @@ class SearchResultsViewController: SearchControllerBaseViewController, UISearchR
         */
         static let identifier = "SearchResultsViewControllerStoryboardIdentifier"
     }
-    
+
     // MARK: UISearchResultsUpdating
-    
     func updateSearchResults(for searchController: UISearchController) {
         /*
             `updateSearchResultsForSearchController(_:)` is called when the controller is
@@ -29,7 +28,13 @@ class SearchResultsViewController: SearchControllerBaseViewController, UISearchR
             anything if we're being dismissed.
         */
         guard searchController.isActive else { return }
-        
         filterString = searchController.searchBar.text
+        if let filterString = filterString {
+            SearchResultsViewData.searchKeyword = filterString
+        }
+        TealiumHelper.trackView(SearchResultsViewData.tealiumEvent,
+                                dataSources: ["screen_name": SearchResultsViewData.screenName as AnyObject,
+                                              "search_results": SearchResultsViewData.searchResults as AnyObject,
+                                              "search_keyword": SearchResultsViewData.searchKeyword as AnyObject])
     }
 }

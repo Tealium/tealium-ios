@@ -8,12 +8,13 @@
 
 import UIKit
 
-class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIPickerViewAccessibilityDelegate {
+class PickerViewController: UIViewController,
+                            UIPickerViewDataSource,
+                            UIPickerViewDelegate,
+                            UIPickerViewAccessibilityDelegate {
     // MARK: Types
-
     enum ColorComponent: Int {
         case red = 0, green, blue
-        
         static var count: Int {
             return ColorComponent.blue.rawValue + 1
         }
@@ -26,25 +27,23 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
 
     // MARK: Properties
-
+    enum PickerViewData {
+        static let tealiumEvent = "screen_view"
+        static let screenName = "picker view"
+    }
     @IBOutlet weak var pickerView: UIPickerView!
-    
     @IBOutlet weak var colorSwatchView: UIView!
-
     lazy var numberOfColorValuesPerComponent: Int = (Int(RGB.max) / Int(RGB.offset)) + 1
-
     var redColor: CGFloat = RGB.min {
         didSet {
             updateColorSwatchViewBackgroundColor()
         }
     }
-
     var greenColor: CGFloat = RGB.min {
         didSet {
             updateColorSwatchViewBackgroundColor()
         }
     }
-
     var blueColor: CGFloat = RGB.min {
         didSet {
             updateColorSwatchViewBackgroundColor()
@@ -52,28 +51,24 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
 
     // MARK: View Life Cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        TealiumHelper.trackView(PickerViewData.tealiumEvent,
+                                dataSources: ["screen_name": PickerViewData.screenName as AnyObject])
         configurePickerView()
     }
 
     // MARK: Convenience
-    
     func updateColorSwatchViewBackgroundColor() {
         colorSwatchView.backgroundColor = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1)
     }
 
     // MARK: Configuration
-    
     func configurePickerView() {
         // Show that a given row is selected. This is off by default.
         pickerView.showsSelectionIndicator = true
-
         // Set the default selected rows (the desired rows to initially select will vary from app to app).
         let selectedRows: [ColorComponent: Int] = [.red: 13, .green: 41, .blue: 24]
-
         for (colorComponent, selectedRow) in selectedRows {
             /*
                 Note that the delegate method on `UIPickerViewDelegate` is not triggered
@@ -86,7 +81,6 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
 
     // MARK: UIPickerViewDataSource
-
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return ColorComponent.count
     }
@@ -96,35 +90,32 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
 
     // MARK: UIPickerViewDelegate
-
-    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+    func pickerView(_ pickerView: UIPickerView,
+                    attributedTitleForRow row: Int,
+                    forComponent component: Int) -> NSAttributedString? {
         let colorValue = CGFloat(row) * RGB.offset
-
         let value = CGFloat(colorValue) / RGB.max
         var redColorComponent = RGB.min
         var greenColorComponent = RGB.min
         var blueColorComponent = RGB.min
 
         switch ColorComponent(rawValue: component)! {
-            case .red:
-                redColorComponent = value
-
-            case .green:
-                greenColorComponent = value
-            
-            case .blue:
-                blueColorComponent = value
+        case .red:
+            redColorComponent = value
+        case .green:
+            greenColorComponent = value
+        case .blue:
+            blueColorComponent = value
         }
-
-        let foregroundColor = UIColor(red: redColorComponent, green: greenColorComponent, blue: blueColorComponent, alpha: 1)
-
+        let foregroundColor = UIColor(red: redColorComponent,
+                                      green: greenColorComponent,
+                                      blue: blueColorComponent,
+                                      alpha: 1)
         // Set the foreground color for the entire attributed string.
         let attributes = [
             NSForegroundColorAttributeName: foregroundColor
         ]
-
         let title = NSMutableAttributedString(string: "\(Int(colorValue))", attributes: attributes)
-
         return title
     }
 
@@ -132,29 +123,24 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         let colorComponentValue = RGB.offset * CGFloat(row) / RGB.max
 
         switch ColorComponent(rawValue: component)! {
-            case .red:
-                redColor = colorComponentValue
-
-            case .green:
-                greenColor = colorComponentValue
-            
-            case .blue:
-                blueColor = colorComponentValue
+        case .red:
+            redColor = colorComponentValue
+        case .green:
+            greenColor = colorComponentValue
+        case .blue:
+            blueColor = colorComponentValue
         }
     }
 
     // MARK: UIPickerViewAccessibilityDelegate
-
     func pickerView(_ pickerView: UIPickerView, accessibilityLabelForComponent component: Int) -> String? {
         switch ColorComponent(rawValue: component)! {
-            case .red:
-                return NSLocalizedString("Red color component value", comment: "")
-
-            case .green:
-                return NSLocalizedString("Green color component value", comment: "")
-            
-            case .blue:
-                return NSLocalizedString("Blue color component value", comment: "")
+        case .red:
+            return NSLocalizedString("Red color component value", comment: "")
+        case .green:
+            return NSLocalizedString("Green color component value", comment: "")
+        case .blue:
+            return NSLocalizedString("Blue color component value", comment: "")
         }
     }
 }

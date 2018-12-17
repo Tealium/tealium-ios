@@ -15,93 +15,93 @@ import UIKit
 private var progressViewKVOContext = 0
 
 class ProgressViewController: UITableViewController {
-    // MARK: Properties
-    
-    @IBOutlet weak var defaultStyleProgressView: UIProgressView!
-    
-    @IBOutlet weak var barStyleProgressView: UIProgressView!
-    
-    @IBOutlet weak var tintedProgressView: UIProgressView!
 
+    // MARK: Properties
+    enum ProgressViewData {
+        static let tealiumEvent = "screen_view"
+        static let screenName = "progress view"
+    }
+    @IBOutlet weak var defaultStyleProgressView: UIProgressView!
+    @IBOutlet weak var barStyleProgressView: UIProgressView!
+    @IBOutlet weak var tintedProgressView: UIProgressView!
     @IBOutlet var progressViews: [UIProgressView]!
-    
     /**
         An `NSProgress` object who's `fractionCompleted` is observed using
         KVO to update the `UIProgressView`s' `progress` properties.
     */
     fileprivate let progress = Progress(totalUnitCount: 10)
-    
     /**
         A repeating timer that, when fired, updates the `NSProgress` object's
         `completedUnitCount` property.
     */
     fileprivate var updateTimer: Timer?
-    
+
     // MARK: Initialization
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
         // Register as an observer of the `NSProgress`'s `fractionCompleted` property.
         progress.addObserver(self, forKeyPath: "fractionCompleted", options: [.new], context: &progressViewKVOContext)
     }
-    
     deinit {
         // Unregister as an observer of the `NSProgress`'s `fractionCompleted` property.
         progress.removeObserver(self, forKeyPath: "fractionCompleted")
-    }
-    
-    // MARK: View Life Cycle
 
+    }
+
+    // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        TealiumHelper.trackView(ProgressViewData.tealiumEvent,
+                                dataSources: ["screen_name": ProgressViewData.screenName as AnyObject])
         configureDefaultStyleProgressView()
         configureBarStyleProgressView()
         configureTintedProgressView()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         // Reset the completed progress of the `UIProgressView`s.
         for progressView in progressViews {
             progressView.setProgress(0.0, animated: false)
         }
-        
         /*
             Reset the `completedUnitCount` of the `NSProgress` object and create
             a repeating timer to increment it over time.
         */
         progress.completedUnitCount = 0
-        updateTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ProgressViewController.timerDidFire), userInfo: nil, repeats: true)
+        updateTimer = Timer
+            .scheduledTimer(timeInterval: 1,
+                            target: self,
+                            selector: #selector(ProgressViewController.timerDidFire),
+                            userInfo: nil,
+                            repeats: true)
     }
-    
+
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
         // Stop the timer from firing.
         updateTimer?.invalidate()
     }
-    
+
     // MARK: Key Value Observing (KVO)
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    override func observeValue(forKeyPath keyPath: String?,
+                               of object: Any?,
+                               change: [NSKeyValueChangeKey: Any]?,
+                               context: UnsafeMutableRawPointer?) {
         // Check if this is the KVO notification for our `NSProgress` object.
-        guard context == &progressViewKVOContext && keyPath == "fractionCompleted" && object as AnyObject === progress else{
-        
+        guard context == &progressViewKVOContext &&
+            keyPath == "fractionCompleted" &&
+            object as AnyObject === progress else {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
             return
         }
-            // Update the progress views.
-            for progressView in progressViews {
-                progressView.setProgress(Float(progress.fractionCompleted), animated: true)
-            }
-        
+        // Update the progress views.
+        for progressView in progressViews {
+            progressView.setProgress(Float(progress.fractionCompleted), animated: true)
+        }
     }
 
     // MARK: Configuration
-
     func configureDefaultStyleProgressView() {
         defaultStyleProgressView.progressViewStyle = .default
     }
@@ -118,7 +118,7 @@ class ProgressViewController: UITableViewController {
     }
 
     // MARK: Timer
-    
+
     func timerDidFire() {
         /*
             Update the `completedUnitCount` of the `NSProgress` object if it's
@@ -126,8 +126,7 @@ class ProgressViewController: UITableViewController {
         */
         if progress.completedUnitCount < progress.totalUnitCount {
             progress.completedUnitCount += 1
-        }
-        else {
+        } else {
             updateTimer?.invalidate()
         }
     }

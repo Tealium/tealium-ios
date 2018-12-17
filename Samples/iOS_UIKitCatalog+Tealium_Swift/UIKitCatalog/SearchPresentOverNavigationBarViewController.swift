@@ -5,20 +5,28 @@
     Abstract:
     A view controller that demonstrates how to present a search controller over a navigation bar.
 */
+enum SearchResultsViewData {
+    static let tealiumEvent = "search_results_view"
+    static let screenName = "search results"
+    static var searchKeyword = ""
+    static var searchResults = ""
+}
 
 import UIKit
 
 class SearchPresentOverNavigationBarViewController: SearchControllerBaseViewController {
+
     // MARK: Properties
-    
     // `searchController` is set when the search button is clicked.
     var searchController: UISearchController!
 
     // MARK: Actions
-    
     @IBAction func searchButtonClicked(_ button: UIBarButtonItem) {
         // Create the search results view controller and use it for the `UISearchController`.
-        let searchResultsController = storyboard!.instantiateViewController(withIdentifier: SearchResultsViewController.StoryboardConstants.identifier) as! SearchResultsViewController
+        let searchResultsController = storyboard?.instantiateViewController(withIdentifier:
+                                                                            SearchResultsViewController
+                                                                            .StoryboardConstants
+                                                                            .identifier) as? SearchResultsViewController
 
         // Create the search controller and make it perform the results updating.
         searchController = UISearchController(searchResultsController: searchResultsController)

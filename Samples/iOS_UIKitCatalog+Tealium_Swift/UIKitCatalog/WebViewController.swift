@@ -9,29 +9,30 @@
 import UIKit
 
 class WebViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegate {
+
     // MARK: Properties
-    
+    enum WebViewData {
+        static let tealiumEvent = "screen_view"
+        static let screenName = "web view screen view"
+    }
     @IBOutlet weak var webView: UIWebView!
-    
     @IBOutlet weak var addressTextField: UITextField!
 
     // MARK: View Life Cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        TealiumHelper.trackView(WebViewData.tealiumEvent,
+                                dataSources: ["screen_name": WebViewData.screenName as AnyObject])
         configureWebView()
         loadAddressURL()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 
     // MARK: Convenience
-
     func loadAddressURL() {
         if let text = addressTextField.text, let requestURL = URL(string: text) {
             let request = URLRequest(url: requestURL)
@@ -40,7 +41,6 @@ class WebViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegat
     }
 
     // MARK: Configuration
-
     func configureWebView() {
         webView.backgroundColor = UIColor.white
         webView.scalesPageToFit = true
@@ -48,7 +48,6 @@ class WebViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegat
     }
 
     // MARK: UIWebViewDelegate
-
     func webViewDidStartLoad(_ webView: UIWebView) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
@@ -60,22 +59,19 @@ class WebViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegat
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         // Report the error inside the web view.
         let localizedErrorMessage = NSLocalizedString("An error occured:", comment: "")
-
-        let errorHTML = "<!doctype html><html><body><div style=\"width: 100%%; text-align: center; font-size: 36pt;\">\(localizedErrorMessage) \(error.localizedDescription)</div></body></html>"
-
+        let errorHTML = """
+                        <!doctype html><html><body><div style=\"width: 100%%; text-align: center; font-size:
+                        36pt;\">\(localizedErrorMessage) \(error.localizedDescription)</div></body></html>
+                        """
         webView.loadHTMLString(errorHTML, baseURL: nil)
-
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 
     // MARK: UITextFieldDelegate
-
     /// Dismisses the keyboard when the "Done" button is clicked.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-
         loadAddressURL()
-
         return true
     }
 }

@@ -9,47 +9,43 @@
 import UIKit
 
 class CustomSearchBarViewController: UIViewController, UISearchBarDelegate {
-    // MARK: Properties
 
+    // MARK: Properties
+    enum CustomSearchViewData {
+        static let tealiumEvent = "search_view"
+        static let screenName = "custom search bar view"
+    }
     @IBOutlet weak var searchBar: UISearchBar!
 
     // MARK: View Life Cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        TealiumHelper.trackView(CustomSearchViewData.tealiumEvent,
+                                dataSources: ["screen_name": CustomSearchViewData.screenName as AnyObject])
         configureSearchBar()
     }
 
     // MARK: Configuration
-    
     func configureSearchBar() {
         searchBar.showsCancelButton = true
         searchBar.showsBookmarkButton = true
-
         searchBar.tintColor = UIColor.applicationPurpleColor
-
         searchBar.backgroundImage = UIImage(named: "search_bar_background")
-
         // Set the bookmark image for both normal and highlighted states.
         let bookmarkImage = UIImage(named: "bookmark_icon")
         searchBar.setImage(bookmarkImage, for: .bookmark, state: UIControlState())
-
         let bookmarkHighlightedImage = UIImage(named: "bookmark_icon_highlighted")
         searchBar.setImage(bookmarkHighlightedImage, for: .bookmark, state: .highlighted)
     }
 
     // MARK: UISearchBarDelegate
-
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         NSLog("The custom search bar keyboard search button was tapped: \(searchBar).")
-        
         searchBar.resignFirstResponder()
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         NSLog("The custom search bar cancel button was tapped.")
-
         searchBar.resignFirstResponder()
     }
 
