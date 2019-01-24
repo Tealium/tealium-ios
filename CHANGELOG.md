@@ -1,5 +1,8 @@
 # Change Log
 
+- 5.4.8
+  - API Change
+    - [Visitor Lookup](https://community.tealiumiq.com/t5/Tealium-API/Visitor-Lookup-API/ta-p/22859) is supported with TagManagement or Collect. Previously it was turned off for TagManagement
 - 5.4.7
   - API Change
     - `visitorIDCopy` available when Collect is not enabled
