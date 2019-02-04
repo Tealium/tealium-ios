@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- *  Container object for attrubtes related only to a users current visit.  Similar to the TEALVisitorProfile but contains only attributes related to the users current visit.
+ *  Container object for attributes related only to a users current visit.  Similar to the TEALVisitorProfile but contains only attributes related to the users current visit.
  */
 @interface TEALVisitorProfileCurrentVisit : NSObject <NSCoding, NSCopying>
 
@@ -18,42 +18,42 @@
  *
  *  @return interval as unix timestamp
  */
--(NSTimeInterval) creationTimestamp;
+- (NSTimeInterval)creationTimestamp;
 
 /**
  *  Dates this visitor's profile is associated with.
  *
  *  @return Array of TEALVisitorProfileDateAttribute objects or nil if none exist
  */
-- (NSArray *) dates;
+- (NSArray *)dates;
 
 /**
  *  Flags this visitor's profile is associated with.
  *
  *  @return Array of TEALVisitorProfileFlagAttribute objects or nil if none exist
  */
-- (NSArray *) flags;
+- (NSArray *)flags;
 
 /**
  *  Metrics this visitor's profile is associated with.
  *
  *  @return Array of TEALVisitorProfileMetricAttribute objects or nil if none exist
  */
-- (NSArray *) metrics;
+- (NSArray *)metrics;
 
 /**
  *  Properties or "Traits" this visitor's profile is associated with.
  *
  *  @return Array of TEALVisitorProfilePropertyAttribute objects or nil if none exist
  */
-- (NSArray *) properties;
+- (NSArray *)properties;
 
 /**
  *  Total number of events received during this current visit.
  *
  *  @return count as an unsigned integer
  */
-- (NSUInteger) totalEventCount;
+- (NSUInteger)totalEventCount;
 
 
 @end

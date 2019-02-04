@@ -1,5 +1,10 @@
 # Change Log
 
+- 5.4.9
+  - API Change
+    - Public headers for visitor attributes are available. Previously they were hidden.
+  - Bug Fix
+    - Return more than one attribute in Visitor Lookup API
 - 5.4.8
   - API Change
     - [Visitor Lookup](https://community.tealiumiq.com/t5/Tealium-API/Visitor-Lookup-API/ta-p/22859) is supported with TagManagement or Collect. Previously it was turned off for TagManagement

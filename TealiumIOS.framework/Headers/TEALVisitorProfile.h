@@ -34,7 +34,7 @@
 - (BOOL)isValid;
 
 /**
- *  Visitor ID addociated with this profile
+ *  Visitor ID associated with this profile
  *
  *  @return String representation of user's vistorID
  */

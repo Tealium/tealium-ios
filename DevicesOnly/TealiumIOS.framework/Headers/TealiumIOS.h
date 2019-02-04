@@ -33,3 +33,9 @@ FOUNDATION_EXPORT const unsigned char TealiumIOSVersionString[];
 #import <TealiumIOS/TEALRemoteCommandResponse.h>
 #import <TealiumIOS/TEALVisitorProfile.h>
 #import <TealiumIOS/TEALVisitorProfileCurrentVisit.h>
+#import <TealiumIOS/TEALVisitorProfileAudienceAttribute.h>
+#import <TealiumIOS/TEALVisitorProfileBadgeAttribute.h>
+#import <TealiumIOS/TEALVisitorProfileDateAttribute.h>
+#import <TealiumIOS/TEALVisitorProfileFlagAttribute.h>
+#import <TealiumIOS/TEALVisitorProfileMetricAttribute.h>
+#import <TealiumIOS/TEALVisitorProfilePropertyAttribute.h>
