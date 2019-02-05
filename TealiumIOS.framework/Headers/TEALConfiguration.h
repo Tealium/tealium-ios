@@ -14,8 +14,8 @@
  Defines the endpoint of where to send data for the CollectDispatchService.
  */
 typedef NS_ENUM(NSInteger, TEALCollectURL) {
-    Vdata,
-    Event
+    TEALCollectURLVdata,
+    TEALCollectURLEvent
 };
 
 /**

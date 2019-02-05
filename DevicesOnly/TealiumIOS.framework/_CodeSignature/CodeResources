@@ -54,11 +54,39 @@
 		</data>
 		<key>Headers/TEALVisitorProfile.h</key>
 		<data>
-		Co7NozReVnNzNtDu2xFV9fzek1k=
+		sNEvRIEAWt2F6Y1VZx6hW/18EgE=
+		</data>
+		<key>Headers/TEALVisitorProfileAudienceAttribute.h</key>
+		<data>
+		SBL7bw+sjd6XKNyDuQjkoo9xYus=
+		</data>
+		<key>Headers/TEALVisitorProfileBadgeAttribute.h</key>
+		<data>
+		s1NRFvTseuAX+2AIb6v1mEwldos=
+		</data>
+		<key>Headers/TEALVisitorProfileBaseAttribute.h</key>
+		<data>
+		qmfAJRTuAYsjxsKbyHk86JovJDo=
 		</data>
 		<key>Headers/TEALVisitorProfileCurrentVisit.h</key>
 		<data>
-		VYooBirc9uBm6iT1Jg9m2Xw3gc8=
+		huutZfkLAQ/E7TolUcA9x8ZP+30=
+		</data>
+		<key>Headers/TEALVisitorProfileDateAttribute.h</key>
+		<data>
+		7Pzy7by7afccP4pMWjSey7RwsFk=
+		</data>
+		<key>Headers/TEALVisitorProfileFlagAttribute.h</key>
+		<data>
+		MX+O929RUYC7kL/g74pIACnKk5c=
+		</data>
+		<key>Headers/TEALVisitorProfileMetricAttribute.h</key>
+		<data>
+		xoquvtcNBCB/zs5QC7SyA+Fnl88=
+		</data>
+		<key>Headers/TEALVisitorProfilePropertyAttribute.h</key>
+		<data>
+		iPQVCRycpl+T8fSmjmoHyaNtcvM=
 		</data>
 		<key>Headers/TEALWKConstants.h</key>
 		<data>
@@ -86,11 +114,11 @@
 		</data>
 		<key>Headers/TealiumIOS.h</key>
 		<data>
-		4ixRANXiQ7p05T76Dfpob3rojzU=
+		Y2OnBYcl9ICikjF6BmWhxYzJt3g=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tmEyTD/8F2mGM4MK89KfhqcaR+M=
+		AnU6l0x+Cv8hmGr9AmCHxPXhX7I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -235,22 +263,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Co7NozReVnNzNtDu2xFV9fzek1k=
+			sNEvRIEAWt2F6Y1VZx6hW/18EgE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/3rImrmuRPXKP1dZiBIqyxEf19b/+kbSPe1ksP9L2/U=
+			AP6BA/yjUw0bUPYIpoXZVZpVpz3HgfUka+OGXXWe73Y=
+			</data>
+		</dict>
+		<key>Headers/TEALVisitorProfileAudienceAttribute.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SBL7bw+sjd6XKNyDuQjkoo9xYus=
+			</data>
+			<key>hash2</key>
+			<data>
+			BH+pbQhkb2Ap9qoTPLsnRnJ7u+4b2KHI3MI3YIq0yxw=
+			</data>
+		</dict>
+		<key>Headers/TEALVisitorProfileBadgeAttribute.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s1NRFvTseuAX+2AIb6v1mEwldos=
+			</data>
+			<key>hash2</key>
+			<data>
+			eCJIMMzaYNoqK1lyCoQXLhRtjLMJF1RNCbxv4EvqTCk=
+			</data>
+		</dict>
+		<key>Headers/TEALVisitorProfileBaseAttribute.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qmfAJRTuAYsjxsKbyHk86JovJDo=
+			</data>
+			<key>hash2</key>
+			<data>
+			iQf+gby2rS0ZpCbWDlR9U1RtSbfOSnKDJjcxboAJPQc=
 			</data>
 		</dict>
 		<key>Headers/TEALVisitorProfileCurrentVisit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VYooBirc9uBm6iT1Jg9m2Xw3gc8=
+			huutZfkLAQ/E7TolUcA9x8ZP+30=
 			</data>
 			<key>hash2</key>
 			<data>
-			t3VJ10uqEqtZViIdmQtB+tpZ94/T9m1GKTeEFdmcezw=
+			hY2j3me3EuqoHfynC/pJTGDbKF+xfBbMlasMSBcZ/uU=
+			</data>
+		</dict>
+		<key>Headers/TEALVisitorProfileDateAttribute.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7Pzy7by7afccP4pMWjSey7RwsFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			/QjXKri7S4Qv04HJrxZbOwvaAqd4eRwxuOlhvOFwy5I=
+			</data>
+		</dict>
+		<key>Headers/TEALVisitorProfileFlagAttribute.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MX+O929RUYC7kL/g74pIACnKk5c=
+			</data>
+			<key>hash2</key>
+			<data>
+			3v5RFVAS8YVrbvDdt66WE83GDgLATfwpmKL4TjA+MTk=
+			</data>
+		</dict>
+		<key>Headers/TEALVisitorProfileMetricAttribute.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xoquvtcNBCB/zs5QC7SyA+Fnl88=
+			</data>
+			<key>hash2</key>
+			<data>
+			y3g/7VZSdb6rtm3f/6D0ESxMEdACCKW+KeaXKr1XSw0=
+			</data>
+		</dict>
+		<key>Headers/TEALVisitorProfilePropertyAttribute.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iPQVCRycpl+T8fSmjmoHyaNtcvM=
+			</data>
+			<key>hash2</key>
+			<data>
+			HMEa18uOWQcg8IbalUmGH1PseV/sqDPyXsXGoKXz5SY=
 			</data>
 		</dict>
 		<key>Headers/TEALWKConstants.h</key>
@@ -323,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4ixRANXiQ7p05T76Dfpob3rojzU=
+			Y2OnBYcl9ICikjF6BmWhxYzJt3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ba2GSYfv7vC/yBVkj6kvrnmzHj5ehKQp+oY5VxOZXyM=
+			yaGHmW6qwTe8u3+/zwdG0aCbUmw4Vx15saPcoC4cfTg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
