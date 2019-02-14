@@ -1,6 +1,6 @@
 //
 //  Tealium+Lifecycle.h
-//  UIKitCatalog
+//  Tealium
 //
 //  Created by Jason Koo on 3/1/16.
 //  Copyright © 2016 f. All rights reserved.

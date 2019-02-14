@@ -1,5 +1,9 @@
 # Change Log
 
+- 5.4.10
+  - Bug Fix
+    - Fix ConsentManager header file to not return _Nullable for `init` method
+    - Changed NSDateFormatter singleton implementation
 - 5.4.9
   - API Change
     - Public headers for visitor attributes are available. Previously they were hidden.
