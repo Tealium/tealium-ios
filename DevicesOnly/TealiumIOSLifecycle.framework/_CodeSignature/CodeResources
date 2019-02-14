@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/TEALConfiguration+Lifecycle.h</key>
 		<data>
-		ENh/j2+UKxbaEr2M8aqgRZIATQw=
+		yK3iIOE3m8auYJHDKNZJ/ShtQMg=
 		</data>
 		<key>Headers/Tealium+Lifecycle.h</key>
 		<data>
-		HzxNGo1ETfrZaCC1cNokr+q/ojY=
+		Be+fYcjKzTFtxPsZoJFCpSmg9eQ=
 		</data>
 		<key>Headers/TealiumIOSLifecycle.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+MmmOoq+42WCfic1HrUr/exRDwo=
+		c/0dfn2EDGAkhGQf2x0/Uc2ZFQ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,22 +31,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ENh/j2+UKxbaEr2M8aqgRZIATQw=
+			yK3iIOE3m8auYJHDKNZJ/ShtQMg=
 			</data>
 			<key>hash2</key>
 			<data>
-			d968qWNCJRn5BbTEfdmfIwaQlXRL6yZvUGcvtReoh2E=
+			2liSOfg6DnuL/Q9YeanDhOXkexAbDO9xzLLVMuvQa0o=
 			</data>
 		</dict>
 		<key>Headers/Tealium+Lifecycle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HzxNGo1ETfrZaCC1cNokr+q/ojY=
+			Be+fYcjKzTFtxPsZoJFCpSmg9eQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			OuZS+RWMPd2XggdvqFEdi12SKlRJ0SfQUGj9TdVQftI=
+			n6OJBDCPeZTFCNSPTAVauKZG/24Y/Oq9FmGz2Ws6mPA=
 			</data>
 		</dict>
 		<key>Headers/TealiumIOSLifecycle.h</key>

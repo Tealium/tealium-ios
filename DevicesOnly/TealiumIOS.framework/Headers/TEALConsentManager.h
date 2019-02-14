@@ -21,9 +21,9 @@
 @property (nonatomic, readonly) BOOL isEnabled;
 @property (nonatomic, readonly) BOOL consentConfigurationWasLoaded; // TiQ property for WebView
 
-- (instancetype _Nullable)initWithURLSessionManager:(TEALURLSessionManager *_Nonnull)sessionManager delegate:(id <TEALConsentManagerDelegate>_Nullable)delegate;
+- (instancetype _Nullable)initWithURLSessionManager:(TEALURLSessionManager *_Nonnull)sessionManager delegate:(id <TEALConsentManagerDelegate>_Nullable)delegate NS_DESIGNATED_INITIALIZER;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype _Nonnull)init NS_UNAVAILABLE;
 
 /**
  Enables consent manager.
@@ -69,7 +69,7 @@
  
  @param categories the categories the user has consented to.
  */
-- (void)setUserConsentCategories:(NSArray *)categories;
+- (void)setUserConsentCategories:(NSArray *_Nonnull)categories;
 
 /**
  Sets the consentStatus and categories for a user.
@@ -118,7 +118,7 @@
  
  @returns NSArray: acceptable category names only. Empty array if no valid categories.
  */
-- (NSArray *_Nonnull)filteredCategories:(NSArray *)categories;
+- (NSArray *_Nonnull)filteredCategories:(NSArray *_Nonnull)categories;
 
 /**
  Enables consent logging which sends an additional log on consent state changes.

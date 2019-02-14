@@ -1,6 +1,6 @@
 //
 //  TEALConfiguration+TagManagement.h
-//  UIKitCatalog
+//  Tealium
 //
 //  Created by Jason Koo on 1/10/16.
 //
