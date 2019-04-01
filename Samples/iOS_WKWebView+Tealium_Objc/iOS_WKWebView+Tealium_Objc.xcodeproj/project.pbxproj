@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B65DA142252809B00E7E0DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA132252809B00E7E0DF /* AppDelegate.m */; };
+		4B65DA172252809B00E7E0DF /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA162252809B00E7E0DF /* BlueViewController.m */; };
+		4B65DA1A2252809B00E7E0DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B65DA182252809B00E7E0DF /* Main.storyboard */; };
+		4B65DA1C2252809D00E7E0DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B65DA1B2252809D00E7E0DF /* Assets.xcassets */; };
+		4B65DA1F2252809D00E7E0DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B65DA1D2252809D00E7E0DF /* LaunchScreen.storyboard */; };
+		4B65DA222252809D00E7E0DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA212252809D00E7E0DF /* main.m */; };
+		4B65DA2A2252820F00E7E0DF /* TealiumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA292252820F00E7E0DF /* TealiumHelper.m */; };
+		4B65DA31225285B000E7E0DF /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA30225285B000E7E0DF /* GreenViewController.m */; };
+		4B65DA37225297DB00E7E0DF /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */; };
+		4B65DA38225297DB00E7E0DF /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B65DA2E2252827A00E7E0DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B65DA38225297DB00E7E0DF /* TealiumIOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B65DA0F2252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS_WKWebView+Tealium_Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B65DA122252809B00E7E0DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4B65DA132252809B00E7E0DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B65DA152252809B00E7E0DF /* BlueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		4B65DA162252809B00E7E0DF /* BlueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		4B65DA192252809B00E7E0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B65DA1B2252809D00E7E0DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B65DA1E2252809D00E7E0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B65DA202252809D00E7E0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B65DA212252809D00E7E0DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B65DA282252820F00E7E0DF /* TealiumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumHelper.h; sourceTree = "<group>"; };
+		4B65DA292252820F00E7E0DF /* TealiumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumHelper.m; sourceTree = "<group>"; };
+		4B65DA2F225285B000E7E0DF /* GreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		4B65DA30225285B000E7E0DF /* GreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
+		4B65DA3222528E6800E7E0DF /* iOS_WKWebView+Tealium_Objc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS_WKWebView+Tealium_Objc.entitlements"; sourceTree = "<group>"; };
+		4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TealiumIOS.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B65DA0C2252809B00E7E0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B65DA37225297DB00E7E0DF /* TealiumIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B65DA062252809B00E7E0DF = {
+			isa = PBXGroup;
+			children = (
+				4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */,
+				4B65DA112252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc */,
+				4B65DA102252809B00E7E0DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B65DA102252809B00E7E0DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B65DA0F2252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B65DA112252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc */ = {
+			isa = PBXGroup;
+			children = (
+				4B65DA3222528E6800E7E0DF /* iOS_WKWebView+Tealium_Objc.entitlements */,
+				4B65DA122252809B00E7E0DF /* AppDelegate.h */,
+				4B65DA132252809B00E7E0DF /* AppDelegate.m */,
+				4B65DA152252809B00E7E0DF /* BlueViewController.h */,
+				4B65DA162252809B00E7E0DF /* BlueViewController.m */,
+				4B65DA2F225285B000E7E0DF /* GreenViewController.h */,
+				4B65DA30225285B000E7E0DF /* GreenViewController.m */,
+				4B65DA282252820F00E7E0DF /* TealiumHelper.h */,
+				4B65DA292252820F00E7E0DF /* TealiumHelper.m */,
+				4B65DA182252809B00E7E0DF /* Main.storyboard */,
+				4B65DA1B2252809D00E7E0DF /* Assets.xcassets */,
+				4B65DA1D2252809D00E7E0DF /* LaunchScreen.storyboard */,
+				4B65DA202252809D00E7E0DF /* Info.plist */,
+				4B65DA212252809D00E7E0DF /* main.m */,
+			);
+			path = "iOS_WKWebView+Tealium_Objc";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B65DA0E2252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B65DA252252809D00E7E0DF /* Build configuration list for PBXNativeTarget "iOS_WKWebView+Tealium_Objc" */;
+			buildPhases = (
+				4B65DA0B2252809B00E7E0DF /* Sources */,
+				4B65DA0C2252809B00E7E0DF /* Frameworks */,
+				4B65DA0D2252809B00E7E0DF /* Resources */,
+				4B65DA2E2252827A00E7E0DF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS_WKWebView+Tealium_Objc";
+			productName = "iOS_WKWebView+Tealium_Objc";
+			productReference = 4B65DA0F2252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B65DA072252809B00E7E0DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jonathan Wong";
+				TargetAttributes = {
+					4B65DA0E2252809B00E7E0DF = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4B65DA0A2252809B00E7E0DF /* Build configuration list for PBXProject "iOS_WKWebView+Tealium_Objc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B65DA062252809B00E7E0DF;
+			productRefGroup = 4B65DA102252809B00E7E0DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B65DA0E2252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B65DA0D2252809B00E7E0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B65DA1F2252809D00E7E0DF /* LaunchScreen.storyboard in Resources */,
+				4B65DA1C2252809D00E7E0DF /* Assets.xcassets in Resources */,
+				4B65DA1A2252809B00E7E0DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B65DA0B2252809B00E7E0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B65DA172252809B00E7E0DF /* BlueViewController.m in Sources */,
+				4B65DA222252809D00E7E0DF /* main.m in Sources */,
+				4B65DA31225285B000E7E0DF /* GreenViewController.m in Sources */,
+				4B65DA142252809B00E7E0DF /* AppDelegate.m in Sources */,
+				4B65DA2A2252820F00E7E0DF /* TealiumHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B65DA182252809B00E7E0DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B65DA192252809B00E7E0DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B65DA1D2252809D00E7E0DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B65DA1E2252809D00E7E0DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B65DA232252809D00E7E0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B65DA242252809D00E7E0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B65DA262252809D00E7E0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS_WKWebView+Tealium_Objc/iOS_WKWebView+Tealium_Objc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC939GDC9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "iOS_WKWebView+Tealium_Objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tealium.iOS-WKWebView-Tealium-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B65DA272252809D00E7E0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS_WKWebView+Tealium_Objc/iOS_WKWebView+Tealium_Objc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC939GDC9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "iOS_WKWebView+Tealium_Objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tealium.iOS-WKWebView-Tealium-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B65DA0A2252809B00E7E0DF /* Build configuration list for PBXProject "iOS_WKWebView+Tealium_Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B65DA232252809D00E7E0DF /* Debug */,
+				4B65DA242252809D00E7E0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B65DA252252809D00E7E0DF /* Build configuration list for PBXNativeTarget "iOS_WKWebView+Tealium_Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B65DA262252809D00E7E0DF /* Debug */,
+				4B65DA272252809D00E7E0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B65DA072252809B00E7E0DF /* Project object */;
+}
