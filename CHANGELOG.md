@@ -1,5 +1,9 @@
 # Change Log
 
+- 5.5.0
+  - API Change
+    - Support for WKWebView in Tag Management if iOS version is greater than iOS 11.0. This is done automatically.
+      - To continue using UIWebView instead, set `configuration.useLegacyWebView = YES` on the `TEALConfiguration` object before initializing Tealium
 - 5.4.11
   - Bug Fix
     - Fix `lifecycle_isfirstlaunch=true` on second launch

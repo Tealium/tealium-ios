@@ -123,14 +123,14 @@ typedef void (^TEALDispatchBlock)(TEALDispatchStatus status, TEALDispatch * _Non
  * Converts a NSDictionary to a TEALDispatch
  */
 
-+ (TEALDispatch * _Nonnull)fromDictionary:(NSDictionary* _Nullable)dictionary;
++ (TEALDispatch * _Nullable)fromDictionary:(NSDictionary* _Nullable)dictionary;
 
 /**
  Adds dataSources to the payload.
  
  @param dataSources NSDictionary to add to the dispatch.
  */
-- (void)addDataSources:(NSDictionary *)dataSources;
+- (void)addDataSources:(NSDictionary *_Nonnull)dataSources;
 
 /**
  Creates a TEALDispatch given a payload.
