@@ -39,9 +39,9 @@
 - (void) setRemoteCommandsEnabled:(BOOL)enabled;
 
 /**
- Optionally set the type of WebView to use.
+ Optionally use legacy WebView.
  */
-@property (nonatomic, assign) TEALWebViewType webViewType;
+@property (nonatomic, assign) BOOL useLegacyWebView;
 
 /**
  Optionally set a view for WKWebView to attach to.

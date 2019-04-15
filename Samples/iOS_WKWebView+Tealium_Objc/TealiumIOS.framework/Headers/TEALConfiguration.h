@@ -12,7 +12,6 @@
 
 #ifdef TEAL_TARGET_IOS
 #import <UIKit/UIKit.h>
-#import "TEALWebView.h"
 #endif
 
 /**

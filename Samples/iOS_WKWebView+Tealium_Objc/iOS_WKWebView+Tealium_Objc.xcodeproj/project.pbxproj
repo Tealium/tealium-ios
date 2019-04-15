@@ -15,8 +15,8 @@
 		4B65DA222252809D00E7E0DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA212252809D00E7E0DF /* main.m */; };
 		4B65DA2A2252820F00E7E0DF /* TealiumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA292252820F00E7E0DF /* TealiumHelper.m */; };
 		4B65DA31225285B000E7E0DF /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B65DA30225285B000E7E0DF /* GreenViewController.m */; };
-		4B65DA37225297DB00E7E0DF /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */; };
-		4B65DA38225297DB00E7E0DF /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B6DF9D22264F3D700DF9BCE /* TealiumIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6DF9D12264F3D700DF9BCE /* TealiumIOS.framework */; };
+		4B6DF9D32264F3D700DF9BCE /* TealiumIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6DF9D12264F3D700DF9BCE /* TealiumIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4B65DA38225297DB00E7E0DF /* TealiumIOS.framework in Embed Frameworks */,
+				4B6DF9D32264F3D700DF9BCE /* TealiumIOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +49,7 @@
 		4B65DA2F225285B000E7E0DF /* GreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
 		4B65DA30225285B000E7E0DF /* GreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
 		4B65DA3222528E6800E7E0DF /* iOS_WKWebView+Tealium_Objc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS_WKWebView+Tealium_Objc.entitlements"; sourceTree = "<group>"; };
-		4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TealiumIOS.framework; sourceTree = "<group>"; };
+		4B6DF9D12264F3D700DF9BCE /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TealiumIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B65DA37225297DB00E7E0DF /* TealiumIOS.framework in Frameworks */,
+				4B6DF9D22264F3D700DF9BCE /* TealiumIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +67,7 @@
 		4B65DA062252809B00E7E0DF = {
 			isa = PBXGroup;
 			children = (
-				4B65DA36225297DB00E7E0DF /* TealiumIOS.framework */,
+				4B6DF9D12264F3D700DF9BCE /* TealiumIOS.framework */,
 				4B65DA112252809B00E7E0DF /* iOS_WKWebView+Tealium_Objc */,
 				4B65DA102252809B00E7E0DF /* Products */,
 			);
