@@ -10,6 +10,10 @@
 #import "TEALLogLevels.h"
 #import "TEALConsentConstants.h"
 
+#ifdef TEAL_TARGET_IOS
+#import <UIKit/UIKit.h>
+#endif
+
 /**
  Defines the endpoint of where to send data for the CollectDispatchService.
  */
@@ -74,7 +78,7 @@ typedef NS_ENUM(NSInteger, TEALCollectURL) {
 /**
  Optionally set initial userConsentCategories.
  */
-@property (nonatomic, strong) NSArray *userConsentCategories;
+@property (nonatomic, strong) NSArray *_Nullable userConsentCategories;
 
 /**
  Optionally set initial userConsentStatus.
