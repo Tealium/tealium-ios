@@ -1,5 +1,7 @@
 # Change Log
-
+- 5.5.1
+  - Bug Fix
+    - Fix `captureTimeDataSourcesForType` to use `Tealium:volatileDataSourcesCopy` instead of the `TEALDataSources: clientVolatileDataSources`. `addToVolatileDataSources` can now safely be called on another thread
 - 5.5.0
   - API Change
     - Support for WKWebView in Tag Management if iOS version is greater than iOS 11.0. This is done automatically.
