@@ -1,16 +1,16 @@
 PODS:
-  - TealiumIOS (5.4.4)
+  - TealiumIOS (5.5.1)
 
 DEPENDENCIES:
-  - TealiumIOS (= 5.4.4)
+  - TealiumIOS
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - TealiumIOS
 
 SPEC CHECKSUMS:
-  TealiumIOS: 12e0cd6396f8e09d79555c8bb24da0dc8abd09c6
+  TealiumIOS: 796d6be605c0716ad49519b889e92ff8c49970e1
 
-PODFILE CHECKSUM: ea7c1b48af13d1e14e8939eb896c1c20a78b3569
+PODFILE CHECKSUM: 0413d3ce927ae93a84240839e547e625c81fe8f3
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

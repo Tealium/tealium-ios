@@ -15,7 +15,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UISplitViewControllerDelegat
 
     // MARK: UIApplicationDelegate
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if let splitViewController = window?.rootViewController as? UISplitViewController {
             splitViewController.delegate = self
             splitViewController.preferredDisplayMode = .allVisible
@@ -26,7 +26,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UISplitViewControllerDelegat
     }
 
     // MARK: UISplitViewControllerDelegate
-    func targetDisplayModeForAction(in splitViewController: UISplitViewController) -> UISplitViewControllerDisplayMode {
+    func targetDisplayModeForAction(in splitViewController: UISplitViewController) -> UISplitViewController.DisplayMode {
         return .allVisible
     }
 

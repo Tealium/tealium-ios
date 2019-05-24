@@ -232,7 +232,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ConsentManagerDemo_Swift/Pods-ConsentManagerDemo_Swift-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_Swift/Pods-ConsentManagerDemo_Swift-frameworks.sh",
 				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework",
 				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework.dSYM",
 			);
@@ -243,7 +243,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConsentManagerDemo_Swift/Pods-ConsentManagerDemo_Swift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_Swift/Pods-ConsentManagerDemo_Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

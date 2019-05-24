@@ -52,7 +52,7 @@ class ButtonViewController: UITableViewController {
     // MARK: Configuration
     func configureSystemTextButton() {
         let buttonTitle = NSLocalizedString("Add To Cart", comment: "")
-        systemTextButton.setTitle(buttonTitle, for: UIControlState())
+        systemTextButton.setTitle(buttonTitle, for: UIControl.State())
         systemTextButton.addTarget(self, action: #selector(ButtonViewController.addToCart(_:)), for: .touchUpInside)
     }
 
@@ -73,10 +73,10 @@ class ButtonViewController: UITableViewController {
     func configureImageButton() {
         // To create this button in code you can use UIButton.buttonWithType() with a parameter value of .Custom.
         // Remove the title text.
-        imageButton.setTitle("", for: UIControlState())
+        imageButton.setTitle("", for: UIControl.State())
         imageButton.tintColor = UIColor.applicationPurpleColor
         let imageButtonNormalImage = UIImage(named: "x_icon")
-        imageButton.setImage(imageButtonNormalImage, for: UIControlState())
+        imageButton.setImage(imageButtonNormalImage, for: UIControl.State())
         // Add an accessibility label to the image.
         imageButton.accessibilityLabel = NSLocalizedString("X Button", comment: "")
         imageButton.addTarget(self, action: #selector(ButtonViewController.buttonClicked(_:)), for: .touchUpInside)
@@ -86,17 +86,17 @@ class ButtonViewController: UITableViewController {
         let buttonTitle = NSLocalizedString("Remove From Cart", comment: "")
         // Set the button's title for normal state.
         let normalTitleAttributes = [
-            NSForegroundColorAttributeName: UIColor.applicationBlueColor,
-            NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue
+            convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.applicationBlueColor,
+            convertFromNSAttributedStringKey(NSAttributedString.Key.strikethroughStyle): NSUnderlineStyle.single.rawValue
         ] as [String: Any]
-        let normalAttributedTitle = NSAttributedString(string: buttonTitle, attributes: normalTitleAttributes)
-        attributedTextButton.setAttributedTitle(normalAttributedTitle, for: UIControlState())
+        let normalAttributedTitle = NSAttributedString(string: buttonTitle, attributes: convertToOptionalNSAttributedStringKeyDictionary(normalTitleAttributes))
+        attributedTextButton.setAttributedTitle(normalAttributedTitle, for: UIControl.State())
         // Set the button's title for highlighted state.
         let highlightedTitleAttributes = [
-            NSForegroundColorAttributeName: UIColor.green,
-            NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleThick.rawValue
+            convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.green,
+            convertFromNSAttributedStringKey(NSAttributedString.Key.strikethroughStyle): NSUnderlineStyle.thick.rawValue
         ] as [String: Any]
-        let highlightedAttributedTitle = NSAttributedString(string: buttonTitle, attributes: highlightedTitleAttributes)
+        let highlightedAttributedTitle = NSAttributedString(string: buttonTitle, attributes: convertToOptionalNSAttributedStringKeyDictionary(highlightedTitleAttributes))
         attributedTextButton.setAttributedTitle(highlightedAttributedTitle, for: .highlighted)
         attributedTextButton.addTarget(self,
                                        action: #selector(ButtonViewController.removeFromCart(_:)),
@@ -105,7 +105,7 @@ class ButtonViewController: UITableViewController {
 
     // MARK: Actions
 
-    func buttonClicked(_ sender: UIButton) {
+    @objc func buttonClicked(_ sender: UIButton) {
         NSLog("A button was clicked: \(sender).")
         TealiumHelper.trackEvent(ButtonEventData.tealiumEvent,
                                  dataSources: ["event_category": ButtonEventData.eventCategory as AnyObject,
@@ -113,11 +113,22 @@ class ButtonViewController: UITableViewController {
                                                "associated_view": ButtonViewData.screenName as AnyObject])
     }
 
-    func addToCart(_ sender: UIButton) {
+    @objc func addToCart(_ sender: UIButton) {
         TealiumHelper.trackEvent(CartEventData.tealiumEventCartAdd, dataSources: DefaultData.productData)
     }
 
-    func removeFromCart(_ sender: UIButton) {
+    @objc func removeFromCart(_ sender: UIButton) {
         TealiumHelper.trackEvent(CartEventData.tealiumEventCartRemove, dataSources: DefaultData.productData)
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

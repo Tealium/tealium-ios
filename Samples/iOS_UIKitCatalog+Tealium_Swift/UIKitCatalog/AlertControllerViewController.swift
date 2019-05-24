@@ -189,7 +189,7 @@ class AlertControllerViewController: UITableViewController {
             NotificationCenter.default.addObserver(self,
                                                    selector: #selector(AlertControllerViewController
                                                                         .handleTextFieldTextDidChangeNotification(_:)),
-                                                   name: NSNotification.Name.UITextFieldTextDidChange,
+                                                   name: UITextField.textDidChangeNotification,
                                                    object: textField)
             textField.isSecureTextEntry = true
         }
@@ -199,7 +199,7 @@ class AlertControllerViewController: UITableViewController {
         */
         let removeTextFieldObserver: () -> Void = {
             NotificationCenter.default.removeObserver(self,
-                                                      name: NSNotification.Name.UITextFieldTextDidChange,
+                                                      name: UITextField.textDidChangeNotification,
                                                       object: alertController.textFields!.first)
         }
         // Create the actions.
@@ -284,7 +284,7 @@ class AlertControllerViewController: UITableViewController {
     }
 
     // MARK: UITextFieldTextDidChangeNotification
-    func handleTextFieldTextDidChangeNotification(_ notification: Notification) {
+    @objc func handleTextFieldTextDidChangeNotification(_ notification: Notification) {
         guard let textField = notification.object as? UITextField else {
             return
         }
