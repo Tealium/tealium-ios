@@ -1,4 +1,8 @@
 # Change Log
+
+- 5.5.2
+  - Bug Fix
+    - Fix crash in WKWebView for Tag Management
 - 5.5.1
   - Bug Fix
     - Fix `captureTimeDataSourcesForType` to use `Tealium:volatileDataSourcesCopy` instead of the `TEALDataSources: clientVolatileDataSources`. `addToVolatileDataSources` can now safely be called on another thread
