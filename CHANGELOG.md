@@ -1,5 +1,7 @@
 # Change Log
 
+- 5.5.3
+	- WKWebView UIView detection optimizations. 
 - 5.5.2
   - Bug Fix
     - Fix crash in WKWebView for Tag Management
