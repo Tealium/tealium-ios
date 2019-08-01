@@ -1,5 +1,7 @@
 # Change Log
 
+- 5.5.4
+  - More WKWebView optimizations. Add functionality to reattach to the view at each track call so that Tealium does not need to be reinitialized when view hierarchy changes.
 - 5.5.3
 	- WKWebView UIView detection optimizations. 
 - 5.5.2
