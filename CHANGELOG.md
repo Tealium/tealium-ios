@@ -1,5 +1,7 @@
 # Change Log
 
+- 5.5.5
+  - Incremented version number in the framework.
 - 5.5.4
   - More WKWebView optimizations. Add functionality to reattach to the view at each track call so that Tealium does not need to be reinitialized when view hierarchy changes.
 - 5.5.3
