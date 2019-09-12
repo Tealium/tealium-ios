@@ -202,7 +202,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks.sh",
 				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework",
 				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework.dSYM",
 			);
@@ -213,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5273E7037EA3AEBD776C7D79 /* [CP] Check Pods Manifest.lock */ = {

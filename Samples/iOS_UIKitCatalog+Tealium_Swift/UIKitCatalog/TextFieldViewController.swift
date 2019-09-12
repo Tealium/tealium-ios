@@ -39,19 +39,19 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self,
                                        selector: #selector(TextFieldViewController.handleKeyboardNotification(_:)),
-                                       name: NSNotification.Name.UIKeyboardWillShow,
+                                       name: UIResponder.keyboardWillShowNotification,
                                        object: nil)
         notificationCenter.addObserver(self,
                                        selector: #selector(TextFieldViewController.handleKeyboardNotification(_:)),
-                                       name: NSNotification.Name.UIKeyboardWillHide,
+                                       name: UIResponder.keyboardWillHideNotification,
                                        object: nil)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     // MARK: Configuration
@@ -100,7 +100,7 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         let purpleImageButton = UIButton(type: .custom)
         purpleImageButton.bounds = CGRect(x: 0, y: 0, width: purpleImage.size.width, height: purpleImage.size.height)
         purpleImageButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
-        purpleImageButton.setImage(purpleImage, for: UIControlState())
+        purpleImageButton.setImage(purpleImage, for: UIControl.State())
         purpleImageButton
             .addTarget(self,
                        action: #selector(TextFieldViewController.customTextFieldPurpleButtonClicked),
@@ -124,19 +124,19 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
     }
 
     // MARK: Keyboard Event Notifications
-    func handleKeyboardNotification(_ notification: Notification) {
+    @objc func handleKeyboardNotification(_ notification: Notification) {
         let userInfo = notification.userInfo!
-        guard let keyboardAnimationDurationUserInfoKey = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber
+        guard let keyboardAnimationDurationUserInfoKey = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber
             else {
             return
         }
-        guard let keyboardFrameBeginUserInfoKey = userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue else {
+        guard let keyboardFrameBeginUserInfoKey = userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else {
             return
         }
         // Get information about the animation.
         let animationDuration: TimeInterval = keyboardAnimationDurationUserInfoKey.doubleValue
         let rawAnimationCurveValue = keyboardAnimationDurationUserInfoKey.uintValue
-        let animationCurve = UIViewAnimationOptions(rawValue: rawAnimationCurveValue)
+        let animationCurve = UIView.AnimationOptions(rawValue: rawAnimationCurveValue)
         // Convert the keyboard frame from screen to view coordinates.
         let keyboardScreenBeginFrame = keyboardFrameBeginUserInfoKey.cgRectValue
         let keyboardScreenEndFrame = keyboardFrameBeginUserInfoKey.cgRectValue
@@ -150,14 +150,14 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         // Inform the view that its the layout should be updated.
         tableView.setNeedsLayout()
         // Animate updating the view's layout by calling layoutIfNeeded inside a UIView animation block.
-        let animationOptions: UIViewAnimationOptions = [animationCurve, .beginFromCurrentState]
+        let animationOptions: UIView.AnimationOptions = [animationCurve, .beginFromCurrentState]
         UIView.animate(withDuration: animationDuration, delay: 0, options: animationOptions, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }
 
     // MARK: Actions
-    func customTextFieldPurpleButtonClicked() {
+    @objc func customTextFieldPurpleButtonClicked() {
         customTextField.textColor = UIColor.applicationPurpleColor
         NSLog("The custom text field's purple right view button was clicked.")
     }

@@ -64,7 +64,7 @@ class TealiumHelper : NSObject {
 
 extension TealiumHelper : TealiumDelegate {
     
-    func tealium(_ tealium: Tealium!, shouldDrop dispatch: TEALDispatch!) -> Bool {
+    func tealium(_ tealium: Tealium, shouldDrop dispatch: TEALDispatch) -> Bool {
         
         // Add optional tracking suppression logic here - returning true will destroy
         // any processed dispatch so some conditional must eventually return false
@@ -72,7 +72,7 @@ extension TealiumHelper : TealiumDelegate {
         return false
     }
     
-    func tealium(_ tealium: Tealium!, shouldQueue dispatch: TEALDispatch!) -> Bool {
+    func tealium(_ tealium: Tealium, shouldQueue dispatch: TEALDispatch) -> Bool {
         
         // Add optional queuing / saving logic here - returning true will save
         // a dispatch so some condition must eventually return false.
@@ -80,19 +80,19 @@ extension TealiumHelper : TealiumDelegate {
         return false
     }
     
-    func tealium(_ tealium: Tealium!, didQueue dispatch: TEALDispatch!) {
+    func tealium(_ tealium: Tealium, didQueue dispatch: TEALDispatch) {
         
         // Add optional code here to respond to queuing of dispatches.
 
     }
     
-    func tealium(_ tealium: Tealium!, didSend dispatch: TEALDispatch!) {
+    func tealium(_ tealium: Tealium, didSend dispatch: TEALDispatch) {
         
         // Add optional code here to respond to sent dispatches.
 
     }
     
-    func tealium(_ tealium: Tealium!, webViewIsReady webView: Any!) {
+    func tealium(_ tealium: Tealium, webViewIsReady webView: Any) {
 
         // Use this to interact with the Tag Management Dispatcher's webview - available only if Tag Management enabled via remote settings.
 
@@ -111,7 +111,7 @@ extension TealiumHelper{
             
         if let savedNumber = (persistentData[key] as AnyObject) as? NSNumber {
 
-            oldNumber = Int(savedNumber)
+            oldNumber = Int(truncating: savedNumber)
             
         }
         

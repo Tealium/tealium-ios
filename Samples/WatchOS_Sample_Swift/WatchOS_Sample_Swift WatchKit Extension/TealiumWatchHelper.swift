@@ -21,7 +21,7 @@ class TealiumWatchHelper {
         let configuration = TEALWKExtensionConfiguration()
         configuration.logLevel = TEALLogLevel.dev
         self.tealiumWatchExtension = TEALWKExtension.newInstance(forKey: TealiumWatchHelper.WatchInstanceIdentifier, configuration: configuration)
-        let a = self.tealiumWatchExtension
+        _ = self.tealiumWatchExtension
     }
     
     class func startTracking() {
@@ -33,7 +33,7 @@ class TealiumWatchHelper {
     }
     
     class func trackEventWithTitle(title: String, dataSources: [AnyHashable: Any]?) {
-        let a = TEALWKExtension.instance(forKey: WatchInstanceIdentifier)
+        _ = TEALWKExtension.instance(forKey: WatchInstanceIdentifier)
         TEALWKExtension.instance(forKey: WatchInstanceIdentifier)?.trackEvent(withTitle: title, dataSources: dataSources)
     }
 }

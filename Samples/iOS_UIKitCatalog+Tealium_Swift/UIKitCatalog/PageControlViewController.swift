@@ -62,7 +62,7 @@ class PageControlViewController: UIViewController {
     }
 
     // MARK: Actions
-    func pageControlValueDidChange() {
+    @objc func pageControlValueDidChange() {
         NSLog("The page control changed its current page to \(pageControl.currentPage).")
         colorView.backgroundColor = colors[pageControl.currentPage]
     }

@@ -33,36 +33,36 @@ class TextViewController: UIViewController, UITextViewDelegate {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self,
                                        selector: #selector(TextViewController.handleKeyboardNotification(_:)),
-                                       name: NSNotification.Name.UIKeyboardWillShow,
+                                       name: UIResponder.keyboardWillShowNotification,
                                        object: nil)
         notificationCenter.addObserver(self,
                                        selector: #selector(TextViewController.handleKeyboardNotification(_:)),
-                                       name: NSNotification.Name.UIKeyboardWillHide,
+                                       name: UIResponder.keyboardWillHideNotification,
                                        object: nil)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     // MARK: Keyboard Event Notifications
 
-    func handleKeyboardNotification(_ notification: Notification) {
+    @objc func handleKeyboardNotification(_ notification: Notification) {
         let userInfo = notification.userInfo!
-        guard let keyboardAnimationDurationUserInfoKey = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber
+        guard let keyboardAnimationDurationUserInfoKey = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber
             else {
                 return
         }
-        guard let keyboardFrameBeginUserInfoKey = userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue else {
+        guard let keyboardFrameBeginUserInfoKey = userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else {
             return
         }
         // Get information about the animation.
         let animationDuration: TimeInterval = keyboardAnimationDurationUserInfoKey.doubleValue
         let rawAnimationCurveValue = keyboardAnimationDurationUserInfoKey.uintValue
-        let animationCurve = UIViewAnimationOptions(rawValue: rawAnimationCurveValue)
+        let animationCurve = UIView.AnimationOptions(rawValue: rawAnimationCurveValue)
         // Convert the keyboard frame from screen to view coordinates.
         let keyboardScreenBeginFrame = keyboardFrameBeginUserInfoKey.cgRectValue
         let keyboardScreenEndFrame = keyboardFrameBeginUserInfoKey.cgRectValue
@@ -74,7 +74,7 @@ class TextViewController: UIViewController, UITextViewDelegate {
         // Inform the view that its autolayout constraints have changed and the layout should be updated.
         view.setNeedsUpdateConstraints()
         // Animate updating the view's layout by calling layoutIfNeeded inside a UIView animation block.
-        let animationOptions: UIViewAnimationOptions = [animationCurve, .beginFromCurrentState]
+        let animationOptions: UIView.AnimationOptions = [animationCurve, .beginFromCurrentState]
         UIView.animate(withDuration: animationDuration, delay: 0, options: animationOptions, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
@@ -85,7 +85,7 @@ class TextViewController: UIViewController, UITextViewDelegate {
 
     // MARK: Configuration
     func configureTextView() {
-        let bodyFontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFontTextStyle.body)
+        let bodyFontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFont.TextStyle.body)
         textView.font = UIFont(descriptor: bodyFontDescriptor, size: 0)
         textView.textColor = UIColor.black
         textView.backgroundColor = UIColor.white
@@ -113,18 +113,18 @@ class TextViewController: UIViewController, UITextViewDelegate {
         */
         let boldFontDescriptor = textView.font!.fontDescriptor.withSymbolicTraits(.traitBold)
         let boldFont = UIFont(descriptor: boldFontDescriptor!, size: 0)
-        attributedText.addAttribute(NSFontAttributeName, value: boldFont, range: boldRange)
+        attributedText.addAttribute(NSAttributedString.Key.font, value: boldFont, range: boldRange)
 
         // Add highlight.
-        attributedText.addAttribute(NSBackgroundColorAttributeName,
+        attributedText.addAttribute(NSAttributedString.Key.backgroundColor,
                                     value: UIColor.applicationGreenColor,
                                     range: highlightedRange)
         // Add underline.
-        attributedText.addAttribute(NSUnderlineStyleAttributeName,
-                                    value: NSUnderlineStyle.styleSingle.rawValue,
+        attributedText.addAttribute(NSAttributedString.Key.underlineStyle,
+                                    value: NSUnderlineStyle.single.rawValue,
                                     range: underlinedRange)
         // Add tint.
-        attributedText.addAttribute(NSForegroundColorAttributeName,
+        attributedText.addAttribute(NSAttributedString.Key.foregroundColor,
                                     value: UIColor.applicationBlueColor,
                                     range: tintedRange)
         // Add image attachment.
@@ -150,7 +150,7 @@ class TextViewController: UIViewController, UITextViewDelegate {
     }
 
     // MARK: Actions
-    func doneBarButtonItemClicked() {
+    @objc func doneBarButtonItemClicked() {
         // Dismiss the keyboard by removing it as the first responder.
         textView.resignFirstResponder()
         navigationItem.setRightBarButton(nil, animated: true)

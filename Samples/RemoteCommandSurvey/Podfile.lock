@@ -1,5 +1,5 @@
 PODS:
-  - TealiumIOS (5.5.0)
+  - TealiumIOS (5.5.1)
 
 DEPENDENCIES:
   - TealiumIOS
@@ -9,7 +9,7 @@ SPEC REPOS:
     - TealiumIOS
 
 SPEC CHECKSUMS:
-  TealiumIOS: 0cc9e143be34a3df0a1b28c6ed2667aa56fff0c1
+  TealiumIOS: 796d6be605c0716ad49519b889e92ff8c49970e1
 
 PODFILE CHECKSUM: 5e6b0a5217a8be7c77ba47ba559dacb94fd8dbce
 

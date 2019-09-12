@@ -42,7 +42,7 @@ class ActivityIndicatorViewController: UITableViewController {
 
     // MARK: Configuration
     func configureGrayActivityIndicatorView() {
-        grayStyleActivityIndicatorView.activityIndicatorViewStyle = .gray
+        grayStyleActivityIndicatorView.style = .gray
         grayStyleActivityIndicatorView.startAnimating()
         grayStyleActivityIndicatorView.hidesWhenStopped = true
         TealiumHelper.trackEvent(ActivityViewData.tealiumEvent,
@@ -53,7 +53,7 @@ class ActivityIndicatorViewController: UITableViewController {
     }
 
     func configureTintedActivityIndicatorView() {
-        tintedActivityIndicatorView.activityIndicatorViewStyle = .gray
+        tintedActivityIndicatorView.style = .gray
         tintedActivityIndicatorView.color = UIColor.applicationPurpleColor
         tintedActivityIndicatorView.startAnimating()
         TealiumHelper.trackEvent(ActivityViewData.tealiumEvent,
