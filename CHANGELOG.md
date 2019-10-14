@@ -1,11 +1,13 @@
 # Change Log
 
+- 5.6.0
+  - Remove UIWebView from Tag Management. Tag Management requires the use of WKWebView.
 - 5.5.5
   - Incremented version number in the framework.
 - 5.5.4
   - More WKWebView optimizations. Add functionality to reattach to the view at each track call so that Tealium does not need to be reinitialized when view hierarchy changes.
 - 5.5.3
-	- WKWebView UIView detection optimizations. 
+	- WKWebView UIView detection optimizations.
 - 5.5.2
   - Bug Fix
     - Fix crash in WKWebView for Tag Management

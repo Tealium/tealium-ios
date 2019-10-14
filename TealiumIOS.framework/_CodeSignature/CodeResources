@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TEALConfiguration+TagManagement.h</key>
 		<data>
-		HVKzxDUh4R7Dde3sbHV9E8zxHpM=
+		0P1d+FUzUqe6pcYHvp5X68DWK9I=
 		</data>
 		<key>Headers/TEALConfiguration.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/TEALDataSourceConstants.h</key>
 		<data>
-		tMKzs5PwPpnjFaRH9+8bZRLNMAk=
+		6YI7+1PcHR7vPSh8hAuXbvmLDEw=
 		</data>
 		<key>Headers/TEALDispatch.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/TEALWebView.h</key>
 		<data>
-		zQwrxvKrk6c4kAt+PwoRVcQH8jg=
+		kXZdQzqKfUGPBDJqZSq0cods6nk=
 		</data>
 		<key>Headers/Tealium+Collect.h</key>
 		<data>
@@ -122,11 +122,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZVLiUsx3ThidFlZM3DJxoo3Wou4=
+		0V2QcAj+dVt+KLfbA+ff1AO+6PI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		9nHA37pKHr1c4KVfHRGomP3dCkU=
+		</data>
+		<key>device-names.json</key>
+		<data>
+		8yH0VKct8GConPjj4hrEwtCndLQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -146,11 +150,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HVKzxDUh4R7Dde3sbHV9E8zxHpM=
+			0P1d+FUzUqe6pcYHvp5X68DWK9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			IIfRczz6cNZHIq2zhZW/JU8gtUBkfVOUdRV7NeBbW18=
+			ZbBshD6rM0rnYZ9kdKuUcVly3cazrbQn+pQj+nhkdQo=
 			</data>
 		</dict>
 		<key>Headers/TEALConfiguration.h</key>
@@ -212,11 +216,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tMKzs5PwPpnjFaRH9+8bZRLNMAk=
+			6YI7+1PcHR7vPSh8hAuXbvmLDEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			BUAx5jw6ucg8fdIe+srRPBqKujkJ6JBVHOQGckyDWyY=
+			IG65ohvBQ6+em+T6x3WHyRqJ3GWfG535+LYb4SRHvkg=
 			</data>
 		</dict>
 		<key>Headers/TEALDispatch.h</key>
@@ -377,11 +381,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zQwrxvKrk6c4kAt+PwoRVcQH8jg=
+			kXZdQzqKfUGPBDJqZSq0cods6nk=
 			</data>
 			<key>hash2</key>
 			<data>
-			PykqamsBYHVeZNilfJxrIgr5ZQyn/d4OqzKMomOmOno=
+			Fbs4LS6DkMtdCmDAdgz2Ep2aAaYBn6miwaoUZcujYyI=
 			</data>
 		</dict>
 		<key>Headers/Tealium+Collect.h</key>
@@ -459,6 +463,17 @@
 			<key>hash2</key>
 			<data>
 			opjxXw2S78HXh5XOmgcIPUPPxu8q0M1t2KTNhN06Fig=
+			</data>
+		</dict>
+		<key>device-names.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8yH0VKct8GConPjj4hrEwtCndLQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			oQHgLhlY0ljrh+dPTlq6J0fUD2J2Rhsb8ZpUfI1kcV4=
 			</data>
 		</dict>
 	</dict>

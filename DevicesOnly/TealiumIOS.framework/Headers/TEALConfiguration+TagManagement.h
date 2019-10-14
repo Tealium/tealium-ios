@@ -39,11 +39,6 @@
 - (void) setRemoteCommandsEnabled:(BOOL)enabled;
 
 /**
- Optionally use legacy WebView.
- */
-@property (nonatomic, assign) BOOL useLegacyWebView;
-
-/**
  Optionally set a view for WKWebView to attach to.
  */
 @property (nonatomic, strong) UIView *_Nullable view;
