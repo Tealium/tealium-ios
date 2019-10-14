@@ -18,11 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		P76V3NpyKnMKIvkDt8QEVlTz71A=
+		hIIiNtlgaiV24lFZ95jfhEeidjk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		dtqYbIUTCH2Io5gO03KRm3UPwIY=
+		</data>
+		<key>device-names.json</key>
+		<data>
+		8yH0VKct8GConPjj4hrEwtCndLQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -69,6 +73,17 @@
 			<key>hash2</key>
 			<data>
 			J/VFBU5x24LQibxeInCk3XZuhN/GuW4M9FL/Kqa/SBE=
+			</data>
+		</dict>
+		<key>device-names.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8yH0VKct8GConPjj4hrEwtCndLQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			oQHgLhlY0ljrh+dPTlq6J0fUD2J2Rhsb8ZpUfI1kcV4=
 			</data>
 		</dict>
 	</dict>

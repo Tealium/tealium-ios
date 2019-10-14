@@ -8,7 +8,6 @@
 
 typedef NS_ENUM(NSInteger, TEALWebViewType) {
     TEALDefaultWebView,
-    TEALUIWebView,
     TEALWKWebView
 };
 
