@@ -1,5 +1,7 @@
 # Change Log
 
+- 5.6.1
+  - Remove DevicesOnly frameworks
 - 5.6.0
   - Remove UIWebView from Tag Management. Tag Management requires the use of WKWebView.
 - 5.5.5
