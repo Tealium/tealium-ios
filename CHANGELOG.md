@@ -1,5 +1,8 @@
 # Change Log
 
+- 5.6.2
+  - Update device list to include newest iPad devices
+  - Added saftey additional checks for unknown devices
 - 5.6.1
   - Remove DevicesOnly frameworks
 - 5.6.0
