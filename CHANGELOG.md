@@ -1,8 +1,11 @@
 # Change Log
 
+- 5.6.3
+  - Bug Fix
+    - Safely remove dispatch services while enumerating through array
 - 5.6.2
-  - Update device list to include newest iPad devices
-  - Added saftey additional checks for unknown devices
+  - Updated device list to include the newest iPad devices
+  - Added additional safety checks for unknown devices
 - 5.6.1
   - Remove DevicesOnly frameworks
 - 5.6.0
@@ -12,7 +15,7 @@
 - 5.5.4
   - More WKWebView optimizations. Add functionality to reattach to the view at each track call so that Tealium does not need to be reinitialized when view hierarchy changes.
 - 5.5.3
-	- WKWebView UIView detection optimizations.
+  - WKWebView UIView detection optimizations.
 - 5.5.2
   - Bug Fix
     - Fix crash in WKWebView for Tag Management
