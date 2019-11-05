@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31E842866A73F54D74926B18 /* Pods_ConsentManagerDemo_ObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94D9390CDE75BF51B4B7210 /* Pods_ConsentManagerDemo_ObjC.framework */; };
 		4B0357B420BDF6AD0064A6EE /* SliderPreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0357B320BDF6AD0064A6EE /* SliderPreferencesTableViewController.swift */; };
 		4B0357B620D01B170064A6EE /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0357B520D01B170064A6EE /* SwitchTableViewCell.swift */; };
 		4B0357B820D030160064A6EE /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0357B720D030160064A6EE /* TitleTableViewCell.swift */; };
@@ -21,9 +20,11 @@
 		4B2A119020B8C8E800BCE2C6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A118F20B8C8E800BCE2C6 /* HomeTableViewController.swift */; };
 		4B2A119220B8D23F00BCE2C6 /* SimplePreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A119120B8D23F00BCE2C6 /* SimplePreferencesTableViewController.swift */; };
 		4B858EDB20FFB77A002D5D20 /* TealiumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B858EDA20FFB77A002D5D20 /* TealiumHelper.m */; };
+		61B04BF27C4CF6FE9701E666 /* Pods_ConsentManagerDemo_ObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608A0BD3510355A136191D8F /* Pods_ConsentManagerDemo_ObjC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12481115152069B8FD46BB95 /* Pods-ConsentManagerDemo_ObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsentManagerDemo_ObjC.release.xcconfig"; path = "Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC.release.xcconfig"; sourceTree = "<group>"; };
 		4B0357B320BDF6AD0064A6EE /* SliderPreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPreferencesTableViewController.swift; sourceTree = "<group>"; };
 		4B0357B520D01B170064A6EE /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		4B0357B720D030160064A6EE /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
@@ -42,9 +43,8 @@
 		4B858ED920FFB77A002D5D20 /* TealiumHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TealiumHelper.h; sourceTree = "<group>"; };
 		4B858EDA20FFB77A002D5D20 /* TealiumHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TealiumHelper.m; sourceTree = "<group>"; };
 		4BAE554E20EA9FC7007551B9 /* TealiumIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumIOS.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FrameworkBuilder-dmbnvbrnwapxjacsxxaxikshtzto/Build/Products/Release-iphonesimulator/TealiumIOS.framework"; sourceTree = "<group>"; };
-		773AF55DF20709642C6AEF70 /* Pods-ConsentManagerDemo_ObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsentManagerDemo_ObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC.debug.xcconfig"; sourceTree = "<group>"; };
-		A94D9390CDE75BF51B4B7210 /* Pods_ConsentManagerDemo_ObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsentManagerDemo_ObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDDD39FF220E3678643D177B /* Pods-ConsentManagerDemo_ObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsentManagerDemo_ObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC.release.xcconfig"; sourceTree = "<group>"; };
+		608A0BD3510355A136191D8F /* Pods_ConsentManagerDemo_ObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsentManagerDemo_ObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7077D54415483B00774AC67 /* Pods-ConsentManagerDemo_ObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsentManagerDemo_ObjC.debug.xcconfig"; path = "Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31E842866A73F54D74926B18 /* Pods_ConsentManagerDemo_ObjC.framework in Frameworks */,
+				61B04BF27C4CF6FE9701E666 /* Pods_ConsentManagerDemo_ObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 				4B2A116C20B8625000BCE2C6 /* ConsentManagerDemo_ObjC */,
 				4B2A116B20B8625000BCE2C6 /* Products */,
 				4BAE554D20EA9FC7007551B9 /* Frameworks */,
-				FCCE0DD88AAEC79DF1F02FE8 /* Pods */,
+				A8491F919A337933A79E0C4D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,18 +112,19 @@
 			isa = PBXGroup;
 			children = (
 				4BAE554E20EA9FC7007551B9 /* TealiumIOS.framework */,
-				A94D9390CDE75BF51B4B7210 /* Pods_ConsentManagerDemo_ObjC.framework */,
+				608A0BD3510355A136191D8F /* Pods_ConsentManagerDemo_ObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FCCE0DD88AAEC79DF1F02FE8 /* Pods */ = {
+		A8491F919A337933A79E0C4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				773AF55DF20709642C6AEF70 /* Pods-ConsentManagerDemo_ObjC.debug.xcconfig */,
-				BDDD39FF220E3678643D177B /* Pods-ConsentManagerDemo_ObjC.release.xcconfig */,
+				B7077D54415483B00774AC67 /* Pods-ConsentManagerDemo_ObjC.debug.xcconfig */,
+				12481115152069B8FD46BB95 /* Pods-ConsentManagerDemo_ObjC.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,11 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B2A117C20B8625200BCE2C6 /* Build configuration list for PBXNativeTarget "ConsentManagerDemo_ObjC" */;
 			buildPhases = (
-				5273E7037EA3AEBD776C7D79 /* [CP] Check Pods Manifest.lock */,
+				17C06D2604D254E6B5A1E12F /* [CP] Check Pods Manifest.lock */,
 				4B2A116620B8625000BCE2C6 /* Sources */,
 				4B2A116720B8625000BCE2C6 /* Frameworks */,
 				4B2A116820B8625000BCE2C6 /* Resources */,
-				04CEC073E5E257150AFC2F2E /* [CP] Embed Pods Frameworks */,
+				452A5D579197D6C703014D33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,42 +197,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04CEC073E5E257150AFC2F2E /* [CP] Embed Pods Frameworks */ = {
+		17C06D2604D254E6B5A1E12F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks.sh",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework.dSYM",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealiumIOS.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/TealiumIOS.framework.dSYM",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5273E7037EA3AEBD776C7D79 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ConsentManagerDemo_ObjC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452A5D579197D6C703014D33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_ObjC/Pods-ConsentManagerDemo_ObjC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -392,7 +394,7 @@
 		};
 		4B2A117D20B8625200BCE2C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 773AF55DF20709642C6AEF70 /* Pods-ConsentManagerDemo_ObjC.debug.xcconfig */;
+			baseConfigurationReference = B7077D54415483B00774AC67 /* Pods-ConsentManagerDemo_ObjC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -417,7 +419,7 @@
 		};
 		4B2A117E20B8625200BCE2C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDDD39FF220E3678643D177B /* Pods-ConsentManagerDemo_ObjC.release.xcconfig */;
+			baseConfigurationReference = 12481115152069B8FD46BB95 /* Pods-ConsentManagerDemo_ObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

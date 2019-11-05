@@ -231,15 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_Swift/Pods-ConsentManagerDemo_Swift-frameworks.sh",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework.dSYM",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_Swift/Pods-ConsentManagerDemo_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealiumIOS.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/TealiumIOS.framework.dSYM",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConsentManagerDemo_Swift/Pods-ConsentManagerDemo_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

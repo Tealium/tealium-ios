@@ -28,6 +28,7 @@ extern NSString *const TEALDataSourceKey_CarrierISO;
 extern NSString *const TEALDataSourceKey_CarrierMCC;
 extern NSString *const TEALDataSourceKey_CarrierMNC;
 extern NSString *const TEALDataSourceKey_ConnectionType;
+extern NSString *const TEALDataSourceKey_DeviceType;
 extern NSString *const TEALDataSourceKey_Device;
 extern NSString *const TEALDataSourceKey_DeviceModelName;
 extern NSString *const TEALDataSourceKey_DeviceModelVariant;
