@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import TealiumIOSLifecycle
+import TealiumIOS
 
 class TealiumHelper: NSObject {
     

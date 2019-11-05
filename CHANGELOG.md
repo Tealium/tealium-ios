@@ -1,5 +1,7 @@
 # Change Log
-
+- 5.6.4
+  - Added additional device_type variable that includes Apple device name (e.g 
+    "iPhone10,4") 
 - 5.6.3
   - Bug Fix
     - Safely remove dispatch services while enumerating through array

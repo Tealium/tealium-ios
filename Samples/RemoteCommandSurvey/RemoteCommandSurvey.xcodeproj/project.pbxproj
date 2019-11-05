@@ -166,18 +166,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RemoteCommandSurvey/Pods-RemoteCommandSurvey-frameworks.sh",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework",
-				"${PODS_ROOT}/TealiumIOS/TealiumIOS.framework.dSYM",
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteCommandSurvey/Pods-RemoteCommandSurvey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealiumIOS.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/TealiumIOS.framework.dSYM",
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteCommandSurvey/Pods-RemoteCommandSurvey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
