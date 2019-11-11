@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.frameworks = 'SystemConfiguration'
     s.license      = { :type => "Commercial", :file => "LICENSE.txt" }
     s.name             = "TealiumIOSLifecycle"
-    s.version          = "5.6.4"
+    s.version          = "5.6.5"
     s.requires_arc = true
     s.social_media_url   = "https://twitter.com/tealium"
     s.source           = { :git => "https://github.com/tealium/tealium-ios.git", :tag => s.version.to_s}
