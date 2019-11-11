@@ -1,4 +1,6 @@
 # Change Log
+- 5.6.5
+  - Added `tealium_session_id` to volatile data variables
 - 5.6.4
   - Added additional device_type variable that includes Apple device name (e.g 
     "iPhone10,4") 
