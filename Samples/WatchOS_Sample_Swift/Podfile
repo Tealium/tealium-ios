@@ -6,7 +6,7 @@ target 'WatchOS_Sample_Swift' do
   use_frameworks!
 
   # Pods for WatchOS_Sample_Swift
-	pod	"TealiumIOS", "~> 5.6.4"
+	pod	"TealiumIOS", "~> 5.6.6"
 
 end
 

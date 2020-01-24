@@ -1,4 +1,7 @@
 # Change Log
+- 5.6.6
+  - Bug Fix
+    - Update log format on `removeRemoteCommandID`
 - 5.6.5
   - Added `tealium_session_id` to volatile data variables
 - 5.6.4

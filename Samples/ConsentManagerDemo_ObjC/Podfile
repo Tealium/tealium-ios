@@ -6,5 +6,5 @@ target 'ConsentManagerDemo_ObjC' do
   use_frameworks!
 
   # Pods for ConsentManagerDemo_ObjC
-	pod "TealiumIOS", "~> 5.6.4"
+	pod "TealiumIOS", "~> 5.6.6"
 end
