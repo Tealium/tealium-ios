@@ -1,4 +1,6 @@
 # Change Log
+- 5.7.0
+  - Added support for native session counting in lieu of using the session counting logic within utag.js. [Read More](https://docs.tealium.com/platforms/ios-objective-c/release-notes/)
 - 5.6.6
   - Bug Fix
     - Update log format on `removeRemoteCommandID`

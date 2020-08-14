@@ -102,6 +102,7 @@ extern NSString *const TEALDataSourceKey_Tealium_Profile;
 extern NSString *const TEALDataSourceKey_Tealium_Random;
 extern NSString *const TEALDataSourceKey_Tealium_SessionID;
 extern NSString *const TEALDataSourceKey_Tealium_LastTrackEvent;
+extern NSString *const TEALDataSourceKey_Tealium_LastSessionCreated;
 extern NSString *const TEALDataSourceKey_Tealium_Timestamp_Epoch;
 extern NSString *const TEALDataSourceKey_Tealium_Visitor_Id;
 extern NSString *const TEALDataSourceKey_TealiumID;
