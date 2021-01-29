@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TEALVisitorProfileCurrentVisit.h"
+#import <TealiumIOS/TEALVisitorProfileCurrentVisit.h>
 
 /**
  *  This class represents a visitor profile retrieved from AudienceStream by the Collect library.

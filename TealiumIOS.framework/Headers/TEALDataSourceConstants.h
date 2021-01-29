@@ -128,6 +128,7 @@ extern NSString *const TEALDataSourceValue_DispatchType_Derived;
 extern NSString *const TEALDataSourceValue_DispatchType_Interaction;
 extern NSString *const TEALDataSourceValue_DispatchType_View;
 extern NSString *const TEALDataSourceValue_IOS;
+extern NSString *const TEALDataSourceValue_IOS_Lowercase;
 extern NSString *const TEALDataSourceValue_LifecycleLaunch;
 extern NSString *const TEALDataSourceValue_LifecycleWake;
 extern NSString *const TEALDataSourceValue_LifecycleSleep;
@@ -138,12 +139,14 @@ extern NSString *const TEALDataSourceValue_Pagetype;
 extern NSString *const TEALDataSourceValue_True;
 extern NSString *const TEALDataSourceValue_TV;
 extern NSString *const TEALDataSourceValue_TvOS;
+extern NSString *const TEALDataSourceValue_TvOS_Lowercase;
 extern NSString *const TEALDataSourceValue_View;
 extern NSString *const TEALDataSourceValue_Exception;
 extern NSString *const TEALDataSourceValue_ExceptionCaught;
 extern NSString *const TEALDataSourceValue_ExceptionUncaught;
 extern NSString *const TEALDataSourceValue_Unknown;
 extern NSString *const TEALDataSourceValue_WatchOS;
+extern NSString *const TEALDataSourceValue_WatchOS_Lowercase;
 extern NSString *const TEALDataSourceValue_Wearable;
 
 

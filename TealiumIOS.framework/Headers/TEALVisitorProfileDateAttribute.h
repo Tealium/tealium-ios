@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TEALVisitorProfileBaseAttribute.h"
+#import <TealiumIOS/TEALVisitorProfileBaseAttribute.h>
 
 @interface TEALVisitorProfileDateAttribute : TEALVisitorProfileBaseAttribute <NSCoding, NSCopying>
 

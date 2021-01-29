@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TEALConsentConstants.h"
+#import <TealiumIOS/TEALConsentConstants.h>
 
 @class TEALDispatch;
 @class TEALConsentConfiguration;

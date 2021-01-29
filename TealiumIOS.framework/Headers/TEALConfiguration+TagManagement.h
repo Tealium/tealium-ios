@@ -6,7 +6,7 @@
 //
 //
 
-#import "TEALConfiguration.h"
+#import <TealiumIOS/TEALConfiguration.h>
 
 @interface TEALConfiguration (TagManagement)
 

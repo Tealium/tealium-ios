@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TEALConsentConstants.h"
-#import "TEALConsentManagerDelegate.h"
-#import "TEALConsentStoreDelegate.h"
+#import <TealiumIOS/TEALConsentConstants.h>
+#import <TealiumIOS/TEALConsentManagerDelegate.h>
+#import <TealiumIOS/TEALConsentStoreDelegate.h>
 
 @class TEALURLSessionManager;
 @protocol TEALDataSourcesProtocol;

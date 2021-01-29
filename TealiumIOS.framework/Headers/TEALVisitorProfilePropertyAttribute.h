@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TEALVisitorProfileBaseAttribute.h"
+#import <TealiumIOS/TEALVisitorProfileBaseAttribute.h>
 
 @interface TEALVisitorProfilePropertyAttribute : TEALVisitorProfileBaseAttribute <NSCoding, NSCopying, NSSecureCoding>
 

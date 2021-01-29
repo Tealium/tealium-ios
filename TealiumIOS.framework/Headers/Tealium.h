@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TEALConfiguration.h"
-#import "TEALConsentConstants.h"
-#import "TEALConsentManagerDelegate.h"
-#import "TEALDispatch.h"
-#import "TEALSettingsFactory.h"
-#import "TealiumDelegate.h"
+#import <TealiumIOS/TEALConfiguration.h>
+#import <TealiumIOS/TEALConsentConstants.h>
+#import <TealiumIOS/TEALConsentManagerDelegate.h>
+#import <TealiumIOS/TEALDispatch.h>
+#import <TealiumIOS/TEALSettingsFactory.h>
+#import <TealiumIOS/TealiumDelegate.h>
 
 @class TEALLogger;
 @class TEALConsentConfiguration;

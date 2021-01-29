@@ -6,7 +6,7 @@
 //
 //
 
-#import "TEALConfiguration.h"
+#import <TealiumIOS/TEALConfiguration.h>
 
 /**
  *  Unsigned integer value that controls the frequency at which the user's visitor profile is requested

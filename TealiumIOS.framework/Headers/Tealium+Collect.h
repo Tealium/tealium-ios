@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Tealium Inc. All rights reserved.
 //
 
-#import "Tealium.h"
-#import "TEALVisitorProfile.h"
-#import "TEALConfiguration+Collect.h"
+#import <TealiumIOS/Tealium.h>
+#import <TealiumIOS/TEALVisitorProfile.h>
+#import <TealiumIOS/TEALConfiguration+Collect.h>
 
 @interface Tealium (Collect)
 
