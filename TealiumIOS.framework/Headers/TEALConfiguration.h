@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TEALLogLevels.h"
-#import "TEALConsentConstants.h"
+#import <TealiumIOS/TEALLogLevels.h>
+#import <TealiumIOS/TEALConsentConstants.h>
 
 #ifdef TEAL_TARGET_IOS
 #import <UIKit/UIKit.h>

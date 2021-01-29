@@ -6,5 +6,5 @@ target 'RemoteCommandSurvey' do
   use_frameworks!
 
   # Pods for RemoteCommandSurvey
-	pod "TealiumIOS", "~> 5.7.0"
+	pod "TealiumIOS", "~> 5.8.0"
 end

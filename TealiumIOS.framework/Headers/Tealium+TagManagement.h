@@ -6,9 +6,8 @@
 //  Copyright (c) 2015 Tealium Inc. All rights reserved.
 //
 
-#import "Tealium.h"
-#import "TEALRemoteCommandResponse.h"
-//#import "TEALConfiguration+TagManagement.h"
+#import <TealiumIOS/Tealium.h>
+#import <TealiumIOS/TEALRemoteCommandResponse.h>
 
 @interface Tealium (TagManagement)
 

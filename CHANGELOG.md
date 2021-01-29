@@ -1,4 +1,8 @@
 # Change Log
+
+- 5.8.0
+  - Updated `platform` variable to be lowercase
+  - Resolved build warnings
 - 5.7.0
   - Added support for native session counting in lieu of using the session counting logic within utag.js. [Read More](https://docs.tealium.com/platforms/ios-objective-c/release-notes/)
 - 5.6.6
