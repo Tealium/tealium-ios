@@ -1,5 +1,7 @@
 # Change Log
 
+- 5.8.1
+  - Added the option to set a `WKProcessPool` instance on the `TealiumConfig` object
 - 5.8.0
   - Updated `platform` variable to be lowercase
   - Resolved build warnings

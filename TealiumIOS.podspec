@@ -13,13 +13,17 @@ Pod::Spec.new do |s|
     s.frameworks = 'SystemConfiguration'
     s.license      = { :type => "Commercial", :file => "LICENSE.txt" }
     s.name             = "TealiumIOS"
-    s.version          = "5.8.0"
+    s.version          = "5.8.1"
     s.requires_arc = true
     s.social_media_url   = "https://twitter.com/tealium"
     s.source           = { :git => "https://github.com/tealium/tealium-ios.git", :tag => s.version.to_s }
     s.summary          = "Framework for adding Tealium services to an iOS application."
     s.platform     = :ios, '8.0'
-    #s.public_header_files = 'TealiumIOS.framework/Headers/*.{h}'
     s.vendored_frameworks = 'TealiumIOS.framework'
     s.xcconfig = {'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/Headers/Public/TealiumIOS/TealiumIOS'}
+    
+    # Workaround to exclude arm64 from simulator. If you are on an M1 Mac, please use the XCFrameworks 
+    # that are uploaded to the latest release
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
 end
