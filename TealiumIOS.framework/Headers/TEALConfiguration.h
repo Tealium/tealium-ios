@@ -13,6 +13,7 @@
 #ifdef TEAL_TARGET_IOS
 #import <UIKit/UIKit.h>
 #endif
+@import WebKit;
 
 /**
  Defines the endpoint of where to send data for the CollectDispatchService.
@@ -89,6 +90,16 @@ typedef NS_ENUM(NSInteger, TEALCollectURL) {
  Set the endpoint for the CollectDispatchService. By default this is set to the /event endpoint and is a POST request.
  */
 @property (nonatomic, assign) TEALCollectURL collectURL;
+
+/**
+ Optionally set a WKProcessPool for the WKWebView
+ */
+@property (nonatomic, retain) WKProcessPool *_Nullable wkProcessPool;
+
+/**
+ Optionally set a WKWebViewConfiguration for the WKWebView
+ */
+@property (nonatomic, retain) WKWebViewConfiguration *_Nullable wkWebViewConfig;
 
 #pragma mark - Core Methods
 /** @name Core Methods */
