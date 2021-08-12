@@ -1,0 +1,6 @@
+framework module TealiumIOS {
+  umbrella header "TealiumIOS.h"
+
+  export *
+  module * { export * }
+}
