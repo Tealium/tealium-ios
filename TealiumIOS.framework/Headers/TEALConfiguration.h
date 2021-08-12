@@ -13,7 +13,9 @@
 #ifdef TEAL_TARGET_IOS
 #import <UIKit/UIKit.h>
 #endif
+#if !TARGET_OS_TV
 @import WebKit;
+#endif
 
 /**
  Defines the endpoint of where to send data for the CollectDispatchService.
@@ -91,6 +93,7 @@ typedef NS_ENUM(NSInteger, TEALCollectURL) {
  */
 @property (nonatomic, assign) TEALCollectURL collectURL;
 
+#if !TARGET_OS_TV
 /**
  Optionally set a WKProcessPool for the WKWebView
  */
@@ -100,6 +103,7 @@ typedef NS_ENUM(NSInteger, TEALCollectURL) {
  Optionally set a WKWebViewConfiguration for the WKWebView
  */
 @property (nonatomic, retain) WKWebViewConfiguration *_Nullable wkWebViewConfig;
+#endif
 
 #pragma mark - Core Methods
 /** @name Core Methods */
