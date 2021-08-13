@@ -4,9 +4,9 @@
 
 ## Documentation
 
-For full documentation, please see the Tealium Learning Community:
+For full documentation, please see the Tealium Developer Docs:
 
-[Tealium for iOS](https://community.tealiumiq.com/t5/Tealium-for-iOS/Adding-Tealium-to-Your-iOS-App/ta-p/16327)
+[Tealium for iOS](https://docs.tealium.com/platforms/ios-objective-c/)
 
 ## License
 
