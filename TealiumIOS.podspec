@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.version          = "5.8.2"
     s.requires_arc = true
     s.social_media_url   = "https://twitter.com/tealium"
-    s.source           = { :git => "https://github.com/tealium/tealium-ios.git", :tag => s.version.to_s }
+    # s.source           = { :git => "https://github.com/tealium/tealium-ios.git", :tag => s.version.to_s }
     s.summary          = "Framework for adding Tealium services to an iOS application."
     s.platform     = :ios, '8.0'
     s.vendored_frameworks = 'TealiumIOS.xcframework'
