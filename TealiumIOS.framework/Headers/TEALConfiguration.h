@@ -105,6 +105,11 @@ typedef NS_ENUM(NSInteger, TEALCollectURL) {
 @property (nonatomic, retain) WKWebViewConfiguration *_Nullable wkWebViewConfig;
 #endif
 
+/**
+ Disable session counting if false
+ */
+@property (nonatomic, assign) BOOL sessionCountingEnabled;
+
 #pragma mark - Core Methods
 /** @name Core Methods */
 
