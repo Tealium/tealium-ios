@@ -1,5 +1,12 @@
 # Change Log
 
+- 5.8.3
+  - Added `sessionCountingEnabled` to `TealiumConfig` option, to allow disabling of session counting for TealiumIQ.
+  - Fixed a crash that could happen for devices with no preferred language.
+- 5.8.2
+  - Fixed issue with Lifecycle XCFramework file that prevented successful archiving of the enclosing app’s .ipa file
+  - Carthage can now use XCFrameworks directly from the Github repo without requiring an intermediate JSON file. Any existing Cartfile references must be updated.
+  - CocoaPods now uses XCFramework files
 - 5.8.1
   - Added the option to set a `WKProcessPool` instance on the `TealiumConfig` object
 - 5.8.0
